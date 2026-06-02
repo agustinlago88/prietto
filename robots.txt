@@ -1,0 +1,10 @@
+# =============================================================================
+# robots.txt — Maxi Prietto / Prietto
+# Sitio estático en GitHub Pages
+# =============================================================================
+
+User-agent: *
+Allow: /
+
+# Mapa del sitio para crawlers
+Sitemap: https://agustinlago88.github.io/prietto/sitemap.xml

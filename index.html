@@ -1,0 +1,1174 @@
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prietto | Cosmos, Blues y Psicodelia Analógica — Buenos Aires</title>
+  <meta name="description" content="Maxi Prietto: solista, Los Espíritus y Prietto Viaja al Cosmos con Mariano. Canciones, fechas, discografía y videos desde Buenos Aires.">
+  <meta name="theme-color" content="#fbfbfb">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://agustinlago88.github.io/prietto/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Prietto — Cosmos, Blues y Psicodelia Analógica">
+  <meta property="og:description" content="Maxi Prietto: solista, Los Espíritus y Prietto Viaja al Cosmos con Mariano. Shows, discos y videos desde Buenos Aires.">
+  <meta property="og:image" content="https://agustinlago88.github.io/prietto/assets/hero-bg.jpg">
+  <meta property="og:url" content="https://agustinlago88.github.io/prietto/">
+  <meta property="og:type" content="music.musician">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:site_name" content="Prietto">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Prietto — Cosmos, Blues y Psicodelia Analógica">
+  <meta name="twitter:description" content="Maxi Prietto: solista, Los Espíritus y Prietto Viaja al Cosmos con Mariano.">
+  <meta name="twitter:image" content="https://agustinlago88.github.io/prietto/assets/hero-bg.jpg">
+
+  <!-- Fuentes: Cinzel (display), Space Mono (mono), Syne (sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN con config monocromática -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif:  ['Cinzel', 'Georgia', 'serif'],
+            sans:   ['Syne', 'sans-serif'],
+            mono:   ['Space Mono', 'monospace'],
+          },
+          colors: {
+            starkBlack: '#0a0a0a',
+            starkWhite: '#fbfbfb',
+            paperGrey:  '#f2f2f2',
+            darkGrey:   '#1c1c1c',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* ── GRANO ANALÓGICO (Fukase Aesthetic) ────────────────────────────────── */
+    .grain-overlay {
+      position: fixed; top: -50%; left: -50%; right: -50%; bottom: -50%;
+      width: 200%; height: 200%;
+      background: transparent url('data:image/svg+xml,%3Csvg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"%3E%3Cfilter id="n"%3E%3CfeTurbulence type="fractalNoise" baseFrequency="0.75" numOctaves="3" stitchTiles="stitch"/%3E%3C/filter%3E%3Crect width="100%25" height="100%25" filter="url(%23n)"/%3E%3C/svg%3E') repeat;
+      opacity: 0.042; pointer-events: none; z-index: 9999;
+      animation: grainRun 8s steps(8) infinite;
+    }
+    @keyframes grainRun {
+      0%,100%{transform:translate(0,0)} 10%{transform:translate(-5%,-10%)}
+      30%{transform:translate(-15%,5%)} 50%{transform:translate(-5%,15%)}
+      70%{transform:translate(15%,10%)} 90%{transform:translate(10%,-5%)}
+    }
+
+    /* ── MARCO REDONDO ANALÓGICO ─────────────────────────────────────────── */
+    .modern-analogue-frame {
+      position: relative; border-radius: 50%;
+      border: 1px solid rgba(10,10,10,.08);
+      background: rgba(251,251,251,.5);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+    .frame-ring-outer {
+      position: absolute; inset: -12px;
+      border: 1px dashed rgba(10,10,10,.15); border-radius: 50%;
+      animation: spinRing 60s linear infinite; pointer-events: none;
+    }
+    .frame-ring-inner {
+      position: absolute; inset: -6px;
+      border: 1px solid rgba(10,10,10,.04); border-radius: 50%;
+      pointer-events: none;
+    }
+    @keyframes spinRing { to { transform: rotate(360deg); } }
+
+    /* ── VIDEO DE FONDO (grayscale psicodélico) ──────────────────────────── */
+    .video-background-container {
+      position: fixed; inset: 0; width: 100vw; height: 100vh;
+      z-index: -30; overflow: hidden; pointer-events: none;
+      background-color: #fbfbfb;
+    }
+    .video-background-container iframe {
+      position: absolute; top: 50%; left: 50%;
+      width: 100vw; height: 56.25vw;
+      min-height: 100vh; min-width: 177.78vh;
+      transform: translate(-50%,-50%);
+      filter: grayscale(100%) contrast(165%) brightness(125%) opacity(.28);
+    }
+    .vignette-overlay {
+      position: fixed; inset: 0; z-index: -20; pointer-events: none;
+      background: radial-gradient(circle at center, transparent 30%, rgba(251,251,251,.88) 90%);
+    }
+
+    /* ── BLOBS PSICODÉLICOS ──────────────────────────────────────────────── */
+    .psychedelic-blob {
+      position: absolute; background: rgba(10,10,10,.025);
+      filter: blur(20px); z-index: -10; pointer-events: none;
+      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+      animation: morphBlob 12s ease-in-out infinite alternate;
+    }
+    .psychedelic-blob-2 {
+      position: absolute; background: rgba(10,10,10,.018);
+      filter: blur(40px); z-index: -10; pointer-events: none;
+      border-radius: 40% 60% 70% 30% / 50% 60% 30% 60%;
+      animation: morphBlob 18s ease-in-out infinite alternate-reverse;
+    }
+    @keyframes morphBlob {
+      0%   { border-radius:60% 40% 30% 70%/60% 30% 70% 40%; transform:translate(0,0) scale(1) rotate(0deg); }
+      50%  { border-radius:30% 60% 70% 40%/50% 60% 30% 60%; transform:translate(5%,-5%) scale(1.1) rotate(90deg); }
+      100% { border-radius:50% 50% 30% 70%/50% 30% 70% 50%; transform:translate(-5%,5%) scale(.9) rotate(180deg); }
+    }
+
+    /* ── GOTEO DE TINTA ──────────────────────────────────────────────────── */
+    .drip-fluid {
+      position: absolute; pointer-events: none; z-index: -5;
+      opacity: .07; fill: #0a0a0a; transition: transform .1s linear;
+    }
+
+    /* ── ILUSTRACIONES FLOTANTES (Dahyun Kim) ────────────────────────────── */
+    .dahyun-illustration {
+      position: absolute; pointer-events: none; opacity: 0;
+      transform-origin: center; transition: opacity 2s ease-in-out;
+      filter: drop-shadow(0 8px 16px rgba(0,0,0,.03));
+    }
+    @keyframes driftFloat {
+      0%  { transform: translate(0,0) rotate(0deg) scale(.9); }
+      50% { transform: translate(3vw,-4vh) rotate(5deg) scale(1.05); }
+      100%{ transform: translate(-2vw,-8vh) rotate(-3deg) scale(.95); }
+    }
+
+    /* ── REVEAL ON SCROLL ────────────────────────────────────────────────── */
+    .reveal {
+      opacity: 0; transform: translateY(30px); filter: blur(4px);
+      transition: opacity 1200ms cubic-bezier(.16,1,.3,1),
+                  transform 1200ms cubic-bezier(.16,1,.3,1),
+                  filter 1200ms cubic-bezier(.16,1,.3,1);
+    }
+    .reveal.is-visible { opacity:1; transform:translateY(0); filter:blur(0); }
+
+    /* ── VINYL SPIN ──────────────────────────────────────────────────────── */
+    .vinyl-spin { animation: spinVinyl 8s linear infinite; }
+    .is-paused .vinyl-spin { animation-play-state: paused; }
+    @keyframes spinVinyl { to { transform: rotate(360deg); } }
+
+    /* ── DISCO TABS ACTIVE STATE ─────────────────────────────────────────── */
+    [role="tab"][aria-selected="true"] {
+      border-bottom-color: #0a0a0a !important; color: #0a0a0a !important;
+    }
+
+    /* ── ALBUM CARD COVER ────────────────────────────────────────────────── */
+    .album-cover-wrap { aspect-ratio: 1/1; overflow: hidden; background: #f2f2f2; }
+    .album-cover-wrap img {
+      width:100%; height:100%; object-fit:cover;
+      filter: grayscale(100%) contrast(110%);
+      transition: transform 700ms cubic-bezier(.16,1,.3,1);
+    }
+    .group:hover .album-cover-wrap img { transform: scale(1.06); }
+
+    /* ── SHOWS EXTRA (toggle suave) ─────────────────────────────────────── */
+    .shows-extra { max-height:0; overflow:hidden; opacity:0;
+      transition: max-height 600ms cubic-bezier(.4,0,.2,1), opacity 400ms ease; }
+    .shows-extra--visible { max-height:2000px; opacity:1; }
+
+    /* ── REDUCED MOTION ──────────────────────────────────────────────────── */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 1ms !important; animation-iteration-count: 1 !important;
+        transition-duration: 1ms !important;
+      }
+      .reveal { opacity:1; transform:none; filter:none; }
+    }
+
+    /* ── FOCUS VISIBLE ───────────────────────────────────────────────────── */
+    :focus-visible { outline: 2px solid #0a0a0a; outline-offset: 3px; }
+    :focus:not(:focus-visible) { outline: none; }
+  </style>
+</head>
+
+<body class="bg-starkWhite text-starkBlack font-sans antialiased relative overflow-x-hidden selection:bg-starkBlack selection:text-starkWhite">
+
+  <!-- Grano analógico fijo -->
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <!-- Goteo de tinta dinámico -->
+  <div id="dripping-ink-container" class="absolute inset-0 pointer-events-none overflow-hidden z-0" aria-hidden="true"></div>
+
+  <!-- Video atmosférico de fondo (grayscale, opacidad reducida) -->
+  <div class="video-background-container" aria-hidden="true">
+    <iframe src="https://www.youtube-nocookie.com/embed/LLlFzucZhOQ?autoplay=1&mute=1&loop=1&playlist=LLlFzucZhOQ&controls=0&showinfo=0&rel=0&modestbranding=1&iv_load_policy=3&playsinline=1"
+            frameborder="0"
+            allow="autoplay; encrypted-media"
+            title="Video de fondo decorativo"
+            loading="lazy">
+    </iframe>
+  </div>
+  <div class="vignette-overlay" aria-hidden="true"></div>
+
+  <!-- Ilustraciones flotantes Dahyun Kim -->
+  <div id="dahyun-canvas-container" class="fixed inset-0 pointer-events-none z-0 overflow-hidden" aria-hidden="true"></div>
+
+  <!-- ====================================================================
+       JUKEBOX — Player ambiental flotante (bottom-right)
+       ==================================================================== -->
+  <aside id="jukebox"
+         class="fixed bottom-6 right-6 z-50 bg-starkWhite/85 border border-starkBlack/10 backdrop-blur-md p-4 rounded-full flex items-center gap-4 shadow-xl transition-all duration-300 hover:border-starkBlack/30"
+         data-player-state="playing"
+         aria-label="Reproductor ambiental">
+
+    <button class="relative group focus:outline-none" data-player-action="toggle" aria-label="Reproducir / pausar">
+      <span class="material-symbols-outlined text-starkBlack text-4xl vinyl-spin" aria-hidden="true">album</span>
+      <span class="absolute top-0 right-0 w-2.5 h-2.5 bg-starkBlack rounded-full border border-starkWhite animate-pulse" aria-hidden="true"></span>
+    </button>
+
+    <div class="hidden md:flex flex-col text-left max-w-[200px] overflow-hidden whitespace-nowrap">
+      <span class="text-[9px] font-mono tracking-widest text-starkBlack/40 uppercase">Ambient loop</span>
+      <span id="player-track" class="text-xs font-mono tracking-tight font-bold text-starkBlack" aria-live="polite">Los Espíritus — Camina</span>
+    </div>
+
+    <div class="flex items-center gap-1.5 px-2">
+      <button class="w-8 h-8 rounded-full border border-starkBlack/10 flex items-center justify-center hover:bg-starkBlack hover:text-starkWhite transition-colors focus:outline-none"
+              data-player-action="mute" aria-label="Silenciar" aria-pressed="false">
+        <span id="mute-icon" class="material-symbols-outlined text-sm" aria-hidden="true">volume_up</span>
+      </button>
+      <button class="w-8 h-8 rounded-full border border-starkBlack/10 flex items-center justify-center hover:bg-starkBlack hover:text-starkWhite transition-colors focus:outline-none"
+              data-player-action="next" aria-label="Siguiente título">
+        <span class="material-symbols-outlined text-sm" aria-hidden="true">skip_next</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- ====================================================================
+       HEADER / NAVEGACIÓN
+       ==================================================================== -->
+  <header class="fixed top-0 inset-x-0 z-40 transition-all duration-500 border-b border-starkBlack/5 bg-starkWhite/80 backdrop-blur-md">
+    <nav class="container mx-auto px-6 h-20 flex items-center justify-between" aria-label="Navegación principal">
+
+      <a href="#inicio" class="font-serif text-2xl font-black tracking-[.2em] uppercase hover:opacity-70 transition-opacity" aria-label="Prietto — inicio">
+        PRIETTO
+      </a>
+
+      <!-- Desktop links -->
+      <div class="hidden md:flex items-center gap-8 font-mono text-xs uppercase tracking-widest">
+        <a href="#biografia" class="hover:text-starkBlack/60 transition-colors">Biografía</a>
+        <a href="#fechas"    class="hover:text-starkBlack/60 transition-colors">Fechas</a>
+        <a href="#discos"    class="hover:text-starkBlack/60 transition-colors">Discografía</a>
+        <a href="#media"     class="hover:text-starkBlack/60 transition-colors">Vídeo</a>
+        <a href="#archivo"   class="hover:text-starkBlack/60 transition-colors">Archivo</a>
+        <a href="#contacto"  class="hover:text-starkBlack/60 transition-colors">Contacto</a>
+      </div>
+
+      <!-- Hamburguesa mobile -->
+      <button class="md:hidden flex items-center p-2 border border-starkBlack/10 rounded-full"
+              data-menu-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menú">
+        <span class="material-symbols-outlined" aria-hidden="true">menu</span>
+      </button>
+    </nav>
+
+    <!-- Menú mobile -->
+    <div id="mobile-menu" class="hidden bg-starkWhite/95 border-t border-starkBlack/10" data-mobile-menu hidden>
+      <div class="container mx-auto px-6 py-6 flex flex-col gap-4 font-mono text-sm uppercase tracking-widest">
+        <a href="#biografia" class="py-2 border-b border-starkBlack/5 min-h-[44px] flex items-center">Biografía</a>
+        <a href="#fechas"    class="py-2 border-b border-starkBlack/5 min-h-[44px] flex items-center">Fechas</a>
+        <a href="#discos"    class="py-2 border-b border-starkBlack/5 min-h-[44px] flex items-center">Discografía</a>
+        <a href="#media"     class="py-2 border-b border-starkBlack/5 min-h-[44px] flex items-center">Vídeo</a>
+        <a href="#archivo"   class="py-2 border-b border-starkBlack/5 min-h-[44px] flex items-center">Archivo</a>
+        <a href="#contacto"  class="py-2 min-h-[44px] flex items-center">Contacto</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ====================================================================
+       CONTENIDO PRINCIPAL
+       ==================================================================== -->
+  <main class="relative z-10 pt-20">
+
+    <!-- ==================================================================
+         HERO — Fukase Mood en Alto Contraste
+         ================================================================== -->
+    <section id="inicio" class="min-h-[88vh] flex items-center py-16 md:py-32 relative" aria-labelledby="hero-heading">
+      <div class="psychedelic-blob w-72 h-72 md:w-96 md:h-96 top-10 left-10" aria-hidden="true"></div>
+      <div class="psychedelic-blob-2 w-80 h-80 top-40 right-20" aria-hidden="true"></div>
+
+      <div class="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+        <div class="lg:col-span-7 space-y-8 reveal">
+          <p class="font-mono text-[10px] tracking-[.36em] text-starkBlack/50 uppercase">Buenos Aires · blues · psicodelia · canción</p>
+          <h1 id="hero-heading" class="font-serif text-5xl md:text-8xl font-black leading-none tracking-tighter text-starkBlack">
+            MAXI <span class="block text-transparent bg-clip-text bg-gradient-to-r from-starkBlack to-starkBlack/40">PRIETTO</span>
+          </h1>
+          <p class="text-lg md:text-xl font-sans leading-relaxed text-starkBlack/80 max-w-xl font-light">
+            Ecos de cinta abierta, guitarras distorsionadas por el calor de la tarde y el latido hipnótico del blues rioplatense.
+          </p>
+          <div class="flex flex-wrap gap-4 pt-4">
+            <a href="#discos"
+               class="bg-starkBlack text-starkWhite hover:bg-black hover:scale-105 px-8 py-4 rounded-full font-sans font-bold uppercase tracking-widest text-xs transition-all min-h-[44px] inline-flex items-center">
+              Catálogo de Obra
+            </a>
+            <a href="#fechas"
+               class="border border-starkBlack/30 hover:border-starkBlack hover:bg-starkBlack/5 px-8 py-4 rounded-full font-sans font-bold uppercase tracking-widest text-xs transition-all min-h-[44px] inline-flex items-center">
+              Fechas de Gira
+            </a>
+          </div>
+        </div>
+
+        <!-- Retrato con marco analógico -->
+        <div class="lg:col-span-5 flex justify-center reveal">
+          <div class="modern-analogue-frame w-72 h-72 md:w-96 md:h-96 flex items-center justify-center p-6 shadow-2xl">
+            <div class="frame-ring-outer" aria-hidden="true"></div>
+            <div class="frame-ring-inner" aria-hidden="true"></div>
+            <!-- Oscilador psicodélico canvas -->
+            <canvas id="visualizer-canvas" class="absolute inset-0 w-full h-full rounded-full opacity-60" aria-hidden="true"></canvas>
+            <div class="relative z-10 w-44 h-44 md:w-60 md:h-60 rounded-full overflow-hidden border border-starkBlack/20 shadow-inner bg-starkBlack">
+              <img src="prietto-6.jpeg"
+                   alt="Maxi Prietto"
+                   class="w-full h-full object-cover filter grayscale contrast-[1.15]"
+                   width="480" height="480"
+                   loading="eager"
+                   onerror="this.src='assets/hero-bg.jpg'">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         BIOGRAFÍA
+         ================================================================== -->
+    <section id="biografia" class="py-24 bg-starkWhite/90 border-t border-starkBlack/5 relative overflow-hidden" aria-labelledby="bio-heading">
+      <div class="psychedelic-blob w-96 h-96 -bottom-20 -left-20" aria-hidden="true"></div>
+      <div class="container mx-auto px-6 max-w-4xl">
+
+        <header class="mb-12 reveal text-center">
+          <span class="font-mono text-xs tracking-[.3em] text-starkBlack/50 uppercase">El Sonido Analógico</span>
+          <h2 id="bio-heading" class="font-serif text-4xl md:text-6xl font-bold mt-2">Mística de Ensayo</h2>
+        </header>
+
+        <div class="space-y-8 font-sans text-lg text-starkBlack/80 leading-relaxed font-light reveal">
+          <p>
+            Compositor y guitarrista de la escena musical independiente, <strong class="font-semibold text-starkBlack">Maxi Prietto</strong> trabaja con la repetición psicodélica y la mística analógica. Desde sus comienzos con el dúo <em class="font-serif italic font-normal">Prietto Viaja al Cosmos con Mariano</em>, adoptó grabaciones directas a cinta, la reverberación y el sonido crudo como parte de su propuesta sonora.
+          </p>
+          <p>
+            Al frente de <strong class="font-semibold text-starkBlack">Los Espíritus</strong>, fusionó raíces del blues rioplatense y el rock con bases rítmicas de herencia africana y caribeña, recorriendo escenarios locales e internacionales de manera autogestiva. Sus composiciones proponen un trance urbano donde conviven las calles de la noche y el rumor del río.
+          </p>
+          <p>
+            Su faceta solista complementa este ecosistema con canciones despojadas: boleros psicodélicos, grabaciones lo-fi caseras y composiciones acústicas que exponen su interés por la simpleza melódica y la atmósfera de lo cotidiano.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         POSTALES / FRAGMENTOS FOLK (viñetas B&W minimalistas)
+         ================================================================== -->
+    <section class="py-16 bg-starkWhite/40 border-t border-starkBlack/5" aria-label="Fragmentos visuales">
+      <div class="container mx-auto px-6">
+        <span class="block text-center font-mono text-[10px] tracking-[.35em] text-starkBlack/40 uppercase mb-12">Fragmentos &amp; Postales del Camino</span>
+        <div class="flex flex-wrap justify-center gap-10 md:gap-16">
+
+          <div class="flex flex-col items-center max-w-[120px] md:max-w-[150px] reveal">
+            <div class="w-24 h-24 md:w-32 md:h-32 overflow-hidden border border-starkBlack/10 shadow-xs">
+              <img src="https://images.unsplash.com/photo-1518156677180-95a2893f3e9f?w=400&auto=format&fit=crop&q=80" alt="Silueta analógica — vuelo de tarde" class="w-full h-full object-cover filter grayscale contrast-[1.5]" loading="lazy">
+            </div>
+            <span class="mt-4 font-mono text-[9px] text-starkBlack/50 uppercase tracking-widest text-center">I. Vuelo de Tarde</span>
+          </div>
+
+          <div class="flex flex-col items-center max-w-[120px] md:max-w-[150px] reveal">
+            <div class="w-24 h-24 md:w-32 md:h-32 overflow-hidden border border-starkBlack/10 shadow-xs">
+              <img src="https://images.unsplash.com/photo-1543185377-b75bf717c3e1?w=400&auto=format&fit=crop&q=80" alt="Cinta de carrete abierto" class="w-full h-full object-cover filter grayscale contrast-[1.3]" loading="lazy">
+            </div>
+            <span class="mt-4 font-mono text-[9px] text-starkBlack/50 uppercase tracking-widest text-center">II. Siseo de Cinta</span>
+          </div>
+
+          <div class="flex flex-col items-center max-w-[120px] md:max-w-[150px] reveal">
+            <div class="w-24 h-24 md:w-32 md:h-32 overflow-hidden border border-starkBlack/10 shadow-xs">
+              <img src="https://images.unsplash.com/photo-1509114397022-ed747cca3f65?w=400&auto=format&fit=crop&q=80" alt="Invierno seco — aire seco" class="w-full h-full object-cover filter grayscale contrast-[1.25]" loading="lazy">
+            </div>
+            <span class="mt-4 font-mono text-[9px] text-starkBlack/50 uppercase tracking-widest text-center">III. Aire Seco</span>
+          </div>
+
+          <div class="flex flex-col items-center max-w-[120px] md:max-w-[150px] reveal">
+            <div class="w-24 h-24 md:w-32 md:h-32 overflow-hidden border border-starkBlack/10 shadow-xs">
+              <img src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?w=400&auto=format&fit=crop&q=80" alt="Guitarra acústica folk" class="w-full h-full object-cover filter grayscale contrast-[1.4]" loading="lazy">
+            </div>
+            <span class="mt-4 font-mono text-[9px] text-starkBlack/50 uppercase tracking-widest text-center">IV. Madera y Acero</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         FECHAS / TOUR
+         ================================================================== -->
+    <section id="fechas" class="py-24 bg-paperGrey/80 border-y border-starkBlack/5 backdrop-blur-md" aria-labelledby="fechas-heading">
+      <div class="container mx-auto px-6">
+
+        <header class="mb-16 max-w-2xl reveal">
+          <span class="font-mono text-xs tracking-[.3em] text-starkBlack/50 uppercase">Calendario de Viaje</span>
+          <h2 id="fechas-heading" class="font-serif text-4xl md:text-6xl font-bold mt-2">La Ruta Nocturna</h2>
+          <p class="text-starkBlack/60 mt-4 font-light">Fechas confirmadas por el mapa psicodélico del Cono Sur.</p>
+        </header>
+
+        <!-- Primeros 3 shows (siempre visibles) -->
+        <div class="space-y-4 reveal" aria-label="Próximos shows">
+
+          <article class="group border border-starkBlack/10 hover:border-starkBlack/30 bg-starkWhite/90 p-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 transition-all duration-300">
+            <div class="flex gap-6 items-center">
+              <time class="font-serif text-5xl font-black text-starkBlack/20 group-hover:text-starkBlack transition-colors" datetime="2026-06-04">04</time>
+              <div>
+                <span class="font-mono text-xs text-starkBlack/40 uppercase tracking-widest">Junio — Jueves</span>
+                <h3 class="font-serif text-xl font-bold mt-0.5">Comuna · San Luis</h3>
+                <p class="text-sm font-mono text-starkBlack/60">Los Espíritus en Vivo</p>
+              </div>
+            </div>
+            <a href="https://alpogo.com/" target="_blank" rel="noreferrer"
+               class="border border-starkBlack/20 hover:bg-starkBlack hover:text-starkWhite px-6 py-3 rounded-full text-xs font-bold uppercase tracking-wider transition-all min-h-[44px] inline-flex items-center"
+               aria-label="Comprar tickets para San Luis (abre nueva pestaña)">Tickets</a>
+          </article>
+
+          <article class="group border border-starkBlack/10 hover:border-starkBlack/30 bg-starkWhite/90 p-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 transition-all duration-300">
+            <div class="flex gap-6 items-center">
+              <time class="font-serif text-5xl font-black text-starkBlack/20 group-hover:text-starkBlack transition-colors" datetime="2026-06-05">05</time>
+              <div>
+                <span class="font-mono text-xs text-starkBlack/40 uppercase tracking-widest">Junio — Viernes</span>
+                <h3 class="font-serif text-xl font-bold mt-0.5">Mamadera Bar · San Juan</h3>
+                <p class="text-sm font-mono text-starkBlack/60">Los Espíritus en Vivo</p>
+              </div>
+            </div>
+            <a href="https://www.entradaweb.com.ar/" target="_blank" rel="noreferrer"
+               class="border border-starkBlack/20 hover:bg-starkBlack hover:text-starkWhite px-6 py-3 rounded-full text-xs font-bold uppercase tracking-wider transition-all min-h-[44px] inline-flex items-center"
+               aria-label="Comprar tickets para San Juan (abre nueva pestaña)">Tickets</a>
+          </article>
+
+          <article class="group border border-starkBlack/10 hover:border-starkBlack/30 bg-starkWhite/90 p-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 transition-all duration-300">
+            <div class="flex gap-6 items-center">
+              <time class="font-serif text-5xl font-black text-starkBlack/20 group-hover:text-starkBlack transition-colors" datetime="2026-06-06">06</time>
+              <div>
+                <span class="font-mono text-xs text-starkBlack/40 uppercase tracking-widest">Junio — Sábado</span>
+                <h3 class="font-serif text-xl font-bold mt-0.5">Nido · Mendoza</h3>
+                <p class="text-sm font-mono text-starkBlack/60">Los Espíritus en Vivo</p>
+              </div>
+            </div>
+            <a href="https://www.entradaweb.com.ar/" target="_blank" rel="noreferrer"
+               class="border border-starkBlack/20 hover:bg-starkBlack hover:text-starkWhite px-6 py-3 rounded-full text-xs font-bold uppercase tracking-wider transition-all min-h-[44px] inline-flex items-center"
+               aria-label="Comprar tickets para Mendoza (abre nueva pestaña)">Tickets</a>
+          </article>
+        </div>
+
+        <!-- Shows extra (ocultos hasta "Ver más") -->
+        <div id="more-shows" class="shows-extra space-y-4" aria-hidden="true" role="region" aria-label="Shows adicionales">
+          <div class="pt-4 space-y-4">
+
+            <article class="group border border-starkBlack/10 hover:border-starkBlack/30 bg-starkWhite/90 p-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 transition-all duration-300">
+              <div class="flex gap-6 items-center">
+                <time class="font-serif text-5xl font-black text-starkBlack/20 group-hover:text-starkBlack transition-colors" datetime="2026-06-12">12</time>
+                <div>
+                  <span class="font-mono text-xs text-starkBlack/40 uppercase tracking-widest">Junio — Viernes</span>
+                  <h3 class="font-serif text-xl font-bold mt-0.5">Casa Brava · Rosario</h3>
+                  <p class="text-sm font-mono text-starkBlack/60">Los Espíritus en Vivo</p>
+                </div>
+              </div>
+              <a href="https://www.ticketsbravos.com/" target="_blank" rel="noreferrer"
+                 class="border border-starkBlack/20 hover:bg-starkBlack hover:text-starkWhite px-6 py-3 rounded-full text-xs font-bold uppercase tracking-wider transition-all min-h-[44px] inline-flex items-center"
+                 aria-label="Tickets Rosario (abre nueva pestaña)">Tickets</a>
+            </article>
+
+            <article class="group border border-starkBlack/10 hover:border-starkBlack/30 bg-starkWhite/90 p-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 transition-all duration-300">
+              <div class="flex gap-6 items-center">
+                <time class="font-serif text-5xl font-black text-starkBlack/20 group-hover:text-starkBlack transition-colors" datetime="2026-06-19">19</time>
+                <div>
+                  <span class="font-mono text-xs text-starkBlack/40 uppercase tracking-widest">Junio — Viernes</span>
+                  <h3 class="font-serif text-xl font-bold mt-0.5">Club Re · Quilmes</h3>
+                  <p class="text-sm font-mono text-starkBlack/60">Los Espíritus en Vivo</p>
+                </div>
+              </div>
+              <a href="https://www.livepass.com.ar/" target="_blank" rel="noreferrer"
+                 class="border border-starkBlack/20 hover:bg-starkBlack hover:text-starkWhite px-6 py-3 rounded-full text-xs font-bold uppercase tracking-wider transition-all min-h-[44px] inline-flex items-center"
+                 aria-label="Tickets Quilmes (abre nueva pestaña)">Tickets</a>
+            </article>
+
+            <article class="group border border-starkBlack/10 hover:border-starkBlack/30 bg-starkWhite/90 border-opacity-100 !border-starkBlack/25 p-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 transition-all duration-300">
+              <div class="flex gap-6 items-center">
+                <time class="font-serif text-5xl font-black text-starkBlack/20 group-hover:text-starkBlack transition-colors" datetime="2026-11-22">22</time>
+                <div>
+                  <span class="font-mono text-xs text-starkBlack/40 uppercase tracking-widest">Noviembre — Sábado · <span class="text-starkBlack/70">Especial</span></span>
+                  <h3 class="font-serif text-xl font-bold mt-0.5">The Roxy Live · Buenos Aires</h3>
+                  <p class="text-sm font-mono text-starkBlack/60">Los Espíritus en Vivo</p>
+                </div>
+              </div>
+              <a href="https://www.allaccess.com.ar/" target="_blank" rel="noreferrer"
+                 class="border border-starkBlack hover:bg-starkBlack hover:text-starkWhite px-6 py-3 rounded-full text-xs font-bold uppercase tracking-wider transition-all min-h-[44px] inline-flex items-center"
+                 aria-label="Tickets Buenos Aires — The Roxy Live (abre nueva pestaña)">Tickets</a>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- Botón toggle -->
+        <button id="toggle-shows"
+                class="mt-8 border border-starkBlack/20 hover:border-starkBlack hover:bg-starkBlack/5 px-8 py-4 rounded-full font-sans font-bold uppercase tracking-widest text-xs transition-all min-h-[44px] inline-flex items-center gap-2 w-full md:w-auto justify-center"
+                type="button"
+                aria-expanded="false"
+                aria-controls="more-shows">
+          Ver todas las fechas
+          <span class="material-symbols-outlined text-base" aria-hidden="true">expand_more</span>
+        </button>
+
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         DISCOGRAFÍA — WAI-ARIA Tabs + tapas reales
+         ================================================================== -->
+    <section id="discos" class="py-24" aria-labelledby="discos-heading">
+      <div class="container mx-auto px-6">
+
+        <header class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 reveal gap-6">
+          <div>
+            <span class="font-mono text-xs tracking-[.3em] text-starkBlack/50 uppercase">Discografía de Archivo</span>
+            <h2 id="discos-heading" class="font-serif text-4xl md:text-6xl font-bold mt-2">Registros de Obra</h2>
+          </div>
+          <p class="text-starkBlack/60 max-w-md font-light leading-relaxed">
+            Del folk espectral a la densidad de la psicodelia eléctrica y experimental en diferentes formaciones.
+          </p>
+        </header>
+
+        <!-- Tabs -->
+        <div class="flex flex-wrap gap-2 border-b border-starkBlack/10 pb-0 mb-12 reveal"
+             role="tablist" aria-label="Filtrar por proyecto">
+          <button class="px-6 py-3 font-mono text-xs uppercase tracking-widest border-b-2 border-starkBlack text-starkBlack focus:outline-none min-h-[44px]"
+                  role="tab" id="tab-todos" aria-selected="true" data-filter="todos">Todos</button>
+          <button class="px-6 py-3 font-mono text-xs uppercase tracking-widest border-b-2 border-transparent text-starkBlack/40 hover:text-starkBlack transition-all focus:outline-none min-h-[44px]"
+                  role="tab" id="tab-solista" aria-selected="false" data-filter="solista">Solista</button>
+          <button class="px-6 py-3 font-mono text-xs uppercase tracking-widest border-b-2 border-transparent text-starkBlack/40 hover:text-starkBlack transition-all focus:outline-none min-h-[44px]"
+                  role="tab" id="tab-espiritus" aria-selected="false" data-filter="espiritus">Los Espíritus</button>
+          <button class="px-6 py-3 font-mono text-xs uppercase tracking-widest border-b-2 border-transparent text-starkBlack/40 hover:text-starkBlack transition-all focus:outline-none min-h-[44px]"
+                  role="tab" id="tab-cosmos" aria-selected="false" data-filter="cosmos">Cosmos</button>
+        </div>
+
+        <!-- Grid de álbumes -->
+        <div id="disco-panel" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 reveal"
+             role="tabpanel" aria-labelledby="tab-todos">
+
+          <!-- ── PRIETTO SOLISTA ─────────────────────── -->
+          <article class="group bg-starkWhite border border-starkBlack/10 p-4 hover:border-starkBlack/30 transition-all duration-300" data-project="solista">
+            <div class="album-cover-wrap border border-starkBlack/5">
+              <img src="assets/album-prietto.jpg" alt="Tapa del álbum PRIETTO (2015)" width="600" height="600" loading="lazy">
+            </div>
+            <div class="mt-4">
+              <span class="font-mono text-[9px] tracking-widest text-starkBlack/40 uppercase">Prietto · 2015</span>
+              <h3 class="font-serif text-lg font-bold mt-1">PRIETTO</h3>
+              <p class="text-xs text-starkBlack/60 font-mono mt-1">Estás Lejos, Error Blues, Vívelo.</p>
+            </div>
+          </article>
+
+          <article class="group bg-starkWhite border border-starkBlack/10 p-4 hover:border-starkBlack/30 transition-all duration-300" data-project="solista">
+            <div class="album-cover-wrap border border-starkBlack/5">
+              <img src="assets/album-lluvia.jpg" alt="Tapa del álbum Lluvia en la Cumbrecita (2019)" width="600" height="600" loading="lazy">
+            </div>
+            <div class="mt-4">
+              <span class="font-mono text-[9px] tracking-widest text-starkBlack/40 uppercase">Prietto · 2019</span>
+              <h3 class="font-serif text-lg font-bold mt-1">Lluvia en la Cumbrecita</h3>
+              <p class="text-xs text-starkBlack/60 font-mono mt-1">Canciones de ruta, lluvia y montaña.</p>
+            </div>
+          </article>
+
+          <article class="group bg-starkWhite border border-starkBlack/10 p-4 hover:border-starkBlack/30 transition-all duration-300" data-project="solista">
+            <div class="album-cover-wrap border border-starkBlack/5">
+              <img src="assets/album-blanco-negro.jpg" alt="Tapa del álbum Blanco y Negro (2020)" width="600" height="600" loading="lazy">
+            </div>
+            <div class="mt-4">
+              <span class="font-mono text-[9px] tracking-widest text-starkBlack/40 uppercase">Prietto · 2020</span>
+              <h3 class="font-serif text-lg font-bold mt-1">Blanco y Negro</h3>
+              <p class="text-xs text-starkBlack/60 font-mono mt-1">Canciones grabadas durante el encierro.</p>
+            </div>
+          </article>
+
+          <article class="group bg-starkWhite border border-starkBlack/10 p-4 hover:border-starkBlack/30 transition-all duration-300" data-project="solista">
+            <div class="album-cover-wrap border border-starkBlack/5">
+              <img src="assets/album-astro.jpg" alt="Tapa del álbum Astro Lo Fi Beats (2022)" width="600" height="600" loading="lazy">
+            </div>
+            <div class="mt-4">
+              <span class="font-mono text-[9px] tracking-widest text-starkBlack/40 uppercase">Prietto · 2022</span>
+              <h3 class="font-serif text-lg font-bold mt-1">Astro Lo Fi Beats</h3>
+              <p class="text-xs text-starkBlack/60 font-mono mt-1">Beats de otra dimensión.</p>
+            </div>
+          </article>
+
+          <!-- ── LOS ESPÍRITUS ───────────────────────── -->
+          <article class="group bg-starkWhite border border-starkBlack/10 p-4 hover:border-starkBlack/30 transition-all duration-300" data-project="espiritus">
+            <div class="album-cover-wrap border border-starkBlack/5">
+              <img src="assets/album-espiritus-debut.jpg" alt="Tapa del álbum debut Los Espíritus (2013)" width="600" height="600" loading="lazy">
+            </div>
+            <div class="mt-4">
+              <span class="font-mono text-[9px] tracking-widest text-starkBlack/40 uppercase">Los Espíritus · 2013</span>
+              <h3 class="font-serif text-lg font-bold mt-1">Los Espíritus</h3>
+              <p class="text-xs text-starkBlack/60 font-mono mt-1">Álbum debut de la banda.</p>
+            </div>
+          </article>
+
+          <article class="group bg-starkWhite border border-starkBlack/10 p-4 hover:border-starkBlack/30 transition-all duration-300" data-project="espiritus">
+            <div class="album-cover-wrap border border-starkBlack/5">
+              <img src="assets/album-gratitud.jpg" alt="Tapa del álbum Gratitud de Los Espíritus (2015)" width="600" height="600" loading="lazy">
+            </div>
+            <div class="mt-4">
+              <span class="font-mono text-[9px] tracking-widest text-starkBlack/40 uppercase">Los Espíritus · 2015</span>
+              <h3 class="font-serif text-lg font-bold mt-1">Gratitud</h3>
+              <p class="text-xs text-starkBlack/60 font-mono mt-1">El salto internacional.</p>
+            </div>
+          </article>
+
+          <article class="group bg-starkWhite border border-starkBlack/10 p-4 hover:border-starkBlack/30 transition-all duration-300" data-project="espiritus">
+            <div class="album-cover-wrap border border-starkBlack/5">
+              <img src="assets/album-agua-ardiente.jpg" alt="Tapa del álbum Agua Ardiente de Los Espíritus (2017)" width="600" height="600" loading="lazy">
+            </div>
+            <div class="mt-4">
+              <span class="font-mono text-[9px] tracking-widest text-starkBlack/40 uppercase">Los Espíritus · 2017</span>
+              <h3 class="font-serif text-lg font-bold mt-1">Agua Ardiente</h3>
+              <p class="text-xs text-starkBlack/60 font-mono mt-1">Blues psicodélico y camino de tierra.</p>
+            </div>
+          </article>
+
+          <article class="group bg-starkWhite border border-starkBlack/10 p-4 hover:border-starkBlack/30 transition-all duration-300" data-project="espiritus">
+            <div class="album-cover-wrap border border-starkBlack/5">
+              <img src="assets/album-caldero.jpg" alt="Tapa del álbum Caldero de Los Espíritus (2019)" width="600" height="600" loading="lazy">
+            </div>
+            <div class="mt-4">
+              <span class="font-mono text-[9px] tracking-widest text-starkBlack/40 uppercase">Los Espíritus · 2019</span>
+              <h3 class="font-serif text-lg font-bold mt-1">Caldero</h3>
+              <p class="text-xs text-starkBlack/60 font-mono mt-1">Nueva formación, mismo fuego.</p>
+            </div>
+          </article>
+
+          <article class="group bg-starkWhite border border-starkBlack/10 p-4 hover:border-starkBlack/30 transition-all duration-300" data-project="espiritus">
+            <div class="album-cover-wrap border border-starkBlack/5">
+              <img src="assets/album-montana.jpg" alt="Tapa del álbum La Montaña de Los Espíritus (2023)" width="600" height="600" loading="lazy">
+            </div>
+            <div class="mt-4">
+              <span class="font-mono text-[9px] tracking-widest text-starkBlack/40 uppercase">Los Espíritus · 2023</span>
+              <h3 class="font-serif text-lg font-bold mt-1">La Montaña</h3>
+              <p class="text-xs text-starkBlack/60 font-mono mt-1">Blues rock y psicodelia.</p>
+            </div>
+          </article>
+
+          <!-- ── COSMOS ──────────────────────────────── -->
+          <article class="group bg-starkWhite border border-starkBlack/10 p-4 hover:border-starkBlack/30 transition-all duration-300" data-project="cosmos">
+            <div class="album-cover-wrap border border-starkBlack/5">
+              <img src="assets/album-cosmos-ep.jpg" alt="Tapa del EP Prietto Viaja al Cosmos con Mariano (2007)" width="600" height="600" loading="lazy">
+            </div>
+            <div class="mt-4">
+              <span class="font-mono text-[9px] tracking-widest text-starkBlack/40 uppercase">Cosmos · 2007</span>
+              <h3 class="font-serif text-lg font-bold mt-1">Viaja al Cosmos</h3>
+              <p class="text-xs text-starkBlack/60 font-mono mt-1">Av. Corrientes, Cruzando el Parque.</p>
+            </div>
+          </article>
+
+          <article class="group bg-starkWhite border border-starkBlack/10 p-4 hover:border-starkBlack/30 transition-all duration-300" data-project="cosmos">
+            <div class="album-cover-wrap border border-starkBlack/5">
+              <img src="assets/album-puedo-viajar.jpg" alt="Tapa del álbum Los Puedo Viajar (2014)" width="600" height="600" loading="lazy">
+            </div>
+            <div class="mt-4">
+              <span class="font-mono text-[9px] tracking-widest text-starkBlack/40 uppercase">Cosmos · 2014</span>
+              <h3 class="font-serif text-lg font-bold mt-1">Los Puedo Viajar</h3>
+              <p class="text-xs text-starkBlack/60 font-mono mt-1">Dos personas tocando lo que les pinta.</p>
+            </div>
+          </article>
+
+          <article class="group bg-starkWhite border border-starkBlack/10 p-4 hover:border-starkBlack/30 transition-all duration-300" data-project="cosmos">
+            <div class="album-cover-wrap border border-starkBlack/5">
+              <img src="assets/album-cronicas.jpg" alt="Tapa del álbum Crónicas (2021)" width="600" height="600" loading="lazy">
+            </div>
+            <div class="mt-4">
+              <span class="font-mono text-[9px] tracking-widest text-starkBlack/40 uppercase">Cosmos · 2021</span>
+              <h3 class="font-serif text-lg font-bold mt-1">Crónicas</h3>
+              <p class="text-xs text-starkBlack/60 font-mono mt-1">Editado por Alto Valle. Vinilo 12".</p>
+            </div>
+          </article>
+
+        </div><!-- /disco-panel -->
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         MEDIA — Video con Facade (click-to-load, single active player)
+         ================================================================== -->
+    <section id="media" class="py-24 bg-paperGrey/60 backdrop-blur-md border-t border-starkBlack/5" aria-labelledby="media-heading">
+      <div class="container mx-auto px-6">
+
+        <header class="mb-16 max-w-2xl reveal">
+          <span class="font-mono text-xs tracking-[.3em] text-starkBlack/50 uppercase">Canal de Frecuencias</span>
+          <h2 id="media-heading" class="font-serif text-4xl md:text-6xl font-bold mt-2">Vibraciones de Ensayo</h2>
+        </header>
+
+        <!-- Facade Pattern — NO carga iframe hasta click -->
+        <div class="border border-starkBlack/10 bg-starkWhite overflow-hidden max-w-4xl mx-auto reveal shadow-xl">
+          <div class="aspect-video relative bg-starkBlack flex items-center justify-center cursor-pointer"
+               data-embed-facade data-embed-type="youtube" data-embed-id="W7RgorqL3j8">
+
+            <img class="facade-thumb absolute inset-0 w-full h-full object-cover opacity-60 filter grayscale contrast-[1.2] hover:scale-105 transition-transform duration-700"
+                 src="assets/yt-thumb-camina.jpg"
+                 alt="Los Espíritus — Camina. Miniatura del video oficial."
+                 width="1280" height="720" loading="lazy">
+
+            <div class="absolute inset-0 bg-white/5 backdrop-blur-[1px]" aria-hidden="true"></div>
+
+            <button class="facade-play relative z-10 w-20 h-20 rounded-full border-2 border-starkBlack bg-starkWhite/80 flex items-center justify-center text-starkBlack hover:bg-starkBlack hover:text-starkWhite transition-all transform hover:scale-110 focus:outline-none shadow-lg"
+                    aria-label="Reproducir video: Los Espíritus — Camina">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </button>
+          </div>
+
+          <div class="p-6 border-t border-starkBlack/5 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+            <div>
+              <span class="font-mono text-[9px] tracking-widest text-starkBlack/40 uppercase">Ahora Sonando</span>
+              <h3 class="font-serif text-xl font-bold mt-1">Los Espíritus — Camina (Sesión en vivo)</h3>
+            </div>
+            <a href="https://linktr.ee/losespiritus" target="_blank" rel="noreferrer"
+               class="text-xs font-mono font-bold uppercase tracking-widest flex items-center gap-1 hover:text-starkBlack/60 transition-colors min-h-[44px]">
+              Ver más material
+              <span class="material-symbols-outlined text-xs" aria-hidden="true">arrow_outward</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         ARCHIVO — Galería B&W con overlays de texto al hover
+         ================================================================== -->
+    <section id="archivo" class="py-24" aria-labelledby="archivo-heading">
+      <div class="container mx-auto px-6">
+
+        <header class="mb-12 reveal">
+          <span class="font-mono text-xs tracking-[.3em] text-starkBlack/50 uppercase">Archivo Visual</span>
+          <h2 id="archivo-heading" class="font-serif text-4xl md:text-6xl font-bold mt-2">Lugar para Posters, Fotos y Texturas</h2>
+        </header>
+
+        <!-- Grid asimétrico B&W -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6 reveal">
+
+          <div class="group relative md:col-span-8 aspect-video md:aspect-auto md:h-96 border border-starkBlack/10 bg-starkBlack overflow-hidden cursor-pointer shadow-md">
+            <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=1200&auto=format&fit=crop&q=80"
+                 alt="Archivo Prietto — Registro Nocturno"
+                 class="w-full h-full object-cover filter grayscale contrast-[1.5] transition-all duration-500 group-hover:opacity-20 group-hover:scale-[1.02]" loading="lazy">
+            <div class="absolute inset-0 flex flex-col justify-end p-8 opacity-0 group-hover:opacity-100 transition-all duration-500 bg-starkWhite/5 backdrop-blur-[1px]">
+              <span class="font-mono text-[10px] text-starkWhite/55 tracking-widest uppercase border-b border-starkWhite/10 pb-2 mb-3">Archivo I — Registro Nocturno</span>
+              <p class="font-serif text-sm italic text-stone-200 leading-relaxed font-light">Sala de ensayo. Frío de invierno. Grabaciones directas a cinta del siseo porteño.</p>
+            </div>
+          </div>
+
+          <div class="group relative md:col-span-4 aspect-square border border-starkBlack/10 bg-starkBlack overflow-hidden cursor-pointer shadow-md">
+            <img src="https://images.unsplash.com/photo-1487180142328-0c4e37023af5?w=800&auto=format&fit=crop&q=80"
+                 alt="Archivo Prietto — Fuego y Sala"
+                 class="w-full h-full object-cover filter grayscale contrast-[1.25] transition-all duration-500 group-hover:opacity-20 group-hover:scale-[1.02]" loading="lazy">
+            <div class="absolute inset-0 flex flex-col justify-end p-8 opacity-0 group-hover:opacity-100 transition-all duration-500 bg-starkWhite/5 backdrop-blur-[1px]">
+              <span class="font-mono text-[10px] text-starkWhite/55 tracking-widest uppercase border-b border-starkWhite/10 pb-2 mb-3">Archivo II — Fuego y Sala</span>
+              <p class="font-serif text-sm italic text-stone-200 leading-relaxed font-light">Frecuencias perdidas grabadas directo a un canal durante las sesiones de invierno.</p>
+            </div>
+          </div>
+
+          <div class="group relative md:col-span-4 aspect-square border border-starkBlack/10 bg-starkBlack overflow-hidden cursor-pointer shadow-md">
+            <img src="https://images.unsplash.com/photo-1498038432885-c6f3f1b912ee?w=800&auto=format&fit=crop&q=80"
+                 alt="Archivo Prietto — Eco Analógico"
+                 class="w-full h-full object-cover filter grayscale contrast-[1.3] transition-all duration-500 group-hover:opacity-20 group-hover:scale-[1.02]" loading="lazy">
+            <div class="absolute inset-0 flex flex-col justify-end p-8 opacity-0 group-hover:opacity-100 transition-all duration-500 bg-starkWhite/5 backdrop-blur-[1px]">
+              <span class="font-mono text-[10px] text-starkWhite/55 tracking-widest uppercase border-b border-starkWhite/10 pb-2 mb-3">Archivo III — Eco Analógico</span>
+              <p class="font-serif text-sm italic text-stone-200 leading-relaxed font-light">Trance urbano. Las calles de la noche y el rumor del río.</p>
+            </div>
+          </div>
+
+          <div class="group relative md:col-span-8 aspect-video md:aspect-auto md:h-96 border border-starkBlack/10 bg-starkBlack overflow-hidden cursor-pointer shadow-md">
+            <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=1200&auto=format&fit=crop&q=80"
+                 alt="Archivo Prietto — Niebla y Trance"
+                 class="w-full h-full object-cover filter grayscale contrast-[1.4] transition-all duration-500 group-hover:opacity-20 group-hover:scale-[1.02]" loading="lazy">
+            <div class="absolute inset-0 flex flex-col justify-end p-8 opacity-0 group-hover:opacity-100 transition-all duration-500 bg-starkWhite/5 backdrop-blur-[1px]">
+              <span class="font-mono text-[10px] text-starkWhite/55 tracking-widest uppercase border-b border-starkWhite/10 pb-2 mb-3">Archivo IV — Niebla y Trance</span>
+              <p class="font-serif text-sm italic text-stone-200 leading-relaxed font-light">Boleros psicodélicos, grabaciones lo-fi caseras y la simpleza melódica de lo cotidiano.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         CONTACTO
+         ================================================================== -->
+    <section id="contacto" class="py-24 bg-paperGrey/50 border-t border-starkBlack/5 backdrop-blur-md" aria-labelledby="contacto-heading">
+      <div class="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12">
+
+        <div class="space-y-6 reveal">
+          <span class="font-mono text-xs tracking-[.3em] text-starkBlack/50 uppercase">Canal de Prensa y Booking</span>
+          <h2 id="contacto-heading" class="font-serif text-4xl md:text-6xl font-bold">Llegar al Cosmos</h2>
+          <p class="text-starkBlack/60 font-light max-w-md leading-relaxed">
+            Para contrataciones, notas de prensa o consultas sobre material físico y vinilos, contactá a través de nuestros canales oficiales.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 reveal">
+
+          <a href="mailto:info@los-espiritus.com"
+             class="p-6 border border-starkBlack/10 hover:border-starkBlack/30 bg-starkWhite/80 flex flex-col justify-between aspect-video hover:-translate-y-1 transition-all shadow-sm"
+             aria-label="Enviar email de management a info@los-espiritus.com">
+            <span class="material-symbols-outlined text-starkBlack text-3xl" aria-hidden="true">mail</span>
+            <div>
+              <h3 class="font-serif text-lg font-bold">Management</h3>
+              <p class="text-xs text-starkBlack/40 font-mono mt-1">info@los-espiritus.com</p>
+            </div>
+          </a>
+
+          <a href="https://prietto.bandcamp.com/" target="_blank" rel="noreferrer"
+             class="p-6 border border-starkBlack/10 hover:border-starkBlack/30 bg-starkWhite/80 flex flex-col justify-between aspect-video hover:-translate-y-1 transition-all shadow-sm"
+             aria-label="Abrir Bandcamp de Prietto solista (abre nueva pestaña)">
+            <span class="material-symbols-outlined text-starkBlack text-3xl" aria-hidden="true">album</span>
+            <div>
+              <h3 class="font-serif text-lg font-bold">Bandcamp</h3>
+              <p class="text-xs text-starkBlack/40 font-mono mt-1">Prietto solista</p>
+            </div>
+          </a>
+
+          <a href="https://priettoviajaalcosmosconmariano.bandcamp.com/" target="_blank" rel="noreferrer"
+             class="p-6 border border-starkBlack/10 hover:border-starkBlack/30 bg-starkWhite/80 flex flex-col justify-between aspect-video hover:-translate-y-1 transition-all shadow-sm"
+             aria-label="Abrir Bandcamp de Prietto Viaja al Cosmos (abre nueva pestaña)">
+            <span class="material-symbols-outlined text-starkBlack text-3xl" aria-hidden="true">rocket_launch</span>
+            <div>
+              <h3 class="font-serif text-lg font-bold">Cosmos</h3>
+              <p class="text-xs text-starkBlack/40 font-mono mt-1">Prietto Viaja al Cosmos</p>
+            </div>
+          </a>
+
+          <a href="https://linktr.ee/losespiritus" target="_blank" rel="noreferrer"
+             class="p-6 border border-starkBlack/10 hover:border-starkBlack/30 bg-starkWhite/80 flex flex-col justify-between aspect-video hover:-translate-y-1 transition-all shadow-sm"
+             aria-label="Abrir Linktree de Los Espíritus con Spotify y YouTube (abre nueva pestaña)">
+            <span class="material-symbols-outlined text-starkBlack text-3xl" aria-hidden="true">hub</span>
+            <div>
+              <h3 class="font-serif text-lg font-bold">Streaming</h3>
+              <p class="text-xs text-starkBlack/40 font-mono mt-1">Spotify · YouTube · Redes</p>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ====================================================================
+       FOOTER
+       ==================================================================== -->
+  <footer class="border-t border-starkBlack/10 py-12 bg-starkWhite">
+    <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+      <a href="#inicio" class="font-serif text-lg font-black tracking-widest text-starkBlack/60 hover:text-starkBlack transition-colors">PRIETTO</a>
+      <p class="text-xs text-starkBlack/40 font-mono text-center">Buenos Aires, Argentina. &copy; 2026. Todos los derechos reservados.</p>
+      <nav class="flex gap-6 font-mono text-xs text-starkBlack/40" aria-label="Links de footer">
+        <a href="https://prietto.bandcamp.com/" rel="noreferrer" target="_blank" class="hover:text-starkBlack transition-colors">Bandcamp</a>
+        <a href="https://linktr.ee/losespiritus" rel="noreferrer" target="_blank" class="hover:text-starkBlack transition-colors">YouTube</a>
+        <a href="mailto:info@los-espiritus.com" class="hover:text-starkBlack transition-colors">Management</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- ====================================================================
+       DATOS ESTRUCTURADOS (JSON-LD)
+       ==================================================================== -->
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"MusicGroup","name":"Maxi Prietto","alternateName":["Prietto","Los Espíritus","Prietto Viaja al Cosmos con Mariano"],"url":"https://agustinlago88.github.io/prietto/","genre":["Blues","Rock","Psicodelia","Rock Argentino"],"foundingLocation":{"@type":"Place","name":"Buenos Aires","address":{"@type":"PostalAddress","addressLocality":"Buenos Aires","addressCountry":"AR"}},"sameAs":["https://prietto.bandcamp.com/","https://priettoviajaalcosmosconmariano.bandcamp.com/","https://linktr.ee/losespiritus"]}
+  </script>
+  <script type="application/ld+json">
+  [{"@context":"https://schema.org","@type":"MusicEvent","name":"Los Espíritus en vivo — San Luis","startDate":"2026-06-04","location":{"@type":"Place","name":"Comuna","address":{"@type":"PostalAddress","addressLocality":"San Luis","addressCountry":"AR"}},"performer":{"@type":"MusicGroup","name":"Los Espíritus"},"offers":{"@type":"Offer","url":"https://alpogo.com/","availability":"https://schema.org/InStock"}},{"@context":"https://schema.org","@type":"MusicEvent","name":"Los Espíritus en vivo — Buenos Aires","startDate":"2026-11-22","location":{"@type":"Place","name":"The Roxy Live","address":{"@type":"PostalAddress","addressLocality":"Buenos Aires","addressCountry":"AR"}},"performer":{"@type":"MusicGroup","name":"Los Espíritus"},"offers":{"@type":"Offer","url":"https://www.allaccess.com.ar/","availability":"https://schema.org/InStock"}}]
+  </script>
+
+  <!-- ====================================================================
+       JAVASCRIPT — Todo inline para máxima compatibilidad estática
+       ==================================================================== -->
+  <script>
+  'use strict';
+
+  /* ── 1. REVEAL ON SCROLL ─────────────────────────────────────────────── */
+  (function() {
+    const targets = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+          if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); }
+        });
+      }, { rootMargin: '0px 0px -10% 0px', threshold: 0.1 });
+      targets.forEach(t => io.observe(t));
+    } else {
+      targets.forEach(t => t.classList.add('is-visible'));
+    }
+  })();
+
+  /* ── 2. MENÚ MOBILE ──────────────────────────────────────────────────── */
+  (function() {
+    const btn = document.querySelector('[data-menu-toggle]');
+    const menu = document.querySelector('[data-mobile-menu]');
+    if (!btn || !menu) return;
+    btn.addEventListener('click', () => {
+      const open = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!open));
+      if (open) { menu.setAttribute('hidden', ''); } else { menu.removeAttribute('hidden'); }
+    });
+    menu.addEventListener('click', e => {
+      if (e.target.closest('a')) { btn.setAttribute('aria-expanded','false'); menu.setAttribute('hidden',''); }
+    });
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && btn.getAttribute('aria-expanded') === 'true') {
+        btn.setAttribute('aria-expanded','false'); menu.setAttribute('hidden',''); btn.focus();
+      }
+    });
+  })();
+
+  /* ── 3. JUKEBOX (decorativo) ─────────────────────────────────────────── */
+  (function() {
+    const jukebox = document.getElementById('jukebox');
+    if (!jukebox) return;
+    const trackLabel = document.getElementById('player-track');
+    const muteIcon   = document.getElementById('mute-icon');
+    const tracks = [
+      'Los Espíritus — Camina',
+      'Prietto viaja al cosmos — Av. Chiclana',
+      'Prietto — Estás Lejos',
+      'Los Espíritus — La Montaña'
+    ];
+    let idx = 0, muted = false;
+
+    document.querySelectorAll('[data-player-action]').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.stopPropagation();
+        const action = btn.dataset.playerAction;
+        if (action === 'toggle') {
+          const playing = jukebox.dataset.playerState !== 'paused';
+          jukebox.dataset.playerState = playing ? 'paused' : 'playing';
+          jukebox.classList.toggle('is-paused', playing);
+        }
+        if (action === 'next') {
+          idx = (idx + 1) % tracks.length;
+          if (trackLabel) trackLabel.textContent = tracks[idx];
+        }
+        if (action === 'mute') {
+          muted = !muted;
+          if (muteIcon) muteIcon.textContent = muted ? 'volume_off' : 'volume_up';
+          btn.setAttribute('aria-pressed', String(muted));
+        }
+      });
+    });
+  })();
+
+  /* ── 4. SHOWS TOGGLE ────────────────────────────────────────────────── */
+  (function() {
+    const btn = document.getElementById('toggle-shows');
+    const box = document.getElementById('more-shows');
+    if (!btn || !box) return;
+    btn.addEventListener('click', () => {
+      const open = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!open));
+      box.setAttribute('aria-hidden', String(open));
+      box.classList.toggle('shows-extra--visible', !open);
+      const icon = btn.querySelector('.material-symbols-outlined');
+      if (icon) icon.textContent = open ? 'expand_more' : 'expand_less';
+      btn.firstChild.textContent = open ? 'Ver todas las fechas ' : 'Ver menos ';
+    });
+  })();
+
+  /* ── 5. TABS DISCOGRAFÍA (WAI-ARIA) ─────────────────────────────────── */
+  (function() {
+    const tabList = document.querySelector('[role="tablist"]');
+    if (!tabList) return;
+    const tabs  = Array.from(tabList.querySelectorAll('[role="tab"]'));
+    const cards = Array.from(document.querySelectorAll('#disco-panel [data-project]'));
+
+    function activate(tab, focus) {
+      tabs.forEach(t => {
+        t.setAttribute('aria-selected','false');
+        t.setAttribute('tabindex','-1');
+        t.classList.remove('border-starkBlack','text-starkBlack');
+        t.classList.add('border-transparent','text-starkBlack/40');
+      });
+      tab.setAttribute('aria-selected','true');
+      tab.setAttribute('tabindex','0');
+      tab.classList.add('border-starkBlack','text-starkBlack');
+      tab.classList.remove('border-transparent','text-starkBlack/40');
+      if (focus) tab.focus();
+      const f = tab.dataset.filter;
+      cards.forEach(c => {
+        f === 'todos' || c.dataset.project === f ? c.removeAttribute('hidden') : c.setAttribute('hidden','');
+      });
+    }
+
+    tabs.forEach(t => t.addEventListener('click', () => activate(t, true)));
+    tabList.addEventListener('keydown', e => {
+      const i = tabs.indexOf(document.activeElement);
+      if (i === -1) return;
+      if (e.key === 'ArrowRight' || e.key === 'ArrowDown') { e.preventDefault(); activate(tabs[(i+1)%tabs.length], true); }
+      if (e.key === 'ArrowLeft'  || e.key === 'ArrowUp')   { e.preventDefault(); activate(tabs[(i-1+tabs.length)%tabs.length], true); }
+      if (e.key === 'Home') { e.preventDefault(); activate(tabs[0], true); }
+      if (e.key === 'End')  { e.preventDefault(); activate(tabs[tabs.length-1], true); }
+    });
+  })();
+
+  /* ── 6. EMBED FACADE (single active player) ──────────────────────────── */
+  (function() {
+    let active = null;
+    function destroyActive() {
+      if (!active) return;
+      const iframe = active.querySelector('iframe');
+      if (iframe) { iframe.src = ''; iframe.remove(); }
+      const thumb = active.querySelector('.facade-thumb');
+      const play  = active.querySelector('.facade-play');
+      if (thumb) thumb.style.display = '';
+      if (play)  play.style.display  = '';
+      active = null;
+    }
+    document.querySelectorAll('[data-embed-facade]').forEach(facade => {
+      const playBtn = facade.querySelector('.facade-play');
+      if (!playBtn) return;
+      playBtn.addEventListener('click', e => {
+        e.stopPropagation();
+        if (active === facade) { destroyActive(); return; }
+        destroyActive();
+        const thumb = facade.querySelector('.facade-thumb');
+        const btn   = facade.querySelector('.facade-play');
+        if (thumb) thumb.style.display = 'none';
+        if (btn)   btn.style.display   = 'none';
+        const id = facade.dataset.embedId;
+        const iframe = document.createElement('iframe');
+        iframe.src = `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0&modestbranding=1`;
+        iframe.setAttribute('allow','accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture');
+        iframe.setAttribute('allowfullscreen','');
+        iframe.className = 'absolute inset-0 w-full h-full border-0 z-20';
+        iframe.title = 'Reproductor de YouTube';
+        facade.appendChild(iframe);
+        active = facade;
+      });
+    });
+  })();
+
+  /* ── 7. CANVAS VISUALIZER (oscilador psicodélico B&W) ────────────────── */
+  (function() {
+    const canvas = document.getElementById('visualizer-canvas');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    const jukebox = document.getElementById('jukebox');
+    function resize() { canvas.width = canvas.offsetWidth; canvas.height = canvas.offsetHeight; }
+    resize();
+    window.addEventListener('resize', resize);
+    let angle = 0;
+    function draw() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      const cx = canvas.width / 2, cy = canvas.height / 2;
+      const r  = Math.min(canvas.width, canvas.height) / 3.4;
+      const playing = jukebox && jukebox.dataset.playerState !== 'paused';
+      const amp = playing ? 18 : 4;
+      ctx.beginPath();
+      for (let i = 0; i < 360; i++) {
+        const t = (i * Math.PI) / 180;
+        const off = Math.sin(t * 6 + angle) * Math.cos(t * 4 - angle) * amp;
+        const x = cx + (r + off) * Math.cos(t);
+        const y = cy + (r + off) * Math.sin(t);
+        i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+      }
+      ctx.closePath();
+      ctx.strokeStyle = 'rgba(10,10,10,.38)';
+      ctx.lineWidth = 1.5;
+      ctx.stroke();
+      ctx.beginPath();
+      for (let i = 0; i < 360; i += 3) {
+        const t = (i * Math.PI) / 180;
+        const off = Math.cos(t * 10 - angle * 2) * (amp * .4);
+        const x = cx + (r - 12 + off) * Math.cos(t);
+        const y = cy + (r - 12 + off) * Math.sin(t);
+        i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+      }
+      ctx.closePath();
+      ctx.strokeStyle = 'rgba(10,10,10,.1)';
+      ctx.lineWidth = 1;
+      ctx.stroke();
+      angle += playing ? 0.015 : 0.002;
+      requestAnimationFrame(draw);
+    }
+    draw();
+  })();
+
+  /* ── 8. GOTEO DE TINTA DINÁMICO ──────────────────────────────────────── */
+  (function() {
+    const container = document.getElementById('dripping-ink-container');
+    if (!container) return;
+    const shapes = [
+      `<svg viewBox="0 0 40 120" class="w-10 h-32"><path d="M20,0 Q23,50 24,80 C25,100 15,100 16,115 C17,125 23,125 24,115 C25,100 17,90 20,0 Z"/><circle cx="18" cy="118" r="1.5"/></svg>`,
+      `<svg viewBox="0 0 60 100" class="w-12 h-28"><path d="M10,0 Q15,40 12,65 C9,85 21,88 20,95 C19,102 11,98 10,95 C8,80 18,60 10,0 Z"/></svg>`,
+      `<svg viewBox="0 0 20 80" class="w-6 h-20"><path d="M10,0 Q12,25 11,45 C10,55 9,55 9,62" stroke="currentColor" stroke-width="1.5" fill="none"/><circle cx="9" cy="70" r="3"/></svg>`,
+      `<svg viewBox="0 0 30 100" class="w-8 h-24"><path d="M15,100 Q18,60 14,35 C11,15 19,10 15,3" stroke="currentColor" stroke-width="1.2" fill="none"/><circle cx="15" cy="1" r="1.5"/></svg>`
+    ];
+    const drips = [];
+    function spawn() {
+      if (drips.length >= 12) return;
+      const el = document.createElement('div');
+      el.className = 'drip-fluid text-starkBlack';
+      const up = Math.random() > 0.65;
+      el.innerHTML = shapes[Math.floor(Math.random() * shapes.length)];
+      el.style.left = Math.random() * 95 + 'vw';
+      const startY = up ? window.innerHeight + 100 : -150;
+      el.style.transform = `translateY(${startY}px)`;
+      container.appendChild(el);
+      drips.push({ el, y: startY, target: up ? -150 : window.innerHeight+100, up, speed: 1.2+Math.random()*2.2, sf: .15+Math.random()*.35 });
+    }
+    function animate() {
+      const sy = window.scrollY;
+      for (let i = drips.length-1; i >= 0; i--) {
+        const d = drips[i];
+        d.y += d.up ? -d.speed : d.speed;
+        d.el.style.transform = `translateY(${d.y + sy * d.sf}px) scale(${.8 + Math.random()*.15})`;
+        if ((!d.up && d.y > window.innerHeight+400) || (d.up && d.y < -400)) {
+          d.el.remove(); drips.splice(i, 1);
+        }
+      }
+      requestAnimationFrame(animate);
+    }
+    setInterval(spawn, 4500); spawn(); spawn(); animate();
+  })();
+
+  /* ── 9. ILUSTRACIONES FLOTANTES (Dahyun Kim style) ───────────────────── */
+  (function() {
+    const container = document.getElementById('dahyun-canvas-container');
+    if (!container) return;
+    const vectors = [
+      `<svg viewBox="0 0 100 100" class="w-48 h-48 md:w-64 md:h-64" fill="none" stroke="currentColor"><path d="M50,15 C45,22 42,28 44,35 C46,42 55,45 52,55 C49,65 35,68 32,78 C29,88 45,95 50,95 C55,95 71,88 68,78 C65,68 51,65 48,55 C45,45 54,42 56,35 C58,28 55,22 50,15 Z" stroke-width="1" stroke-dasharray="2 2" opacity=".3"/><path d="M50,15 C45,22 42,28 44,35 C46,42 55,45 52,55 C49,65 35,68 32,78" stroke-width="1.5" stroke-linecap="round"/><circle cx="50" cy="10" r="3" stroke-width="1.5"/></svg>`,
+      `<svg viewBox="0 0 100 100" class="w-56 h-56 md:w-80 md:h-80" fill="none" stroke="currentColor"><path d="M10,80 Q25,20 50,50 T90,20" stroke-width="1.5" stroke-linecap="round"/><path d="M15,83 Q30,23 55,53 T95,23" stroke-width=".75" stroke-dasharray="4 4"/><circle cx="50" cy="50" r="1.5" fill="currentColor"/></svg>`,
+      `<svg viewBox="0 0 100 100" class="w-40 h-40 md:w-56 md:h-56" fill="none" stroke="currentColor"><path d="M30,30 C30,10 70,10 70,30 C70,55 35,50 35,70 C35,85 65,85 65,70" stroke-width="1.5" stroke-linecap="round"/><circle cx="60" cy="35" r="1.5" fill="currentColor"/></svg>`,
+      `<svg viewBox="0 0 100 100" class="w-48 h-48 md:w-64 md:h-64" fill="none" stroke="currentColor"><path d="M20,50 C30,45 40,45 50,50 C60,55 70,55 80,50 M30,40 Q50,60 70,40" stroke-width="1.25" stroke-linecap="round"/><path d="M50,15 C60,30 60,70 50,85" stroke-width=".75" stroke-dasharray="3 3"/></svg>`,
+      `<svg viewBox="0 0 100 100" class="w-64 h-64 md:w-96 md:h-96" fill="none" stroke="currentColor"><path d="M50,50 C40,40 30,50 30,60 C30,75 55,75 60,60 C65,40 40,30 35,45 C30,60 70,70 75,50 C80,30 50,10 40,25" stroke-width="1.5" stroke-linecap="round"/></svg>`
+    ];
+    function spawn() {
+      if (container.querySelectorAll('.dahyun-illustration').length >= 3) return;
+      const el = document.createElement('div');
+      el.className = 'dahyun-illustration text-starkBlack/10';
+      el.innerHTML = vectors[Math.floor(Math.random() * vectors.length)];
+      el.style.left = Math.random() * 85 + 'vw';
+      el.style.top  = (Math.random() * 80 + 10) + 'vh';
+      el.style.transform = `rotate(${Math.random()*360}deg) scale(${.7 + Math.random()*.5})`;
+      el.style.animation = `driftFloat ${12+Math.random()*10}s ease-in-out infinite alternate`;
+      container.appendChild(el);
+      setTimeout(() => { el.style.opacity = String(.2 + Math.random()*.25); }, 100);
+      const life = 14000 + Math.random()*8000;
+      setTimeout(() => {
+        el.style.opacity = '0';
+        setTimeout(() => el.remove(), 2000);
+      }, life);
+    }
+    spawn(); setInterval(spawn, 7500);
+  })();
+  </script>
+</body>
+</html>
