@@ -105,7 +105,7 @@
         "?autoplay=1&rel=0&modestbranding=1&playsinline=1";
       iframe.allow = "autoplay; encrypted-media; picture-in-picture";
       iframe.allowFullscreen = true;
-      iframe.title = "Los Espíritus — Camina";
+      iframe.title = "RUMBO A HONG KONG - PRIETTO";
       frame.innerHTML = "";
       frame.appendChild(iframe);
     });
