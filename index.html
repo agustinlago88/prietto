@@ -88,23 +88,7 @@
     }
     @keyframes spinRing { to { transform: rotate(360deg); } }
 
-    /* ── VIDEO DE FONDO (grayscale psicodélico) ──────────────────────────── */
-    .video-background-container {
-      position: fixed; inset: 0; width: 100vw; height: 100vh;
-      z-index: -30; overflow: hidden; pointer-events: none;
-      background-color: #fbfbfb;
-    }
-    .video-background-container iframe {
-      position: absolute; top: 50%; left: 50%;
-      width: 100vw; height: 56.25vw;
-      min-height: 100vh; min-width: 177.78vh;
-      transform: translate(-50%,-50%);
-      filter: grayscale(100%) contrast(165%) brightness(125%) opacity(.28);
-    }
-    .vignette-overlay {
-      position: fixed; inset: 0; z-index: -20; pointer-events: none;
-      background: radial-gradient(circle at center, transparent 30%, rgba(251,251,251,.88) 90%);
-    }
+
 
     /* ── BLOBS PSICODÉLICOS ──────────────────────────────────────────────── */
     .psychedelic-blob {
@@ -189,75 +173,13 @@
     :focus-visible { outline: 2px solid #0a0a0a; outline-offset: 3px; }
     :focus:not(:focus-visible) { outline: none; }
 
-    /* ── ILUSTRACIONES SATURADAS DE ADJUNTOS ────────────────────────────── */
-    .saturated-illustration {
-      position: absolute;
-      pointer-events: none;
-      mix-blend-mode: multiply;
-      opacity: 0.5;
-      transition: transform 12s ease-in-out, opacity 1s ease-in-out;
-    }
-    @keyframes slowFloat {
-      0% { transform: translate(0, 0) rotate(0deg); }
-      50% { transform: translate(15px, -15px) rotate(4deg); }
-      100% { transform: translate(-15px, 15px) rotate(-4deg); }
-    }
-    @media (prefers-reduced-motion: reduce) {
-      .saturated-illustration {
-        animation: none !important;
-        transform: none !important;
-      }
-    }
+
   </style>
 </head>
 
 <body class="bg-starkWhite text-starkBlack font-sans antialiased relative overflow-x-hidden selection:bg-starkBlack selection:text-starkWhite">
 
-  <!-- Filtros SVG para colorear las ilustraciones con tonos saturados y transparentar el fondo blanco -->
-  <svg width="0" height="0" class="absolute pointer-events-none" style="position: absolute; width: 0; height: 0; overflow: hidden;" aria-hidden="true">
-    <defs>
-      <!-- Verde saturado / Neón -->
-      <filter id="vector-green">
-        <feColorMatrix type="matrix" values="
-          0 0 0 0 0.0
-          0 0 0 0 1.0
-          0 0 0 0 0.4
-          -1.5 -1.5 -1.5 2.0 0" />
-      </filter>
-      <!-- Rosa / Magenta saturado -->
-      <filter id="vector-pink">
-        <feColorMatrix type="matrix" values="
-          0 0 0 0 1.0
-          0 0 0 0 0.0
-          0 0 0 0 1.0
-          -1.5 -1.5 -1.5 2.0 0" />
-      </filter>
-      <!-- Celeste / Cian saturado -->
-      <filter id="vector-cyan">
-        <feColorMatrix type="matrix" values="
-          0 0 0 0 0.0
-          0 0 0 0 0.9
-          0 0 0 0 1.0
-          -1.5 -1.5 -1.5 2.0 0" />
-      </filter>
-      <!-- Naranja saturado -->
-      <filter id="vector-orange">
-        <feColorMatrix type="matrix" values="
-          0 0 0 0 1.0
-          0 0 0 0 0.4
-          0 0 0 0 0.0
-          -1.5 -1.5 -1.5 2.0 0" />
-      </filter>
-      <!-- Violeta saturado -->
-      <filter id="vector-purple">
-        <feColorMatrix type="matrix" values="
-          0 0 0 0 0.7
-          0 0 0 0 0.0
-          0 0 0 0 1.0
-          -1.5 -1.5 -1.5 2.0 0" />
-      </filter>
-    </defs>
-  </svg>
+
 
   <!-- Grano analógico fijo -->
   <div class="grain-overlay" aria-hidden="true"></div>
@@ -265,16 +187,7 @@
   <!-- Goteo de tinta dinámico -->
   <div id="dripping-ink-container" class="absolute inset-0 pointer-events-none overflow-hidden z-0" aria-hidden="true"></div>
 
-  <!-- Video atmosférico de fondo (grayscale, opacidad reducida) -->
-  <div class="video-background-container" aria-hidden="true">
-    <iframe src="https://www.youtube-nocookie.com/embed/LLlFzucZhOQ?autoplay=1&mute=1&loop=1&playlist=LLlFzucZhOQ&controls=0&showinfo=0&rel=0&modestbranding=1&iv_load_policy=3&playsinline=1"
-            frameborder="0"
-            allow="autoplay; encrypted-media"
-            title="Video de fondo decorativo"
-            loading="lazy">
-    </iframe>
-  </div>
-  <div class="vignette-overlay" aria-hidden="true"></div>
+
 
   <!-- Ilustraciones flotantes Dahyun Kim -->
   <div id="dahyun-canvas-container" class="fixed inset-0 pointer-events-none z-0 overflow-hidden" aria-hidden="true"></div>
@@ -1236,62 +1149,7 @@
     spawn(); setInterval(spawn, 7500);
   })();
 
-  /* ── 10. ILUSTRACIONES PSICODÉLICAS SATURADAS (ADJUNTOS) ─────────────── */
-  (function() {
-    const sections = document.querySelectorAll('section');
-    if (!sections.length) return;
 
-    const images = [
-      'assets/caba.jfif',
-      'assets/coco.jfif',
-      'assets/jagu.jfif',
-      'assets/lupe.jfif',
-      'assets/camaleon.jpg',
-      'assets/taco.avif'
-    ];
-
-    const filters = [
-      'vector-green',
-      'vector-pink',
-      'vector-cyan',
-      'vector-orange',
-      'vector-purple'
-    ];
-
-    sections.forEach((section) => {
-      // Spawn 1 a 3 ilustraciones por sección de manera aleatoria
-      const count = Math.floor(Math.random() * 3) + 1;
-      for (let i = 0; i < count; i++) {
-        const imgUrl = images[Math.floor(Math.random() * images.length)];
-        const filterId = filters[Math.floor(Math.random() * filters.length)];
-
-        const el = document.createElement('img');
-        el.src = imgUrl;
-        el.alt = 'Ilustración psicodélica decorativa';
-        el.className = 'saturated-illustration';
-
-        // Tamaños aleatorios (entre 120px y 240px)
-        const size = Math.floor(120 + Math.random() * 120);
-        el.style.width = `${size}px`;
-        el.style.height = 'auto';
-
-        // Posiciones aleatorias dentro de la sección
-        el.style.left = `${Math.random() * 80}%`;
-        el.style.top = `${Math.random() * 75}%`;
-
-        // Rotación y retardo de animación aleatorio
-        const rotation = Math.floor(Math.random() * 360);
-        const delay = -Math.random() * 20;
-        el.style.transform = `rotate(${rotation}deg)`;
-        el.style.animation = `slowFloat 20s ease-in-out ${delay}s infinite alternate`;
-
-        // Filtro de color saturado + sombra suave
-        el.style.filter = `url(#${filterId}) drop-shadow(0 6px 12px rgba(0,0,0,0.08))`;
-
-        section.appendChild(el);
-      }
-    });
-  })();
   </script>
 </body>
 </html>
