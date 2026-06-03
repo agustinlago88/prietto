@@ -234,22 +234,6 @@ button { font-family: inherit; cursor: pointer; }
 .scroll-hint { animation: hintPulse 2.2s ease-in-out infinite; }
 @keyframes hintPulse { 0%,100% { opacity: 0.4; } 50% { opacity: 1; } }
 
-.sheet-bg {
-  position: absolute;
-  bottom: clamp(2.5rem, 7vh, 4.5rem);
-  right: var(--pad);
-  width: clamp(220px, 36vw, 440px);
-  height: auto;
-  opacity: 0.08;
-  pointer-events: none;
-  z-index: 0;
-}
-.sheet-bg img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
 /* home scroll teasers */
 .home-scroll {
   max-width: var(--maxw);
