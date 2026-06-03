@@ -144,7 +144,7 @@ button { font-family: inherit; cursor: pointer; }
   align-items: baseline;
 }
 .tagline {
-  max-width: 32ch;
+  max-width: 70ch;
   color: var(--ink-70);
   font-size: clamp(0.8rem, 1.1vw, 0.95rem);
   line-height: 1.55;
