@@ -215,6 +215,7 @@ button { font-family: inherit; cursor: pointer; }
   border-top: 1px solid var(--rule);
   position: relative;
   z-index: 1;
+  max-width: 520px;
 }
 .index li {
   border-bottom: 1px solid var(--rule);
@@ -230,10 +231,9 @@ button { font-family: inherit; cursor: pointer; }
 
 .index a {
   display: grid;
-  grid-template-columns: 3.2em 1fr auto;
+  grid-template-columns: 3.2em 1fr;
   align-items: baseline;
-  gap: clamp(0.75rem, 2vw, 2rem);
-  padding: clamp(0.55rem, 1.5vh, 1.05rem) clamp(0.4rem, 1.5vw, 1.1rem);
+  gap: clamp(0.5rem, 1.5vw, 1rem);
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -267,20 +267,13 @@ button { font-family: inherit; cursor: pointer; }
   letter-spacing: -0.02em;
   line-height: 1;
 }
-.index .ix-desc {
-  font-size: 0.7rem;
-  letter-spacing: 0.04em;
-  color: var(--ink-45);
-  text-transform: uppercase;
-  text-align: right;
-  white-space: nowrap;
-}
 .index .ix-arrow {
   display: inline-block;
   opacity: 0;
-  transform: translateX(-0.4em);
+  transform: translateX(-0.3em);
   transition: opacity var(--t-fast), transform var(--t-fast);
   font-weight: 700;
+  margin-left: 0.5em;
 }
 .index a:hover,
 .index a:focus-visible {
@@ -289,11 +282,9 @@ button { font-family: inherit; cursor: pointer; }
   outline: none;
 }
 .index a:hover .ix-num,
-.index a:hover .ix-desc,
-.index a:focus-visible .ix-num,
-.index a:focus-visible .ix-desc { color: rgba(255,255,255,0.6); }
+.index a:focus-visible .ix-num { color: rgba(255,255,255,0.6); }
 .index a:hover .ix-arrow,
-.index a:focus-visible .ix-arrow { opacity: 1; transform: translateX(0); }
+.index a:focus-visible .ix-arrow { opacity: 1; transform: translateX(0.15em); }
 
 .sheet-foot {
   display: flex;
