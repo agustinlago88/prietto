@@ -432,13 +432,13 @@ button { font-family: inherit; cursor: pointer; }
 }
 .photo-2 {
   width: 58%;
-  aspect-ratio: 2 / 3;
+  aspect-ratio: 9 / 16;
   transform: rotate(8deg) translate(45px, 20px);
   z-index: 2;
 }
 .photo-3 {
   width: 76%;
-  aspect-ratio: 3 / 2;
+  aspect-ratio: 5 / 4;
   transform: rotate(-2deg) translate(5px, -25px);
   z-index: 3;
 }
