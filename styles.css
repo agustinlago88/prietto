@@ -112,6 +112,21 @@ button { font-family: inherit; cursor: pointer; }
   min-height: 100dvh;
   padding: var(--frame);
   flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+#home::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: clamp(280px, 35vh, 480px);
+  background: url('assets/motifs/calaveras.png') no-repeat bottom center;
+  background-size: cover;
+  opacity: 0.35;
+  z-index: -2;
+  pointer-events: none;
 }
 
 .sheet {
@@ -443,21 +458,6 @@ button { font-family: inherit; cursor: pointer; }
 .teaser {
   border-top: 1px solid var(--rule-strong);
   padding-top: clamp(1.4rem, 3vh, 2.2rem);
-  position: relative;
-  z-index: 1;
-}
-.teaser::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url('assets/motifs/calaveras.png') no-repeat center;
-  background-size: contain;
-  opacity: 0.08;
-  z-index: -1;
-  pointer-events: none;
 }
 .teaser-lead {
   font-size: clamp(1.1rem, 2.2vw, 1.6rem);
@@ -851,13 +851,20 @@ body[data-route="home"] .pager { display: none; }
   gap: clamp(2rem, 5vw, 4.5rem);
   align-items: start;
 }
+#contacto .section {
+  position: relative;
+}
 .contact-intro p { margin: 0; max-width: 46ch; color: var(--ink-70); }
 .contact-motif {
-  margin-top: clamp(1.5rem, 4vh, 3rem);
-  opacity: 0.85;
+  position: absolute;
+  left: -35px;
+  bottom: -45px;
+  z-index: -1;
+  opacity: 0.65;
+  pointer-events: none;
 }
 .contact-motif img {
-  max-width: 220px;
+  width: clamp(220px, 22vw, 360px);
   height: auto;
   display: block;
 }
