@@ -58,7 +58,7 @@
 
     body.setAttribute("data-route", id);
     if (id !== "home") {
-      tbWhere.textContent = meta.num + " — " + meta.label;
+      tbWhere.textContent = meta.label;
       setPager(idx);
     }
 
