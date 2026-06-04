@@ -167,7 +167,7 @@ button { font-family: inherit; cursor: pointer; }
 }
 .wordmark-logo {
   margin: 0;
-  height: clamp(1.8rem, 6.2vw, 3.8rem);
+  height: clamp(2.3rem, 7.8vw, 4.6rem);
   display: flex;
   align-items: center;
 }
