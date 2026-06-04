@@ -405,7 +405,7 @@ button { font-family: inherit; cursor: pointer; }
   justify-content: center;
   align-items: center;
   position: relative;
-  min-height: clamp(280px, 45vh, 420px);
+  min-height: clamp(300px, 45vh, 420px);
   margin: clamp(0.5rem, 1.5vh, 1.25rem) auto;
   width: 100%;
   max-width: 480px;
@@ -413,7 +413,7 @@ button { font-family: inherit; cursor: pointer; }
 .hero-photo {
   position: absolute;
   border: 1px solid var(--rule-strong);
-  padding: 0.45rem 0.45rem 1.60rem; /* Borde estilo Polaroid */
+  padding: 0.55rem 0.55rem 1.80rem; /* Borde estilo Polaroid */
   background: var(--paper);
   box-shadow: 0 4px 15px rgba(12, 12, 12, 0.08);
   transition: transform var(--t-mid), z-index var(--t-fast);
@@ -425,27 +425,43 @@ button { font-family: inherit; cursor: pointer; }
   display: block;
 }
 .photo-1 {
-  width: 68%;
+  width: 76%;
   aspect-ratio: 3 / 2;
-  transform: rotate(-5deg) translate(-25px, -10px);
+  transform: rotate(-6deg) translate(-35px, -12px);
   z-index: 1;
 }
 .photo-2 {
-  width: 52%;
+  width: 58%;
   aspect-ratio: 2 / 3;
-  transform: rotate(6deg) translate(35px, 15px);
+  transform: rotate(8deg) translate(45px, 20px);
   z-index: 2;
 }
 .photo-3 {
-  width: 68%;
+  width: 76%;
   aspect-ratio: 3 / 2;
-  transform: rotate(-1deg) translate(-5px, -15px);
+  transform: rotate(-2deg) translate(5px, -25px);
   z-index: 3;
 }
 .hero-photo:hover {
   transform: rotate(0deg) scale(1.05) translate(0, 0);
   z-index: 10;
   box-shadow: 0 10px 30px rgba(12, 12, 12, 0.18);
+}
+
+@media (min-width: 768px) {
+  .home-hero-stack {
+    max-width: 580px;
+    min-height: clamp(360px, 50vh, 480px);
+  }
+  .photo-1 {
+    transform: rotate(-6deg) translate(-55px, -18px);
+  }
+  .photo-2 {
+    transform: rotate(8deg) translate(70px, 30px);
+  }
+  .photo-3 {
+    transform: rotate(-2deg) translate(8px, -40px);
+  }
 }
 
 .sheet-foot {
@@ -869,6 +885,19 @@ body[data-route="home"] .pager { display: none; }
 }
 .contact-intro p { margin: 0; max-width: 46ch; color: var(--ink-70); }
 /* .contact-motif - Dados removidos a pedido del usuario */
+.contact-drawing {
+  margin-top: clamp(1.5rem, 3.5vh, 2.5rem);
+  opacity: 0.92;
+  max-width: 380px;
+  border: 1px solid var(--rule);
+  padding: 0.5rem;
+  background: var(--paper);
+}
+.contact-drawing img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 .channels { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--rule-strong); }
 .channels li { border-bottom: 1px solid var(--rule); }
 .channels a {
