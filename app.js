@@ -71,6 +71,36 @@
 
   window.addEventListener("hashchange", render);
 
+  /* ---------- Menú móvil lateral (drawer) ---------- */
+  var ixToggle = document.getElementById("ixToggle");
+  var ixClose = document.getElementById("ixClose");
+  var ixMenu = document.getElementById("ixMenu");
+  var ixOverlay = document.getElementById("ixOverlay");
+
+  function openMobileMenu() {
+    if (ixMenu) ixMenu.classList.add("is-open");
+    if (ixOverlay) ixOverlay.classList.add("is-visible");
+    if (ixToggle) ixToggle.setAttribute("aria-expanded", "true");
+  }
+
+  function closeMobileMenu() {
+    if (ixMenu) ixMenu.classList.remove("is-open");
+    if (ixOverlay) ixOverlay.classList.remove("is-visible");
+    if (ixToggle) ixToggle.setAttribute("aria-expanded", "false");
+  }
+
+  if (ixToggle) ixToggle.addEventListener("click", openMobileMenu);
+  if (ixClose) ixClose.addEventListener("click", closeMobileMenu);
+  if (ixOverlay) ixOverlay.addEventListener("click", closeMobileMenu);
+
+  if (ixMenu) {
+    ixMenu.addEventListener("click", function (e) {
+      if (e.target.closest("a")) {
+        closeMobileMenu();
+      }
+    });
+  }
+
   /* ---------- Discografía: filtro por categoría ---------- */
   var filters = document.getElementById("discoFilters");
   var grid = document.getElementById("discoGrid");

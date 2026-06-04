@@ -43,6 +43,7 @@
 
   <!-- ===================== HOME / ÍNDICE ===================== -->
   <section class="view" id="home" data-screen-label="Índice">
+    <div class="ix-overlay" id="ixOverlay" aria-hidden="true"></div>
     <div class="sheet">
       <div class="sheet-head">
         <div class="left">
@@ -54,10 +55,14 @@
         <div class="right">
           <span class="label">Buenos Aires · AR</span>
           <span class="label num">MMXXVI</span>
+          <button type="button" class="ix-toggle" id="ixToggle" aria-expanded="false" aria-controls="ixMenu">
+            <span class="ix-toggle-icon">☰</span> <span class="ix-toggle-text">MENÚ</span>
+          </button>
         </div>
       </div>
 
-      <ul class="index">
+      <ul class="index" id="ixMenu">
+        <li class="ix-close-row"><button type="button" class="ix-close" id="ixClose" aria-label="Cerrar menú">✕ CERRAR</button></li>
         <li><a href="#/fechas">
           <span class="ix-num num">01</span>
           <span class="ix-name">Fechas <span class="ix-arrow">→</span></span>
