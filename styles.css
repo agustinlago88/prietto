@@ -149,6 +149,17 @@ button { font-family: inherit; cursor: pointer; }
   display: flex;
   align-items: baseline;
 }
+.wordmark-logo {
+  margin: 0;
+  height: clamp(1.8rem, 6.2vw, 3.8rem);
+  display: flex;
+  align-items: center;
+}
+.wordmark-logo img {
+  height: 100%;
+  width: auto;
+  display: block;
+}
 .tagline {
   max-width: 95ch;
   color: var(--ink-70);
@@ -422,7 +433,6 @@ body[data-route="home"] .pager { display: none; }
   width: 100%;
   aspect-ratio: 4 / 5;
   object-fit: cover;
-  filter: grayscale(1) contrast(1.04);
 }
 .bio-portrait figcaption {
   margin-top: 0.7rem;
@@ -440,39 +450,51 @@ body[data-route="home"] .pager { display: none; }
 .dates { border-top: 1px solid var(--rule-strong); }
 .date-row {
   display: grid;
-  grid-template-columns: 4.5em 1fr auto;
+  grid-template-columns: 8.5rem 11.5rem 1fr 7rem;
   align-items: center;
-  gap: clamp(0.9rem, 3vw, 2.5rem);
-  padding: clamp(1rem, 2.4vh, 1.5rem) clamp(0.3rem,1vw,0.8rem);
+  gap: clamp(1rem, 2.5vw, 2.2rem);
+  padding: 1.15rem 0.5rem;
   border-bottom: 1px solid var(--rule);
-  transition: background var(--t-fast), color var(--t-fast), padding-left var(--t-fast);
+  text-transform: uppercase;
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+  transition: opacity var(--t-fast);
 }
 .date-row:hover {
-  background: var(--ink);
-  color: var(--paper);
-  padding-left: clamp(0.8rem, 2vw, 1.5rem);
+  opacity: 0.65;
 }
-.date-main { display: flex; flex-direction: column; }
-.date-main .venue, .date-main .city { display: block; }
-.date-day { display: flex; flex-direction: column; line-height: 1; }
-.date-day .dd { font-size: clamp(1.7rem, 4vw, 2.6rem); font-weight: 700; letter-spacing: -0.03em; }
-.date-day .mo { font-size: 0.66rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-45); margin-top: 0.35rem; }
-.date-row:hover .date-day .mo { color: rgba(255,255,255,0.6); }
-.date-main .venue { font-size: clamp(1.05rem, 2.2vw, 1.4rem); font-weight: 700; letter-spacing: -0.01em; }
-.date-main .city { font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-45); margin-top: 0.25rem; }
-.date-row:hover .date-main .city { color: rgba(255,255,255,0.6); }
-.date-cta {
-  font-size: 0.7rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  font-weight: 700;
-  border: 1px solid currentColor;
-  padding: 0.55em 1.1em;
+.date-col {
+  display: block;
   white-space: nowrap;
-  transition: background var(--t-fast), color var(--t-fast);
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.date-row:hover .date-cta { border-color: var(--paper); }
-.date-cta:hover { background: var(--paper); color: var(--ink); }
+.date-date {
+  color: var(--ink-70);
+}
+.date-city {
+  font-weight: 700;
+}
+.date-venue {
+  color: var(--ink-70);
+}
+.date-cta {
+  text-align: right;
+  text-decoration: underline;
+  text-underline-offset: 0.35em;
+  font-weight: 700;
+}
+.date-status {
+  text-align: right;
+  color: var(--ink-45);
+}
+.date-status.sold-out {
+  color: var(--ink-45);
+  text-decoration: line-through;
+}
+.date-status.past {
+  color: var(--ink-25);
+}
 
 /* =========================================================
    DISCOGRAFÍA
@@ -512,10 +534,7 @@ body[data-route="home"] .pager { display: none; }
   width: 100%;
   aspect-ratio: 1;
   object-fit: cover;
-  filter: grayscale(1) contrast(1.03);
-  transition: filter var(--t-mid);
 }
-.album:hover .cover img { filter: grayscale(0) contrast(1); }
 .album .meta-line { font-size: 0.64rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-45); }
 .album .a-title { font-size: 1.02rem; font-weight: 700; letter-spacing: -0.01em; line-height: 1.1; }
 .album .a-desc { font-size: 0.74rem; color: var(--ink-70); line-height: 1.5; }
@@ -537,7 +556,6 @@ body[data-route="home"] .pager { display: none; }
 .video-frame img {
   width: 100%; height: 100%;
   object-fit: cover;
-  filter: grayscale(1) contrast(1.05);
 }
 .video-frame iframe { width: 100%; height: 100%; border: 0; display: block; }
 .video-play {
@@ -599,10 +617,7 @@ body[data-route="home"] .pager { display: none; }
   width: 100%;
   height: auto;
   display: block;
-  filter: grayscale(1) contrast(1.04);
-  transition: filter var(--t-mid);
 }
-.arch-item:hover img { filter: grayscale(0) contrast(1); }
 
 /* =========================================================
    CONTACTO
@@ -655,8 +670,19 @@ body[data-route="home"] .pager { display: none; }
   .index .ix-desc { display: none; }
   .sheet-head { flex-direction: column; }
   .sheet-head .right { align-items: flex-start; text-align: left; }
-  .date-row { grid-template-columns: 3.4em 1fr; grid-template-areas: "day main" "cta cta"; row-gap: 0.8rem; }
-  .date-row .date-cta { grid-area: cta; justify-self: start; }
+  .date-row {
+    grid-template-columns: 1fr auto;
+    grid-template-areas: 
+      "date cta"
+      "city cta"
+      "venue cta";
+    gap: 0.2rem 1.2rem;
+    padding: 1.1rem 0.3rem;
+  }
+  .date-date { grid-area: date; font-size: 0.72rem; }
+  .date-city { grid-area: city; font-size: 0.94rem; }
+  .date-venue { grid-area: venue; font-size: 0.78rem; }
+  .date-cta, .date-status { grid-area: cta; align-self: center; text-align: right; font-size: 0.78rem; }
 }
 @media (max-width: 480px) {
   .topbar { grid-template-columns: 1fr auto; }
