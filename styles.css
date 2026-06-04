@@ -440,7 +440,25 @@ button { font-family: inherit; cursor: pointer; }
   flex-direction: column;
   gap: clamp(2.5rem, 7vh, 5rem);
 }
-.teaser { border-top: 1px solid var(--rule-strong); padding-top: clamp(1.4rem, 3vh, 2.2rem); }
+.teaser {
+  border-top: 1px solid var(--rule-strong);
+  padding-top: clamp(1.4rem, 3vh, 2.2rem);
+  position: relative;
+  z-index: 1;
+}
+.teaser::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('assets/motifs/calaveras.png') no-repeat center;
+  background-size: contain;
+  opacity: 0.08;
+  z-index: -1;
+  pointer-events: none;
+}
 .teaser-lead {
   font-size: clamp(1.1rem, 2.2vw, 1.6rem);
   line-height: 1.45;
@@ -834,6 +852,15 @@ body[data-route="home"] .pager { display: none; }
   align-items: start;
 }
 .contact-intro p { margin: 0; max-width: 46ch; color: var(--ink-70); }
+.contact-motif {
+  margin-top: clamp(1.5rem, 4vh, 3rem);
+  opacity: 0.85;
+}
+.contact-motif img {
+  max-width: 220px;
+  height: auto;
+  display: block;
+}
 .channels { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--rule-strong); }
 .channels li { border-bottom: 1px solid var(--rule); }
 .channels a {
