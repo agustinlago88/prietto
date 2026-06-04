@@ -50,6 +50,17 @@ button { font-family: inherit; cursor: pointer; }
 ::selection { background: var(--ink); color: var(--paper); }
 
 /* ---------- Reusable type primitives ---------- */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
 .label {
   font-size: 0.6875rem;
   letter-spacing: 0.32em;

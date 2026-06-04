@@ -6,11 +6,11 @@
 
   var ROUTES = [
     { id: "home",      label: "Índice",      num: "00" },
-    { id: "biografia", label: "Biografía",   num: "01" },
-    { id: "fechas",    label: "Fechas",      num: "02" },
-    { id: "discos",    label: "Discografía", num: "03" },
-    { id: "video",     label: "Vídeo",       num: "04" },
-    { id: "archivo",   label: "Archivo",     num: "05" },
+    { id: "fechas",    label: "Fechas",      num: "01" },
+    { id: "discos",    label: "Discografía", num: "02" },
+    { id: "video",     label: "Vídeo",       num: "03" },
+    { id: "archivo",   label: "Archivo",     num: "04" },
+    { id: "biografia", label: "Bio",         num: "05" },
     { id: "contacto",  label: "Contacto",    num: "06" }
   ];
 
