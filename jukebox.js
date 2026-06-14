@@ -25,21 +25,15 @@
   ];
 
   var BC_BASE = "https://bandcamp.com/EmbeddedPlayer/album=";
-  var BC_OPTS = "/size=small/bgcol=0c0c0c/linkcol=ffffff/transparent=true/autoplay=true/";
+  var BC_OPTS = "/size=small/bgcol=0c0c0c/linkcol=ffffff/transparent=true/";
 
   // ─── DOM refs ───
-  var jukebox   = document.getElementById("jukebox");
-  var btnPlay   = document.getElementById("jbPlay");
-  var btnStop   = document.getElementById("jbStop");
+  var container = document.getElementById("jbPlayerContainer");
   var btnSkip   = document.getElementById("jbSkip");
-  var trackName = document.getElementById("jbTrack");
-  var bcLink    = document.getElementById("jbLink");
-  var iframeWrap= document.getElementById("jbIframeWrap");
 
-  if (!jukebox) return;
+  if (!container) return;
 
   var currentIdx = -1;
-  var isPlaying  = false;
   var shuffled   = [];
 
   // ─── Shuffle the album list (Fisher-Yates) ───
@@ -57,28 +51,20 @@
     currentIdx = -1;
   }
 
-  // ─── Load an album into the hidden iframe ───
+  // ─── Load album iframe ───
   function loadAlbum(album) {
-    // Remove any existing iframe
-    iframeWrap.innerHTML = "";
+    container.innerHTML = "";
 
     var iframe = document.createElement("iframe");
-    iframe.style.cssText = "border:0;width:400px;height:42px;";
+    iframe.style.cssText = "border:0;width:100%;height:42px;display:block;";
     iframe.src = BC_BASE + album.id + BC_OPTS;
-    iframe.allow = "autoplay";
     iframe.title = "Prietto — " + album.title;
     iframe.setAttribute("seamless", "");
-    iframeWrap.appendChild(iframe);
-
-    // Update track name display
-    trackName.textContent = "PRIETTO · " + album.title.toUpperCase();
-
-    // Update BC link
-    bcLink.href = "https://prietto.bandcamp.com" + album.url;
+    container.appendChild(iframe);
   }
 
-  // ─── Next track (cycle through shuffled list) ───
-  function nextAlbum() {
+  // ─── Skip / Next ───
+  function skip() {
     currentIdx++;
     if (currentIdx >= shuffled.length) {
       resetShuffle();
@@ -87,50 +73,13 @@
     loadAlbum(shuffled[currentIdx]);
   }
 
-  // ─── Play ───
-  function play() {
-    if (currentIdx < 0 || currentIdx >= shuffled.length) {
-      resetShuffle();
-      currentIdx = 0;
-    }
-    loadAlbum(shuffled[currentIdx]);
-    isPlaying = true;
-    jukebox.classList.add("is-playing");
-    btnPlay.classList.add("is-active");
-  }
-
-  // ─── Stop ───
-  function stop() {
-    iframeWrap.innerHTML = "";
-    isPlaying = false;
-    jukebox.classList.remove("is-playing");
-    btnPlay.classList.remove("is-active");
-    trackName.textContent = "PRIETTO · JUKEBOX";
-  }
-
-  // ─── Skip to next ───
-  function skip() {
-    nextAlbum();
-    if (!isPlaying) {
-      isPlaying = true;
-      jukebox.classList.add("is-playing");
-      btnPlay.classList.add("is-active");
-    }
-  }
-
   // ─── Event listeners ───
-  btnPlay.addEventListener("click", function () {
-    if (isPlaying) {
-      stop();
-    } else {
-      play();
-    }
-  });
+  if (btnSkip) {
+    btnSkip.addEventListener("click", skip);
+  }
 
-  btnStop.addEventListener("click", stop);
-  btnSkip.addEventListener("click", skip);
-
-  // ─── Initialize shuffle on load ───
+  // ─── Init ───
   resetShuffle();
+  skip();
 
 })();
