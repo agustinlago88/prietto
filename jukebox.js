@@ -5,14 +5,14 @@
 (function () {
   "use strict";
 
-  var PLAYLIST = [
-    { id: "GSB0aGXgG1A", title: "Maxi Prietto — Rumbo a Hong Kong" },
-    { id: "8VzM4zN-t7k", title: "Los Espíritus — Camina" },
-    { id: "iT52hFp5z6U", title: "Los Espíritus — Negro Chico" },
-    { id: "o2XWz8xNoRo", title: "Maxi Prietto — Estás Lejos" },
-    { id: "QZ0_jV1z1mU", title: "Maxi Prietto — Otra Tumba Más" },
-    { id: "BqN2p_H93V8", title: "Los Espíritus — Huracanes" },
-    { id: "Xh0Y9QkR-a0", title: "Los Espíritus — La Crecida" }
+  var PLAYLIST_IDS = [
+    "GSB0aGXgG1A", // Rumbo a Hong Kong
+    "8VzM4zN-t7k", // Camina
+    "iT52hFp5z6U", // Negro Chico
+    "o2XWz8xNoRo", // Estás Lejos
+    "QZ0_jV1z1mU", // Otra Tumba Más
+    "BqN2p_H93V8", // Huracanes
+    "Xh0Y9QkR-a0"  // La Crecida
   ];
 
   var jukebox   = document.getElementById("jukebox");
@@ -27,25 +27,8 @@
 
   var player = null;
   var isPlaying = false;
-  var currentIdx = -1;
-  var shuffled = [];
   var isPlayerReady = false;
   var currentVolume = 80;
-
-  // Shuffle playlist (Fisher-Yates)
-  function shuffle(arr) {
-    var a = arr.slice();
-    for (var i = a.length - 1; i > 0; i--) {
-      var j = Math.floor(Math.random() * (i + 1));
-      var t = a[i]; a[i] = a[j]; a[j] = t;
-    }
-    return a;
-  }
-
-  function resetShuffle() {
-    shuffled = shuffle(PLAYLIST);
-    currentIdx = -1;
-  }
 
   // Load YouTube script dynamically
   window.onYouTubeIframeAPIReady = function() {
@@ -63,8 +46,9 @@
     player = new YT.Player('ytPlayerPlaceholder', {
       height: '200',
       width: '200',
-      videoId: PLAYLIST[0].id,
+      videoId: PLAYLIST_IDS[0],
       playerVars: {
+        'playlist': PLAYLIST_IDS.join(','),
         'autoplay': 0,
         'controls': 0,
         'disablekb': 1,
@@ -87,95 +71,69 @@
     player.setVolume(currentVolume);
     if (sliderVol) sliderVol.value = currentVolume;
     
-    // Cue the first track
-    if (currentIdx < 0) {
-      resetShuffle();
-      currentIdx = 0;
-    }
-    player.cueVideoById(shuffled[currentIdx].id);
+    // Shuffle and loop the playlist natively
+    player.setShuffle(true);
+    player.setLoop(true);
+    
     trackName.textContent = "PRIETTO · JUKEBOX";
   }
 
   function onPlayerStateChange(event) {
-    // Automatically skip to next track when one ends
-    if (event.data === YT.PlayerState.ENDED) {
-      skip();
+    if (event.data === YT.PlayerState.PLAYING) {
+      isPlaying = true;
+      jukebox.classList.add("is-playing");
+      btnPlay.classList.add("is-active");
+      // Change Play button to Pause icon
+      btnPlay.innerHTML = '<svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><rect x="5" y="4" width="4" height="16" rx="1"/><rect x="15" y="4" width="4" height="16" rx="1"/></svg>';
+      btnPlay.title = "Pausar";
+      btnPlay.setAttribute("aria-label", "Pausar");
+
+      // Update track name from YouTube video data
+      var data = player.getVideoData();
+      if (data && data.title) {
+        var cleanTitle = data.title
+          .replace(/official/i, '')
+          .replace(/video/i, '')
+          .replace(/audio/i, '')
+          .replace(/[\(\)\[\]]/g, '')
+          .trim();
+        trackName.textContent = "REPRODUCIENDO: " + cleanTitle.toUpperCase();
+      }
+    } else if (event.data === YT.PlayerState.PAUSED || event.data === YT.PlayerState.ENDED) {
+      isPlaying = false;
+      jukebox.classList.remove("is-playing");
+      btnPlay.classList.remove("is-active");
+      // Change to Play icon
+      btnPlay.innerHTML = '<svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><polygon points="6,3 20,12 6,21"/></svg>';
+      btnPlay.title = "Reproducir";
+      btnPlay.setAttribute("aria-label", "Reproducir");
     }
   }
 
   function onPlayerError(event) {
-    console.warn("YouTube Player Error (ID: " + shuffled[currentIdx].id + "), code: " + event.data);
-    // Auto-skip if video is blocked or restricted
+    console.warn("YouTube Player Error code:", event.data);
     skip();
-  }
-
-  function playTrack(track) {
-    if (!player || !isPlayerReady || typeof player.loadVideoById !== 'function') return;
-
-    player.loadVideoById(track.id);
-    trackName.textContent = "REPRODUCIENDO: " + track.title.toUpperCase();
-    
-    isPlaying = true;
-    jukebox.classList.add("is-playing");
-    btnPlay.classList.add("is-active");
-    // Change Play button to Pause icon
-    btnPlay.innerHTML = '<svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><rect x="5" y="4" width="4" height="16" rx="1"/><rect x="15" y="4" width="4" height="16" rx="1"/></svg>';
-    btnPlay.title = "Pausar";
-    btnPlay.setAttribute("aria-label", "Pausar");
   }
 
   function play() {
     if (!player || !isPlayerReady) return;
 
-    if (currentIdx < 0) {
-      resetShuffle();
-      currentIdx = 0;
-      playTrack(shuffled[currentIdx]);
+    if (isPlaying) {
+      player.pauseVideo();
     } else {
-      if (isPlaying) {
-        player.pauseVideo();
-        isPlaying = false;
-        jukebox.classList.remove("is-playing");
-        btnPlay.classList.remove("is-active");
-        // Change back to Play icon
-        btnPlay.innerHTML = '<svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><polygon points="6,3 20,12 6,21"/></svg>';
-        btnPlay.title = "Reproducir";
-        btnPlay.setAttribute("aria-label", "Reproducir");
-      } else {
-        player.playVideo();
-        isPlaying = true;
-        jukebox.classList.add("is-playing");
-        btnPlay.classList.add("is-active");
-        trackName.textContent = "REPRODUCIENDO: " + shuffled[currentIdx].title.toUpperCase();
-        // Change to Pause icon
-        btnPlay.innerHTML = '<svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><rect x="5" y="4" width="4" height="16" rx="1"/><rect x="15" y="4" width="4" height="16" rx="1"/></svg>';
-        btnPlay.title = "Pausar";
-        btnPlay.setAttribute("aria-label", "Pausar");
-      }
+      player.playVideo();
     }
   }
 
   function stop() {
     if (!player || !isPlayerReady) return;
     player.stopVideo();
-    isPlaying = false;
-    jukebox.classList.remove("is-playing");
-    btnPlay.classList.remove("is-active");
-    btnPlay.innerHTML = '<svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><polygon points="6,3 20,12 6,21"/></svg>';
-    btnPlay.title = "Reproducir";
-    btnPlay.setAttribute("aria-label", "Reproducir");
     trackName.textContent = "PRIETTO · JUKEBOX";
   }
 
   function skip() {
     if (!player || !isPlayerReady) return;
-
-    currentIdx++;
-    if (currentIdx >= shuffled.length) {
-      resetShuffle();
-      currentIdx = 0;
-    }
-    playTrack(shuffled[currentIdx]);
+    player.nextVideo();
   }
 
   // Event listeners
@@ -191,7 +149,5 @@
       }
     });
   }
-
-  resetShuffle();
 
 })();

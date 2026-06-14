@@ -150,9 +150,6 @@ body {
 }
 
 @media (max-width: 480px) {
-  .jb-vol {
-    display: none;
-  }
   .jb-inner {
     gap: 0.15rem;
   }
