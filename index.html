@@ -36,13 +36,20 @@
 <!-- ===================== JUKEBOX FLOTANTE ===================== -->
 <div id="jukebox" class="jukebox" aria-label="Reproductor de música">
   <div class="jb-inner">
-    <div class="jb-brand">PRIETTO · JUKEBOX</div>
-    <div id="jbPlayerContainer" class="jb-player-container"></div>
-    <button class="jb-btn" id="jbSkip" aria-label="Siguiente álbum" title="Siguiente álbum">
-      <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor" style="display:block;"><polygon points="4,3 16,12 4,21"/><rect x="17" y="3" width="3" height="18"/></svg>
-      <span class="jb-btn-text">Saltar</span>
+    <button class="jb-btn" id="jbPlay" aria-label="Reproducir" title="Reproducir">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><polygon points="6,3 20,12 6,21"/></svg>
     </button>
+    <button class="jb-btn" id="jbStop" aria-label="Detener" title="Detener">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><rect x="4" y="4" width="16" height="16" rx="2"/></svg>
+    </button>
+    <button class="jb-btn" id="jbSkip" aria-label="Siguiente" title="Siguiente">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><polygon points="4,3 16,12 4,21"/><rect x="17" y="3" width="3" height="18"/></svg>
+    </button>
+    <div class="jb-info">
+      <span class="jb-track" id="jbTrack">PRIETTO · JUKEBOX</span>
+    </div>
   </div>
+  <div id="jbYtWrap" class="jb-yt-wrap" aria-hidden="true"></div>
 </div>
 
 <!-- ===================== SHARED TOP BAR ===================== -->

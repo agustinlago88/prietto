@@ -498,7 +498,7 @@ button { font-family: inherit; cursor: pointer; }
    ========================================================= */
 .topbar {
   position: sticky;
-  top: 42px;
+  top: 36px;
   z-index: 20;
   display: none;
   grid-template-columns: 1fr auto 1fr;

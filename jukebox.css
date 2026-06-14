@@ -1,5 +1,5 @@
 /* =========================================================
-   JUKEBOX — Barra flotante minimalista con Bandcamp visible
+   JUKEBOX — Barra flotante minimalista (YouTube embed)
    ========================================================= */
 
 .jukebox {
@@ -14,102 +14,106 @@
   border-bottom: 1px solid rgba(255,255,255,0.08);
   user-select: none;
   -webkit-user-select: none;
-  height: 42px;
+  height: 36px;
 }
 
 .jb-inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 1.25rem;
+  gap: 0.25rem;
   max-width: 1180px;
   margin: 0 auto;
-  padding: 0 clamp(0.5rem, 2vw, 1.5rem);
+  padding: 0 clamp(0.75rem, 2vw, 1.5rem);
   height: 100%;
 }
 
-/* brand title */
-.jb-brand {
-  font-size: 0.65rem;
-  font-weight: 700;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  opacity: 0.6;
-  flex-shrink: 0;
-}
-
-/* player wrapper */
-.jb-player-container {
-  flex: 1;
-  max-width: 500px;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  margin: 0 auto;
-}
-
-/* skip button */
+/* control buttons */
 .jb-btn {
   background: none;
-  border: 1px solid rgba(255,255,255,0.18);
-  border-radius: 3px;
+  border: none;
   color: inherit;
-  padding: 4px 10px;
+  padding: 4px 8px;
   cursor: pointer;
   display: flex;
   align-items: center;
-  gap: 0.45rem;
-  opacity: 0.85;
-  transition: opacity 180ms ease, transform 180ms ease, border-color 180ms ease;
+  justify-content: center;
+  opacity: 0.7;
+  transition: opacity 180ms ease, transform 180ms ease;
   flex-shrink: 0;
-  font-family: inherit;
-  font-size: 0.62rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
 }
 .jb-btn:hover {
   opacity: 1;
-  border-color: rgba(255,255,255,0.5);
+  transform: scale(1.15);
 }
 .jb-btn:active {
-  transform: scale(0.96);
+  transform: scale(0.95);
 }
-.jb-btn svg {
-  flex-shrink: 0;
+.jb-btn.is-active {
+  opacity: 1;
+}
+
+/* track info */
+.jb-info {
+  flex: 1;
+  overflow: hidden;
+  padding: 0 0.75rem;
+  min-width: 0;
+}
+.jb-track {
+  display: block;
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  opacity: 0.75;
+}
+
+/* hidden YouTube player container */
+.jb-yt-wrap {
+  position: fixed;
+  left: -9999px;
+  top: 0;
+  width: 200px;
+  height: 200px;
+  z-index: -1000;
+  pointer-events: none;
+  opacity: 0.001;
+}
+
+/* pulse animation for playing state */
+@keyframes jb-pulse {
+  0%, 100% { opacity: 0.75; }
+  50% { opacity: 1; }
+}
+.jukebox.is-playing .jb-track {
+  animation: jb-pulse 2.4s ease-in-out infinite;
 }
 
 /* ─── RESPONSIVE & LAYOUT INTEGRATION ─── */
 
-/* push body content down to make room for the 42px jukebox bar */
 body {
-  padding-top: 42px;
+  padding-top: 36px;
 }
 
-/* adjustments for headers and menus */
 .topbar {
-  top: 42px !important;
+  top: 36px !important;
 }
 
-@media (max-width: 640px) {
-  .jb-brand {
-    display: none;
-  }
-}
-
-@media (max-width: 440px) {
-  .jb-btn-text {
-    display: none;
+@media (max-width: 480px) {
+  .jb-inner {
+    gap: 0.15rem;
   }
   .jb-btn {
-    padding: 6px;
-    border-radius: 50%;
-    aspect-ratio: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 3px 5px;
   }
   .jb-btn svg {
     width: 13px;
     height: 13px;
+  }
+  .jb-track {
+    font-size: 0.58rem;
+    letter-spacing: 0.08em;
   }
 }
