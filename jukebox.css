@@ -90,12 +90,14 @@
 
 /* hidden iframe container for audio */
 .jb-iframe-wrap {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  opacity: 0;
+  position: fixed;
+  left: -9999px;
+  top: 0;
+  width: 300px;
+  height: 80px;
+  z-index: -1000;
   pointer-events: none;
+  opacity: 0.01;
 }
 
 /* pulse animation for playing state */

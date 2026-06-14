@@ -25,7 +25,7 @@
   ];
 
   var BC_BASE = "https://bandcamp.com/EmbeddedPlayer/album=";
-  var BC_OPTS = "/size=small/bgcol=0c0c0c/linkcol=ffffff/transparent=true/";
+  var BC_OPTS = "/size=small/bgcol=0c0c0c/linkcol=ffffff/transparent=true/autoplay=true/";
 
   // ─── DOM refs ───
   var jukebox   = document.getElementById("jukebox");

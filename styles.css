@@ -407,9 +407,11 @@ button { font-family: inherit; cursor: pointer; }
   margin: clamp(1rem, 2.5vh, 2rem) auto;
   width: 100%;
   max-width: 520px;
+  align-self: center;
 }
 .home-hero-single img {
   width: 100%;
+  aspect-ratio: 16 / 9;
   height: auto;
   object-fit: cover;
   display: block;
