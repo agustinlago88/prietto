@@ -21,6 +21,7 @@
   var btnSkip   = document.getElementById("jbSkip");
   var trackName = document.getElementById("jbTrack");
   var ytWrap    = document.getElementById("jbYtWrap");
+  var sliderVol = document.getElementById("jbVol");
 
   if (!jukebox) return;
 
@@ -28,6 +29,8 @@
   var isPlaying = false;
   var currentIdx = -1;
   var shuffled = [];
+  var isPlayerReady = false;
+  var currentVolume = 80;
 
   // Shuffle playlist (Fisher-Yates)
   function shuffle(arr) {
@@ -72,9 +75,25 @@
         'iv_load_policy': 3
       },
       events: {
-        'onStateChange': onPlayerStateChange
+        'onReady': onPlayerReady,
+        'onStateChange': onPlayerStateChange,
+        'onError': onPlayerError
       }
     });
+  }
+
+  function onPlayerReady(event) {
+    isPlayerReady = true;
+    player.setVolume(currentVolume);
+    if (sliderVol) sliderVol.value = currentVolume;
+    
+    // Cue the first track
+    if (currentIdx < 0) {
+      resetShuffle();
+      currentIdx = 0;
+    }
+    player.cueVideoById(shuffled[currentIdx].id);
+    trackName.textContent = "PRIETTO · JUKEBOX";
   }
 
   function onPlayerStateChange(event) {
@@ -84,8 +103,14 @@
     }
   }
 
+  function onPlayerError(event) {
+    console.warn("YouTube Player Error (ID: " + shuffled[currentIdx].id + "), code: " + event.data);
+    // Auto-skip if video is blocked or restricted
+    skip();
+  }
+
   function playTrack(track) {
-    if (!player || typeof player.loadVideoById !== 'function') return;
+    if (!player || !isPlayerReady || typeof player.loadVideoById !== 'function') return;
 
     player.loadVideoById(track.id);
     trackName.textContent = "REPRODUCIENDO: " + track.title.toUpperCase();
@@ -100,7 +125,7 @@
   }
 
   function play() {
-    if (!player) return;
+    if (!player || !isPlayerReady) return;
 
     if (currentIdx < 0) {
       resetShuffle();
@@ -121,6 +146,7 @@
         isPlaying = true;
         jukebox.classList.add("is-playing");
         btnPlay.classList.add("is-active");
+        trackName.textContent = "REPRODUCIENDO: " + shuffled[currentIdx].title.toUpperCase();
         // Change to Pause icon
         btnPlay.innerHTML = '<svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><rect x="5" y="4" width="4" height="16" rx="1"/><rect x="15" y="4" width="4" height="16" rx="1"/></svg>';
         btnPlay.title = "Pausar";
@@ -130,7 +156,7 @@
   }
 
   function stop() {
-    if (!player) return;
+    if (!player || !isPlayerReady) return;
     player.stopVideo();
     isPlaying = false;
     jukebox.classList.remove("is-playing");
@@ -142,7 +168,7 @@
   }
 
   function skip() {
-    if (!player) return;
+    if (!player || !isPlayerReady) return;
 
     currentIdx++;
     if (currentIdx >= shuffled.length) {
@@ -156,6 +182,15 @@
   btnPlay.addEventListener("click", play);
   btnStop.addEventListener("click", stop);
   btnSkip.addEventListener("click", skip);
+
+  if (sliderVol) {
+    sliderVol.addEventListener("input", function (e) {
+      currentVolume = parseInt(e.target.value, 10);
+      if (player && isPlayerReady && typeof player.setVolume === 'function') {
+        player.setVolume(currentVolume);
+      }
+    });
+  }
 
   resetShuffle();
 

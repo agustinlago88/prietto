@@ -70,6 +70,54 @@
   opacity: 0.75;
 }
 
+/* volume control */
+.jb-vol {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  flex-shrink: 0;
+  opacity: 0.7;
+  transition: opacity 180ms ease;
+  margin-left: 0.5rem;
+}
+.jb-vol:hover {
+  opacity: 1;
+}
+.jb-vol-icon {
+  flex-shrink: 0;
+}
+.jb-vol-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 60px;
+  height: 3px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+  transition: background 180ms ease;
+}
+.jb-vol-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--paper, #ffffff);
+  cursor: pointer;
+}
+.jb-vol-slider::-moz-range-thumb {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--paper, #ffffff);
+  cursor: pointer;
+  border: none;
+}
+.jb-vol-slider:hover {
+  background: rgba(255,255,255,0.4);
+}
+
 /* hidden YouTube player container */
 .jb-yt-wrap {
   position: fixed;
@@ -102,6 +150,9 @@ body {
 }
 
 @media (max-width: 480px) {
+  .jb-vol {
+    display: none;
+  }
   .jb-inner {
     gap: 0.15rem;
   }
