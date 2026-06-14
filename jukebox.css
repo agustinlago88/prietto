@@ -23,16 +23,18 @@
   gap: 0.25rem;
   max-width: 1180px;
   margin: 0 auto;
-  padding: 0 clamp(0.75rem, 2vw, 1.5rem);
+  padding: 0 clamp(0.5rem, 2vw, 1.5rem);
   height: 100%;
 }
 
 /* control buttons */
-.jb-btn {
+.jb-btn,
+.jb-vol-btn {
   background: none;
   border: none;
   color: inherit;
-  padding: 4px 8px;
+  height: 100%;
+  padding: 0 10px;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -41,33 +43,50 @@
   transition: opacity 180ms ease, transform 180ms ease;
   flex-shrink: 0;
 }
-.jb-btn:hover {
+.jb-btn:hover,
+.jb-vol-btn:hover {
   opacity: 1;
   transform: scale(1.15);
 }
-.jb-btn:active {
+.jb-btn:active,
+.jb-vol-btn:active {
   transform: scale(0.95);
 }
 .jb-btn.is-active {
   opacity: 1;
 }
 
-/* track info */
+/* track info container */
 .jb-info {
   flex: 1;
   overflow: hidden;
-  padding: 0 0.75rem;
+  padding: 0 0.5rem;
   min-width: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
+
+/* marquee scrolling text */
 .jb-track {
-  display: block;
+  display: inline-block;
   font-size: 0.65rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
   opacity: 0.75;
+}
+
+/* active marquee animation when playing */
+.jukebox.is-playing .jb-track {
+  padding-left: 100%;
+  animation: jbMarquee 22s linear infinite;
+}
+
+@keyframes jbMarquee {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-100%, 0, 0); }
 }
 
 /* volume control */
@@ -78,7 +97,7 @@
   flex-shrink: 0;
   opacity: 0.7;
   transition: opacity 180ms ease;
-  margin-left: 0.5rem;
+  margin-left: 0.25rem;
 }
 .jb-vol:hover {
   opacity: 1;
@@ -136,7 +155,7 @@
   50% { opacity: 1; }
 }
 .jukebox.is-playing .jb-track {
-  animation: jb-pulse 2.4s ease-in-out infinite;
+  animation: jbMarquee 22s linear infinite; /* marquee takes over animation */
 }
 
 /* ─── RESPONSIVE & LAYOUT INTEGRATION ─── */
@@ -151,17 +170,36 @@ body {
 
 @media (max-width: 480px) {
   .jb-inner {
-    gap: 0.15rem;
+    gap: 0.1rem;
+    padding: 0 0.4rem;
   }
-  .jb-btn {
-    padding: 3px 5px;
+  .jb-btn,
+  .jb-vol-btn {
+    padding: 0 8px;
   }
-  .jb-btn svg {
-    width: 13px;
-    height: 13px;
+  .jb-btn svg,
+  .jb-vol-btn svg {
+    width: 14px;
+    height: 14px;
   }
   .jb-track {
     font-size: 0.58rem;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.06em;
+  }
+  .jb-vol {
+    gap: 0.2rem;
+    margin-left: 0.1rem;
+  }
+  .jb-vol-slider {
+    width: 45px;
+  }
+  /* increase touch targets for slider thumb on mobile */
+  .jb-vol-slider::-webkit-slider-thumb {
+    width: 14px;
+    height: 14px;
+  }
+  .jb-vol-slider::-moz-range-thumb {
+    width: 14px;
+    height: 14px;
   }
 }

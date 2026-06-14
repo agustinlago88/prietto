@@ -108,8 +108,8 @@ button { font-family: inherit; cursor: pointer; }
   display: flex;
 }
 #home {
-  min-height: 100vh;
-  min-height: 100dvh;
+  min-height: calc(100vh - 36px);
+  min-height: calc(100dvh - 36px);
   padding: var(--frame);
   flex-direction: column;
   position: relative;
@@ -120,7 +120,7 @@ button { font-family: inherit; cursor: pointer; }
 .sheet {
   flex: none;
   position: relative;
-  min-height: calc(100dvh - 2 * var(--frame));
+  min-height: calc(100dvh - 36px - 2 * var(--frame));
   border: 1px solid var(--rule-strong);
   padding: clamp(1.25rem, 3.2vw, 2.75rem) var(--pad);
   display: flex;
@@ -404,19 +404,19 @@ button { font-family: inherit; cursor: pointer; }
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: clamp(1rem, 2.5vh, 2rem) auto;
+  margin: clamp(0.75rem, 2vh, 1.5rem) auto;
   width: 100%;
   max-width: 520px;
   align-self: center;
 }
 .home-hero-single img {
   width: 100%;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 21 / 9;
   height: auto;
   object-fit: cover;
   display: block;
   border: 1px solid var(--rule-strong);
-  padding: 0.55rem 0.55rem 1.80rem;
+  padding: 0.45rem 0.45rem 1.15rem;
   background: var(--paper);
   box-shadow: 0 4px 18px rgba(12, 12, 12, 0.1);
   transform: rotate(-1.5deg);
@@ -429,7 +429,7 @@ button { font-family: inherit; cursor: pointer; }
 
 @media (min-width: 768px) {
   .home-hero-single {
-    max-width: 620px;
+    max-width: 720px;
   }
 }
 
