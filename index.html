@@ -29,8 +29,29 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="jukebox.css" />
 </head>
 <body data-route="home">
+
+<!-- ===================== JUKEBOX FLOTANTE ===================== -->
+<div id="jukebox" class="jukebox" aria-label="Reproductor de música">
+  <div class="jb-inner">
+    <button class="jb-btn" id="jbPlay" aria-label="Reproducir" title="Reproducir">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><polygon points="6,3 20,12 6,21"/></svg>
+    </button>
+    <button class="jb-btn" id="jbStop" aria-label="Detener" title="Detener">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><rect x="4" y="4" width="16" height="16" rx="2"/></svg>
+    </button>
+    <button class="jb-btn" id="jbSkip" aria-label="Siguiente" title="Siguiente">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><polygon points="4,3 16,12 4,21"/><rect x="17" y="3" width="3" height="18"/></svg>
+    </button>
+    <div class="jb-info">
+      <span class="jb-track" id="jbTrack">PRIETTO · JUKEBOX</span>
+    </div>
+    <a class="jb-bc-link" id="jbLink" href="https://prietto.bandcamp.com" target="_blank" rel="noopener" title="Escuchar en Bandcamp">BC</a>
+  </div>
+  <div id="jbIframeWrap" class="jb-iframe-wrap" aria-hidden="true"></div>
+</div>
 
 <!-- ===================== SHARED TOP BAR ===================== -->
 <header class="topbar">
@@ -82,16 +103,8 @@
         </a></li>
       </ul>
 
-      <div class="home-hero-stack reveal">
-        <div class="hero-photo photo-1">
-          <img src="assets/home-bg.jpg" alt="Maxi Prietto" />
-        </div>
-        <div class="hero-photo photo-2">
-          <img src="assets/home-bg-2.jpg" alt="Maxi Prietto" />
-        </div>
-        <div class="hero-photo photo-3">
-          <img src="assets/home-bg-3.jpg" alt="Maxi Prietto" />
-        </div>
+      <div class="home-hero-single reveal">
+        <img src="assets/home-bg-3.jpg" alt="Maxi Prietto" />
       </div>
 
       <div class="sheet-foot">
@@ -366,5 +379,6 @@
 </script>
 
 <script src="app.js"></script>
+<script src="jukebox.js"></script>
 </body>
 </html>

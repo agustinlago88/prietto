@@ -1,0 +1,142 @@
+/* =========================================================
+   JUKEBOX — Barra flotante minimalista (Bandcamp embed)
+   ========================================================= */
+
+.jukebox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background: var(--ink, #0c0c0c);
+  color: var(--paper, #ffffff);
+  font-family: var(--mono, "Space Mono", "Courier New", monospace);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.jb-inner {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 clamp(0.75rem, 2vw, 1.5rem);
+  height: 36px;
+}
+
+/* control buttons */
+.jb-btn {
+  background: none;
+  border: none;
+  color: inherit;
+  padding: 4px 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.7;
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+.jb-btn:hover {
+  opacity: 1;
+  transform: scale(1.15);
+}
+.jb-btn:active {
+  transform: scale(0.95);
+}
+.jb-btn.is-active {
+  opacity: 1;
+}
+
+/* track info */
+.jb-info {
+  flex: 1;
+  overflow: hidden;
+  padding: 0 0.75rem;
+  min-width: 0;
+}
+.jb-track {
+  display: block;
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  opacity: 0.75;
+}
+
+/* Bandcamp link badge */
+.jb-bc-link {
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 3px;
+  padding: 2px 6px;
+  opacity: 0.5;
+  transition: opacity 180ms ease, border-color 180ms ease;
+  flex-shrink: 0;
+}
+.jb-bc-link:hover {
+  opacity: 1;
+  border-color: rgba(255,255,255,0.7);
+}
+
+/* hidden iframe container for audio */
+.jb-iframe-wrap {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* pulse animation for playing state */
+@keyframes jb-pulse {
+  0%, 100% { opacity: 0.75; }
+  50% { opacity: 1; }
+}
+.jukebox.is-playing .jb-track {
+  animation: jb-pulse 2.4s ease-in-out infinite;
+}
+
+/* ─── RESPONSIVE ─── */
+
+/* push body content down to make room for the jukebox bar */
+body {
+  padding-top: 36px;
+}
+
+/* small screens: tighter spacing */
+@media (max-width: 480px) {
+  .jb-inner {
+    height: 32px;
+    padding: 0 0.5rem;
+  }
+  .jb-btn {
+    padding: 3px 5px;
+  }
+  .jb-btn svg {
+    width: 13px;
+    height: 13px;
+  }
+  .jb-track {
+    font-size: 0.55rem;
+  }
+  .jb-bc-link {
+    display: none;
+  }
+  body {
+    padding-top: 32px;
+  }
+  .topbar {
+    top: 32px;
+  }
+}
