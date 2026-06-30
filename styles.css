@@ -405,8 +405,8 @@ button { font-family: inherit; cursor: pointer; }
   justify-content: center;
   align-items: center;
   margin: clamp(0.75rem, 2vh, 1.5rem) auto;
-  width: 100%;
-  max-width: 520px;
+  width: 98%;
+  max-width: 1080px;
   align-self: center;
 }
 .home-hero-single img {
@@ -429,7 +429,8 @@ button { font-family: inherit; cursor: pointer; }
 
 @media (min-width: 768px) {
   .home-hero-single {
-    max-width: 720px;
+    width: 98%;
+    max-width: 1080px;
   }
 }
 
