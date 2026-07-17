@@ -720,6 +720,37 @@ body[data-route="home"] .pager { display: none; }
   padding: 0.4rem;
   background: var(--paper);
 }
+.album .cover[data-booklet] {
+  cursor: pointer;
+  position: relative;
+  transition: transform var(--t-fast), border-color var(--t-fast);
+}
+.album .cover[data-booklet]:hover {
+  border-color: var(--ink);
+  transform: translateY(-2px);
+}
+.album .cover[data-booklet]::after {
+  content: "LETRAS / FICHA";
+  position: absolute;
+  bottom: 0.8rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(4px);
+  background: var(--ink);
+  color: var(--paper);
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  padding: 0.3em 0.7em;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--t-fast), transform var(--t-fast);
+  white-space: nowrap;
+  font-weight: 700;
+}
+.album .cover[data-booklet]:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
 .album .cover img {
   width: 100%;
   aspect-ratio: 1;
@@ -916,38 +947,8 @@ body[data-route="home"] .pager { display: none; }
 }
 
 /* =========================================================
-   ALBUM ACTIONS & BOOKLET MODAL
+   BOOKLET MODAL
    ========================================================= */
-.album-actions {
-  display: flex;
-  gap: 0.5rem;
-  margin-top: auto;
-  width: 100%;
-}
-.album-actions .btn-buy,
-.album-actions .btn-booklet {
-  flex: 1;
-  font-size: 0.62rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: var(--ink);
-  border: 1px solid var(--rule-strong);
-  padding: 0.55em 0.2rem;
-  text-align: center;
-  background: none;
-  cursor: pointer;
-  transition: background var(--t-fast), color var(--t-fast);
-  display: inline-block;
-  margin-top: 0;
-  font-family: var(--mono);
-}
-.album-actions .btn-buy:hover,
-.album-actions .btn-booklet:hover {
-  background: var(--ink);
-  color: var(--paper);
-}
-
 .booklet-modal {
   position: fixed;
   inset: 0;

@@ -9,9 +9,8 @@
     { id: "fechas",    label: "Fechas",      num: "01" },
     { id: "discos",    label: "Discografía", num: "02" },
     { id: "video",     label: "Vídeo",       num: "03" },
-    { id: "archivo",   label: "Archivo",     num: "04" },
-    { id: "biografia", label: "Bio",         num: "05" },
-    { id: "contacto",  label: "Contacto",    num: "06" }
+    { id: "biografia", label: "Bio",         num: "04" },
+    { id: "contacto",  label: "Contacto",    num: "05" }
   ];
 
   var body = document.body;
