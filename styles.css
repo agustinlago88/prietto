@@ -400,37 +400,25 @@ button { font-family: inherit; cursor: pointer; }
 
 /* home hero – single photo */
 .home-hero-single {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: clamp(0.75rem, 2vh, 1.5rem) auto;
-  width: 98%;
-  max-width: 1080px;
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: clamp(0.75rem, 2vh, 1.5rem) 0;
   align-self: center;
+  overflow: hidden;
 }
 .home-hero-single img {
   width: 100%;
-  aspect-ratio: 21 / 9;
+  aspect-ratio: 16 / 9;
   height: auto;
   object-fit: cover;
   display: block;
-  border: 1px solid var(--rule-strong);
-  padding: 0.45rem 0.45rem 1.15rem;
-  background: var(--paper);
-  box-shadow: 0 4px 18px rgba(12, 12, 12, 0.1);
-  transform: rotate(-1.5deg);
-  transition: transform var(--t-mid);
-}
-.home-hero-single img:hover {
-  transform: rotate(0deg) scale(1.02);
-  box-shadow: 0 8px 30px rgba(12, 12, 12, 0.16);
 }
 
 @media (min-width: 768px) {
-  .home-hero-single {
-    width: 98%;
-    max-width: 1080px;
+  .home-hero-single img {
+    aspect-ratio: 21 / 9;
   }
 }
 
@@ -927,3 +915,199 @@ body[data-route="home"] .pager { display: none; }
   .topbar { grid-template-columns: 1fr auto; }
   .topbar .tb-mark { display: none; }
 }
+
+/* =========================================================
+   ALBUM ACTIONS & BOOKLET MODAL
+   ========================================================= */
+.album-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: auto;
+  width: 100%;
+}
+.album-actions .btn-buy,
+.album-actions .btn-booklet {
+  flex: 1;
+  font-size: 0.62rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--ink);
+  border: 1px solid var(--rule-strong);
+  padding: 0.55em 0.2rem;
+  text-align: center;
+  background: none;
+  cursor: pointer;
+  transition: background var(--t-fast), color var(--t-fast);
+  display: inline-block;
+  margin-top: 0;
+  font-family: var(--mono);
+}
+.album-actions .btn-buy:hover,
+.album-actions .btn-booklet:hover {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.booklet-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--t-mid);
+}
+.booklet-modal.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+.bm-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(12, 12, 12, 0.7);
+  backdrop-filter: blur(4px);
+}
+.bm-content {
+  position: relative;
+  background: var(--paper);
+  color: var(--ink);
+  border: 1px solid var(--rule-strong);
+  width: 100%;
+  max-width: 900px;
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 15px 50px rgba(12, 12, 12, 0.3);
+  animation: modalScale 380ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+@keyframes modalScale {
+  from { transform: scale(0.95) translateY(10px); }
+  to { transform: scale(1) translateY(0); }
+}
+.bm-close {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  background: none;
+  border: none;
+  font-size: 2.2rem;
+  line-height: 1;
+  color: var(--ink);
+  cursor: pointer;
+  z-index: 10;
+  padding: 0;
+  transition: opacity var(--t-fast);
+}
+.bm-close:hover {
+  opacity: 0.6;
+}
+.bm-body {
+  padding: 2.5rem var(--pad);
+  overflow-y: auto;
+  flex: 1;
+}
+.bm-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.2rem;
+  line-height: 1.1;
+}
+.bm-subtitle {
+  font-size: 0.74rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-45);
+  margin: 0 0 2rem;
+}
+.bm-section {
+  margin-bottom: 2.5rem;
+  border-top: 1px solid var(--rule);
+  padding-top: 1.5rem;
+}
+.bm-sec-title {
+  font-size: 0.82rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-45);
+  margin: 0 0 1.2rem;
+  font-weight: 700;
+}
+.bm-credits p {
+  margin: 0 0 0.5rem;
+  font-size: 0.9rem;
+}
+.bm-credits ul {
+  margin: 0 0 1rem 1.2rem;
+  padding: 0;
+}
+.bm-credits li {
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+}
+.bm-quote {
+  border-left: 2px solid var(--rule-strong);
+  margin: 1.5rem 0 0;
+  padding: 0.5rem 0 0.5rem 1.2rem;
+}
+.bm-quote p {
+  font-style: italic;
+  margin: 0 0 0.5rem;
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+.bm-quote cite {
+  font-size: 0.74rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-45);
+  font-weight: 700;
+  display: block;
+}
+
+/* Gallery inside modal */
+.bm-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+.bm-gallery-item {
+  border: 1px solid var(--rule-strong);
+  padding: 0.45rem;
+  background: var(--paper);
+  margin: 0;
+}
+.bm-gallery-item img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  display: block;
+}
+
+/* Lyrics inside modal */
+.bm-lyrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 2rem;
+  align-items: start;
+}
+.bm-song {
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+.bm-song h4 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  margin: 0 0 0.8rem;
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 0.3rem;
+}
+.bm-song p {
+  margin: 0;
+}
+

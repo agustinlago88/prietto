@@ -161,5 +161,37 @@
     reveals.forEach(function (el) { el.classList.add("is-in"); });
   }
 
+  /* ---------- Modales de Letras y Ficha (Booklets) ---------- */
+  document.querySelectorAll("[data-booklet]").forEach(function (btn) {
+    var modalId = btn.getAttribute("data-booklet");
+    var modal = document.getElementById(modalId);
+    if (!modal) return;
+    
+    btn.addEventListener("click", function () {
+      modal.classList.add("is-open");
+      modal.setAttribute("aria-hidden", "false");
+      document.body.style.overflow = "hidden";
+    });
+
+    var closeBtn = modal.querySelector(".bm-close");
+    var overlay = modal.querySelector(".bm-overlay");
+
+    function closeModal() {
+      modal.classList.remove("is-open");
+      modal.setAttribute("aria-hidden", "true");
+      document.body.style.overflow = "";
+    }
+
+    if (closeBtn) closeBtn.addEventListener("click", closeModal);
+    if (overlay) overlay.addEventListener("click", closeModal);
+
+    // Also close on Escape key if open
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && modal.classList.contains("is-open")) {
+        closeModal();
+      }
+    });
+  });
+
   render();
 })();
