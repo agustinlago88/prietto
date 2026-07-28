@@ -730,7 +730,7 @@ body[data-route="home"] .pager { display: none; }
   transform: translateY(-2px);
 }
 .album .cover[data-booklet]::after {
-  content: "LETRAS / FICHA";
+  content: "FICHA TÉCNICA";
   position: absolute;
   bottom: 0.8rem;
   left: 50%;
@@ -759,21 +759,42 @@ body[data-route="home"] .pager { display: none; }
 .album .meta-line { font-size: 0.64rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-45); }
 .album .a-title { font-size: 1.02rem; font-weight: 700; letter-spacing: -0.01em; line-height: 1.1; }
 .album .a-desc { font-size: 0.74rem; color: var(--ink-70); line-height: 1.5; }
+.album-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: auto;
+  width: 100%;
+}
+.album-actions .btn-buy,
+.album-actions .btn-booklet,
 .album .btn-buy {
-  display: inline-block;
-  align-self: flex-start;
-  font-size: 0.65rem;
-  letter-spacing: 0.15em;
+  font-size: 0.62rem;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   font-weight: 700;
   color: var(--ink);
   border: 1px solid var(--rule-strong);
-  padding: 0.45em 0.9em;
+  padding: 0.55em 0.4rem;
   text-align: center;
-  text-decoration: none;
+  background: none;
+  cursor: pointer;
   transition: background var(--t-fast), color var(--t-fast);
+  display: inline-block;
   margin-top: auto;
+  font-family: var(--mono);
+  text-decoration: none;
 }
+.album-actions .btn-buy,
+.album-actions .btn-booklet {
+  flex: 1;
+  margin-top: 0;
+}
+.album .btn-buy {
+  align-self: flex-start;
+  padding: 0.45em 0.9em;
+}
+.album-actions .btn-buy:hover,
+.album-actions .btn-booklet:hover,
 .album .btn-buy:hover {
   background: var(--ink);
   color: var(--paper);

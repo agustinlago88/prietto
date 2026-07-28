@@ -237,13 +237,16 @@
       <div class="disco" id="discoGrid">
         <!-- SOLISTA -->
         <article class="album" data-cat="solista">
-          <div class="cover" data-booklet="bookletModal" title="Ver Letras / Ficha">
+          <div class="cover" data-booklet="fichaModal" title="Ver Ficha Técnica">
             <img src="assets/album-prietto.jpg" alt="PRIETTO (2015)" loading="lazy"/>
           </div>
           <span class="meta-line">Solista · 2015</span>
           <span class="a-title">PRIETTO</span>
           <span class="a-desc">Estás Lejos, Error Blues, Vívelo.</span>
-          <a class="btn-buy" href="https://open.spotify.com/album/7dfcnLFaM1MXsBKTp5FQVA" target="_blank" rel="noopener">Spotify</a>
+          <div class="album-actions">
+            <a class="btn-buy" href="https://open.spotify.com/album/7dfcnLFaM1MXsBKTp5FQVA" target="_blank" rel="noopener">Spotify</a>
+            <button type="button" class="btn-booklet" data-booklet="letrasModal">Letras</button>
+          </div>
         </article>
         <article class="album" data-cat="solista"><div class="cover"><img src="assets/album-lluvia.jpg" alt="Lluvia en la Cumbrecita (2019)" loading="lazy"/></div><span class="meta-line">Solista · 2019</span><span class="a-title">Lluvia en la Cumbrecita</span><span class="a-desc">Canciones de ruta, lluvia y montaña.</span><a class="btn-buy" href="https://open.spotify.com/album/6tGg0qNv0PRtFISCO0YVzQ" target="_blank" rel="noopener">Spotify</a></article>
         <article class="album" data-cat="solista"><div class="cover"><img src="assets/album-blanco-negro.jpg" alt="Blanco y Negro (2020)" loading="lazy"/></div><span class="meta-line">Solista · 2020</span><span class="a-title">Blanco y Negro</span><span class="a-desc">Canciones grabadas durante el encierro.</span><a class="btn-buy" href="https://open.spotify.com/album/02dlo3Xv0GojfPBUbcPkFY" target="_blank" rel="noopener">Spotify</a></article>
@@ -383,14 +386,14 @@
 [{"@context":"https://schema.org","@type":"MusicEvent","name":"Los Espíritus en vivo — San Luis","startDate":"2026-06-04","location":{"@type":"Place","name":"Comuna","address":{"@type":"PostalAddress","addressLocality":"San Luis","addressCountry":"AR"}},"performer":{"@type":"MusicGroup","name":"Los Espíritus"},"offers":{"@type":"Offer","url":"https://alpogo.com/evento/los-espiritus-en-san-luis-25822","availability":"https://schema.org/InStock"}},{"@context":"https://schema.org","@type":"MusicEvent","name":"Los Espíritus en vivo — San Juan","startDate":"2026-06-05","location":{"@type":"Place","name":"Mamadera Bar","address":{"@type":"PostalAddress","addressLocality":"San Juan","addressCountry":"AR"}},"performer":{"@type":"MusicGroup","name":"Los Espíritus"},"offers":{"@type":"Offer","url":"https://los-espiritus.com/eventos/mamadera-bar-san-juan-%F0%9F%87%A6%F0%9F%87%B7/","availability":"https://schema.org/InStock"}},{"@context":"https://schema.org","@type":"MusicEvent","name":"Los Espíritus en vivo — Mendoza","startDate":"2026-06-06","location":{"@type":"Place","name":"Nido / Espacio 23 Ríos","address":{"@type":"PostalAddress","addressLocality":"Mendoza","addressCountry":"AR"}},"performer":{"@type":"MusicGroup","name":"Los Espíritus"},"offers":{"@type":"Offer","url":"https://www.entradaweb.com.ar/evento/4cc919e8/step/1","availability":"https://schema.org/InStock"}},{"@context":"https://schema.org","@type":"MusicEvent","name":"Los Espíritus en vivo — Rosario","startDate":"2026-06-12","location":{"@type":"Place","name":"Casa Brava","address":{"@type":"PostalAddress","addressLocality":"Rosario","addressCountry":"AR"}},"performer":{"@type":"MusicGroup","name":"Los Espíritus"},"offers":{"@type":"Offer","url":"https://www.ticketsbravos.com/evento/los-espiritus-en-casa-brava-20412","availability":"https://schema.org/InStock"}},{"@context":"https://schema.org","@type":"MusicEvent","name":"Los Espíritus en vivo — Quilmes","startDate":"2026-06-19","location":{"@type":"Place","name":"Club Re","address":{"@type":"PostalAddress","addressLocality":"Quilmes","addressCountry":"AR"}},"performer":{"@type":"MusicGroup","name":"Los Espíritus"},"offers":{"@type":"Offer","url":"https://livepass.com.ar/events/los-espiritus-en-club-re","availability":"https://schema.org/InStock"}},{"@context":"https://schema.org","@type":"MusicEvent","name":"Los Espíritus en vivo — Buenos Aires","startDate":"2026-11-22","location":{"@type":"Place","name":"The Roxy Live","address":{"@type":"PostalAddress","addressLocality":"Buenos Aires","addressCountry":"AR"}},"performer":{"@type":"MusicGroup","name":"Los Espíritus"},"offers":{"@type":"Offer","url":"https://www.allaccess.com.ar/event/los-espiritus","availability":"https://schema.org/InStock"}}]
 </script>
 
-<!-- Modal Booklet Prietto 2015 -->
-<div id="bookletModal" class="booklet-modal" aria-hidden="true" role="dialog" aria-labelledby="bookletTitle">
+<!-- Modal Ficha Técnica Prietto 2015 -->
+<div id="fichaModal" class="booklet-modal" aria-hidden="true" role="dialog" aria-labelledby="fichaTitle">
   <div class="bm-overlay"></div>
   <div class="bm-content">
     <button class="bm-close" aria-label="Cerrar">&times;</button>
     <div class="bm-body">
-      <h2 id="bookletTitle" class="bm-title">PRIETTO (2015)</h2>
-      <p class="bm-subtitle">Ficha Técnica, Fotos de Grabación y Letras</p>
+      <h2 id="fichaTitle" class="bm-title">PRIETTO (2015)</h2>
+      <p class="bm-subtitle">Ficha Técnica y Fotos de Grabación</p>
       
       <!-- Ficha Técnica -->
       <section class="bm-section">
@@ -432,10 +435,20 @@
           <figure class="bm-gallery-item"><img src="assets/prietto-2015/rec-5.jpg" alt="Grabación Prietto 2015 - Foto 5" loading="lazy" /></figure>
         </div>
       </section>
+    </div>
+  </div>
+</div>
 
-      <!-- Letras -->
+<!-- Modal Letras Prietto 2015 -->
+<div id="letrasModal" class="booklet-modal" aria-hidden="true" role="dialog" aria-labelledby="letrasTitle">
+  <div class="bm-overlay"></div>
+  <div class="bm-content">
+    <button class="bm-close" aria-label="Cerrar">&times;</button>
+    <div class="bm-body">
+      <h2 id="letrasTitle" class="bm-title">PRIETTO (2015)</h2>
+      <p class="bm-subtitle">Letras de Canciones</p>
+
       <section class="bm-section">
-        <h3 class="bm-sec-title">Letras</h3>
         <div class="bm-lyrics-grid">
           
           <div class="bm-song">
@@ -500,7 +513,6 @@
 
         </div>
       </section>
-      
     </div>
   </div>
 </div>
