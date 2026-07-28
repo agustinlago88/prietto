@@ -8,9 +8,10 @@
     { id: "home",      label: "Índice",      num: "00" },
     { id: "fechas",    label: "Fechas",      num: "01" },
     { id: "discos",    label: "Discografía", num: "02" },
-    { id: "video",     label: "Vídeo",       num: "03" },
-    { id: "biografia", label: "Bio",         num: "04" },
-    { id: "contacto",  label: "Contacto",    num: "05" }
+    { id: "letras",    label: "Letras",      num: "03" },
+    { id: "video",     label: "Vídeo",       num: "04" },
+    { id: "biografia", label: "Bio",         num: "05" },
+    { id: "contacto",  label: "Contacto",    num: "06" }
   ];
 
   var body = document.body;
@@ -20,9 +21,11 @@
   var pgNext = document.getElementById("pgNext");
 
   function routeFromHash() {
-    var h = (location.hash || "").replace(/^#\/?/, "").trim();
+    var raw = (location.hash || "").replace(/^#\/?/, "").trim();
+    if (raw.indexOf("letras") === 0) return "letras";
+    var mainRoute = raw.split("/")[0].split("#")[0];
     for (var i = 0; i < ROUTES.length; i++) {
-      if (ROUTES[i].id === h) return h;
+      if (ROUTES[i].id === mainRoute) return mainRoute;
     }
     return "home";
   }
@@ -33,7 +36,6 @@
   }
 
   function setPager(idx) {
-    // Sections are 1..6. prev/next wrap through the section list; ends go to Índice.
     var prev = idx <= 1 ? ROUTES[0] : ROUTES[idx - 1];
     var next = idx >= ROUTES.length - 1 ? ROUTES[0] : ROUTES[idx + 1];
 
@@ -61,8 +63,29 @@
       setPager(idx);
     }
 
-    // top of the freshly-shown view
-    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+    var raw = (location.hash || "").replace(/^#\/?/, "").trim();
+    var anchorPart = "";
+    if (raw.indexOf("letras/") === 0) {
+      anchorPart = raw.substring(7);
+    } else if (raw.indexOf("#") !== -1) {
+      anchorPart = raw.split("#")[1];
+    } else if (raw.indexOf("letras-") === 0) {
+      anchorPart = raw;
+    }
+
+    if (anchorPart) {
+      setTimeout(function () {
+        var el = document.getElementById(anchorPart);
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth", block: "start" });
+        } else {
+          window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+        }
+      }, 80);
+    } else {
+      window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+    }
+
     document.title = id === "home"
       ? "Prietto — Cosmos, Blues y Canción"
       : "Prietto — " + meta.label;
