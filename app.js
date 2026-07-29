@@ -183,36 +183,55 @@
     reveals.forEach(function (el) { el.classList.add("is-in"); });
   }
 
-  /* ---------- Modales de Letras y Ficha (Booklets) ---------- */
-  document.querySelectorAll("[data-booklet]").forEach(function (btn) {
-    var modalId = btn.getAttribute("data-booklet");
-    var modal = document.getElementById(modalId);
-    if (!modal) return;
-    
-    btn.addEventListener("click", function () {
-      modal.classList.add("is-open");
-      modal.setAttribute("aria-hidden", "false");
-      document.body.style.overflow = "hidden";
-    });
-
-    var closeBtn = modal.querySelector(".bm-close");
-    var overlay = modal.querySelector(".bm-overlay");
-
-    function closeModal() {
-      modal.classList.remove("is-open");
-      modal.setAttribute("aria-hidden", "true");
-      document.body.style.overflow = "";
+  /* ---------- Click en Tapa de Disco -> Cargar Spotify Embed ---------- */
+  document.addEventListener("click", function (e) {
+    var cover = e.target.closest(".cover[data-spotify-embed]");
+    if (cover) {
+      var embedUrl = cover.getAttribute("data-spotify-embed");
+      var iframe = document.getElementById("spotifyIframe");
+      var wrap = document.querySelector(".spotify-wrap");
+      if (iframe && embedUrl) {
+        iframe.src = embedUrl;
+        if (wrap) {
+          wrap.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }
+      return;
     }
 
-    if (closeBtn) closeBtn.addEventListener("click", closeModal);
-    if (overlay) overlay.addEventListener("click", closeModal);
-
-    // Also close on Escape key if open
-    document.addEventListener("keydown", function (e) {
-      if (e.key === "Escape" && modal.classList.contains("is-open")) {
-        closeModal();
+    var bookletBtn = e.target.closest("[data-booklet]");
+    if (bookletBtn) {
+      var modalId = bookletBtn.getAttribute("data-booklet");
+      var modal = document.getElementById(modalId);
+      if (modal) {
+        modal.classList.add("is-open");
+        modal.setAttribute("aria-hidden", "false");
+        document.body.style.overflow = "hidden";
       }
-    });
+      return;
+    }
+
+    var closeBtn = e.target.closest(".bm-close");
+    var overlayBtn = e.target.closest(".bm-overlay");
+    if (closeBtn || overlayBtn) {
+      var openModal = document.querySelector(".booklet-modal.is-open");
+      if (openModal) {
+        openModal.classList.remove("is-open");
+        openModal.setAttribute("aria-hidden", "true");
+        document.body.style.overflow = "";
+      }
+    }
+  });
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") {
+      var openModal = document.querySelector(".booklet-modal.is-open");
+      if (openModal) {
+        openModal.classList.remove("is-open");
+        openModal.setAttribute("aria-hidden", "true");
+        document.body.style.overflow = "";
+      }
+    }
   });
 
   render();
