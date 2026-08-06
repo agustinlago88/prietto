@@ -8,6 +8,7 @@
     { id: "home",      label: "Índice",      num: "00" },
     { id: "fechas",    label: "Fechas",      num: "01" },
     { id: "discos",    label: "Discografía", num: "02" },
+    { id: "release",   label: "Disco",       num: "02" },
     { id: "letras",    label: "Letras",      num: "03" },
     { id: "video",     label: "Vídeo",       num: "04" },
     { id: "biografia", label: "Bio",         num: "05" },
@@ -22,6 +23,7 @@
 
   function routeFromHash() {
     var raw = (location.hash || "").replace(/^#\/?/, "").trim();
+    if (raw.indexOf("disco/") === 0 || raw.indexOf("release/") === 0 || raw.indexOf("disco") === 0 || raw.indexOf("release") === 0) return "release";
     if (raw.indexOf("letras") === 0) return "letras";
     var mainRoute = raw.split("/")[0].split("#")[0];
     for (var i = 0; i < ROUTES.length; i++) {
@@ -48,6 +50,127 @@
       (next.id === "home" ? "Índice →" : next.label + " →");
   }
 
+
+  function renderReleasePage() {
+    var raw = (location.hash || "").replace(/^#\/?/, "").trim();
+    var parts = raw.split("/");
+    var key = parts.length > 1 ? parts[1].split("#")[0] : "";
+    
+    var releases = window.PRIETTO_RELEASES || [];
+    if (!releases.length) return;
+    
+    var relIdx = -1;
+    for (var i = 0; i < releases.length; i++) {
+      if (releases[i].key === key || releases[i].key.toLowerCase() === key.toLowerCase()) {
+        relIdx = i;
+        break;
+      }
+    }
+    if (relIdx === -1) relIdx = 0;
+    
+    var item = releases[relIdx];
+    
+    var relCatBadge = document.getElementById("relCategoryBadge");
+    var relYearBadge = document.getElementById("relYearBadge");
+    var relMetaLine = document.getElementById("relMetaLine");
+    var relTitle = document.getElementById("relTitle");
+    var relArtist = document.getElementById("relArtist");
+    var relDesc = document.getElementById("relDesc");
+    var relCover = document.getElementById("relCover");
+    var relSpotifyIframe = document.getElementById("relSpotifyIframe");
+    var relSpotifyExternalBtn = document.getElementById("relSpotifyExternalBtn");
+    var relCreditsBody = document.getElementById("relCreditsBody");
+    var relGalleryGrid = document.getElementById("relGalleryGrid");
+    var relSongsContainer = document.getElementById("relSongsContainer");
+    var relPrevBtn = document.getElementById("relPrevBtn");
+    var relNextBtn = document.getElementById("relNextBtn");
+    
+    if (relCatBadge) relCatBadge.textContent = item.cat || "SOLISTA";
+    if (relYearBadge) relYearBadge.textContent = item.year || "";
+    if (relMetaLine) relMetaLine.textContent = (item.year || "") + " · " + (item.cat || "REGISTRO DE OBRA");
+    if (relTitle) relTitle.textContent = item.title;
+    
+    var artistName = "Maxi Prietto";
+    if (item.cat === "LOS ESPÍRITUS") artistName = "Los Espíritus · Maxi Prietto";
+    else if (item.cat === "COSMOS") artistName = "Prietto Viaja al Cosmos con Mariano";
+    if (relArtist) relArtist.textContent = artistName;
+    
+    if (relDesc) relDesc.textContent = item.desc || "";
+    if (relCover) {
+      relCover.src = item.cover;
+      relCover.alt = item.title;
+    }
+    
+    if (relSpotifyIframe && item.spotify_embed) {
+      relSpotifyIframe.src = item.spotify_embed;
+    }
+    
+    if (relSpotifyExternalBtn && item.spotify_embed) {
+      var cleanUrl = item.spotify_embed.replace("/embed/", "/").split("?")[0];
+      relSpotifyExternalBtn.href = cleanUrl;
+    }
+    
+    // Credits
+    var creditsCard = document.getElementById("creditos");
+    if (creditsCard) {
+      if (item.credits_html && item.credits_html.trim()) {
+        creditsCard.style.display = "block";
+        if (relCreditsBody) relCreditsBody.innerHTML = item.credits_html;
+      } else {
+        creditsCard.style.display = "none";
+      }
+    }
+    
+    // Gallery
+    var galleryCard = document.getElementById("galeria");
+    if (galleryCard) {
+      if (item.photos && item.photos.length) {
+        galleryCard.style.display = "block";
+        var photosHtml = item.photos.map(function (p) {
+          return '<figure class="release-gallery-item">' +
+            '<img src="' + p.src + '" alt="' + (p.alt || "") + '" loading="lazy"/>' +
+            '<figcaption>' + (p.caption || p.alt || "") + '</figcaption>' +
+          '</figure>';
+        }).join("");
+        if (relGalleryGrid) relGalleryGrid.innerHTML = photosHtml;
+      } else {
+        galleryCard.style.display = "none";
+      }
+    }
+    
+    // Songs / Lyrics
+    var songsCard = document.getElementById("letras");
+    if (songsCard) {
+      if (item.songs && item.songs.length) {
+        songsCard.style.display = "block";
+        var songsHtml = item.songs.map(function (s) {
+          return '<div class="release-song-block">' +
+            '<h4>' + s.title + '</h4>' +
+            '<p>' + s.lines.join("<br>") + '</p>' +
+          '</div>';
+        }).join("");
+        if (relSongsContainer) relSongsContainer.innerHTML = songsHtml;
+      } else {
+        songsCard.style.display = "none";
+      }
+    }
+    
+    // Pager
+    var prevItem = releases[relIdx === 0 ? releases.length - 1 : relIdx - 1];
+    var nextItem = releases[relIdx === releases.length - 1 ? 0 : relIdx + 1];
+    
+    if (relPrevBtn) {
+      relPrevBtn.href = "#/disco/" + prevItem.key;
+      relPrevBtn.textContent = "← " + prevItem.title;
+    }
+    if (relNextBtn) {
+      relNextBtn.href = "#/disco/" + nextItem.key;
+      relNextBtn.textContent = nextItem.title + " →";
+    }
+    
+    document.title = "Prietto — " + item.title + " (" + item.year + ")";
+  }
+
   function render() {
     var id = routeFromHash();
     var idx = indexOfRoute(id);
@@ -58,7 +181,11 @@
     });
 
     body.setAttribute("data-route", id);
-    if (id !== "home") {
+    if (id === "release") {
+      renderReleasePage();
+      tbWhere.textContent = "Disco";
+      setPager(idx);
+    } else if (id !== "home") {
       tbWhere.textContent = meta.label;
       setPager(idx);
     }

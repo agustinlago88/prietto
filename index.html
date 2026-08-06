@@ -257,6 +257,79 @@
 
       </section>
 
+  <!-- ===================== RELEASE DETAIL VIEW (NICK CAVE STYLE) ===================== -->
+  <section class="view" id="release" data-screen-label="Disco">
+    <div class="section">
+      <div class="release-top-nav">
+        <a class="release-back-link" href="#/discos">← VOLVER A DISCOGRAFÍA</a>
+        <div class="release-breadcrumbs">
+          <span id="relCategoryBadge" class="label num">SOLISTA</span>
+          <span id="relYearBadge" class="meta-line">2015</span>
+        </div>
+      </div>
+
+      <!-- Release Hero Section -->
+      <div class="release-hero">
+        <div class="release-cover-col">
+          <div class="release-cover-frame">
+            <img id="relCover" src="assets/album-prietto.jpg" alt="Portada de Álbum" />
+          </div>
+        </div>
+        <div class="release-info-col">
+          <span id="relMetaLine" class="meta-line">2015 · ÁLBUM DE ESTUDIO</span>
+          <h1 id="relTitle" class="release-title">PRIETTO</h1>
+          <p id="relArtist" class="release-artist">Maxi Prietto</p>
+          <p id="relDesc" class="release-desc">Prietto de manera íntegramente analógica en cinta.</p>
+
+          <!-- Embedded Spotify Player for this exact release -->
+          <div class="release-spotify-container">
+            <iframe id="relSpotifyIframe" src="https://open.spotify.com/embed/album/7dfcnLFaM1MXsBKTp5FQVA?utm_source=generator&amp;theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          </div>
+
+          <div class="release-actions">
+            <a id="relSpotifyExternalBtn" class="btn-release-action spotify" href="https://open.spotify.com" target="_blank" rel="noopener">🟢 Abrir en Spotify</a>
+            <a class="btn-release-action" href="#letras">📜 Ver Letras del Disco</a>
+            <a class="btn-release-action" href="#creditos">📋 Ficha Técnica</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Integrated Release Details Tabs / Blocks -->
+      <div class="release-sections">
+        <!-- Ficha Técnica & Créditos -->
+        <article class="release-card" id="creditos">
+          <h3 class="release-card-title">Ficha Técnica &amp; Créditos de Grabación</h3>
+          <div id="relCreditsBody" class="release-card-body credits-body">
+            <!-- Populated dynamically -->
+          </div>
+        </article>
+
+        <!-- Galería de Fotos / Sesión -->
+        <article class="release-card" id="galeria">
+          <h3 class="release-card-title">Galería de Sesión &amp; Fotos</h3>
+          <div id="relGalleryGrid" class="release-gallery-grid">
+            <!-- Populated dynamically -->
+          </div>
+        </article>
+
+        <!-- Canicionero / Letras del Disco -->
+        <article class="release-card" id="letras">
+          <h3 class="release-card-title">Repertorio &amp; Letras de Canciones</h3>
+          <div id="relSongsContainer" class="release-songs-container">
+            <!-- Populated dynamically -->
+          </div>
+        </article>
+      </div>
+
+      <!-- Release Bottom Pager -->
+      <div class="release-footer-pager">
+        <a id="relPrevBtn" class="rel-pager-btn prev" href="#/discos">← Disco Anterior</a>
+        <a class="rel-pager-btn top" href="#release" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">Volver arriba ↑</a>
+        <a id="relNextBtn" class="rel-pager-btn next" href="#/discos">Disco Siguiente →</a>
+      </div>
+    </div>
+  </section>
+
     </div>
 
   </section>
@@ -475,445 +548,513 @@
 
       <div class="disco" id="discoGrid">
 
-                <article class="album" data-cat="solista">
-          <div class="cover" data-spotify-embed="https://open.spotify.com/embed/album/7GnSVuVpmKbt6ZrS2dqHiy?utm_source=generator&amp;theme=0" title="Escuchar en Spotify">
+                        <article class="album" data-cat="solista">
+          <a class="cover" href="#/disco/prietto-2002" title="Ver Prietto 2002">
             <img src="assets/album-prietto-2002.jpg" alt="Prietto 2002 (2002)" loading="lazy"/>
-          </div>
+          </a>
           <span class="meta-line">SOLISTA · 2002</span>
-          <span class="a-title">Prietto 2002</span>
+          <a class="a-title-link" href="#/disco/prietto-2002">
+            <span class="a-title">Prietto 2002</span>
+          </a>
           <span class="a-desc">La Noche de Verano, Pies en la arena, Los brujos del lugar.</span>
           <div class="album-actions">
-            <button type="button" class="btn-booklet" data-booklet="ficha-prietto-2002">Ficha Técnica</button>
-            <a class="btn-booklet" href="#/letras/letras-prietto-2002">Letras</a>
+            <a class="btn-booklet" href="#/disco/prietto-2002">Ver Disco &amp; Ficha</a>
+            <a class="btn-booklet" href="#/disco/prietto-2002#letras">Letras</a>
           </div>
         </article>
 
-                <article class="album" data-cat="solista">
-          <div class="cover" data-spotify-embed="https://open.spotify.com/embed/album/0bh0Try1eMw42AG1rQTpaX?utm_source=generator&amp;theme=0" title="Escuchar en Spotify">
+                        <article class="album" data-cat="solista">
+          <a class="cover" href="#/disco/ciruja-2007" title="Ver El ciruja y los rayos solares">
             <img src="assets/album-ciruja-2007.jpg" alt="El ciruja y los rayos solares (2007)" loading="lazy"/>
-          </div>
+          </a>
           <span class="meta-line">SOLISTA · 2007</span>
-          <span class="a-title">El ciruja y los rayos solares</span>
+          <a class="a-title-link" href="#/disco/ciruja-2007">
+            <span class="a-title">El ciruja y los rayos solares</span>
+          </a>
           <span class="a-desc">A través de los soles, El ciruja, La estiba.</span>
           <div class="album-actions">
-            <button type="button" class="btn-booklet" data-booklet="ficha-ciruja-2007">Ficha Técnica</button>
-            <a class="btn-booklet" href="#/letras/letras-ciruja-2007">Letras</a>
+            <a class="btn-booklet" href="#/disco/ciruja-2007">Ver Disco &amp; Ficha</a>
+            <a class="btn-booklet" href="#/disco/ciruja-2007#letras">Letras</a>
           </div>
         </article>
 
-                <article class="album" data-cat="solista">
-          <div class="cover" data-spotify-embed="https://open.spotify.com/embed/album/2cPBaTnWJQL38YxdfhZ7vq?utm_source=generator&theme=0" title="Escuchar en Spotify">
+                        <article class="album" data-cat="solista">
+          <a class="cover" href="#/disco/casa-vol1-2009" title="Ver Casa Vol. 1">
             <img src="assets/album-casa-vol1.jpg" alt="Casa Vol. 1 (2009)" loading="lazy"/>
-          </div>
+          </a>
           <span class="meta-line">SOLISTA · 2009</span>
-          <span class="a-title">Casa Vol. 1</span>
+          <a class="a-title-link" href="#/disco/casa-vol1-2009">
+            <span class="a-title">Casa Vol. 1</span>
+          </a>
           <span class="a-desc">Ay, Corazón, Días de sol, Bozal, Varela.</span>
           <div class="album-actions">
-            <button type="button" class="btn-booklet" data-booklet="ficha-casa-vol1-2009">Ficha Técnica</button>
-            <a class="btn-booklet" href="#/letras/letras-casa-vol1-2009">Letras</a>
+            <a class="btn-booklet" href="#/disco/casa-vol1-2009">Ver Disco &amp; Ficha</a>
+            <a class="btn-booklet" href="#/disco/casa-vol1-2009#letras">Letras</a>
           </div>
         </article>
 
-                <article class="album" data-cat="solista">
-          <div class="cover" data-spotify-embed="https://open.spotify.com/embed/album/0DDeac1LdDLmpof09gfRd2?utm_source=generator&theme=0" title="Escuchar en Spotify">
+                        <article class="album" data-cat="solista">
+          <a class="cover" href="#/disco/casa-vol2-2010" title="Ver Casa Vol. 2: La Sartén Lavada y el Lado Crudo">
             <img src="assets/album-casa-vol2.jpg" alt="Casa Vol. 2: La Sartén Lavada y el Lado Crudo (2010)" loading="lazy"/>
-          </div>
+          </a>
           <span class="meta-line">SOLISTA · 2010</span>
-          <span class="a-title">Casa Vol. 2: La Sartén Lavada y el Lado Crudo</span>
+          <a class="a-title-link" href="#/disco/casa-vol2-2010">
+            <span class="a-title">Casa Vol. 2: La Sartén Lavada y el Lado Crudo</span>
+          </a>
           <span class="a-desc">Carlos dijo, 20 Hombres, Un hindú me miró la cara.</span>
           <div class="album-actions">
-            <button type="button" class="btn-booklet" data-booklet="ficha-casa-vol2-2010">Ficha Técnica</button>
-            <a class="btn-booklet" href="#/letras/letras-casa-vol2-2010">Letras</a>
+            <a class="btn-booklet" href="#/disco/casa-vol2-2010">Ver Disco &amp; Ficha</a>
+            <a class="btn-booklet" href="#/disco/casa-vol2-2010#letras">Letras</a>
           </div>
         </article>
 
-                <article class="album" data-cat="solista">
-          <div class="cover" data-spotify-embed="https://open.spotify.com/embed/album/0R2qlryfHvHzKDm5j4JuIe?utm_source=generator&theme=0" title="Escuchar en Spotify">
+                        <article class="album" data-cat="solista">
+          <a class="cover" href="#/disco/la-ultima-noche-2013" title="Ver La Última Noche">
             <img src="assets/album-la-ultima-noche.jpg" alt="La Última Noche (2013)" loading="lazy"/>
-          </div>
+          </a>
           <span class="meta-line">SOLISTA · 2013</span>
-          <span class="a-title">La Última Noche</span>
+          <a class="a-title-link" href="#/disco/la-ultima-noche-2013">
+            <span class="a-title">La Última Noche</span>
+          </a>
           <span class="a-desc">Historia de un amor, Sabor a mí, 20 años.</span>
           <div class="album-actions">
-            <button type="button" class="btn-booklet" data-booklet="ficha-la-ultima-noche-2013">Ficha Técnica</button>
-            <a class="btn-booklet" href="#/letras/letras-la-ultima-noche-2013">Letras</a>
+            <a class="btn-booklet" href="#/disco/la-ultima-noche-2013">Ver Disco &amp; Ficha</a>
+            <a class="btn-booklet" href="#/disco/la-ultima-noche-2013#letras">Letras</a>
           </div>
         </article>
 
-                <article class="album" data-cat="solista">
-          <div class="cover" data-spotify-embed="https://open.spotify.com/embed/album/7dfcnLFaM1MXsBKTp5FQVA?utm_source=generator&theme=0" title="Escuchar en Spotify">
+                        <article class="album" data-cat="solista">
+          <a class="cover" href="#/disco/prietto-2015" title="Ver PRIETTO">
             <img src="assets/album-prietto.jpg" alt="PRIETTO (2015)" loading="lazy"/>
-          </div>
+          </a>
           <span class="meta-line">SOLISTA · 2015</span>
-          <span class="a-title">PRIETTO</span>
+          <a class="a-title-link" href="#/disco/prietto-2015">
+            <span class="a-title">PRIETTO</span>
+          </a>
           <span class="a-desc">Estás Lejos, Error Blues, Vívelo.</span>
           <div class="album-actions">
-            <button type="button" class="btn-booklet" data-booklet="ficha-prietto-2015">Ficha Técnica</button>
-            <a class="btn-booklet" href="#/letras/letras-prietto-2015">Letras</a>
+            <a class="btn-booklet" href="#/disco/prietto-2015">Ver Disco &amp; Ficha</a>
+            <a class="btn-booklet" href="#/disco/prietto-2015#letras">Letras</a>
           </div>
         </article>
 
-                <article class="album" data-cat="solista">
-          <div class="cover" data-spotify-embed="https://open.spotify.com/embed/album/5sWQhZ8JO0R9tDy8xjagPq?utm_source=generator&amp;theme=0" title="Escuchar en Spotify">
+                        <article class="album" data-cat="solista">
+          <a class="cover" href="#/disco/pum-pum-pum-2017" title="Ver Pum Pum Pum">
             <img src="assets/album-pum-pum-pum.jpg" alt="Pum Pum Pum (2017)" loading="lazy"/>
-          </div>
+          </a>
           <span class="meta-line">SOLISTA · 2017</span>
-          <span class="a-title">Pum Pum Pum</span>
+          <a class="a-title-link" href="#/disco/pum-pum-pum-2017">
+            <span class="a-title">Pum Pum Pum</span>
+          </a>
           <span class="a-desc">Single compuesto y grabado con Zoom H4n.</span>
           <div class="album-actions">
-            <button type="button" class="btn-booklet" data-booklet="ficha-pum-pum-pum-2017">Ficha Técnica</button>
-            <a class="btn-booklet" href="#/letras/letras-pum-pum-pum-2017">Letras</a>
+            <a class="btn-booklet" href="#/disco/pum-pum-pum-2017">Ver Disco &amp; Ficha</a>
+            <a class="btn-booklet" href="#/disco/pum-pum-pum-2017#letras">Letras</a>
           </div>
         </article>
 
-                <article class="album" data-cat="solista">
-          <div class="cover" data-spotify-embed="https://open.spotify.com/embed/artist/3Xm2CjJ6i14krOHOGVDYts?utm_source=generator&theme=0" title="Escuchar en Spotify">
+                        <article class="album" data-cat="solista">
+          <a class="cover" href="#/disco/siesta-2017" title="Ver Siesta">
             <img src="assets/album-siesta.jpg" alt="Siesta (2017)" loading="lazy"/>
-          </div>
+          </a>
           <span class="meta-line">SOLISTA · 2017</span>
-          <span class="a-title">Siesta</span>
+          <a class="a-title-link" href="#/disco/siesta-2017">
+            <span class="a-title">Siesta</span>
+          </a>
           <span class="a-desc">Guitarra sola interpretada por Maxi Prietto.</span>
           <div class="album-actions">
-            <button type="button" class="btn-booklet" data-booklet="ficha-siesta-2017">Ficha Técnica</button>
-            <a class="btn-booklet" href="#/letras/letras-siesta-2017">Letras</a>
+            <a class="btn-booklet" href="#/disco/siesta-2017">Ver Disco &amp; Ficha</a>
+            <a class="btn-booklet" href="#/disco/siesta-2017#letras">Letras</a>
           </div>
         </article>
 
-                <article class="album" data-cat="solista">
-          <div class="cover" data-spotify-embed="https://open.spotify.com/embed/album/0Ieorv8QKVoR9UL1umHtzJ?utm_source=generator&theme=0" title="Escuchar en Spotify">
+                        <article class="album" data-cat="solista">
+          <a class="cover" href="#/disco/boleros-canciones-2018" title="Ver Boleros &amp; Canciones">
             <img src="assets/album-boleros-canciones.jpg" alt="Boleros &amp; Canciones (2018)" loading="lazy"/>
-          </div>
+          </a>
           <span class="meta-line">SOLISTA · 2018</span>
-          <span class="a-title">Boleros &amp; Canciones</span>
+          <a class="a-title-link" href="#/disco/boleros-canciones-2018">
+            <span class="a-title">Boleros &amp; Canciones</span>
+          </a>
           <span class="a-desc">Poli &amp; Prietto. Cariñito, Sabor a mí, Algo contigo.</span>
           <div class="album-actions">
-            <button type="button" class="btn-booklet" data-booklet="ficha-boleros-canciones-2018">Ficha Técnica</button>
-            <a class="btn-booklet" href="#/letras/letras-boleros-canciones-2018">Letras</a>
+            <a class="btn-booklet" href="#/disco/boleros-canciones-2018">Ver Disco &amp; Ficha</a>
+            <a class="btn-booklet" href="#/disco/boleros-canciones-2018#letras">Letras</a>
           </div>
         </article>
 
-                <article class="album" data-cat="solista">
-          <div class="cover" data-spotify-embed="https://open.spotify.com/embed/artist/3Xm2CjJ6i14krOHOGVDYts?utm_source=generator&theme=0" title="Escuchar en Spotify">
+                        <article class="album" data-cat="solista">
+          <a class="cover" href="#/disco/bano-de-bosque-2018" title="Ver Baño de Bosque">
             <img src="assets/album-bano-de-bosque.jpg" alt="Baño de Bosque (2018)" loading="lazy"/>
-          </div>
+          </a>
           <span class="meta-line">SOLISTA · 2018</span>
-          <span class="a-title">Baño de Bosque</span>
+          <a class="a-title-link" href="#/disco/bano-de-bosque-2018">
+            <span class="a-title">Baño de Bosque</span>
+          </a>
           <span class="a-desc">Guitarra de 12 cuerdas, acústica y koshi.</span>
           <div class="album-actions">
-            <button type="button" class="btn-booklet" data-booklet="ficha-bano-de-bosque-2018">Ficha Técnica</button>
-            <a class="btn-booklet" href="#/letras/letras-bano-de-bosque-2018">Letras</a>
+            <a class="btn-booklet" href="#/disco/bano-de-bosque-2018">Ver Disco &amp; Ficha</a>
+            <a class="btn-booklet" href="#/disco/bano-de-bosque-2018#letras">Letras</a>
           </div>
         </article>
 
-                <article class="album" data-cat="solista">
-          <div class="cover" data-spotify-embed="https://open.spotify.com/embed/album/6tGg0qNv0PRtFISCO0YVzQ?utm_source=generator&theme=0" title="Escuchar en Spotify">
+                        <article class="album" data-cat="solista">
+          <a class="cover" href="#/disco/lluvia-cumbrecita-2019" title="Ver Lluvia en la Cumbrecita">
             <img src="assets/album-lluvia.jpg" alt="Lluvia en la Cumbrecita (2019)" loading="lazy"/>
-          </div>
+          </a>
           <span class="meta-line">SOLISTA · 2019</span>
-          <span class="a-title">Lluvia en la Cumbrecita</span>
+          <a class="a-title-link" href="#/disco/lluvia-cumbrecita-2019">
+            <span class="a-title">Lluvia en la Cumbrecita</span>
+          </a>
           <span class="a-desc">Canciones de ruta, lluvia y montaña.</span>
           <div class="album-actions">
-            <button type="button" class="btn-booklet" data-booklet="ficha-lluvia-cumbrecita-2019">Ficha Técnica</button>
-            <a class="btn-booklet" href="#/letras/letras-lluvia-cumbrecita-2019">Letras</a>
+            <a class="btn-booklet" href="#/disco/lluvia-cumbrecita-2019">Ver Disco &amp; Ficha</a>
+            <a class="btn-booklet" href="#/disco/lluvia-cumbrecita-2019#letras">Letras</a>
           </div>
         </article>
 
-                <article class="album" data-cat="solista">
-          <div class="cover" data-spotify-embed="https://open.spotify.com/embed/album/02dlo3Xv0GojfPBUbcPkFY?utm_source=generator&theme=0" title="Escuchar en Spotify">
+                        <article class="album" data-cat="solista">
+          <a class="cover" href="#/disco/blanco-negro-2020" title="Ver Blanco y Negro">
             <img src="assets/album-blanco-negro.jpg" alt="Blanco y Negro (2020)" loading="lazy"/>
-          </div>
+          </a>
           <span class="meta-line">SOLISTA · 2020</span>
-          <span class="a-title">Blanco y Negro</span>
+          <a class="a-title-link" href="#/disco/blanco-negro-2020">
+            <span class="a-title">Blanco y Negro</span>
+          </a>
           <span class="a-desc">Canciones grabadas durante el encierro.</span>
           <div class="album-actions">
-            <button type="button" class="btn-booklet" data-booklet="ficha-blanco-negro-2020">Ficha Técnica</button>
-            <a class="btn-booklet" href="#/letras/letras-blanco-negro-2020">Letras</a>
+            <a class="btn-booklet" href="#/disco/blanco-negro-2020">Ver Disco &amp; Ficha</a>
+            <a class="btn-booklet" href="#/disco/blanco-negro-2020#letras">Letras</a>
           </div>
         </article>
 
-                <article class="album" data-cat="solista">
-          <div class="cover" data-spotify-embed="https://open.spotify.com/embed/album/0etbh21ZQH4vVyp5Ssq6qj?utm_source=generator&theme=0" title="Escuchar en Spotify">
+                        <article class="album" data-cat="solista">
+          <a class="cover" href="#/disco/playa-nocturna" title="Ver Playa Nocturna (Vol. 1 - 4)">
             <img src="assets/album-playa-nocturna-vol-4.jpg" alt="Playa Nocturna (Vol. 1 - 4) (2020-2026)" loading="lazy"/>
-          </div>
+          </a>
           <span class="meta-line">SOLISTA · 2020-2026</span>
-          <span class="a-title">Playa Nocturna (Vol. 1 - 4)</span>
+          <a class="a-title-link" href="#/disco/playa-nocturna">
+            <span class="a-title">Playa Nocturna (Vol. 1 - 4)</span>
+          </a>
           <span class="a-desc">Rey Criollo, Dos Gardenias, Otra Tumba Más, Rumbo a Hong Kong.</span>
           <div class="album-actions">
-            <button type="button" class="btn-booklet" data-booklet="ficha-playa-nocturna">Ficha Técnica</button>
-            <a class="btn-booklet" href="#/letras/letras-playa-nocturna">Letras</a>
+            <a class="btn-booklet" href="#/disco/playa-nocturna">Ver Disco &amp; Ficha</a>
+            <a class="btn-booklet" href="#/disco/playa-nocturna#letras">Letras</a>
           </div>
         </article>
 
-                <article class="album" data-cat="solista">
-          <div class="cover" data-spotify-embed="https://open.spotify.com/embed/album/3ocmSKPNc3wNoyKuu3A3qS?utm_source=generator&theme=0" title="Escuchar en Spotify">
+                        <article class="album" data-cat="solista">
+          <a class="cover" href="#/disco/astro-lofi-2022" title="Ver Astro Lo Fi Beats">
             <img src="assets/album-astro.jpg" alt="Astro Lo Fi Beats (2022)" loading="lazy"/>
-          </div>
+          </a>
           <span class="meta-line">SOLISTA · 2022</span>
-          <span class="a-title">Astro Lo Fi Beats</span>
+          <a class="a-title-link" href="#/disco/astro-lofi-2022">
+            <span class="a-title">Astro Lo Fi Beats</span>
+          </a>
           <span class="a-desc">Beats de otra dimensión.</span>
           <div class="album-actions">
-            <button type="button" class="btn-booklet" data-booklet="ficha-astro-lofi-2022">Ficha Técnica</button>
-            <a class="btn-booklet" href="#/letras/letras-astro-lofi-2022">Letras</a>
+            <a class="btn-booklet" href="#/disco/astro-lofi-2022">Ver Disco &amp; Ficha</a>
+            <a class="btn-booklet" href="#/disco/astro-lofi-2022#letras">Letras</a>
           </div>
         </article>
 
-                <article class="album" data-cat="solista">
-          <div class="cover" data-spotify-embed="https://open.spotify.com/embed/album/5wsT0qbNcCcauMkdoEh4zC?utm_source=generator&theme=0" title="Escuchar en Spotify">
+                        <article class="album" data-cat="solista">
+          <a class="cover" href="#/disco/hogo-sound-2023" title="Ver Hogo Sound">
             <img src="assets/album-hogo-sound.jpg" alt="Hogo Sound (2023)" loading="lazy"/>
-          </div>
+          </a>
           <span class="meta-line">SOLISTA · 2023</span>
-          <span class="a-title">Hogo Sound</span>
+          <a class="a-title-link" href="#/disco/hogo-sound-2023">
+            <span class="a-title">Hogo Sound</span>
+          </a>
           <span class="a-desc">Intro, Samurái, Mouy.</span>
           <div class="album-actions">
-            <button type="button" class="btn-booklet" data-booklet="ficha-hogo-sound-2023">Ficha Técnica</button>
-            <a class="btn-booklet" href="#/letras/letras-hogo-sound-2023">Letras</a>
+            <a class="btn-booklet" href="#/disco/hogo-sound-2023">Ver Disco &amp; Ficha</a>
+            <a class="btn-booklet" href="#/disco/hogo-sound-2023#letras">Letras</a>
           </div>
         </article>
 
-                <article class="album" data-cat="solista">
-          <div class="cover" data-spotify-embed="https://open.spotify.com/embed/album/22ZnGk507MS2c70HTM7HNr?utm_source=generator&theme=0" title="Escuchar en Spotify">
+                        <article class="album" data-cat="solista">
+          <a class="cover" href="#/disco/pin-de-fartie-2026" title="Ver Pin de Fartie (Soundtrack)">
             <img src="assets/album-pin-de-fartie.jpg" alt="Pin de Fartie (Soundtrack) (2026)" loading="lazy"/>
-          </div>
+          </a>
           <span class="meta-line">SOLISTA · 2026</span>
-          <span class="a-title">Pin de Fartie (Soundtrack)</span>
+          <a class="a-title-link" href="#/disco/pin-de-fartie-2026">
+            <span class="a-title">Pin de Fartie (Soundtrack)</span>
+          </a>
           <span class="a-desc">Viene arrastrándose, Socorro.</span>
           <div class="album-actions">
-            <button type="button" class="btn-booklet" data-booklet="ficha-pin-de-fartie-2026">Ficha Técnica</button>
-            <a class="btn-booklet" href="#/letras/letras-pin-de-fartie-2026">Letras</a>
+            <a class="btn-booklet" href="#/disco/pin-de-fartie-2026">Ver Disco &amp; Ficha</a>
+            <a class="btn-booklet" href="#/disco/pin-de-fartie-2026#letras">Letras</a>
           </div>
         </article>
 
-                <article class="album" data-cat="solista">
-          <div class="cover" data-spotify-embed="https://open.spotify.com/embed/album/0t6XeAkrHRBLCjlunTAnpH?utm_source=generator&theme=0" title="Escuchar en Spotify">
+                        <article class="album" data-cat="solista">
+          <a class="cover" href="#/disco/velada-blues-boleros-2026" title="Ver Una Velada de Blues &amp; Boleros">
             <img src="assets/album-una-velada-blues-boleros.jpg" alt="Una Velada de Blues &amp; Boleros (2026)" loading="lazy"/>
-          </div>
+          </a>
           <span class="meta-line">SOLISTA · 2026</span>
-          <span class="a-title">Una Velada de Blues &amp; Boleros</span>
+          <a class="a-title-link" href="#/disco/velada-blues-boleros-2026">
+            <span class="a-title">Una Velada de Blues &amp; Boleros</span>
+          </a>
           <span class="a-desc">Perro de Hospital, Estás Lejos, Error Blues.</span>
           <div class="album-actions">
-            <button type="button" class="btn-booklet" data-booklet="ficha-velada-blues-boleros-2026">Ficha Técnica</button>
-            <a class="btn-booklet" href="#/letras/letras-velada-blues-boleros-2026">Letras</a>
+            <a class="btn-booklet" href="#/disco/velada-blues-boleros-2026">Ver Disco &amp; Ficha</a>
+            <a class="btn-booklet" href="#/disco/velada-blues-boleros-2026#letras">Letras</a>
           </div>
         </article>
 
-                <article class="album" data-cat="espiritus">
-          <div class="cover" data-spotify-embed="https://open.spotify.com/embed/artist/1UnfU05eCWxrY4vWarpeF0?utm_source=generator&theme=0" title="Escuchar en Spotify">
+                        <article class="album" data-cat="espiritus">
+          <a class="cover" href="#/disco/hacele-caso-espiritu" title="Ver Hacele caso a tu espíritu!">
             <img src="assets/album-hacele-caso-a-tu-espiritu.jpg" alt="Hacele caso a tu espíritu! (2010)" loading="lazy"/>
-          </div>
+          </a>
           <span class="meta-line">ESPIRITUS · 2010</span>
-          <span class="a-title">Hacele caso a tu espíritu!</span>
+          <a class="a-title-link" href="#/disco/hacele-caso-espiritu">
+            <span class="a-title">Hacele caso a tu espíritu!</span>
+          </a>
           <span class="a-desc">Primeros registros y demos.</span>
           <div class="album-actions">
-            <button type="button" class="btn-booklet" data-booklet="ficha-hacele-caso-espiritu">Ficha Técnica</button>
-            <a class="btn-booklet" href="#/letras/letras-hacele-caso-espiritu">Letras</a>
+            <a class="btn-booklet" href="#/disco/hacele-caso-espiritu">Ver Disco &amp; Ficha</a>
+            <a class="btn-booklet" href="#/disco/hacele-caso-espiritu#letras">Letras</a>
           </div>
         </article>
 
-                <article class="album" data-cat="espiritus">
-          <div class="cover" data-spotify-embed="https://open.spotify.com/embed/artist/1UnfU05eCWxrY4vWarpeF0?utm_source=generator&amp;theme=0" title="Escuchar en Spotify">
+                        <article class="album" data-cat="espiritus">
+          <a class="cover" href="#/disco/lo-echaron-del-bar-ep" title="Ver Lo echaron del bar EP">
             <img src="assets/album-lo-echaron-del-bar-ep.jpg" alt="Lo echaron del bar EP (2011)" loading="lazy"/>
-          </div>
+          </a>
           <span class="meta-line">ESPIRITUS · 2011</span>
-          <span class="a-title">Lo echaron del bar EP</span>
+          <a class="a-title-link" href="#/disco/lo-echaron-del-bar-ep">
+            <span class="a-title">Lo echaron del bar EP</span>
+          </a>
           <span class="a-desc">Lo echaron del bar, Jesús rima con cruz.</span>
           <div class="album-actions">
-            <button type="button" class="btn-booklet" data-booklet="ficha-lo-echaron-del-bar-ep">Ficha Técnica</button>
-            <a class="btn-booklet" href="#/letras/letras-lo-echaron-del-bar-ep">Letras</a>
+            <a class="btn-booklet" href="#/disco/lo-echaron-del-bar-ep">Ver Disco &amp; Ficha</a>
+            <a class="btn-booklet" href="#/disco/lo-echaron-del-bar-ep#letras">Letras</a>
           </div>
         </article>
 
-                <article class="album" data-cat="espiritus">
-          <div class="cover" data-spotify-embed="https://open.spotify.com/embed/artist/1UnfU05eCWxrY4vWarpeF0?utm_source=generator&amp;theme=0" title="Escuchar en Spotify">
+                        <article class="album" data-cat="espiritus">
+          <a class="cover" href="#/disco/el-gato-ep" title="Ver El Gato EP">
             <img src="assets/album-el-gato-ep.jpg" alt="El Gato EP (2012)" loading="lazy"/>
-          </div>
+          </a>
           <span class="meta-line">ESPIRITUS · 2012</span>
-          <span class="a-title">El Gato EP</span>
+          <a class="a-title-link" href="#/disco/el-gato-ep">
+            <span class="a-title">El Gato EP</span>
+          </a>
           <span class="a-desc">El gato, El blus, Aunque nos vayamos.</span>
           <div class="album-actions">
-            <button type="button" class="btn-booklet" data-booklet="ficha-el-gato-ep">Ficha Técnica</button>
-            <a class="btn-booklet" href="#/letras/letras-el-gato-ep">Letras</a>
+            <a class="btn-booklet" href="#/disco/el-gato-ep">Ver Disco &amp; Ficha</a>
+            <a class="btn-booklet" href="#/disco/el-gato-ep#letras">Letras</a>
           </div>
         </article>
 
-                <article class="album" data-cat="espiritus">
-          <div class="cover" data-spotify-embed="https://open.spotify.com/embed/album/3jIrLCi1YnbMJHybfNExxS?utm_source=generator&amp;theme=0" title="Escuchar en Spotify">
+                        <article class="album" data-cat="espiritus">
+          <a class="cover" href="#/disco/espiritus-debut" title="Ver Los Espíritus">
             <img src="assets/album-espiritus-debut.jpg" alt="Los Espíritus (2013)" loading="lazy"/>
-          </div>
+          </a>
           <span class="meta-line">ESPIRITUS · 2013</span>
-          <span class="a-title">Los Espíritus</span>
+          <a class="a-title-link" href="#/disco/espiritus-debut">
+            <span class="a-title">Los Espíritus</span>
+          </a>
           <span class="a-desc">Álbum debut de la banda. Lo echaron del bar.</span>
           <div class="album-actions">
-            <button type="button" class="btn-booklet" data-booklet="ficha-espiritus-debut">Ficha Técnica</button>
-            <a class="btn-booklet" href="#/letras/letras-espiritus-debut">Letras</a>
+            <a class="btn-booklet" href="#/disco/espiritus-debut">Ver Disco &amp; Ficha</a>
+            <a class="btn-booklet" href="#/disco/espiritus-debut#letras">Letras</a>
           </div>
         </article>
 
-                <article class="album" data-cat="espiritus">
-          <div class="cover" data-spotify-embed="https://open.spotify.com/embed/album/4wojL8SZIhIi5DRxx7NYbN?utm_source=generator&amp;theme=0" title="Escuchar en Spotify">
+                        <article class="album" data-cat="espiritus">
+          <a class="cover" href="#/disco/gratitud" title="Ver Gratitud">
             <img src="assets/album-gratitud.jpg" alt="Gratitud (2015)" loading="lazy"/>
-          </div>
+          </a>
           <span class="meta-line">ESPIRITUS · 2015</span>
-          <span class="a-title">Gratitud</span>
+          <a class="a-title-link" href="#/disco/gratitud">
+            <span class="a-title">Gratitud</span>
+          </a>
           <span class="a-desc">El salto internacional. La crecida.</span>
           <div class="album-actions">
-            <button type="button" class="btn-booklet" data-booklet="ficha-gratitud">Ficha Técnica</button>
-            <a class="btn-booklet" href="#/letras/letras-gratitud">Letras</a>
+            <a class="btn-booklet" href="#/disco/gratitud">Ver Disco &amp; Ficha</a>
+            <a class="btn-booklet" href="#/disco/gratitud#letras">Letras</a>
           </div>
         </article>
 
-                <article class="album" data-cat="espiritus">
-          <div class="cover" data-spotify-embed="https://open.spotify.com/embed/album/1ahdp3YzkgsUZZl3gJPYgL?utm_source=generator&amp;theme=0" title="Escuchar en Spotify">
+                        <article class="album" data-cat="espiritus">
+          <a class="cover" href="#/disco/agua-ardiente" title="Ver Agua Ardiente">
             <img src="assets/album-agua-ardiente.jpg" alt="Agua Ardiente (2017)" loading="lazy"/>
-          </div>
+          </a>
           <span class="meta-line">ESPIRITUS · 2017</span>
-          <span class="a-title">Agua Ardiente</span>
+          <a class="a-title-link" href="#/disco/agua-ardiente">
+            <span class="a-title">Agua Ardiente</span>
+          </a>
           <span class="a-desc">Blues psicodélico y camino de tierra. Camina.</span>
           <div class="album-actions">
-            <button type="button" class="btn-booklet" data-booklet="ficha-agua-ardiente">Ficha Técnica</button>
-            <a class="btn-booklet" href="#/letras/letras-agua-ardiente">Letras</a>
-          </div>
-        </article>
-
-        <article class="album" data-cat="espiritus">
-          <div class="cover" data-spotify-embed="https://open.spotify.com/embed/album/1gZFGvIIXbOnowKlW8cGh9?utm_source=generator&amp;theme=0" title="Escuchar en Spotify">
-            <img src="assets/album-guayabo.jpg" alt="Guayabo de Agua Ardiente (2017)" loading="lazy"/>
-          </div>
-          <span class="meta-line">2017 · EP</span>
-          <span class="a-title">Guayabo de Agua Ardiente</span>
-          <span class="a-desc">Los Espíritus · Maxi Prietto</span>
-          <div class="album-actions">
-            <button type="button" class="btn-booklet" data-booklet="ficha-guayabo-2017">Ficha Técnica</button>
-            <a class="btn-booklet" href="#/letras/letras-guayabo-2017">Letras</a>
+            <a class="btn-booklet" href="#/disco/agua-ardiente">Ver Disco &amp; Ficha</a>
+            <a class="btn-booklet" href="#/disco/agua-ardiente#letras">Letras</a>
           </div>
         </article>
 
                 <article class="album" data-cat="espiritus">
-          <div class="cover" data-spotify-embed="https://open.spotify.com/embed/album/0WD2XbzYbyiWWhOzTtzmW8?utm_source=generator&amp;theme=0" title="Escuchar en Spotify">
-            <img src="assets/album-caldero.jpg" alt="Caldero (2019)" loading="lazy"/>
+          <a class="cover" href="#/disco/guayabo-2017" title="Ver Guayabo de Agua Ardiente">
+            <img src="assets/album-guayabo.jpg" alt="Guayabo de Agua Ardiente (2017)" loading="lazy"/>
+          </a>
+          <span class="meta-line">2017 · EP</span>
+          <a class="a-title-link" href="#/disco/guayabo-2017">
+            <span class="a-title">Guayabo de Agua Ardiente</span>
+          </a>
+          <span class="a-desc">Los Espíritus · Maxi Prietto</span>
+          <div class="album-actions">
+            <a class="btn-booklet" href="#/disco/guayabo-2017">Ver Disco &amp; Ficha</a>
+            <a class="btn-booklet" href="#/disco/guayabo-2017#letras">Letras</a>
           </div>
+        </article>
+
+                        <article class="album" data-cat="espiritus">
+          <a class="cover" href="#/disco/caldero" title="Ver Caldero">
+            <img src="assets/album-caldero.jpg" alt="Caldero (2019)" loading="lazy"/>
+          </a>
           <span class="meta-line">ESPIRITUS · 2019</span>
-          <span class="a-title">Caldero</span>
+          <a class="a-title-link" href="#/disco/caldero">
+            <span class="a-title">Caldero</span>
+          </a>
           <span class="a-desc">Nueva formación, mismo fuego.</span>
           <div class="album-actions">
-            <button type="button" class="btn-booklet" data-booklet="ficha-caldero">Ficha Técnica</button>
-            <a class="btn-booklet" href="#/letras/letras-caldero">Letras</a>
+            <a class="btn-booklet" href="#/disco/caldero">Ver Disco &amp; Ficha</a>
+            <a class="btn-booklet" href="#/disco/caldero#letras">Letras</a>
           </div>
         </article>
 
-                <article class="album" data-cat="espiritus">
-          <div class="cover" data-spotify-embed="https://open.spotify.com/embed/album/38Y2bvBgrjb4zyMrGlJjAq?utm_source=generator&amp;theme=0" title="Escuchar en Spotify">
+                        <article class="album" data-cat="espiritus">
+          <a class="cover" href="#/disco/sancocho-stereo" title="Ver Sancocho Stereo">
             <img src="assets/album-sancocho-stereo.jpg" alt="Sancocho Stereo (2021)" loading="lazy"/>
-          </div>
+          </a>
           <span class="meta-line">ESPIRITUS · 2021</span>
-          <span class="a-title">Sancocho Stereo</span>
+          <a class="a-title-link" href="#/disco/sancocho-stereo">
+            <span class="a-title">Sancocho Stereo</span>
+          </a>
           <span class="a-desc">Buscando la luz, Mugre, Jericó.</span>
           <div class="album-actions">
-            <button type="button" class="btn-booklet" data-booklet="ficha-sancocho-stereo">Ficha Técnica</button>
-            <a class="btn-booklet" href="#/letras/letras-sancocho-stereo">Letras</a>
+            <a class="btn-booklet" href="#/disco/sancocho-stereo">Ver Disco &amp; Ficha</a>
+            <a class="btn-booklet" href="#/disco/sancocho-stereo#letras">Letras</a>
+          </div>
+        </article>
+
+                        <article class="album" data-cat="espiritus">
+          <a class="cover" href="#/disco/la-montana" title="Ver La Montaña">
+            <img src="assets/album-montana.jpg" alt="La Montaña (2023)" loading="lazy"/>
+          </a>
+          <span class="meta-line">ESPIRITUS · 2023</span>
+          <a class="a-title-link" href="#/disco/la-montana">
+            <span class="a-title">La Montaña</span>
+          </a>
+          <span class="a-desc">Blues rock y psicodelia.</span>
+          <div class="album-actions">
+            <a class="btn-booklet" href="#/disco/la-montana">Ver Disco &amp; Ficha</a>
+            <a class="btn-booklet" href="#/disco/la-montana#letras">Letras</a>
           </div>
         </article>
 
                 <article class="album" data-cat="espiritus">
-          <div class="cover" data-spotify-embed="https://open.spotify.com/embed/album/1kJEPy20AkL9lccVH8oTpC?utm_source=generator&amp;theme=0" title="Escuchar en Spotify">
-            <img src="assets/album-montana.jpg" alt="La Montaña (2023)" loading="lazy"/>
-          </div>
-          <span class="meta-line">ESPIRITUS · 2023</span>
-          <span class="a-title">La Montaña</span>
-          <span class="a-desc">Blues rock y psicodelia.</span>
-          <div class="album-actions">
-            <button type="button" class="btn-booklet" data-booklet="ficha-la-montana">Ficha Técnica</button>
-            <a class="btn-booklet" href="#/letras/letras-la-montana">Letras</a>
-          </div>
-        </article>
-
-        <article class="album" data-cat="espiritus">
-          <div class="cover" data-spotify-embed="https://open.spotify.com/embed/album/63hLRWCHwL16njnYW7sT10?utm_source=generator&amp;theme=0" title="Escuchar en Spotify">
+          <a class="cover" href="#/disco/camina-2025" title="Ver Camina">
             <img src="assets/album-camina.jpg" alt="Camina (2025)" loading="lazy"/>
-          </div>
+          </a>
           <span class="meta-line">2025 · SINGLE / EP</span>
-          <span class="a-title">Camina</span>
+          <a class="a-title-link" href="#/disco/camina-2025">
+            <span class="a-title">Camina</span>
+          </a>
           <span class="a-desc">Los Espíritus · Maxi Prietto</span>
           <div class="album-actions">
-            <button type="button" class="btn-booklet" data-booklet="ficha-camina-2025">Ficha Técnica</button>
-            <a class="btn-booklet" href="#/letras/letras-camina-2025">Letras</a>
+            <a class="btn-booklet" href="#/disco/camina-2025">Ver Disco &amp; Ficha</a>
+            <a class="btn-booklet" href="#/disco/camina-2025#letras">Letras</a>
           </div>
         </article>
 
-                <article class="album" data-cat="cosmos">
-          <div class="cover" data-spotify-embed="https://open.spotify.com/embed/artist/79KyjLxTR5a6vVpPvljowB?utm_source=generator&theme=0" title="Escuchar en Spotify">
+                        <article class="album" data-cat="cosmos">
+          <a class="cover" href="#/disco/experiencias-salon-cosmico" title="Ver Experiencias del Salón Cósmico">
             <img src="assets/album-experiencias-salon-cosmico.jpg" alt="Experiencias del Salón Cósmico (2006)" loading="lazy"/>
-          </div>
+          </a>
           <span class="meta-line">COSMOS · 2006</span>
-          <span class="a-title">Experiencias del Salón Cósmico</span>
+          <a class="a-title-link" href="#/disco/experiencias-salon-cosmico">
+            <span class="a-title">Experiencias del Salón Cósmico</span>
+          </a>
           <span class="a-desc">De la experiencia en México, Alucinando en el Salón Cósmico.</span>
           <div class="album-actions">
-            <button type="button" class="btn-booklet" data-booklet="ficha-experiencias-salon-cosmico">Ficha Técnica</button>
-            <a class="btn-booklet" href="#/letras/letras-experiencias-salon-cosmico">Letras</a>
+            <a class="btn-booklet" href="#/disco/experiencias-salon-cosmico">Ver Disco &amp; Ficha</a>
+            <a class="btn-booklet" href="#/disco/experiencias-salon-cosmico#letras">Letras</a>
           </div>
         </article>
 
-                <article class="album" data-cat="cosmos">
-          <div class="cover" data-spotify-embed="https://open.spotify.com/embed/artist/79KyjLxTR5a6vVpPvljowB?utm_source=generator&theme=0" title="Escuchar en Spotify">
+                        <article class="album" data-cat="cosmos">
+          <a class="cover" href="#/disco/pvccm-ep-2007" title="Ver Viaja al Cosmos EP">
             <img src="assets/album-cosmos-ep.jpg" alt="Viaja al Cosmos EP (2007)" loading="lazy"/>
-          </div>
+          </a>
           <span class="meta-line">COSMOS · 2007</span>
-          <span class="a-title">Viaja al Cosmos EP</span>
+          <a class="a-title-link" href="#/disco/pvccm-ep-2007">
+            <span class="a-title">Viaja al Cosmos EP</span>
+          </a>
           <span class="a-desc">Av. Corrientes, Chispas, Cruzando el Parque.</span>
           <div class="album-actions">
-            <button type="button" class="btn-booklet" data-booklet="ficha-pvccm-ep-2007">Ficha Técnica</button>
-            <a class="btn-booklet" href="#/letras/letras-pvccm-ep-2007">Letras</a>
+            <a class="btn-booklet" href="#/disco/pvccm-ep-2007">Ver Disco &amp; Ficha</a>
+            <a class="btn-booklet" href="#/disco/pvccm-ep-2007#letras">Letras</a>
           </div>
         </article>
 
-                <article class="album" data-cat="cosmos">
-          <div class="cover" data-spotify-embed="https://open.spotify.com/embed/artist/79KyjLxTR5a6vVpPvljowB?utm_source=generator&theme=0" title="Escuchar en Spotify">
+                        <article class="album" data-cat="cosmos">
+          <a class="cover" href="#/disco/lou-fai-home-sessions-ii" title="Ver Lou Fai Home sessions vol II">
             <img src="assets/album-lou-fai-home-sessions-ii.jpg" alt="Lou Fai Home sessions vol II (2007)" loading="lazy"/>
-          </div>
+          </a>
           <span class="meta-line">COSMOS · 2007</span>
-          <span class="a-title">Lou Fai Home sessions vol II</span>
+          <a class="a-title-link" href="#/disco/lou-fai-home-sessions-ii">
+            <span class="a-title">Lou Fai Home sessions vol II</span>
+          </a>
           <span class="a-desc">Cruzando el parque, Verano fatal.</span>
           <div class="album-actions">
-            <button type="button" class="btn-booklet" data-booklet="ficha-lou-fai-home-sessions-ii">Ficha Técnica</button>
-            <a class="btn-booklet" href="#/letras/letras-lou-fai-home-sessions-ii">Letras</a>
+            <a class="btn-booklet" href="#/disco/lou-fai-home-sessions-ii">Ver Disco &amp; Ficha</a>
+            <a class="btn-booklet" href="#/disco/lou-fai-home-sessions-ii#letras">Letras</a>
           </div>
         </article>
 
-                <article class="album" data-cat="cosmos">
-          <div class="cover" data-spotify-embed="https://open.spotify.com/embed/artist/79KyjLxTR5a6vVpPvljowB?utm_source=generator&theme=0" title="Escuchar en Spotify">
+                        <article class="album" data-cat="cosmos">
+          <a class="cover" href="#/disco/le-priet-vaha-2011" title="Ver Le Priët VAHA-CHOSMOS">
             <img src="assets/album-le-priet-vaha.jpg" alt="Le Priët VAHA-CHOSMOS (2011)" loading="lazy"/>
-          </div>
+          </a>
           <span class="meta-line">COSMOS · 2011</span>
-          <span class="a-title">Le Priët VAHA-CHOSMOS</span>
+          <a class="a-title-link" href="#/disco/le-priet-vaha-2011">
+            <span class="a-title">Le Priët VAHA-CHOSMOS</span>
+          </a>
           <span class="a-desc">Bahía Rosales, Ey esa no es forma de decir adiós.</span>
           <div class="album-actions">
-            <button type="button" class="btn-booklet" data-booklet="ficha-le-priet-vaha-2011">Ficha Técnica</button>
-            <a class="btn-booklet" href="#/letras/letras-le-priet-vaha-2011">Letras</a>
+            <a class="btn-booklet" href="#/disco/le-priet-vaha-2011">Ver Disco &amp; Ficha</a>
+            <a class="btn-booklet" href="#/disco/le-priet-vaha-2011#letras">Letras</a>
           </div>
         </article>
 
-                <article class="album" data-cat="cosmos">
-          <div class="cover" data-spotify-embed="https://open.spotify.com/embed/artist/79KyjLxTR5a6vVpPvljowB?utm_source=generator&theme=0" title="Escuchar en Spotify">
+                        <article class="album" data-cat="cosmos">
+          <a class="cover" href="#/disco/los-puedo-viajar" title="Ver Los Puedo Viajar">
             <img src="assets/album-puedo-viajar.jpg" alt="Los Puedo Viajar (2014)" loading="lazy"/>
-          </div>
+          </a>
           <span class="meta-line">COSMOS · 2014</span>
-          <span class="a-title">Los Puedo Viajar</span>
+          <a class="a-title-link" href="#/disco/los-puedo-viajar">
+            <span class="a-title">Los Puedo Viajar</span>
+          </a>
           <span class="a-desc">Dos personas tocando lo que les pinta.</span>
           <div class="album-actions">
-            <button type="button" class="btn-booklet" data-booklet="ficha-los-puedo-viajar">Ficha Técnica</button>
-            <a class="btn-booklet" href="#/letras/letras-los-puedo-viajar">Letras</a>
+            <a class="btn-booklet" href="#/disco/los-puedo-viajar">Ver Disco &amp; Ficha</a>
+            <a class="btn-booklet" href="#/disco/los-puedo-viajar#letras">Letras</a>
           </div>
         </article>
 
-                <article class="album" data-cat="cosmos">
-          <div class="cover" data-spotify-embed="https://open.spotify.com/embed/artist/79KyjLxTR5a6vVpPvljowB?utm_source=generator&theme=0" title="Escuchar en Spotify">
+                        <article class="album" data-cat="cosmos">
+          <a class="cover" href="#/disco/cronicas-2021" title="Ver Crónicas">
             <img src="assets/album-cronicas.jpg" alt="Crónicas (2021)" loading="lazy"/>
-          </div>
+          </a>
           <span class="meta-line">COSMOS · 2021</span>
-          <span class="a-title">Crónicas</span>
+          <a class="a-title-link" href="#/disco/cronicas-2021">
+            <span class="a-title">Crónicas</span>
+          </a>
           <span class="a-desc">Prietto viaja al cosmos con Mariano. Editado por Alto Valle.</span>
           <div class="album-actions">
-            <button type="button" class="btn-booklet" data-booklet="ficha-cronicas-2021">Ficha Técnica</button>
-            <a class="btn-booklet" href="#/letras/letras-cronicas-2021">Letras</a>
+            <a class="btn-booklet" href="#/disco/cronicas-2021">Ver Disco &amp; Ficha</a>
+            <a class="btn-booklet" href="#/disco/cronicas-2021#letras">Letras</a>
           </div>
         </article>
 
@@ -3734,7 +3875,8 @@
 
 
 
-<script src="app.js"></script>
+<script src="releases_data.js"></script>
+  <script src="app.js"></script>
 
 <script src="jukebox.js"></script>
 
