@@ -116,31 +116,33 @@
       relSpotifyExternalBtn.href = cleanUrl;
     }
 
-    // Credits
+    // Combined Credits & Photos
     var creditsCard = document.getElementById("rel-creditos") || document.getElementById("creditos");
+    var hasCredits = item.credits_html && item.credits_html.trim();
+    var hasPhotos = item.photos && item.photos.length;
+
     if (creditsCard) {
-      if (item.credits_html && item.credits_html.trim()) {
+      if (hasCredits || hasPhotos) {
         creditsCard.style.display = "block";
-        if (relCreditsBody) relCreditsBody.innerHTML = item.credits_html;
+        if (relCreditsBody) {
+          relCreditsBody.innerHTML = hasCredits ? item.credits_html : "<p><em>Información técnica de grabación y créditos de obra.</em></p>";
+        }
+        if (relGalleryGrid) {
+          if (hasPhotos) {
+            relGalleryGrid.style.display = "grid";
+            relGalleryGrid.innerHTML = item.photos.map(function (p) {
+              return '<figure class="release-gallery-item">' +
+                '<img src="' + p.src + '" alt="' + (p.alt || "") + '" loading="lazy"/>' +
+                '<figcaption>' + (p.caption || p.alt || "") + '</figcaption>' +
+              '</figure>';
+            }).join("");
+          } else {
+            relGalleryGrid.style.display = "none";
+            relGalleryGrid.innerHTML = "";
+          }
+        }
       } else {
         creditsCard.style.display = "none";
-      }
-    }
-
-    // Gallery
-    var galleryCard = document.getElementById("rel-galeria") || document.getElementById("galeria");
-    if (galleryCard) {
-      if (item.photos && item.photos.length) {
-        galleryCard.style.display = "block";
-        var photosHtml = item.photos.map(function (p) {
-          return '<figure class="release-gallery-item">' +
-            '<img src="' + p.src + '" alt="' + (p.alt || "") + '" loading="lazy"/>' +
-            '<figcaption>' + (p.caption || p.alt || "") + '</figcaption>' +
-          '</figure>';
-        }).join("");
-        if (relGalleryGrid) relGalleryGrid.innerHTML = photosHtml;
-      } else {
-        galleryCard.style.display = "none";
       }
     }
 
