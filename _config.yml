@@ -1,0 +1,8 @@
+# GitHub Pages Jekyll Configuration
+theme: null
+safe: true
+exclude:
+  - scratch
+  - "*.py"
+  - "*.json"
+  - "*.ps1"
