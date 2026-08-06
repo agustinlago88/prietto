@@ -23,7 +23,8 @@
 
   function routeFromHash() {
     var raw = (location.hash || "").replace(/^#\/?/, "").trim();
-    if (raw.indexOf("disco/") === 0 || raw.indexOf("release/") === 0 || raw.indexOf("disco") === 0 || raw.indexOf("release") === 0) return "release";
+    if (raw.indexOf("disco/") === 0 || raw.indexOf("release/") === 0) return "release";
+    if (raw === "disco" || raw === "release") return "release";
     if (raw.indexOf("letras") === 0) return "letras";
     var mainRoute = raw.split("/")[0].split("#")[0];
     for (var i = 0; i < ROUTES.length; i++) {
