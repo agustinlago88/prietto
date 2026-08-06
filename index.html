@@ -62,6 +62,7 @@
 
 <link rel="stylesheet" href="jukebox.css" />
 
+  <script src="releases_data.js"></script>
 </head>
 
 <body data-route="home">
@@ -288,8 +289,8 @@
 
           <div class="release-actions">
             <a id="relSpotifyExternalBtn" class="btn-release-action spotify" href="https://open.spotify.com" target="_blank" rel="noopener">🟢 Abrir en Spotify</a>
-            <a class="btn-release-action" href="#letras">📜 Ver Letras del Disco</a>
-            <a class="btn-release-action" href="#creditos">📋 Ficha Técnica</a>
+            <a class="btn-release-action" href="#rel-letras">📜 Ver Letras del Disco</a>
+            <a class="btn-release-action" href="#rel-creditos">📋 Ficha Técnica</a>
           </div>
         </div>
       </div>
@@ -297,7 +298,7 @@
       <!-- Integrated Release Details Tabs / Blocks -->
       <div class="release-sections">
         <!-- Ficha Técnica & Créditos -->
-        <article class="release-card" id="creditos">
+        <article class="release-card" id="rel-creditos">
           <h3 class="release-card-title">Ficha Técnica &amp; Créditos de Grabación</h3>
           <div id="relCreditsBody" class="release-card-body credits-body">
             <!-- Populated dynamically -->
@@ -305,7 +306,7 @@
         </article>
 
         <!-- Galería de Fotos / Sesión -->
-        <article class="release-card" id="galeria">
+        <article class="release-card" id="rel-galeria">
           <h3 class="release-card-title">Galería de Sesión &amp; Fotos</h3>
           <div id="relGalleryGrid" class="release-gallery-grid">
             <!-- Populated dynamically -->
@@ -313,7 +314,7 @@
         </article>
 
         <!-- Canicionero / Letras del Disco -->
-        <article class="release-card" id="letras">
+        <article class="release-card" id="rel-letras">
           <h3 class="release-card-title">Repertorio &amp; Letras de Canciones</h3>
           <div id="relSongsContainer" class="release-songs-container">
             <!-- Populated dynamically -->
@@ -3875,10 +3876,10 @@
 
 
 
-<script src="releases_data.js"></script>
-  <script src="app.js"></script>
 
-<script src="jukebox.js"></script>
+  
+
+
 
 
   <div class="booklet-modal" id="ficha-camina-2025" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Ficha Técnica - Camina">
@@ -3912,6 +3913,8 @@
       </div>
     </div>
   </div>
+  <script src="app.js"></script>
+  <script src="jukebox.js"></script>
 </body>
 
 </html>

@@ -55,22 +55,27 @@
   function renderReleasePage() {
     var raw = (location.hash || "").replace(/^#\/?/, "").trim();
     var parts = raw.split("/");
-    var key = parts.length > 1 ? parts[1].split("#")[0] : "";
-    
+    var key = parts.length > 1 ? parts[1].split("#")[0].split("?")[0] : "";
+
     var releases = window.PRIETTO_RELEASES || [];
-    if (!releases.length) return;
-    
+    if (!releases.length) {
+      setTimeout(renderReleasePage, 50);
+      return;
+    }
+
     var relIdx = -1;
-    for (var i = 0; i < releases.length; i++) {
-      if (releases[i].key === key || releases[i].key.toLowerCase() === key.toLowerCase()) {
-        relIdx = i;
-        break;
+    if (key) {
+      for (var i = 0; i < releases.length; i++) {
+        if (releases[i].key === key || releases[i].key.toLowerCase() === key.toLowerCase()) {
+          relIdx = i;
+          break;
+        }
       }
     }
     if (relIdx === -1) relIdx = 0;
-    
+
     var item = releases[relIdx];
-    
+
     var relCatBadge = document.getElementById("relCategoryBadge");
     var relYearBadge = document.getElementById("relYearBadge");
     var relMetaLine = document.getElementById("relMetaLine");
@@ -85,34 +90,34 @@
     var relSongsContainer = document.getElementById("relSongsContainer");
     var relPrevBtn = document.getElementById("relPrevBtn");
     var relNextBtn = document.getElementById("relNextBtn");
-    
+
     if (relCatBadge) relCatBadge.textContent = item.cat || "SOLISTA";
     if (relYearBadge) relYearBadge.textContent = item.year || "";
     if (relMetaLine) relMetaLine.textContent = (item.year || "") + " · " + (item.cat || "REGISTRO DE OBRA");
     if (relTitle) relTitle.textContent = item.title;
-    
+
     var artistName = "Maxi Prietto";
     if (item.cat === "LOS ESPÍRITUS") artistName = "Los Espíritus · Maxi Prietto";
     else if (item.cat === "COSMOS") artistName = "Prietto Viaja al Cosmos con Mariano";
     if (relArtist) relArtist.textContent = artistName;
-    
+
     if (relDesc) relDesc.textContent = item.desc || "";
     if (relCover) {
       relCover.src = item.cover;
       relCover.alt = item.title;
     }
-    
+
     if (relSpotifyIframe && item.spotify_embed) {
       relSpotifyIframe.src = item.spotify_embed;
     }
-    
+
     if (relSpotifyExternalBtn && item.spotify_embed) {
       var cleanUrl = item.spotify_embed.replace("/embed/", "/").split("?")[0];
       relSpotifyExternalBtn.href = cleanUrl;
     }
-    
+
     // Credits
-    var creditsCard = document.getElementById("creditos");
+    var creditsCard = document.getElementById("rel-creditos") || document.getElementById("creditos");
     if (creditsCard) {
       if (item.credits_html && item.credits_html.trim()) {
         creditsCard.style.display = "block";
@@ -121,9 +126,9 @@
         creditsCard.style.display = "none";
       }
     }
-    
+
     // Gallery
-    var galleryCard = document.getElementById("galeria");
+    var galleryCard = document.getElementById("rel-galeria") || document.getElementById("galeria");
     if (galleryCard) {
       if (item.photos && item.photos.length) {
         galleryCard.style.display = "block";
@@ -138,9 +143,9 @@
         galleryCard.style.display = "none";
       }
     }
-    
+
     // Songs / Lyrics
-    var songsCard = document.getElementById("letras");
+    var songsCard = document.getElementById("rel-letras") || document.getElementById("letras");
     if (songsCard) {
       if (item.songs && item.songs.length) {
         songsCard.style.display = "block";
@@ -155,11 +160,11 @@
         songsCard.style.display = "none";
       }
     }
-    
+
     // Pager
     var prevItem = releases[relIdx === 0 ? releases.length - 1 : relIdx - 1];
     var nextItem = releases[relIdx === releases.length - 1 ? 0 : relIdx + 1];
-    
+
     if (relPrevBtn) {
       relPrevBtn.href = "#/disco/" + prevItem.key;
       relPrevBtn.textContent = "← " + prevItem.title;
@@ -168,7 +173,7 @@
       relNextBtn.href = "#/disco/" + nextItem.key;
       relNextBtn.textContent = nextItem.title + " →";
     }
-    
+
     document.title = "Prietto — " + item.title + " (" + item.year + ")";
   }
 
