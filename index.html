@@ -59,11 +59,11 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
 
-<link rel="stylesheet" href="styles.css?v=3.0" />
+<link rel="stylesheet" href="styles.css?v=4.0" />
 
-<link rel="stylesheet" href="jukebox.css?v=3.0" />
+<link rel="stylesheet" href="jukebox.css?v=4.0" />
 
-  <script src="releases_data.js?v=3.0"></script>
+  <script src="releases_data.js?v=4.0"></script>
 </head>
 
 <body data-route="home">
@@ -372,22 +372,10 @@
         </div>
       </div>
 
-      <!-- Integrated Release Details Blocks -->
+      <!-- Release Songs & Lyrics Block -->
       <div class="release-sections">
-        <!-- Ficha Técnica, Créditos & Fotos de Sesión -->
-        <article class="release-card" id="rel-creditos">
-          <h3 class="release-card-title">Ficha Técnica &amp; Galería de Grabación</h3>
-          <div id="relCreditsBody" class="release-card-body credits-body">
-            <!-- Populated dynamically -->
-          </div>
-          <div id="relGalleryGrid" class="release-gallery-grid" style="margin-top: 1.5rem;">
-            <!-- Populated dynamically -->
-          </div>
-        </article>
-
-        <!-- Repertorio & Letras de Canciones -->
         <article class="release-card" id="rel-letras">
-          <h3 class="release-card-title">Repertorio &amp; Letras de Canciones</h3>
+          <h3 class="release-card-title">Repertorio &amp; Letras del Disco</h3>
           <div id="relSongsContainer" class="release-songs-container">
             <!-- Populated dynamically -->
           </div>
@@ -2580,7 +2568,7 @@
 
         <div class="bm-gallery">
 
-          <figure class="bm-gallery-item"><img src="assets/albums/2018_bano_de_bosque/BAÑO DE BOSQUE 14X14.jpg" alt="Baño de Bosque - Foto 1" loading="lazy" /></figure><figure class="bm-gallery-item"><img src="assets/albums/2018_bano_de_bosque/SAPOCONTRATAPA.jpg" alt="Baño de Bosque - Foto 2" loading="lazy" /></figure>
+          <figure class="bm-gallery-item"><img src="assets/albums/2018_bano_de_bosque/BAÑO DE BOSQUE 14X14.jpg" alt="Baño de Bosque - Foto 1" loading="lazy" /></figure><figure class="bm-gallery-item"><img src="assets/albums/2018_bano_de_bosque/SAPOCONTRATAPA.jpg" alt="Baño de Bosque - Foto 2" loading="lazy" /></figure>
 
         </div>
 
@@ -3775,8 +3763,38 @@
       </div>
     </div>
   </div>
-  <script src="app.js?v=3.0"></script>
-  <script src="jukebox.js?v=3.0"></script>
+  
+  <!-- Dynamic Release Ficha Técnica & Fotos Modal Popup -->
+  <div class="booklet-modal" id="releaseFichaModal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Ficha Técnica del Disco">
+    <div class="bm-overlay" onclick="closeReleaseFichaModal()"></div>
+    <div class="bm-container">
+      <header class="bm-header">
+        <div class="bm-title-group">
+          <span id="modCategoryBadge" class="label num">SOLISTA</span>
+          <h2 id="modTitle" class="bm-title">Título del Disco</h2>
+          <span id="modSubtitle" class="bm-subtitle">Ficha Técnica &amp; Fotos de Grabación</span>
+        </div>
+        <button type="button" class="bm-close" aria-label="Cerrar Ficha Técnica" onclick="closeReleaseFichaModal()">✕</button>
+      </header>
+      <div class="bm-body">
+        <section class="bm-section">
+          <h3 class="bm-heading">Ficha Técnica &amp; Créditos de Grabación</h3>
+          <div id="modCreditsBody" class="bm-credits">
+            <!-- Dynamic credits -->
+          </div>
+        </section>
+        <section id="modGallerySection" class="bm-section">
+          <h3 class="bm-heading">Galería de Sesión &amp; Fotos</h3>
+          <div id="modGalleryGrid" class="bm-gallery">
+            <!-- Dynamic photos -->
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js?v=4.0"></script>
+  <script src="jukebox.js?v=4.0"></script>
 </body>
 
 </html>

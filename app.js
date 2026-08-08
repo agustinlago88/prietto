@@ -85,8 +85,7 @@
     var relCover = document.getElementById("relCover");
     var relSpotifyIframe = document.getElementById("relSpotifyIframe");
     var relSpotifyExternalBtn = document.getElementById("relSpotifyExternalBtn");
-    var relCreditsBody = document.getElementById("relCreditsBody");
-    var relGalleryGrid = document.getElementById("relGalleryGrid");
+    var relCancioneroLink = document.getElementById("relCancioneroLink");
     var relSongsContainer = document.getElementById("relSongsContainer");
     var relPrevBtn = document.getElementById("relPrevBtn");
     var relNextBtn = document.getElementById("relNextBtn");
@@ -116,37 +115,12 @@
       relSpotifyExternalBtn.href = cleanUrl;
     }
 
-    // Combined Credits & Photos
-    var creditsCard = document.getElementById("rel-creditos") || document.getElementById("creditos");
-    var hasCredits = item.credits_html && item.credits_html.trim();
-    var hasPhotos = item.photos && item.photos.length;
-
-    if (creditsCard) {
-      if (hasCredits || hasPhotos) {
-        creditsCard.style.display = "block";
-        if (relCreditsBody) {
-          relCreditsBody.innerHTML = hasCredits ? item.credits_html : "<p><em>Información técnica de grabación y créditos de obra.</em></p>";
-        }
-        if (relGalleryGrid) {
-          if (hasPhotos) {
-            relGalleryGrid.style.display = "grid";
-            relGalleryGrid.innerHTML = item.photos.map(function (p) {
-              return '<figure class="release-gallery-item">' +
-                '<img src="' + p.src + '" alt="' + (p.alt || "") + '" loading="lazy"/>' +
-                '<figcaption>' + (p.caption || p.alt || "") + '</figcaption>' +
-              '</figure>';
-            }).join("");
-          } else {
-            relGalleryGrid.style.display = "none";
-            relGalleryGrid.innerHTML = "";
-          }
-        }
-      } else {
-        creditsCard.style.display = "none";
-      }
+    // Set link to main Cancionero for this album
+    if (relCancioneroLink) {
+      relCancioneroLink.href = "#/letras#letras-" + item.key;
     }
 
-    // Songs / Lyrics
+    // Display ONLY songs & lyrics of THIS album
     var songsCard = document.getElementById("rel-letras") || document.getElementById("letras");
     if (songsCard) {
       if (item.songs && item.songs.length) {
@@ -370,4 +344,74 @@
   });
 
   render();
+
+  window.openReleaseFichaModal = function (key) {
+    var raw = (location.hash || "").replace(/^#\/?/, "").trim();
+    var parts = raw.split("/");
+    var currentKey = key || (parts.length > 1 ? parts[1].split("#")[0].split("?")[0] : "");
+
+    var releases = window.PRIETTO_RELEASES || [];
+    var relIdx = 0;
+    if (currentKey) {
+      for (var i = 0; i < releases.length; i++) {
+        if (releases[i].key === currentKey || releases[i].key.toLowerCase() === currentKey.toLowerCase()) {
+          relIdx = i;
+          break;
+        }
+      }
+    }
+    var item = releases[relIdx] || releases[0];
+
+    var modal = document.getElementById("releaseFichaModal");
+    var modCategoryBadge = document.getElementById("modCategoryBadge");
+    var modTitle = document.getElementById("modTitle");
+    var modSubtitle = document.getElementById("modSubtitle");
+    var modCreditsBody = document.getElementById("modCreditsBody");
+    var modGalleryGrid = document.getElementById("modGalleryGrid");
+    var modGallerySection = document.getElementById("modGallerySection");
+
+    if (modCategoryBadge) modCategoryBadge.textContent = (item.year || "") + " · " + (item.cat || "ÁLBUM");
+    if (modTitle) modTitle.textContent = item.title;
+    if (modSubtitle) {
+      var artist = "Maxi Prietto";
+      if (item.cat === "LOS ESPÍRITUS") artist = "Los Espíritus";
+      else if (item.cat === "COSMOS") artist = "Prietto Viaja al Cosmos";
+      modSubtitle.textContent = artist + " · Ficha Técnica & Fotos de Grabación";
+    }
+
+    if (modCreditsBody) {
+      modCreditsBody.innerHTML = (item.credits_html && item.credits_html.trim())
+        ? item.credits_html
+        : "<p><strong>Año de lanzamiento:</strong> " + (item.year || "") + "</p><p><strong>Categoría:</strong> " + (item.cat || "SOLISTA") + "</p><p><strong>Artista:</strong> Maxi Prietto</p><p><em>Información técnica de grabación y créditos de obra.</em></p>";
+    }
+
+    if (modGalleryGrid && modGallerySection) {
+      if (item.photos && item.photos.length) {
+        modGallerySection.style.display = "block";
+        modGalleryGrid.innerHTML = item.photos.map(function (p) {
+          return '<figure class="bm-photo">' +
+            '<img src="' + p.src + '" alt="' + (p.alt || "") + '" loading="lazy"/>' +
+            '<figcaption>' + (p.caption || p.alt || "") + '</figcaption>' +
+          '</figure>';
+        }).join("");
+      } else {
+        modGallerySection.style.display = "none";
+        modGalleryGrid.innerHTML = "";
+      }
+    }
+
+    if (modal) {
+      modal.classList.add("is-open");
+      modal.setAttribute("aria-hidden", "false");
+    }
+  };
+
+  window.closeReleaseFichaModal = function () {
+    var modal = document.getElementById("releaseFichaModal");
+    if (modal) {
+      modal.classList.remove("is-open");
+      modal.setAttribute("aria-hidden", "true");
+    }
+  };
+
 })();

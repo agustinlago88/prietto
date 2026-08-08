@@ -1009,28 +1009,6 @@ body[data-route="home"] .pager { display: none; }
   pointer-events: auto;
 }
 .bm-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(12, 12, 12, 0.7);
-  backdrop-filter: blur(4px);
-}
-.bm-content {
-  position: relative;
-  background: var(--paper);
-  color: var(--ink);
-  border: 1px solid var(--rule-strong);
-  width: 100%;
-  max-width: 900px;
-  max-height: 85vh;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 15px 50px rgba(12, 12, 12, 0.3);
-  animation: modalScale 380ms cubic-bezier(0.22, 1, 0.36, 1) both;
-}
-@keyframes modalScale {
-  from { transform: scale(0.95) translateY(10px); }
-  to { transform: scale(1) translateY(0); }
-}
 .bm-close {
   position: absolute;
   top: 1rem;
