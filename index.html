@@ -356,8 +356,7 @@
         <div class="release-info-col">
           <span id="relMetaLine" class="meta-line">2015 · ÁLBUM DE ESTUDIO</span>
           <h1 id="relTitle" class="release-title">PRIETTO</h1>
-          <p id="relArtist" class="release-artist">Maxi Prietto</p>
-          <p id="relDesc" class="release-desc">Prietto de manera íntegramente analógica en cinta.</p>
+
 
           <!-- Embedded Spotify Player for this exact release -->
           <div class="release-spotify-container">
@@ -366,21 +365,12 @@
 
           <div class="release-actions">
             <a id="relSpotifyExternalBtn" class="btn-release-action spotify" href="https://open.spotify.com" target="_blank" rel="noopener">🟢 Abrir en Spotify</a>
-            <a class="btn-release-action" href="#rel-letras">📜 Ver Letras del Disco</a>
-            <a class="btn-release-action" href="#rel-creditos">📋 Ficha Técnica</a>
+            <a class="btn-release-action" href="javascript:void(0)" onclick="openReleaseFichaModal()">📋 Ficha Técnica</a>
           </div>
         </div>
       </div>
 
-      <!-- Release Songs & Lyrics Block -->
-      <div class="release-sections">
-        <article class="release-card" id="rel-letras">
-          <h3 class="release-card-title">Repertorio &amp; Letras del Disco</h3>
-          <div id="relSongsContainer" class="release-songs-container">
-            <!-- Populated dynamically -->
-          </div>
-        </article>
-      </div>
+
 
       <!-- Release Bottom Pager -->
       <div class="release-footer-pager">

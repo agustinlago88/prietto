@@ -80,13 +80,9 @@
     var relYearBadge = document.getElementById("relYearBadge");
     var relMetaLine = document.getElementById("relMetaLine");
     var relTitle = document.getElementById("relTitle");
-    var relArtist = document.getElementById("relArtist");
-    var relDesc = document.getElementById("relDesc");
     var relCover = document.getElementById("relCover");
     var relSpotifyIframe = document.getElementById("relSpotifyIframe");
     var relSpotifyExternalBtn = document.getElementById("relSpotifyExternalBtn");
-    var relCancioneroLink = document.getElementById("relCancioneroLink");
-    var relSongsContainer = document.getElementById("relSongsContainer");
     var relPrevBtn = document.getElementById("relPrevBtn");
     var relNextBtn = document.getElementById("relNextBtn");
 
@@ -95,12 +91,6 @@
     if (relMetaLine) relMetaLine.textContent = (item.year || "") + " · " + (item.cat || "REGISTRO DE OBRA");
     if (relTitle) relTitle.textContent = item.title;
 
-    var artistName = "Maxi Prietto";
-    if (item.cat === "LOS ESPÍRITUS") artistName = "Los Espíritus · Maxi Prietto";
-    else if (item.cat === "COSMOS") artistName = "Prietto Viaja al Cosmos con Mariano";
-    if (relArtist) relArtist.textContent = artistName;
-
-    if (relDesc) relDesc.textContent = item.desc || "";
     if (relCover) {
       relCover.src = item.cover;
       relCover.alt = item.title;
@@ -113,28 +103,6 @@
     if (relSpotifyExternalBtn && item.spotify_embed) {
       var cleanUrl = item.spotify_embed.replace("/embed/", "/").split("?")[0];
       relSpotifyExternalBtn.href = cleanUrl;
-    }
-
-    // Set link to main Cancionero for this album
-    if (relCancioneroLink) {
-      relCancioneroLink.href = "#/letras#letras-" + item.key;
-    }
-
-    // Display ONLY songs & lyrics of THIS album
-    var songsCard = document.getElementById("rel-letras") || document.getElementById("letras");
-    if (songsCard) {
-      if (item.songs && item.songs.length) {
-        songsCard.style.display = "block";
-        var songsHtml = item.songs.map(function (s) {
-          return '<div class="release-song-block">' +
-            '<h4>' + s.title + '</h4>' +
-            '<p>' + s.lines.join("<br>") + '</p>' +
-          '</div>';
-        }).join("");
-        if (relSongsContainer) relSongsContainer.innerHTML = songsHtml;
-      } else {
-        songsCard.style.display = "none";
-      }
     }
 
     // Pager
