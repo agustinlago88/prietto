@@ -82,7 +82,6 @@
     var relTitle = document.getElementById("relTitle");
     var relCover = document.getElementById("relCover");
     var relSpotifyIframe = document.getElementById("relSpotifyIframe");
-    var relSpotifyExternalBtn = document.getElementById("relSpotifyExternalBtn");
     var relPrevBtn = document.getElementById("relPrevBtn");
     var relNextBtn = document.getElementById("relNextBtn");
 
@@ -100,10 +99,6 @@
       relSpotifyIframe.src = item.spotify_embed;
     }
 
-    if (relSpotifyExternalBtn && item.spotify_embed) {
-      var cleanUrl = item.spotify_embed.replace("/embed/", "/").split("?")[0];
-      relSpotifyExternalBtn.href = cleanUrl;
-    }
 
     // Ficha Técnica (inline)
     var fichaCard = document.getElementById("rel-ficha");
