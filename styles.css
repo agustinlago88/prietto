@@ -1834,3 +1834,134 @@ body[data-route="home"] .pager { display: none; }
     right: -10px;
   }
 }
+
+/* =========================================================
+   BLOG
+   ========================================================= */
+.blog-feed {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.blog-post {
+  display: flex;
+  gap: 2rem;
+  padding: 2.5rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.blog-post:first-child {
+  padding-top: 0;
+}
+
+.blog-post:last-child {
+  border-bottom: none;
+}
+
+.blog-post-date {
+  flex: 0 0 80px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+  padding-top: 0.2rem;
+}
+
+.bp-day {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--ink);
+}
+
+.bp-month {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-70);
+}
+
+.blog-post-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.blog-post-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0 0 0.8rem;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+
+.blog-post-body p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin: 0 0 1.2rem;
+  color: var(--ink);
+}
+
+.blog-post-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 0.8rem;
+  margin-bottom: 1.2rem;
+}
+
+.blog-post-gallery img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  display: block;
+  border-radius: 6px;
+  border: 1px solid var(--rule);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.blog-post-gallery img:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.blog-post-link {
+  font-family: var(--mono);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 2px solid var(--ink);
+  padding-bottom: 2px;
+  transition: opacity 0.2s ease;
+}
+
+.blog-post-link:hover {
+  opacity: 0.6;
+}
+
+@media (max-width: 600px) {
+  .blog-post {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .blog-post-date {
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: baseline;
+  }
+
+  .bp-day {
+    font-size: 1.6rem;
+  }
+
+  .blog-post-gallery {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  }
+}
