@@ -12,7 +12,8 @@
     { id: "letras",    label: "Letras",      num: "03" },
     { id: "video",     label: "Vídeo",       num: "04" },
     { id: "biografia", label: "Bio",         num: "05" },
-    { id: "contacto",  label: "Contacto",    num: "06" }
+    { id: "blog",      label: "Novedades",   num: "06" },
+    { id: "contacto",  label: "Contacto",    num: "07" }
   ];
 
   var body = document.body;
