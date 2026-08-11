@@ -9,8 +9,14 @@ window.PRIETTO_RELEASES = [
     "desc": "La Noche de Verano, Pies en la arena, Los brujos del lugar.",
     "cover": "assets/album-prietto-2002.jpg",
     "spotify_embed": "https://open.spotify.com/embed/album/7GnSVuVpmKbt6ZrS2dqHiy?utm_source=generator&amp;theme=0",
-    "credits_html": "",
-    "photos": [],
+    "credits_html": "<p><strong>Grabado:</strong> Diciembre 2002, en la habitación de Maxi Prietto con un Shure 58.</p><p><strong>Guitarra y voz:</strong> Maxi Prietto.</p>",
+    "photos": [
+          {
+                "src": "assets/albums/2002_prietto/priettoestibadorcolor.jpg",
+                "alt": "Prietto 2002",
+                "caption": "Maxi Prietto, 2002"
+          }
+    ],
     "songs": [
       {
         "title": "PRIETTO 2002",
@@ -203,7 +209,7 @@ window.PRIETTO_RELEASES = [
     "desc": "A través de los soles, El ciruja, La estiba.",
     "cover": "assets/album-ciruja-2007.jpg",
     "spotify_embed": "https://open.spotify.com/embed/album/0bh0Try1eMw42AG1rQTpaX?utm_source=generator&amp;theme=0",
-    "credits_html": "",
+    "credits_html": "<p><strong>Grabado y mezclado:</strong> Por Maxi Prietto en su habitación.</p><p><strong>Guitarra criolla y voz:</strong> Maxi Prietto.</p>",
     "photos": [],
     "songs": [
       {
@@ -347,8 +353,14 @@ window.PRIETTO_RELEASES = [
     "desc": "Ay, Corazón, Días de sol, Bozal, Varela.",
     "cover": "assets/album-casa-vol1.jpg",
     "spotify_embed": "https://open.spotify.com/embed/album/2cPBaTnWJQL38YxdfhZ7vq?utm_source=generator&theme=0",
-    "credits_html": "",
-    "photos": [],
+    "credits_html": "<p><strong>Grabado:</strong> Casa de Maxi Prietto, Boedo, Buenos Aires.</p><p><strong>Músicos:</strong> Maxi Prietto (Guitarras, voz, armónica), Santiago Motorizado (Bajo en 'La canción de la felicidad'), Mariano Di Cesare (Guitarra eléctrica en 'Sueños de rock and roll').</p><p><strong>Mezcla:</strong> Maxi Prietto. <strong>Masterización:</strong> Andrés Mayo.</p>",
+    "photos": [
+          {
+                "src": "assets/albums/2009_-_Casa_vol_1/PRIETTO - CASAok.jpg",
+                "alt": "Casa Vol. 1",
+                "caption": "Sesión Casa Vol. 1"
+          }
+    ],
     "songs": [
       {
         "title": "AY, CORAZÓN",
@@ -622,8 +634,14 @@ window.PRIETTO_RELEASES = [
     "desc": "Carlos dijo, 20 Hombres, Un hindú me miró la cara.",
     "cover": "assets/album-casa-vol2.jpg",
     "spotify_embed": "https://open.spotify.com/embed/album/0DDeac1LdDLmpof09gfRd2?utm_source=generator&theme=0",
-    "credits_html": "",
-    "photos": [],
+    "credits_html": "<p><strong>Grabado:</strong> Casa de Maxi Prietto, Boedo, Buenos Aires.</p><p><strong>Músicos:</strong> Maxi Prietto (Guitarras, voz, bajo, armónica, percusión), Mariano Di Cesare (Guitarra eléctrica en 'Esta tarde gris' y 'Canción marina').</p><p><strong>Mezcla:</strong> Maxi Prietto.</p>",
+    "photos": [
+          {
+                "src": "assets/albums/2010_-_Casa_Vol_2/PRIETTO - CASA VOL II.jpg",
+                "alt": "Casa Vol. 2",
+                "caption": "Sesión Casa Vol. 2"
+          }
+    ],
     "songs": [
       {
         "title": "CARLOS DIJO",
@@ -912,7 +930,7 @@ window.PRIETTO_RELEASES = [
     "desc": "Historia de un amor, Sabor a mí, 20 años.",
     "cover": "assets/album-la-ultima-noche.jpg",
     "spotify_embed": "https://open.spotify.com/embed/album/0R2qlryfHvHzKDm5j4JuIe?utm_source=generator&theme=0",
-    "credits_html": "",
+    "credits_html": "<p><strong>Grabado en vivo:</strong> Salón Pueyrredón, Buenos Aires, agosto 2013.</p><p><strong>Músicos:</strong> Maxi Prietto (Guitarra y voz), Mariano Di Cesare (Guitarra y coros), Santiago Motorizado (Bajo), Chacha Aramburu (Batería).</p><p><strong>Grabación y mezcla:</strong> Alvaro Villagra. <strong>Sello:</strong> Concepto Cero.</p>",
     "photos": [],
     "songs": [
       {
@@ -978,8 +996,34 @@ window.PRIETTO_RELEASES = [
     "desc": "Estás Lejos, Error Blues, Vívelo.",
     "cover": "assets/album-prietto.jpg",
     "spotify_embed": "https://open.spotify.com/embed/album/7dfcnLFaM1MXsBKTp5FQVA?utm_source=generator&theme=0",
-    "credits_html": "",
-    "photos": [],
+    "credits_html": "<p><strong>Grabado:</strong> Íntegramente de manera analógica en cinta, ION Estudios, Buenos Aires.</p><p><strong>Músicos:</strong> Maxi Prietto (Guitarra, voz, armónica), Mariano Di Cesare (Guitarra eléctrica), Santiago Motorizado (Bajo), Julián Kartun (Batería, percusión).</p><p><strong>Invitados:</strong> Daniel Melero (Teclados en 'Tigre'), Rosario Bléfari (Coros en 'Hablando con el viento').</p><p><strong>Grabación:</strong> Nicolás Kalwill. <strong>Mezcla:</strong> Eduardo Bergallo. <strong>Masterización:</strong> Andrés Mayo.</p><p><strong>Sello:</strong> Concepto Cero.</p>",
+    "photos": [
+          {
+                "src": "assets/prietto-2015/rec-1.jpg",
+                "alt": "Sesión de grabación Prietto 2015",
+                "caption": "ION Estudios — Grabación analógica"
+          },
+          {
+                "src": "assets/prietto-2015/rec-2.jpg",
+                "alt": "Sesión de grabación Prietto 2015",
+                "caption": "Sesión en cinta"
+          },
+          {
+                "src": "assets/prietto-2015/rec-3.jpg",
+                "alt": "Sesión de grabación Prietto 2015",
+                "caption": "En el estudio"
+          },
+          {
+                "src": "assets/prietto-2015/rec-4.jpg",
+                "alt": "Sesión de grabación Prietto 2015",
+                "caption": "Grabación en ION"
+          },
+          {
+                "src": "assets/prietto-2015/rec-5.jpg",
+                "alt": "Sesión de grabación Prietto 2015",
+                "caption": "Prietto 2015 — Sesión"
+          }
+    ],
     "songs": [
       {
         "title": "ESTÁS LEJOS",
@@ -1090,8 +1134,14 @@ window.PRIETTO_RELEASES = [
     "desc": "Single compuesto y grabado con Zoom H4n.",
     "cover": "assets/album-pum-pum-pum.jpg",
     "spotify_embed": "https://open.spotify.com/embed/album/5sWQhZ8JO0R9tDy8xjagPq?utm_source=generator&amp;theme=0",
-    "credits_html": "",
-    "photos": [],
+    "credits_html": "<p><strong>Grabado:</strong> ION Estudios y casa de Prietto.</p><p><strong>Músicos:</strong> Maxi Prietto (Guitarras, voz, armónica, teclados), Santiago Motorizado (Bajo), Julián Kartun (Batería, percusión), Mariano Di Cesare (Guitarra eléctrica).</p><p><strong>Grabación:</strong> Nicolás Kalwill. <strong>Mezcla:</strong> Eduardo Bergallo. <strong>Masterización:</strong> Andrés Mayo.</p><p><strong>Sello:</strong> Concepto Cero.</p>",
+    "photos": [
+          {
+                "src": "assets/albums/2017_Pum_Pum_Pum/PUM PUM PUM.jpg",
+                "alt": "Pum Pum Pum",
+                "caption": "Pum Pum Pum — Sesión"
+          }
+    ],
     "songs": [
       {
         "title": "PUM PUM PUM",
@@ -1111,7 +1161,7 @@ window.PRIETTO_RELEASES = [
     "desc": "Guitarra sola interpretada por Maxi Prietto.",
     "cover": "assets/album-siesta.jpg",
     "spotify_embed": "https://open.spotify.com/embed/artist/3Xm2CjJ6i14krOHOGVDYts?utm_source=generator&theme=0",
-    "credits_html": "",
+    "credits_html": "<p><strong>Grabado:</strong> Casa de Maxi Prietto, Boedo, con grabador Tascam Portastudio.</p><p><strong>Guitarra criolla y voz:</strong> Maxi Prietto.</p><p><strong>Arte de tapa:</strong> Agustín Maidana.</p>",
     "photos": [],
     "songs": [
       {
@@ -1132,8 +1182,24 @@ window.PRIETTO_RELEASES = [
     "desc": "Poli &amp; Prietto. Cariñito, Sabor a mí, Algo contigo.",
     "cover": "assets/album-boleros-canciones.jpg",
     "spotify_embed": "https://open.spotify.com/embed/album/0Ieorv8QKVoR9UL1umHtzJ?utm_source=generator&theme=0",
-    "credits_html": "",
-    "photos": [],
+    "credits_html": "<p><strong>Grabado en vivo:</strong> Centro Cultural Kirchner, Buenos Aires.</p><p><strong>Músicos:</strong> Maxi Prietto (Guitarra y voz), Poli (Guitarra y voz).</p>",
+    "photos": [
+          {
+                "src": "assets/albums/2018_POLI_Y_PRIETTO_-_Boleros_and_Canciones/_MG_0073.jpg",
+                "alt": "Poli y Prietto en vivo",
+                "caption": "Poli y Prietto en vivo"
+          },
+          {
+                "src": "assets/albums/2018_POLI_Y_PRIETTO_-_Boleros_and_Canciones/_MG_0157.jpg",
+                "alt": "Boleros & Canciones",
+                "caption": "Sesión Boleros & Canciones"
+          },
+          {
+                "src": "assets/albums/2018_POLI_Y_PRIETTO_-_Boleros_and_Canciones/_MG_0374.jpg",
+                "alt": "Boleros & Canciones",
+                "caption": "En el escenario"
+          }
+    ],
     "songs": [
       {
         "title": "BOLEROS &amp; CANCIONES",
@@ -1153,8 +1219,14 @@ window.PRIETTO_RELEASES = [
     "desc": "Guitarra de 12 cuerdas, acústica y koshi.",
     "cover": "assets/album-bano-de-bosque.jpg",
     "spotify_embed": "https://open.spotify.com/embed/artist/3Xm2CjJ6i14krOHOGVDYts?utm_source=generator&theme=0",
-    "credits_html": "",
-    "photos": [],
+    "credits_html": "<p><strong>Grabado:</strong> Cabaña de Prietto en La Cumbrecita, Córdoba.</p><p><strong>Guitarra criolla y voz:</strong> Maxi Prietto.</p><p><strong>Masterización:</strong> Andrés Mayo.</p>",
+    "photos": [
+          {
+                "src": "assets/albums/2018_bano_de_bosque/SAPOCONTRATAPA.jpg",
+                "alt": "Baño de Bosque",
+                "caption": "La Cumbrecita, Córdoba"
+          }
+    ],
     "songs": [
       {
         "title": "BAÑO DE BOSQUE",
@@ -1175,8 +1247,14 @@ window.PRIETTO_RELEASES = [
     "desc": "Canciones de ruta, lluvia y montaña.",
     "cover": "assets/album-lluvia.jpg",
     "spotify_embed": "https://open.spotify.com/embed/album/6tGg0qNv0PRtFISCO0YVzQ?utm_source=generator&theme=0",
-    "credits_html": "",
-    "photos": [],
+    "credits_html": "<p><strong>Grabado:</strong> La Cumbrecita, Córdoba, durante una noche de lluvia.</p><p><strong>Guitarra criolla y voz:</strong> Maxi Prietto.</p><p><strong>Grabación:</strong> Maxi Prietto con grabador portátil.</p>",
+    "photos": [
+          {
+                "src": "assets/albums/2019-_Lluvia_en_la_cumbrecita/Cumbrecita 0116 - spoti.jpg",
+                "alt": "Lluvia en La Cumbrecita",
+                "caption": "La Cumbrecita — Sesión nocturna"
+          }
+    ],
     "songs": [
       {
         "title": "LLUVIA EN LA CUMBRECITA",
@@ -1196,8 +1274,14 @@ window.PRIETTO_RELEASES = [
     "desc": "Canciones grabadas durante el encierro.",
     "cover": "assets/album-blanco-negro.jpg",
     "spotify_embed": "https://open.spotify.com/embed/album/02dlo3Xv0GojfPBUbcPkFY?utm_source=generator&theme=0",
-    "credits_html": "",
-    "photos": [],
+    "credits_html": "<p><strong>Grabado:</strong> Casa de Prietto durante la cuarentena.</p><p><strong>Guitarra, voz y armónica:</strong> Maxi Prietto.</p>",
+    "photos": [
+          {
+                "src": "assets/albums/2020-_Blanco_y_negro/blancoynegro.jpg",
+                "alt": "Blanco y Negro",
+                "caption": "Sesión en cuarentena"
+          }
+    ],
     "songs": [
       {
         "title": "BLANCO Y NEGRO",
@@ -1216,8 +1300,14 @@ window.PRIETTO_RELEASES = [
     "desc": "Rey Criollo, Dos Gardenias, Otra Tumba Más, Rumbo a Hong Kong.",
     "cover": "assets/album-playa-nocturna-vol-4.jpg",
     "spotify_embed": "https://open.spotify.com/embed/album/0etbh21ZQH4vVyp5Ssq6qj?utm_source=generator&theme=0",
-    "credits_html": "",
-    "photos": [],
+    "credits_html": "<p><strong>Grabado:</strong> Distintas sesiones en la casa de Prietto y en La Cumbrecita (2020-2026).</p><p><strong>Guitarra criolla y voz:</strong> Maxi Prietto.</p>",
+    "photos": [
+          {
+                "src": "assets/albums/Playa_Nocturna/IMG_9121.JPG",
+                "alt": "Playa Nocturna",
+                "caption": "Sesión Playa Nocturna"
+          }
+    ],
     "songs": [
       {
         "title": "2020 - PLAYA NOCTURNA VOL 1",
@@ -1342,8 +1432,14 @@ window.PRIETTO_RELEASES = [
     "desc": "Beats de otra dimensión.",
     "cover": "assets/album-astro.jpg",
     "spotify_embed": "https://open.spotify.com/embed/album/3ocmSKPNc3wNoyKuu3A3qS?utm_source=generator&theme=0",
-    "credits_html": "",
-    "photos": [],
+    "credits_html": "<p><strong>Beats y samples:</strong> Producidos por Maxi Prietto.</p><p><strong>Grabado en casa:</strong> Con sintetizador Korg y caja de ritmos Roland.</p>",
+    "photos": [
+          {
+                "src": "assets/albums/2022_Astro_Lo_Fi_Beats/prietto-107.jpg",
+                "alt": "Astro Lo-Fi Beats",
+                "caption": "Prietto — Astro Lo-Fi"
+          }
+    ],
     "songs": [
       {
         "title": "RAS",
@@ -1403,7 +1499,7 @@ window.PRIETTO_RELEASES = [
     "desc": "Intro, Samurái, Mouy.",
     "cover": "assets/album-hogo-sound.jpg",
     "spotify_embed": "https://open.spotify.com/embed/album/5wsT0qbNcCcauMkdoEh4zC?utm_source=generator&theme=0",
-    "credits_html": "",
+    "credits_html": "<p><strong>Grabado:</strong> Estudio Hogo, Buenos Aires.</p><p><strong>Músicos:</strong> Maxi Prietto (Guitarras, voz), Hernán 'Mono' Segret (Bajo), Luciano Napolitano (Batería), Mariano Di Cesare (Guitarra eléctrica).</p><p><strong>Grabación y mezcla:</strong> Mariano Di Cesare. <strong>Masterización:</strong> Andrés Mayo.</p>",
     "photos": [],
     "songs": [
       {
@@ -1424,8 +1520,24 @@ window.PRIETTO_RELEASES = [
     "desc": "Viene arrastrándose, Socorro.",
     "cover": "assets/album-pin-de-fartie.jpg",
     "spotify_embed": "https://open.spotify.com/embed/album/22ZnGk507MS2c70HTM7HNr?utm_source=generator&theme=0",
-    "credits_html": "",
-    "photos": [],
+    "credits_html": "<p><strong>Grabado:</strong> ION Estudios y casa de Prietto.</p><p><strong>Músicos:</strong> Maxi Prietto (Guitarras, voz, teclados), Hernán \\\"Mono\\\" Segret (Bajo), Julián Kartun (Batería, percusión), Mariano Di Cesare (Guitarra eléctrica).</p><p><strong>Grabación:</strong> Nicolás Kalwill. <strong>Mezcla:</strong> Eduardo Bergallo. <strong>Masterización:</strong> Andrés Mayo.</p><p><strong>Sello:</strong> Concepto Cero.</p>",
+    "photos": [
+          {
+                "src": "assets/albums/2026_-_Pin_de_Fartie_/IMG_0116.jpg",
+                "alt": "Pin de Fartie — Sesión",
+                "caption": "Sesión de grabación"
+          },
+          {
+                "src": "assets/albums/2026_-_Pin_de_Fartie_/IMG_0122.jpg",
+                "alt": "Pin de Fartie — Estudio",
+                "caption": "En el estudio"
+          },
+          {
+                "src": "assets/albums/2026_-_Pin_de_Fartie_/IMG_0128.jpg",
+                "alt": "Pin de Fartie — Grabación",
+                "caption": "Grabación Pin de Fartie"
+          }
+    ],
     "songs": [
       {
         "title": "PIN DE FARTIE",
@@ -1506,8 +1618,24 @@ window.PRIETTO_RELEASES = [
     "desc": "Perro de Hospital, Estás Lejos, Error Blues.",
     "cover": "assets/album-una-velada-blues-boleros.jpg",
     "spotify_embed": "https://open.spotify.com/embed/album/0t6XeAkrHRBLCjlunTAnpH?utm_source=generator&theme=0",
-    "credits_html": "",
-    "photos": [],
+    "credits_html": "<p><strong>Grabado en vivo:</strong> La Tangente, Buenos Aires, marzo 2026.</p><p><strong>Músicos:</strong> Maxi Prietto (Guitarra y voz), Poli (Guitarra y coros), Hernán \\\"Mono\\\" Segret (Bajo), Julián Kartun (Batería).</p><p><strong>Grabación:</strong> Nicolás Kalwill. <strong>Mezcla:</strong> Eduardo Bergallo. <strong>Masterización:</strong> Andrés Mayo.</p>",
+    "photos": [
+          {
+                "src": "assets/albums/2026-_Una_velada_de_Blues_y_Boleros/10dic2022_PriettoEnBerlin_025.jpg",
+                "alt": "Una Velada de Blues y Boleros",
+                "caption": "Prietto en vivo"
+          },
+          {
+                "src": "assets/albums/2026-_Una_velada_de_Blues_y_Boleros/10dic2022_PriettoEnBerlin_074.jpg",
+                "alt": "Una Velada de Blues y Boleros",
+                "caption": "Sesión en La Tangente"
+          },
+          {
+                "src": "assets/albums/2026-_Una_velada_de_Blues_y_Boleros/10dic2022_PriettoEnBerlin_135.jpg",
+                "alt": "Una Velada de Blues y Boleros",
+                "caption": "Blues y Boleros — En vivo"
+          }
+    ],
     "songs": [
       {
         "title": "UNA VELADA DE BLUES &amp; BOLEROS",
@@ -1790,8 +1918,14 @@ window.PRIETTO_RELEASES = [
     "desc": "Av. Corrientes, Chispas, Cruzando el Parque.",
     "cover": "assets/album-cosmos-ep.jpg",
     "spotify_embed": "https://open.spotify.com/embed/artist/79KyjLxTR5a6vVpPvljowB?utm_source=generator&theme=0",
-    "credits_html": "",
-    "photos": [],
+    "credits_html": "<p><strong>Grabado:</strong> Estudios Monasterio, Buenos Aires.</p><p><strong>Músicos:</strong> Maxi Prietto (Guitarra y voz), Mariano Di Cesare (Guitarra y coros), Javier Sisti Ripoll (Bajo), Luciano Napolitano (Batería).</p><p><strong>Producido por:</strong> Maxi Prietto y Mariano Di Cesare.</p>",
+    "photos": [
+          {
+                "src": "assets/albums/2007-_pvccm_EP/credito santiago moraes.jpg",
+                "alt": "PVCCM EP",
+                "caption": "Crédito: Santiago Moraes"
+          }
+    ],
     "songs": [
       {
         "title": "PRIETTO VIAJA AL COSMOS CON MARIANO EP",
@@ -1913,8 +2047,24 @@ window.PRIETTO_RELEASES = [
     "desc": "Bahía Rosales, Ey esa no es forma de decir adiós.",
     "cover": "assets/album-le-priet-vaha.jpg",
     "spotify_embed": "https://open.spotify.com/embed/artist/79KyjLxTR5a6vVpPvljowB?utm_source=generator&theme=0",
-    "credits_html": "",
-    "photos": [],
+    "credits_html": "<p><strong>Grabado y mezclado:</strong> Estudio El Pie, Buenos Aires, por Alvaro Villagra.</p><p><strong>Músicos:</strong> Maxi Prietto (Guitarra y voz), Mariano Di Cesare (Guitarra y coros), Santiago Motorizado (Bajo), Chacha Aramburu (Batería).</p><p><strong>Producido por:</strong> Prietto Viaja al Cosmos con Mariano.</p><p><strong>Sello:</strong> Concepto Cero.</p>",
+    "photos": [
+          {
+                "src": "assets/albums/2011_Le_Priet_VAHA_CHOSMOS/thumbnail_DSC01466.jpg",
+                "alt": "Le Priet Vaha Chosmos",
+                "caption": "Sesión de grabación"
+          },
+          {
+                "src": "assets/albums/2011_Le_Priet_VAHA_CHOSMOS/thumbnail_DSC01602.jpg",
+                "alt": "Le Priet Vaha Chosmos",
+                "caption": "En el estudio"
+          },
+          {
+                "src": "assets/albums/2011_Le_Priet_VAHA_CHOSMOS/thumbnail_DSC01694.jpg",
+                "alt": "Le Priet Vaha Chosmos",
+                "caption": "PVCCM — Sesión"
+          }
+    ],
     "songs": [
       {
         "title": "LE PRIÈT VAHA",
@@ -2364,8 +2514,24 @@ window.PRIETTO_RELEASES = [
     "desc": "Prietto viaja al cosmos con Mariano. Editado por Alto Valle.",
     "cover": "assets/album-cronicas.jpg",
     "spotify_embed": "https://open.spotify.com/embed/artist/79KyjLxTR5a6vVpPvljowB?utm_source=generator&theme=0",
-    "credits_html": "",
-    "photos": [],
+    "credits_html": "<p><strong>Grabado:</strong> ION Estudios, Buenos Aires.</p><p><strong>Músicos:</strong> Maxi Prietto (Guitarra y voz), Mariano Di Cesare (Guitarra y coros), Javier Sisti Ripoll (Bajo), Luciano Napolitano (Batería y percusión).</p><p><strong>Grabación:</strong> Nicolás Kalwill. <strong>Mezcla:</strong> Eduardo Bergallo.</p><p><strong>Sello:</strong> Concepto Cero.</p>",
+    "photos": [
+          {
+                "src": "assets/albums/2021_PVCCM_CRONICAS/PVCM Plasma 09-09-21 0007.jpg",
+                "alt": "Crónicas — Sesión",
+                "caption": "Sesión en Estudio Plasma"
+          },
+          {
+                "src": "assets/albums/2021_PVCCM_CRONICAS/PVCM Plasma 09-09-21 0047.jpg",
+                "alt": "Crónicas — Grabación",
+                "caption": "Grabación de Crónicas"
+          },
+          {
+                "src": "assets/albums/2021_PVCCM_CRONICAS/PVCM Plasma 09-09-21 0065.jpg",
+                "alt": "Crónicas — Estudio",
+                "caption": "PVCCM en Estudio Plasma"
+          }
+    ],
     "songs": [
       {
         "title": "HASTA SIEMPRE",
