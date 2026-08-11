@@ -113,7 +113,7 @@
       fichaCard.style.display = "block";
     }
 
-    // Photos (thumbnails)
+    // Photos (grid)
     var photosCard = document.getElementById("rel-photos");
     var photosGrid = document.getElementById("relPhotosGrid");
     if (photosCard && photosGrid) {
@@ -122,7 +122,6 @@
         photosGrid.innerHTML = item.photos.map(function (p) {
           return '<figure class="release-gallery-item">' +
             '<img src="' + p.src + '" alt="' + (p.alt || "") + '" loading="lazy"/>' +
-            '<figcaption>' + (p.caption || p.alt || "") + '</figcaption>' +
           '</figure>';
         }).join("");
       } else {
