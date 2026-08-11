@@ -105,6 +105,55 @@
       relSpotifyExternalBtn.href = cleanUrl;
     }
 
+    // Ficha Técnica (inline)
+    var fichaCard = document.getElementById("rel-ficha");
+    var creditsBody = document.getElementById("relCreditsBody");
+    if (fichaCard && creditsBody) {
+      var creditsContent = (item.credits_html && item.credits_html.trim())
+        ? item.credits_html
+        : "<p><strong>Año:</strong> " + (item.year || "") + "</p>" +
+          "<p><strong>Categoría:</strong> " + (item.cat || "SOLISTA") + "</p>" +
+          "<p><strong>Artista:</strong> Maxi Prietto</p>";
+      creditsBody.innerHTML = creditsContent;
+      fichaCard.style.display = "block";
+    }
+
+    // Photos (thumbnails)
+    var photosCard = document.getElementById("rel-photos");
+    var photosGrid = document.getElementById("relPhotosGrid");
+    if (photosCard && photosGrid) {
+      if (item.photos && item.photos.length) {
+        photosCard.style.display = "block";
+        photosGrid.innerHTML = item.photos.map(function (p) {
+          return '<figure class="release-gallery-item">' +
+            '<img src="' + p.src + '" alt="' + (p.alt || "") + '" loading="lazy"/>' +
+            '<figcaption>' + (p.caption || p.alt || "") + '</figcaption>' +
+          '</figure>';
+        }).join("");
+      } else {
+        photosCard.style.display = "none";
+        photosGrid.innerHTML = "";
+      }
+    }
+
+    // Songs & Lyrics
+    var letrasCard = document.getElementById("rel-letras");
+    var songsContainer = document.getElementById("relSongsContainer");
+    if (letrasCard && songsContainer) {
+      if (item.songs && item.songs.length) {
+        letrasCard.style.display = "block";
+        songsContainer.innerHTML = item.songs.map(function (s) {
+          return '<div class="release-song-block">' +
+            '<h4>' + s.title + '</h4>' +
+            '<p>' + s.lines.join("<br>") + '</p>' +
+          '</div>';
+        }).join("");
+      } else {
+        letrasCard.style.display = "none";
+        songsContainer.innerHTML = "";
+      }
+    }
+
     // Pager
     var prevItem = releases[relIdx === 0 ? releases.length - 1 : relIdx - 1];
     var nextItem = releases[relIdx === releases.length - 1 ? 0 : relIdx + 1];

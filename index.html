@@ -365,12 +365,35 @@
 
           <div class="release-actions">
             <a id="relSpotifyExternalBtn" class="btn-release-action spotify" href="https://open.spotify.com" target="_blank" rel="noopener">🟢 Abrir en Spotify</a>
-            <a class="btn-release-action" href="javascript:void(0)" onclick="openReleaseFichaModal()">📋 Ficha Técnica</a>
           </div>
         </div>
       </div>
 
+      <!-- Ficha Técnica (inline) -->
+      <div class="release-sections">
+        <article class="release-card" id="rel-ficha" style="display:none;">
+          <h3 class="release-card-title">Ficha Técnica</h3>
+          <div id="relCreditsBody" class="release-credits-body">
+            <!-- Dynamic credits -->
+          </div>
+        </article>
 
+        <!-- Photos Thumbnails -->
+        <article class="release-card" id="rel-photos" style="display:none;">
+          <h3 class="release-card-title">Fotos de Grabación</h3>
+          <div id="relPhotosGrid" class="release-photos-grid">
+            <!-- Dynamic photos -->
+          </div>
+        </article>
+
+        <!-- Songs & Lyrics -->
+        <article class="release-card" id="rel-letras" style="display:none;">
+          <h3 class="release-card-title">Letras del Disco</h3>
+          <div id="relSongsContainer" class="release-songs-container">
+            <!-- Dynamic songs -->
+          </div>
+        </article>
+      </div>
 
       <!-- Release Bottom Pager -->
       <div class="release-footer-pager">
