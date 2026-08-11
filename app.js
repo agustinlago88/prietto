@@ -424,6 +424,8 @@
         else goToFlyerSlide(currentFlyerIndex - 1);
       }
     }, { passive: true });
+  }
+
   /* ---------- Home Hero Slider ---------- */
   var homeHeroTrack = document.getElementById("homeHeroTrack");
   var homeHeroPrev = document.getElementById("homeHeroPrev");
