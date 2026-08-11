@@ -1836,132 +1836,145 @@ body[data-route="home"] .pager { display: none; }
 }
 
 /* =========================================================
-   BLOG
+   BLOG — Nick Cave–inspired masonry card grid
    ========================================================= */
-.blog-feed {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-}
-
-.blog-post {
-  display: flex;
-  gap: 2rem;
-  padding: 2.5rem 0;
-  border-bottom: 1px solid var(--rule);
-}
-
-.blog-post:first-child {
-  padding-top: 0;
-}
-
-.blog-post:last-child {
-  border-bottom: none;
-}
-
-.blog-post-date {
-  flex: 0 0 80px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.15rem;
-  padding-top: 0.2rem;
-}
-
-.bp-day {
-  font-size: 2.2rem;
-  font-weight: 700;
-  line-height: 1;
-  color: var(--ink);
-}
-
-.bp-month {
-  font-family: var(--mono);
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--ink-70);
-}
-
-.blog-post-body {
-  flex: 1;
-  min-width: 0;
-}
-
-.blog-post-title {
-  font-size: 1.4rem;
-  font-weight: 700;
-  margin: 0 0 0.8rem;
-  line-height: 1.25;
-  letter-spacing: -0.01em;
-  color: var(--ink);
-}
-
-.blog-post-body p {
-  font-size: 0.95rem;
-  line-height: 1.7;
-  margin: 0 0 1.2rem;
-  color: var(--ink);
-}
-
-.blog-post-gallery {
+.blog-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  gap: 0.8rem;
-  margin-bottom: 1.2rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
 }
 
-.blog-post-gallery img {
+/* Large featured card spans 2 columns */
+.blog-card--large {
+  grid-column: span 2;
+}
+
+/* ---- Card ---- */
+.blog-card {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---- Media wrapper ---- */
+.blog-card-media {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  background: #111;
+}
+
+.blog-card--large .blog-card-media {
+  aspect-ratio: 16 / 9;
+}
+
+.blog-card-media img {
   width: 100%;
-  aspect-ratio: 4 / 5;
+  height: 100%;
   object-fit: cover;
   display: block;
-  border-radius: 6px;
-  border: 1px solid var(--rule);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-.blog-post-gallery img:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+.blog-card:hover .blog-card-media img {
+  transform: scale(1.06);
 }
 
-.blog-post-link {
-  font-family: var(--mono);
-  font-size: 0.82rem;
+/* Hover overlay */
+.blog-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.blog-card:hover .blog-card-overlay {
+  opacity: 1;
+}
+
+/* ---- Info block ---- */
+.blog-card-info {
+  padding: 1.2rem 0 0.6rem;
+}
+
+.blog-card-title {
+  font-size: 1rem;
   font-weight: 700;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
+  line-height: 1.3;
+  margin: 0 0 0.35rem;
+}
+
+.blog-card--large .blog-card-title {
+  font-size: 1.25rem;
+}
+
+.blog-card-title a {
   color: var(--ink);
   text-decoration: none;
-  border-bottom: 2px solid var(--ink);
-  padding-bottom: 2px;
   transition: opacity 0.2s ease;
 }
 
-.blog-post-link:hover {
+.blog-card-title a:hover {
   opacity: 0.6;
 }
 
-@media (max-width: 600px) {
-  .blog-post {
-    flex-direction: column;
-    gap: 0.8rem;
+.blog-card-date {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-50, #999);
+  margin: 0 0 0.6rem;
+}
+
+.blog-card-excerpt {
+  font-size: 0.88rem;
+  line-height: 1.65;
+  color: var(--ink-70, #555);
+  margin: 0;
+}
+
+.blog-card--large .blog-card-excerpt {
+  font-size: 0.92rem;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 900px) {
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
   }
 
-  .blog-post-date {
-    flex-direction: row;
-    gap: 0.5rem;
-    align-items: baseline;
-  }
-
-  .bp-day {
-    font-size: 1.6rem;
-  }
-
-  .blog-post-gallery {
-    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  .blog-card--large {
+    grid-column: span 2;
   }
 }
+
+@media (max-width: 600px) {
+  .blog-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .blog-card--large {
+    grid-column: span 1;
+  }
+
+  .blog-card--large .blog-card-media {
+    aspect-ratio: 4 / 3;
+  }
+
+  .blog-card-title {
+    font-size: 0.95rem;
+  }
+
+  .blog-card--large .blog-card-title {
+    font-size: 1.05rem;
+  }
+}
+
