@@ -249,11 +249,11 @@
 
         <ul class="mini-dates">
 
-          <li><a href="#/fechas"><span class="md-day num">04</span><span class="md-info"><strong>Comuna</strong> · San Luis</span><span class="md-mo">Jun</span></a></li>
+          <li><a href="#/fechas"><span class="md-day num">21</span><span class="md-info"><strong>Pétalos de sol</strong> · Córdoba</span><span class="md-mo">Ago</span></a></li>
 
-          <li><a href="#/fechas"><span class="md-day num">05</span><span class="md-info"><strong>Mamadera Bar</strong> · San Juan</span><span class="md-mo">Jun</span></a></li>
+          <li><a href="#/fechas"><span class="md-day num">22</span><span class="md-info"><strong>Hall de Hub</strong> · Santa Fe</span><span class="md-mo">Ago</span></a></li>
 
-          <li><a href="#/fechas"><span class="md-day num">06</span><span class="md-info"><strong>Nido</strong> · Mendoza</span><span class="md-mo">Jun</span></a></li>
+          <li><a href="#/fechas"><span class="md-day num">23</span><span class="md-info"><strong>Casa Brava</strong> · Rosario</span><span class="md-mo">Ago</span></a></li>
 
         </ul>
 
@@ -416,78 +416,127 @@
 
 
 
+      <!-- Flyer Slider Carousel -->
+      <div class="flyers-carousel-wrap">
+        <button class="flyer-nav prev" id="flyerPrev" aria-label="Flyer anterior">‹</button>
+        <div class="flyers-track-container">
+          <div class="flyers-track" id="flyersTrack">
+            
+            <!-- Slide 1: Córdoba -->
+            <div class="flyer-slide active" data-slide-index="0">
+              <div class="flyer-img-box">
+                <img src="assets/fechas/flyer-cordoba.jpg" alt="Flyer Prietto 21 Agosto Córdoba - Pétalos de Sol" loading="lazy" />
+              </div>
+              <div class="flyer-slide-info">
+                <span class="flyer-date num">21 AGO 2026</span>
+                <h3 class="flyer-city">Córdoba</h3>
+                <p class="flyer-venue">Pétalos de sol (@petalosdesol)</p>
+                <a href="https://alpogo.com/evento/prietto-en-petalos-27534" target="_blank" rel="noopener" class="flyer-ticket-btn">🎟 Comprar Entradas</a>
+              </div>
+            </div>
+
+            <!-- Slide 2: Santa Fe -->
+            <div class="flyer-slide" data-slide-index="1">
+              <div class="flyer-img-box">
+                <img src="assets/fechas/flyer-santafe.jpg" alt="Flyer Prietto 22 Agosto Santa Fe - Hall de Hub" loading="lazy" />
+              </div>
+              <div class="flyer-slide-info">
+                <span class="flyer-date num">22 AGO 2026</span>
+                <h3 class="flyer-city">Santa Fe</h3>
+                <p class="flyer-venue">Hall de Hub (@hub.santafe)</p>
+                <a href="https://www.ticketway.com.ar/#/cartelera?evento=2851" target="_blank" rel="noopener" class="flyer-ticket-btn">🎟 Comprar Entradas</a>
+              </div>
+            </div>
+
+            <!-- Slide 3: Rosario -->
+            <div class="flyer-slide" data-slide-index="2">
+              <div class="flyer-img-box">
+                <img src="assets/fechas/flyer-rosario.jpg" alt="Flyer Prietto 23 Agosto Rosario - Casa Brava" loading="lazy" />
+              </div>
+              <div class="flyer-slide-info">
+                <span class="flyer-date num">23 AGO 2026</span>
+                <h3 class="flyer-city">Rosario</h3>
+                <p class="flyer-venue">Casa Brava (@casa.brava)</p>
+                <a href="https://www.ticketsbravos.com/eventos/prietto-presenta-decarnado-e204" target="_blank" rel="noopener" class="flyer-ticket-btn">🎟 Comprar Entradas</a>
+              </div>
+            </div>
+
+            <!-- Slide 4: San Juan -->
+            <div class="flyer-slide" data-slide-index="3">
+              <div class="flyer-img-box">
+                <img src="assets/fechas/flyer-sanjuan.jpg" alt="Flyer Prietto 28 Agosto San Juan - Mamadera" loading="lazy" />
+              </div>
+              <div class="flyer-slide-info">
+                <span class="flyer-date num">28 AGO 2026</span>
+                <h3 class="flyer-city">San Juan</h3>
+                <p class="flyer-venue">Mamadera (@mamadera.sj)</p>
+                <a href="https://www.entradaweb.com.ar/evento/fc8b0d2b/step/1" target="_blank" rel="noopener" class="flyer-ticket-btn">🎟 Comprar Entradas</a>
+              </div>
+            </div>
+
+            <!-- Slide 5: Mendoza -->
+            <div class="flyer-slide" data-slide-index="4">
+              <div class="flyer-img-box">
+                <img src="assets/fechas/flyer-mendoza.jpg" alt="Flyer Prietto 29 Agosto Mendoza - Willys Bar" loading="lazy" />
+              </div>
+              <div class="flyer-slide-info">
+                <span class="flyer-date num">29 AGO 2026</span>
+                <h3 class="flyer-city">Mendoza</h3>
+                <p class="flyer-venue">Willys Bar</p>
+                <a href="https://www.entradaweb.com.ar/evento/357a5264/step/1" target="_blank" rel="noopener" class="flyer-ticket-btn">🎟 Comprar Entradas</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <button class="flyer-nav next" id="flyerNext" aria-label="Flyer siguiente">›</button>
+
+        <!-- Carousel Dots -->
+        <div class="flyer-dots" id="flyerDots">
+          <button class="flyer-dot active" data-index="0" aria-label="Córdoba"></button>
+          <button class="flyer-dot" data-index="1" aria-label="Santa Fe"></button>
+          <button class="flyer-dot" data-index="2" aria-label="Rosario"></button>
+          <button class="flyer-dot" data-index="3" aria-label="San Juan"></button>
+          <button class="flyer-dot" data-index="4" aria-label="Mendoza"></button>
+        </div>
+      </div>
+
+      <!-- Tour Dates List -->
       <div class="dates">
 
-        <a class="date-row" href="https://alpogo.com/evento/los-espiritus-en-san-luis-25822" target="_blank" rel="noopener">
-
-          <span class="date-col date-date num">04 JUN 2026</span>
-
-          <span class="date-col date-city">SAN LUIS, AR</span>
-
-          <span class="date-col date-venue">COMUNA</span>
-
+        <a class="date-row active-date" href="https://alpogo.com/evento/prietto-en-petalos-27534" target="_blank" rel="noopener" data-slide="0">
+          <span class="date-col date-date num">21 AGO 2026</span>
+          <span class="date-col date-city">CÓRDOBA, AR</span>
+          <span class="date-col date-venue">PÉTALOS DE SOL</span>
           <span class="date-col date-cta">TICKETS</span>
-
         </a>
 
-        <a class="date-row" href="https://los-espiritus.com/eventos/mamadera-bar-san-juan-%F0%9F%87%A6%F0%9F%87%B7/" target="_blank" rel="noopener">
-
-          <span class="date-col date-date num">05 JUN 2026</span>
-
-          <span class="date-col date-city">SAN JUAN, AR</span>
-
-          <span class="date-col date-venue">MAMADERA BAR</span>
-
+        <a class="date-row" href="https://www.ticketway.com.ar/#/cartelera?evento=2851" target="_blank" rel="noopener" data-slide="1">
+          <span class="date-col date-date num">22 AGO 2026</span>
+          <span class="date-col date-city">SANTA FE, AR</span>
+          <span class="date-col date-venue">HALL DE HUB</span>
           <span class="date-col date-cta">TICKETS</span>
-
         </a>
 
-        <a class="date-row" href="https://www.entradaweb.com.ar/evento/4cc919e8/step/1" target="_blank" rel="noopener">
-
-          <span class="date-col date-date num">06 JUN 2026</span>
-
-          <span class="date-col date-city">MENDOZA, AR</span>
-
-          <span class="date-col date-venue">NIDO / ESPACIO 23 RÍOS</span>
-
-          <span class="date-col date-cta">TICKETS</span>
-
-        </a>
-
-        <a class="date-row" href="https://www.ticketsbravos.com/evento/los-espiritus-en-casa-brava-20412" target="_blank" rel="noopener">
-
-          <span class="date-col date-date num">12 JUN 2026</span>
-
+        <a class="date-row" href="https://www.ticketsbravos.com/eventos/prietto-presenta-decarnado-e204" target="_blank" rel="noopener" data-slide="2">
+          <span class="date-col date-date num">23 AGO 2026</span>
           <span class="date-col date-city">ROSARIO, AR</span>
-
           <span class="date-col date-venue">CASA BRAVA</span>
-
-          <span class="date-col date-status sold-out">SOLD OUT</span>
-
-        </a>
-
-        <a class="date-row" href="https://livepass.com.ar/events/los-espiritus-en-club-re" target="_blank" rel="noopener">
-
-          <span class="date-col date-date num">19 JUN 2026</span>
-
-          <span class="date-col date-city">QUILMES, AR</span>
-
-          <span class="date-col date-venue">CLUB RE</span>
-
           <span class="date-col date-cta">TICKETS</span>
-
         </a>
 
-        <a class="date-row" href="https://www.allaccess.com.ar/event/los-espiritus" target="_blank" rel="noopener">
+        <a class="date-row" href="https://www.entradaweb.com.ar/evento/fc8b0d2b/step/1" target="_blank" rel="noopener" data-slide="3">
+          <span class="date-col date-date num">28 AGO 2026</span>
+          <span class="date-col date-city">SAN JUAN, AR</span>
+          <span class="date-col date-venue">MAMADERA</span>
+          <span class="date-col date-cta">TICKETS</span>
+        </a>
 
-          <span class="date-col date-date num">22 NOV 2026</span>
-
-          <span class="date-col date-city">BUENOS AIRES, AR</span>
-
-          <span class="date-col date-venue">THE ROXY LIVE</span>
-
-          <span class="date-col date-status past">PASADO</span>
-
+        <a class="date-row" href="https://www.entradaweb.com.ar/evento/357a5264/step/1" target="_blank" rel="noopener" data-slide="4">
+          <span class="date-col date-date num">29 AGO 2026</span>
+          <span class="date-col date-city">MENDOZA, AR</span>
+          <span class="date-col date-venue">WILLYS BAR</span>
+          <span class="date-col date-cta">TICKETS</span>
         </a>
 
       </div>

@@ -354,6 +354,78 @@
     }
   });
 
+  /* ---------- Flyer Slider / Carousel ---------- */
+  var flyersTrack = document.getElementById("flyersTrack");
+  var flyerPrev = document.getElementById("flyerPrev");
+  var flyerNext = document.getElementById("flyerNext");
+  var flyerDots = document.querySelectorAll(".flyer-dot");
+  var dateRows = document.querySelectorAll(".dates .date-row");
+  var currentFlyerIndex = 0;
+  var totalFlyers = 5;
+
+  function goToFlyerSlide(index) {
+    if (index < 0) index = totalFlyers - 1;
+    if (index >= totalFlyers) index = 0;
+    currentFlyerIndex = index;
+
+    if (flyersTrack) {
+      flyersTrack.style.transform = "translateX(-" + (currentFlyerIndex * 100) + "%)";
+    }
+
+    flyerDots.forEach(function (dot, i) {
+      dot.classList.toggle("active", i === currentFlyerIndex);
+    });
+
+    dateRows.forEach(function (row, i) {
+      row.classList.toggle("active-date", i === currentFlyerIndex);
+    });
+  }
+
+  if (flyerPrev) {
+    flyerPrev.addEventListener("click", function (e) {
+      e.preventDefault();
+      goToFlyerSlide(currentFlyerIndex - 1);
+    });
+  }
+
+  if (flyerNext) {
+    flyerNext.addEventListener("click", function (e) {
+      e.preventDefault();
+      goToFlyerSlide(currentFlyerIndex + 1);
+    });
+  }
+
+  flyerDots.forEach(function (dot) {
+    dot.addEventListener("click", function (e) {
+      e.preventDefault();
+      var idx = parseInt(this.getAttribute("data-index"), 10);
+      if (!isNaN(idx)) goToFlyerSlide(idx);
+    });
+  });
+
+  dateRows.forEach(function (row) {
+    row.addEventListener("mouseenter", function () {
+      var idx = parseInt(this.getAttribute("data-slide"), 10);
+      if (!isNaN(idx)) goToFlyerSlide(idx);
+    });
+  });
+
+  if (flyersTrack) {
+    var startX = 0;
+    flyersTrack.addEventListener("touchstart", function (e) {
+      startX = e.touches[0].clientX;
+    }, { passive: true });
+
+    flyersTrack.addEventListener("touchend", function (e) {
+      var endX = e.changedTouches[0].clientX;
+      var dist = endX - startX;
+      if (Math.abs(dist) > 40) {
+        if (dist < 0) goToFlyerSlide(currentFlyerIndex + 1);
+        else goToFlyerSlide(currentFlyerIndex - 1);
+      }
+    }, { passive: true });
+  }
+
   render();
 
   window.openReleaseFichaModal = function (key) {
