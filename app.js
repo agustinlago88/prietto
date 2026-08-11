@@ -424,6 +424,84 @@
         else goToFlyerSlide(currentFlyerIndex - 1);
       }
     }, { passive: true });
+  /* ---------- Home Hero Slider ---------- */
+  var homeHeroTrack = document.getElementById("homeHeroTrack");
+  var homeHeroPrev = document.getElementById("homeHeroPrev");
+  var homeHeroNext = document.getElementById("homeHeroNext");
+  var homeHeroDots = document.querySelectorAll(".home-hero-dot");
+  var currentHomeIndex = 0;
+  var totalHomeSlides = 4;
+  var homeAutoTimer = null;
+
+  function goToHomeSlide(index) {
+    if (index < 0) index = totalHomeSlides - 1;
+    if (index >= totalHomeSlides) index = 0;
+    currentHomeIndex = index;
+
+    if (homeHeroTrack) {
+      homeHeroTrack.style.transform = "translateX(-" + (currentHomeIndex * 100) + "%)";
+    }
+
+    homeHeroDots.forEach(function (dot, i) {
+      dot.classList.toggle("active", i === currentHomeIndex);
+    });
+  }
+
+  function startHomeAuto() {
+    stopHomeAuto();
+    homeAutoTimer = setInterval(function () {
+      goToHomeSlide(currentHomeIndex + 1);
+    }, 5000);
+  }
+
+  function stopHomeAuto() {
+    if (homeAutoTimer) clearInterval(homeAutoTimer);
+  }
+
+  if (homeHeroPrev) {
+    homeHeroPrev.addEventListener("click", function (e) {
+      e.preventDefault();
+      goToHomeSlide(currentHomeIndex - 1);
+      startHomeAuto();
+    });
+  }
+
+  if (homeHeroNext) {
+    homeHeroNext.addEventListener("click", function (e) {
+      e.preventDefault();
+      goToHomeSlide(currentHomeIndex + 1);
+      startHomeAuto();
+    });
+  }
+
+  homeHeroDots.forEach(function (dot) {
+    dot.addEventListener("click", function (e) {
+      e.preventDefault();
+      var idx = parseInt(this.getAttribute("data-index"), 10);
+      if (!isNaN(idx)) {
+        goToHomeSlide(idx);
+        startHomeAuto();
+      }
+    });
+  });
+
+  if (homeHeroTrack) {
+    var homeStartX = 0;
+    homeHeroTrack.addEventListener("touchstart", function (e) {
+      homeStartX = e.touches[0].clientX;
+    }, { passive: true });
+
+    homeHeroTrack.addEventListener("touchend", function (e) {
+      var endX = e.changedTouches[0].clientX;
+      var dist = endX - homeStartX;
+      if (Math.abs(dist) > 40) {
+        if (dist < 0) goToHomeSlide(currentHomeIndex + 1);
+        else goToHomeSlide(currentHomeIndex - 1);
+        startHomeAuto();
+      }
+    }, { passive: true });
+
+    startHomeAuto();
   }
 
   render();
