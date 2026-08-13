@@ -1,942 +1,758 @@
-/* PRIETTO RELEASE DATABASE - 37 ALBUMS */
+/* PRIETTO RELEASE DATABASE - 37 ALBUMS (NEWEST TO OLDEST) */
 window.PRIETTO_RELEASES = [
   {
-    "key": "prietto-2002",
-    "title": "Prietto 2002",
-    "year": "2002",
+    "key": "playa-nocturna-vol4",
+    "title": "Playa Nocturna, Vol. 4",
+    "year": "2026",
     "cat": "SOLISTA",
-    "meta": "SOLISTA · 2002",
-    "desc": "La Noche de Verano, Pies en la arena, Los brujos del lugar.",
-    "cover": "assets/album-prietto-2002.jpg",
-    "spotify_embed": "https://open.spotify.com/embed/album/7GnSVuVpmKbt6ZrS2dqHiy?utm_source=generator&amp;theme=0",
-    "credits_html": "<p>Grabado en diciembre de 2002 por Maxi Prietto en la habitación con un Shure 58.</p>",
-    "photos": [
-      {
-        "src": "assets/albums/2002_prietto/priettoestibadorcolor.jpg",
-        "alt": "Prietto 2002",
-        "caption": "Maxi Prietto, 2002"
-      }
-    ],
-    "songs": [
-      {
-        "title": "LA NOCHE DE VERANO",
-        "lines": [
-          "Sale del mar empapado y contento",
-          "Y se acuesta en la arena otra vez",
-          "Su chica le toca la espalda y prepara el mate",
-          "Son las siete y media de la tarde y el viento empieza a picar",
-          "Se ponen los buzos, se abrazan, se acuestan",
-          "Y vuelven callados a su hogar",
-          "Se bañan juntos, se cambian",
-          "Y salen a la peatonal",
-          "Se sientan en el bar mas barato",
-          "Piden pizza y birra helada",
-          "Es de noche",
-          "La noche, el verano, summer, cerveza el calor",
-          "La noche, el verano, summer, cerveza el calor"
-        ]
-      },
-      {
-        "title": "PIES EN LA ARENA",
-        "lines": [
-          "Sube el sol, sobre el mar",
-          "Huesos rotos, la noche azul",
-          "El verano, la madrugada",
-          "Pies y arena, la libertad",
-          "No hay palabras, hay verdad",
-          "Aire y tiempo, la muerte",
-          "Se quiebran las alas de mi alma,",
-          "En la montaña oí mi voz",
-          "Pude comprender la calma",
-          "Pude comprender dolor",
-          "Pies y arena, la libertad",
-          "No hay palabras, hay verdad",
-          "Aire y tiempo, la muerte",
-          "Aire y tiempo, la muerte"
-        ]
-      },
-      {
-        "title": "ES LA VERDAD",
-        "lines": [
-          "En la mañana sientes bondad al caminar",
-          "Es la verdad que transmite el sol",
-          "Es la verdad que transmite el sol"
-        ]
-      },
-      {
-        "title": "LOS BRUJOS DEL LUGAR",
-        "lines": [
-          "Son siete pactos los que hacen y se van",
-          "Visten con sotanas negras hasta el piso",
-          "Bailan con tambores alrededor del fuego",
-          "Se mueven como ebrios hacen culto a Satán",
-          "Lo hacen a cien millas de un pueblo lejano",
-          "Donde viven forasteros de rostros sucios",
-          "Que mastican tabaco y no saben que",
-          "Estos transeúntes son los brujos del lugar",
-          "Estos transeúntes son los brujos del lugar"
-        ]
-      },
-      {
-        "title": "SALUDO AL SOL",
-        "lines": [
-          "Los indios van a la montaña",
-          "Miran arriba estrellas",
-          "Piensan en amigos muertos",
-          "Y en donde estarán",
-          "O si estarán bien",
-          "Vuelven a la madrugada",
-          "Vuelven sin hablar",
-          "Fumaron hachís junto al fuego",
-          "Dieron bienvenida al sol",
-          "Dieron bienvenida al sol"
-        ]
-      },
-      {
-        "title": "COSAS DE LA CIUDAD",
-        "lines": [
-          "Él vende en el tren cuchillos",
-          "Ella canta en un bar",
-          "Él antes paseaba perros",
-          "Ella tuvo que abortar",
-          "Él no come al mediodía y",
-          "Se emborracha todo el día",
-          "Ella sufre de asma y no tiene obra social",
-          "Él torturó sin asco",
-          "Ella dejó aerobics y el yoga",
-          "Él se puso a llorar",
-          "Mil veces quiso suicidarse",
-          "pero tiene dos niñas hermosas que no puede abandonar",
-          "Él nunca se lavó los dientes, se los tienen que arrancar",
-          "Ella está harta de la tele",
-          "Cuando tiene un rato libre se va a fumar al balcón",
-          "Él se hizo Skin Head y era negro, nadie lo quiso aceptar",
-          "Ella salía con un tipo que se hizo homosexual",
-          "Ella quiere un Estado justo, ya eligió a su candidato",
-          "Él no quiere ningún Estado, él quiere andar en libertad",
-          "Y por las noches ellos salen de paso con sus Falcon",
-          "Miran chicas, miran travas",
-          "Paran autos piden plata",
-          "Y ellas siempre con sonrisas,",
-          "Sueñan con verlos morir",
-          "Sueñan con verlos morir"
-        ]
-      },
-      {
-        "title": "ALGUIEN VIO AL SOL",
-        "lines": [
-          "- Ey, alguien vio al sol?",
-          "- Yo lo vi",
-          "- Donde está?",
-          "- Detrás de la colina",
-          "- Hay que cambiarlo de lugar",
-          "- Por qué?",
-          "- Porque está en un lugar muy lejos",
-          "- Lejos, lejos",
-          "- Muy, muy, lejos",
-          "- Lejos"
-        ]
-      },
-      {
-        "title": "ALGUIEN VIO AL SOL",
-        "lines": [
-          "- Yo lo vi"
-        ]
-      },
-      {
-        "title": "ALGUIEN VIO AL SOL",
-        "lines": [
-          "- Yo lo vi. Está lejos. detrás de la colina.",
-          "- Hay que esconder a la muerte",
-          "- Sí",
-          "- Alguien vio a la muerte?",
-          "- Yo la vi",
-          "- Y que hacía ahí?",
-          "- Estaba jugando con unas niñas",
-          "- De qué edad?",
-          "- Seis años",
-          "- Hay que matar a la muerte",
-          "- Sí, hay que matarla",
-          "- Hay que matar a la muerte",
-          "- Sí, hay que matarla",
-          "- Y a las niñas",
-          "- No",
-          "- Hay que matar al sol",
-          "- Hay que esconder a las niñas"
-        ]
-      },
-      {
-        "title": "ALCANCÍA DE TRISTEZA",
-        "lines": [
-          "“Miro las nubes grises desde mi cama",
-          "Se rompió la alcancía de tristeza",
-          "E inundó mi mundo.",
-          "Hoy soy tristeza",
-          "Hoy soy tristeza…”"
-        ]
-      },
-      {
-        "title": "LA MAÑANA DEL VERANO",
-        "lines": [
-          "El sol sale, detrás del mar",
-          "Los últimos jóvenes borrachos se vuelven a su casa",
-          "O duermen en la playa",
-          "Los viejos se levantan, van a jugar al tejo",
-          "La noche ha muerto hace rato",
-          "Gobiernan las resacas en las cabezas de mis amigos y yo… (teléfono)"
-        ]
-      },
-      {
-        "title": "SUMMER, NOCHE, PLAYA Y SOL",
-        "lines": [
-          "Chicas tragos rock and roll",
-          "Nada falta en este largo viaje hacia mi buen final"
-        ]
-      },
-      {
-        "title": "CERVEZA EN LA PLAYA",
-        "lines": [
-          "(instrumental)"
-        ]
-      }
-    ]
-  },
-  {
-    "key": "ciruja-2007",
-    "title": "El ciruja y los rayos solares",
-    "year": "2007",
-    "cat": "SOLISTA",
-    "meta": "SOLISTA · 2007",
-    "desc": "A través de los soles, El ciruja, La estiba.",
-    "cover": "assets/album-ciruja-2007.jpg",
-    "spotify_embed": "https://open.spotify.com/embed/album/0bh0Try1eMw42AG1rQTpaX?utm_source=generator&amp;theme=0",
-    "credits_html": "<p><strong>Lanzamiento:</strong> 9/04/2007</p><p><strong>Arte de tapa:</strong> Gabriel Rud</p><p>Compuesto y grabado en una semana por Maxi Prietto con un Casiotone y una guitarra criolla.</p>",
+    "meta": "SOLISTA · 2026",
+    "desc": "Rumbo a Hong Kong / Sólo una canción más.",
+    "cover": "assets/album-playa-nocturna-vol-4.jpg",
+    "spotify_embed": "https://open.spotify.com/embed/album/32n71m49Hh7E64bWbL0aQZ?utm_source=generator&amp;theme=0",
+    "credits_html": "<p><strong>Lanzamiento:</strong> 27/05/2026</p><p><strong>Rumbo a Hong Kong Autor:</strong> Félix Prietto</p><p><strong>Solo una canción más Autor:</strong> Maxi Prietto</p><p><strong>Grabación y mix:</strong> Maxi Prietto</p><p><strong>Mastering:</strong> Michael Graves</p><p><strong>Arte de tapa:</strong> Santi Pozzi</p><p><strong>Sello:</strong> Alto Valle</p><p><strong>Contrabajo:</strong> Damián Manfredi</p><p><strong>Batería:</strong> Pipe Correa</p><p><strong>Guitarra y voz:</strong> Maxi Prietto</p>",
     "photos": [],
     "songs": [
       {
-        "title": "A TRAVÉS DE LOS SOLES",
+        "title": "RUMBO A HONG KONG",
         "lines": [
-          "Viajo en rayos de luz, a través de los soles",
-          "Rojos primero, luego azules",
-          "Viajo en barcos de sal, a través de los mares",
-          "Hondos primero, luego oscuros",
-          "Entre los moribundos, vi tu rostro feliz",
-          "Rojas mejillas, luego azules"
+          "Navegando en un barco mercante",
+          "Voy rumbo hacia Hong Kong",
+          "Maravillado del azul resplandor",
+          "Y de los días que me regala el sol",
+          "Voy rumbo a Hong Kong",
+          "Paisajes, rayos de sol",
+          "Hay mañanas y hay mañanas",
+          "Ámame hasta la muerte",
+          "Porque tú eres mi suerte:",
+          "Singapur del mar Oriente.",
+          "Navegando en un barco mercante",
+          "Voy rumbo hacia Hong Kong",
+          "Maravillado del azul resplandor",
+          "Y de los días que me regala el sol",
+          "Voy rumbo a Hong Kong",
+          "Paisajes, rayos de sol.",
+          "Un mar de aceite, nena",
+          "Un mar de aceite, nene",
+          "Voy rumbo a Hong Kong",
+          "Paisajes, rayos de sol"
         ]
       },
       {
-        "title": "CANCIÓN PARA SHAMAN Y EL AFRO",
+        "title": "SÓLO UNA CANCIÓN MÁS",
         "lines": [
-          "Cruzaron los siete mares en sus escobas las brujas todas",
-          "Ardientes palabras sangraban sus bocas",
-          "Arriba de un árbol un hombre",
-          "De larga barba y sin nombre",
-          "Creyó ver una luz fugaz",
-          "Cruzar el cielo negro",
-          "Abajo las personas corrían por el pasto",
-          "Eran en el bosque una noche más de amor",
-          "Querían ver la luz nomás",
-          "Eso nadie lo podía explicar",
-          "Querían ver la luz nomás",
-          "Eso nadie lo podía explicar"
-        ]
-      },
-      {
-        "title": "LOCO DE AMOR",
-        "lines": [
-          "Me diste toda la ternura que yo podía querer",
-          "Me diste toda la frescura que yo quería tener",
-          "Me diste todo el amor yo nunca había sentido tanto amor",
-          "Así que ahora ni lo pienses",
-          "Si te quieres marchar",
-          "Soy capaz de cualquier cosa",
-          "Estoy loco de amor",
-          "Estoy loco de amor",
-          "Estoy loco de amor",
-          "Estoy loco de amor",
-          "El instante en que te vi, aún sigo ahí",
-          "Mirándote entrar",
-          "Supe que no existía yo para vos, me heriste.",
-          "Ahora te miro, te volvés hermosa con tu mal humor",
-          "Ahora te hablo y esa es toda la conversación",
-          "Porque a veces me miras",
-          "Para qué lo hacés? Me ilusionas",
-          "Porque a veces me miras",
-          "Te espero",
-          "Porque en verdad está en mí",
-          "El amor por vos",
-          "Te invento",
-          "Porque es bueno tener algo por que vivir",
-          "Y en verdad yo no te conozco bien"
-        ]
-      },
-      {
-        "title": "ESTRELLAS VERDES",
-        "lines": [
-          "Soles rojos",
-          "Soles azules"
-        ]
-      },
-      {
-        "title": "ES QUE QUIERO COMER",
-        "lines": [
-          "Ya vi la trampa, detrás de tu pastel",
-          "Lo que pasa es que quiero comer",
-          "No fue el blanco de tus dientes",
-          "Lo que me enamoró",
-          "Fueron sólo tus dientes",
-          "Acá nadie tiene",
-          "Cuando escupas para arriba",
-          "No quiero estar arriba",
-          "Cuando te tropieces",
-          "No quiero ser el tren",
-          "No quiero que seamos el gato y el ratón",
-          "No quiero que seamos el perro y el león",
-          "No quería ser niño pero el tiempo pasó",
-          "No quería ser niño, pero el tiempo pasó",
-          "Ya vi la trampa, detrás de tu pastel",
-          "Lo que pasa es que quiero comer"
-        ]
-      },
-      {
-        "title": "CHOZAS DE FUEGO",
-        "lines": [
-          "Este es mi lugar, no quiero volver",
-          "siempre quise estar lejos en barco",
-          "Por las estrellas, bajar al campo",
-          "Pasto amarillo, chozas de fuego"
-        ]
-      },
-      {
-        "title": "LA JOVEN ORIENTAL",
-        "lines": [
-          "La joven oriental camina con su cesta por el pueblo",
-          "Los jóvenes la miran piensan que ella es la mujer más hermosa",
-          "Por las noches le escriben cartas de amor",
-          "Diciéndole que sin su amor ellos no quieren vivir más"
-        ]
-      },
-      {
-        "title": "EL HOMBRE GATO",
-        "lines": [
-          "El Hombre de la bolsa es un chiste",
-          "Al lado del Hombre Gato",
-          "A través de los soles verdes, rojos y azules",
-          "Viajo en rayos de luz, a través de los soles",
-          "Rojos primero, luego azules",
-          "Viajo en barcos de sal, a través de los mares",
-          "Hondos primero, luego oscuros"
-        ]
-      },
-      {
-        "title": "LOCO DE AMOR (DELUXE)",
-        "lines": [
-          "Me diste toda la ternura que yo podía querer",
-          "Me diste toda la frescura que yo quería tener",
-          "Me diste todo el amor yo nunca había sentido tanto amor",
-          "Así que ahora ni lo pienses",
-          "Si te quieres marchar",
-          "Soy capaz de cualquier cosa",
-          "Estoy loco de amor",
-          "Estoy loco de amor",
-          "Estoy loco de amor",
-          "Estoy loco de amor"
+          "Se van los efectos de otra noche",
+          "Y al abrir la ventana ya no queda nada",
+          "Sólo una canción más pedís para bailar con el cielo",
+          "Y ya ni la luna está",
+          "Muertos en el piso están los sueños que más quiso",
+          "Ya no hay nadie nuevo a quien culpar",
+          "Sólo una canción más pedís para bailar con el cielo",
+          "Y ya ni la luna está",
+          "Se van los efectos de otra copa",
+          "Y al abrir la ventana ya no queda nada",
+          "Sólo una canción más pedís para bailar con el cielo",
+          "Y ya ni la luna está",
+          "Muertos en el piso están los sueños que más quiso",
+          "Ya no hay nadie nuevo a quien culpar",
+          "Sólo una canción más pedís para bailar con el cielo",
+          "Y ya ni la luna está"
         ]
       }
     ]
   },
   {
-    "key": "casa-vol1-2009",
-    "title": "Casa Vol. 1",
-    "year": "2009",
+    "key": "velada-blues-boleros-2026",
+    "title": "Una Velada de Blues & Boleros",
+    "year": "2026",
     "cat": "SOLISTA",
-    "meta": "SOLISTA · 2009",
-    "desc": "Ay, Corazón, Días de sol, Bozal, Varela.",
-    "cover": "assets/album-casa-vol1.jpg",
-    "spotify_embed": "https://open.spotify.com/embed/album/2cPBaTnWJQL38YxdfhZ7vq?utm_source=generator&theme=0",
-    "credits_html": "<p><strong>Lanzamiento:</strong> 4/06/2009</p><p>Grabado por Maxi Prietto en su habitación.</p><p>Todos los instrumentos y voces por Maxi Prietto.</p><p>Quiero encontrarte</p><p>y al hablarte descubrí la sombra otra vez</p>",
+    "meta": "SOLISTA · 2026",
+    "desc": "Perro de Hospital, Estás Lejos, Error Blues.",
+    "cover": "assets/album-una-velada-blues-boleros.jpg",
+    "spotify_embed": "https://open.spotify.com/embed/album/0t6XeAkrHRBLCjlunTAnpH?utm_source=generator&theme=0",
+    "credits_html": "<p><strong>Fecha de lanzamiento:</strong> 22/05/2024</p><p><strong>Grabado en vivo en Buenos Aires en Diciembre del 2022. Damian Manfredi:</strong> Contrabajo Pipe Correa: Batería, Maracas. Luciano Scalera: Bongó. Noe Sinkunas: Piano. Alex Musatov: Violín. Jacquelin Oro: cello. Invitado especial: Melingo en voz y clarinete (Sin Luna)</p><p><strong>Arte:</strong> Santi Pozzi Sello: Alto Valle.</p><p><strong>Fotos:</strong> Magdalena Dihel</p>",
     "photos": [
       {
-        "src": "assets/albums/2009_-_Casa_vol_1/PRIETTO - CASAok.jpg",
-        "alt": "Casa Vol. 1",
-        "caption": "Sesión Casa Vol. 1"
+        "src": "assets/albums/2026-_Una_velada_de_Blues_y_Boleros/10dic2022_PriettoEnBerlin_025.jpg",
+        "alt": "Una Velada de Blues y Boleros",
+        "caption": "Prietto en vivo"
+      },
+      {
+        "src": "assets/albums/2026-_Una_velada_de_Blues_y_Boleros/10dic2022_PriettoEnBerlin_074.jpg",
+        "alt": "Una Velada de Blues y Boleros",
+        "caption": "Sesión en La Tangente"
+      },
+      {
+        "src": "assets/albums/2026-_Una_velada_de_Blues_y_Boleros/10dic2022_PriettoEnBerlin_135.jpg",
+        "alt": "Una Velada de Blues y Boleros",
+        "caption": "Blues y Boleros — En vivo"
+      }
+    ],
+    "songs": []
+  },
+  {
+    "key": "pin-de-fartie-2026",
+    "title": "Pin de Fartie (Soundtrack)",
+    "year": "2026",
+    "cat": "SOLISTA",
+    "meta": "SOLISTA · 2026",
+    "desc": "Viene arrastrándose, Socorro.",
+    "cover": "assets/album-pin-de-fartie.jpg",
+    "spotify_embed": "https://open.spotify.com/embed/album/22ZnGk507MS2c70HTM7HNr?utm_source=generator&theme=0",
+    "credits_html": "<p><strong>Lanzamiento:</strong> 28/08/2025</p><p>Todos los instrumentos por Maxi Prietto.</p><p>Música original para la película “pin de Fartie” de Alejo Moguillansky.</p>",
+    "photos": [
+      {
+        "src": "assets/albums/2026_-_Pin_de_Fartie_/IMG_0116.jpg",
+        "alt": "Pin de Fartie — Sesión",
+        "caption": "Sesión de grabación"
+      },
+      {
+        "src": "assets/albums/2026_-_Pin_de_Fartie_/IMG_0122.jpg",
+        "alt": "Pin de Fartie — Estudio",
+        "caption": "En el estudio"
+      },
+      {
+        "src": "assets/albums/2026_-_Pin_de_Fartie_/IMG_0128.jpg",
+        "alt": "Pin de Fartie — Grabación",
+        "caption": "Grabación Pin de Fartie"
       }
     ],
     "songs": [
       {
-        "title": "AY, CORAZÓN",
+        "title": "VIENE ARRASTRÁNDOSE",
         "lines": [
-          "No vale la pena llorar por tu amor"
+          "Si hay un final que anda escondido por ahí",
+          "Creo que ese final, está frente a mí"
         ]
       },
       {
-        "title": "AY, CORAZÓN",
+        "title": "VIENE ARRASTRÁNDOSE",
         "lines": [
-          "No vale la pena sufrir por tu adiós",
-          "Que sea lo que la suerte quiera",
-          "Digo, tirando monedas",
-          "que no puedo atrapar"
+          "Si hay un día que espera por mí",
+          "Será ese día, el día de partir"
         ]
       },
       {
-        "title": "AY, CORAZÓN",
+        "title": "VIENE ARRASTRÁNDOSE",
         "lines": [
-          "No vale la pena sufrir por tu adiós"
+          "Eso que sientes, que nunca vendrá",
+          "No importa que sientas vos,",
+          "No viene a preguntar"
         ]
       },
       {
-        "title": "AY, CORAZÓN",
+        "title": "VIENE ARRASTRÁNDOSE",
         "lines": [
-          "Es que no hay nada, nada, mejor",
-          "Que sea lo que la suerte quiera",
-          "Digo, tirando monedas",
-          "Que no puedo atrapar"
+          "Si hay una curva que te alejará de mí",
+          "Si hay un desvío que me alejará de ti"
         ]
       },
       {
-        "title": "DÍAS DE SOL",
+        "title": "SOCORRO (ARNALDO ANTUNES)",
         "lines": [
-          "Nubes se acercan,",
-          "Sombras se acercan",
-          "¿Y donde estas?",
-          "Todos se esconden,",
-          "Todos se alejan,",
-          "¿Y a donde van?",
-          "Yo voy dentro mío",
-          "Donde las nubes",
-          "No alcanzan",
-          "Mis días de sol"
-        ]
-      },
-      {
-        "title": "BOZAL",
-        "lines": [
-          "En las bocas de los pájaros,",
-          "Hay poco por envidiar",
-          "En cambio, en sus alas",
-          "En cambio…",
-          "Arráncame el bozal y bésame",
-          "Que te estaba esperando",
-          "Desde antes de nacer",
-          "Desde antes de no ser",
-          "Somos testigos de nuestras compras",
-          "Y de nuestros zapatos nuevos",
-          "Somos testigos de nuestras muertes",
-          "Pero nunca de nuestro amor",
-          "Y hoy no hay amigos en el alma",
-          "Pero no importa no",
-          "Si tus labios eran el puente",
-          "Que había que cruzar",
-          "Para sentirme eterno",
-          "O al menos seguro",
-          "Por hoy",
-          "Arráncame el bozal y bésame",
-          "Que te estaba esperando",
-          "Desde antes de nacer",
-          "Desde antes de no ser"
-        ]
-      },
-      {
-        "title": "VARELA",
-        "lines": [
-          "Se va el tren bajo el sol",
-          "De Varela se va el tren",
-          "El verano dejó",
-          "Un desierto acá",
-          "Verano, sin sol",
-          "Verano, sin sol",
-          "Una vida no es nada",
-          "Si yo quiero vivir",
-          "Una vida no es nada",
-          "Si sólo es trabajar",
-          "Crecen mis sueños en noches de alcohol",
-          "Crecen mis sueños de irme de acá",
-          "Al mar, al mar…",
-          "Se va el tren bajo el sol",
-          "De Varela se va el tren",
-          "El verano dejó",
-          "Un desierto acá"
-        ]
-      },
-      {
-        "title": "ES LA VERDAD",
-        "lines": [
-          "En la mañana",
-          "Sientes bondad",
-          "Al caminar",
-          "Es la verdad que transmite el sol",
-          "Es la verdad que transmite el sol"
-        ]
-      },
-      {
-        "title": "EL HOMBRE DE LA PROVINCIA",
-        "lines": [
-          "El hombre de la provincia viaja a la ciudad",
-          "Va buscar fortuna con su traje nuevo",
-          "El hombre de la provincia viaja a la ciudad",
-          "Va buscar fortuna y le dan propinas"
-        ]
-      },
-      {
-        "title": "LA SOMBRA",
-        "lines": [
-          "Más abro los ojos más quiero cerrarlos",
-          "Más quiero cerrarlos,",
-          "me voy quedando sólo",
-          "Yo en la gran ciudad",
-          "La sombra se estira por el pasto",
-          "Y contamina mil cabezas",
-          "Quiebra almas y enferma",
-          "Yo busco alguien puro en esta tierra",
-          "y sólo creo en el mar",
-          "tal vez viajar allí me ayudaría",
-          "me engañaron las estrellas de tus ojos"
-        ]
-      },
-      {
-        "title": "EL TREN",
-        "lines": [
-          "No hay mas vos",
-          "Que lo que has dicho",
-          "Y no hay más vos",
-          "de lo que has hecho",
-          "No hay mas vos",
-          "de lo que han visto",
-          "No hay mas vos",
-          "De lo que has dado",
-          "Sube al tren",
-          "Que el tiempo se ha ido",
-          "Y si dejaste atrás",
-          "Un sueño dormido",
-          "Es muy tarde ya",
-          "Para llorar",
-          "Y a un paso de este tren…",
-          "Te veo y me arrepiento",
-          "De no haberte hablado",
-          "Tanto tiempo sin verte",
-          "Me ha hecho mal",
-          "Solo pido al tiempo",
-          "Un día más con vos",
-          "Si el tren no me lleva",
-          "¿Me lo darás?",
-          "No hay más vos",
-          "De lo que has dicho",
-          "No hay más vos",
-          "De lo que has hecho",
-          "No hay más vos",
-          "De lo que han visto",
-          "No hay más vos",
-          "De lo que has dado"
-        ]
-      },
-      {
-        "title": "COSAS EXTRAÑAS",
-        "lines": [
-          "- Ey, no recuerdo nada!",
-          "“Esto es un sueño",
-          "Tenés que ponerte un buen vestido",
-          "Y bailar…",
-          "Esta noche fue hecha para los dos",
-          "Pero ya no estás",
-          "Ven a cabalgar en la noche ésta",
-          "En tus sueños, por lugares que apesten",
-          "O que te gusten…",
-          "Hay seres y cosas muy extrañas:",
-          "Tratá de disfrutarlas.”"
-        ]
-      },
-      {
-        "title": "FRENTE AL MAR",
-        "lines": [
-          "(Instrumental)"
-        ]
-      },
-      {
-        "title": "LA ÚLTIMA CANCIÓN",
-        "lines": [
-          "Cada cual tiene su cruz",
-          "Y cada cual su luz",
-          "Que sería del borde del precipicio",
-          "Si nadie se atreviera a mirar",
-          "Voy a bailar en el silencio",
-          "De mis canciones muertas",
-          "Y cada beso que te ofrezca",
-          "Será una canción de verdad"
-        ]
-      },
-      {
-        "title": "LO PEOR DEL CAMINO",
-        "lines": [
-          "Este es el día en el que nadie extraña",
-          "Este es un día como el de ayer",
-          "Este es el día en el que nadie amaminolan",
-          "Como cualquier día",
-          "Como otro día más",
-          "Ahora que me volvés a ver",
-          "Te reís de mi ingenuidad",
-          "Ahora que yo te vuelvo a ver",
-          "Veo la mentira en tus ojos",
-          "Por primera vez",
-          "Y este es el día en que los muertos bailan",
-          "Sobre la tumba del perdedor",
-          "Y esto que viene es lo peor del camino",
-          "Como para el borracho",
-          "El día siguiente"
-        ]
-      },
-      {
-        "title": "TODO DEBE MORIR",
-        "lines": [
-          "Todo lo que nace debe morir",
-          "Esta es una ley universal",
-          "Todo lo que hagas",
-          "Se ha de olvidar",
-          "Eso no nos debe importar",
-          "No, mi amigo",
-          "No, señor",
-          "No, verdugos",
-          "No, perros"
-        ]
-      },
-      {
-        "title": "MÉDANOS",
-        "lines": [
-          "Día en la playa",
-          "Atardecer",
-          "Viento, viento",
-          "Tu lunar,",
-          "Tu lunar",
-          "Lluvia, lluvia y",
-          "Tu lunar, tu lunar",
-          "Quédate,",
-          "Oh sí, quédate",
-          "Con las manos aferradas",
-          "Mirando el mar",
-          "Viento, noche",
-          "Tu pulgar, tu pulgar",
-          "Cerveza, cerveza",
-          "Y tu pulgar, tu pulgar",
-          "Bésame,",
-          "Oh sí, bésame",
-          "Médanos, médanos…",
-          "Médanos, médanos…"
+          "Socorro no estoy sintiendo nada",
+          "Ni miedo ni calor ni fuego",
+          "No da para llorar ni reír",
+          "Socorro algún alma naufragada",
+          "Me preste sus penas",
+          "Ya no siento amor, ni dolor",
+          "Ya no siento nada.",
+          "Socorro alguien me de su corazón",
+          "Que este ya no late ni apaña",
+          "Por favor, una emoción pequeña, cualquier cosa.",
+          "Cualquier cosa que se sienta,",
+          "Si hay tantos sentimientos,",
+          "debe haber uno que sirva.",
+          "Socorro, algún camino que me de sentido.",
+          "Solo un momento un paliativo para este tormento.",
+          "Socorro, ya no siento nada.",
+          "Socorro, no estoy sintiendo nada.",
+          "Ni miedo, ni calor, ni fuego.",
+          "Ni ganas de llorar, ni reír.",
+          "Socorro, algún alma naufragada me preste sus penas.",
+          "Ya no siento amor, ni dolor, ya no siento nada.",
+          "Socorro, alguien me de su corazón,",
+          "Que éste ya no late ni apaña.",
+          "Por favor, una emoción pequeña cualquier cosa",
+          "Cualquier cosa que se sienta",
+          "Si hay tantos sentimientos,",
+          "debe haber uno que sirva."
         ]
       }
     ]
   },
   {
-    "key": "casa-vol2-2010",
-    "title": "Casa Vol. 2: La Sartén Lavada y el Lado Crudo",
-    "year": "2010",
-    "cat": "SOLISTA",
-    "meta": "SOLISTA · 2010",
-    "desc": "Carlos dijo, 20 Hombres, Un hindú me miró la cara.",
-    "cover": "assets/album-casa-vol2.jpg",
-    "spotify_embed": "https://open.spotify.com/embed/album/0DDeac1LdDLmpof09gfRd2?utm_source=generator&theme=0",
-    "credits_html": "<p><strong>Lanzamiento:</strong> 10/09/2010</p><p>Grabado por Maxi Prietto en su habitación, durante el 2010.</p><p>Alumbran partes de tu cuerpo</p>",
+    "key": "camina-2025",
+    "title": "Camina",
+    "year": "2025",
+    "cat": "LOS ESPÍRITUS",
+    "meta": "2025 · SINGLE / EP",
+    "desc": "Los Espíritus · Maxi Prietto",
+    "cover": "assets/album-camina.jpg",
+    "spotify_embed": "https://open.spotify.com/embed/album/63hLRWCHwL16njnYW7sT10?utm_source=generator&amp;theme=0",
+    "credits_html": "",
     "photos": [
       {
-        "src": "assets/albums/2010_-_Casa_Vol_2/PRIETTO - CASA VOL II.jpg",
-        "alt": "Casa Vol. 2",
-        "caption": "Sesión Casa Vol. 2"
+        "src": "assets/yt-thumb-camina.jpg",
+        "alt": "Los Espíritus - Camina",
+        "caption": "Sesión de Camina"
+      },
+      {
+        "src": "assets/tonal-15-abrl-30.jpg",
+        "alt": "Los Espíritus en vivo",
+        "caption": "Los Espíritus en vivo"
+      }
+    ],
+    "songs": []
+  },
+  {
+    "key": "la-montana",
+    "title": "La Montaña",
+    "year": "2023",
+    "cat": "LOS ESPÍRITUS",
+    "meta": "ESPIRITUS · 2023",
+    "desc": "Blues rock y psicodelia.",
+    "cover": "assets/album-montana.jpg",
+    "spotify_embed": "https://open.spotify.com/embed/album/1kJEPy20AkL9lccVH8oTpC?utm_source=generator&amp;theme=0",
+    "credits_html": "",
+    "photos": [],
+    "songs": []
+  },
+  {
+    "key": "hogo-sound-2023",
+    "title": "Hogo Sound",
+    "year": "2023",
+    "cat": "SOLISTA",
+    "meta": "SOLISTA · 2023",
+    "desc": "Intro, Samurái, Mouy.",
+    "cover": "assets/album-hogo-sound.jpg",
+    "spotify_embed": "https://open.spotify.com/embed/album/5wsT0qbNcCcauMkdoEh4zC?utm_source=generator&theme=0",
+    "credits_html": "<p><strong>Lanzamiento:</strong> 20/10/2023</p><p>Grabado y producido por Maxi Prietto</p><p>Todos los instrumentos por Maxi Prietto excepto trompetas en Track 7 por Seisuke.</p>",
+    "photos": [],
+    "songs": []
+  },
+  {
+    "key": "astro-lofi-2022",
+    "title": "Astro Lo Fi Beats",
+    "year": "2022",
+    "cat": "SOLISTA",
+    "meta": "SOLISTA · 2022",
+    "desc": "Beats de otra dimensión.",
+    "cover": "assets/album-astro.jpg",
+    "spotify_embed": "https://open.spotify.com/embed/album/3ocmSKPNc3wNoyKuu3A3qS?utm_source=generator&theme=0",
+    "credits_html": "<p><strong>Lanzamiento:</strong> 5/10/2022</p><p>Grabado y producido por Maxi Prietto</p>",
+    "photos": [
+      {
+        "src": "assets/albums/2022_Astro_Lo_Fi_Beats/prietto-107.jpg",
+        "alt": "Astro Lo-Fi Beats",
+        "caption": "Prietto — Astro Lo-Fi"
       }
     ],
     "songs": [
       {
-        "title": "CARLOS DIJO",
+        "title": "ASTRO LO FI BEATS",
         "lines": [
-          "“La sartén lavada es la continuación de aquél disquillo titulado casa.",
-          "Un disco bastante cojonudo y depresivo.",
-          "Comencemos a escuchar y basta de rodeos, joder.”"
+          "Vincent (1:14)",
+          "Cosa más bonita (0:45)",
+          "Ras (1:47)",
+          "Días de amor (4:05)",
+          "Quién tiene tu amor (1:55)",
+          "El Lobo (1:29)",
+          "Cerveza Tabaco Café (2:23)",
+          "Los amo (0:15)",
+          "Todo el mundo sabe (3:11)",
+          "Funkaflute (4:09)",
+          "Esperanza (2:50)",
+          "Astro Lo Fi Beats (0:26)",
+          "Groove Fx (2:31)"
         ]
       },
       {
-        "title": "20 HOMBRES",
+        "title": "RAS",
         "lines": [
-          "20 hombres en el frío se ponen a esperar",
-          "Es temprano y está oscuro",
-          "Son las siete en la ciudad",
-          "El trabajo es poca paga",
-          "Ya de entrada lo odian",
-          "No se hablan ni se miran",
-          "Se pusieron a fumar",
-          "Pasa un pibe borracho",
-          "Está volviendo hacia su hogar",
-          "Se le acabó la noche y ellos",
-          "Se acaban de levantar",
-          "Y en la bronca ahí parados",
-          "Todos quieren regresar",
-          "Y no hay vuelta en esta vida",
-          "Vas a tener que esperar",
-          "Y dentro todos llevan sueños",
-          "Que no se cumplirán",
-          "20 hombres en el frío se ponen a esperar",
-          "La muerte los abraza y se ríe sin parar",
-          "No hay momentos deseados",
-          "No hay más reyes magos",
-          "No existe la suerte",
-          "Se acabó el carnaval"
+          "Jacarandá hoy ha abierto sus flores",
+          "Le cantarán al sol",
+          "Noche de luna que alumbras las flores",
+          "Le cantarán al sol",
+          "Lluvias del mar caerán",
+          "Le cantarán al sol"
         ]
       },
       {
-        "title": "UN HINDÚ ME MIRÓ LA CARA",
+        "title": "DÍAS DE AMOR",
         "lines": [
-          "Un hindú me miró la cara y me dijo que cara rara",
-          "Dónde está tu ojo del medio?"
-        ]
-      },
-      {
-        "title": "CUADROS DE IMAGINACIÓN",
-        "lines": [
-          "Te vi jugando en el sol",
-          "Te vi jugando bajo el sol",
-          "Te vi correr, dar saltos",
-          "En cuadros de imaginación",
-          "Te vi, jurando una canción",
-          "Te vi, jurando una canción",
-          "Te vi volver al campo",
-          "Sentí nacer la flor"
-        ]
-      },
-      {
-        "title": "LAS HOJAS CAEN",
-        "lines": [
-          "He oído derrumbes de montañas",
-          "Sólo me han enseñado a contarlas y olvidarlas",
-          "Yo también soy paisaje de los demás",
-          "O sólo un número más",
-          "Las hojas caen, los árboles caen",
-          "Las hojas caen, los árboles caen",
-          "Sobre el camino",
-          "Y alguien olvidó un té frío",
-          "Sobre la mesa de esta cabaña",
-          "Cabaña soy yo",
-          "Cabaña soy yo",
-          "Las hojas caen, los árboles caen",
-          "Las hojas caen, los árboles caen",
-          "Sobre el camino"
-        ]
-      },
-      {
-        "title": "VIEJAS BOTELLAS",
-        "lines": [
-          "Trenes blancos bajo el mar",
-          "Llevan duendes de cristal",
-          "A lo profundo los enviarán",
-          "Los niños buscándolos se ahogarán",
-          "Y esos sueños",
-          "Que naufragan",
-          "En viejas botellas",
-          "Se perderán",
-          "Las olas el rumbo olvidarán",
-          "Trenes blancos bajo el mar",
-          "Llevan duendes de cristal",
-          "A lo profundo los enviarán",
-          "Los niños buscándolos se ahogarán",
-          "Naves negras sobre el mar",
-          "Llevan bombas de metal",
-          "A lo profundo las enviarán",
-          "Romperán tus sueños de cristal"
-        ]
-      },
-      {
-        "title": "THE ERROR BLUES",
-        "lines": [
-          "hay un error en la semilla, hay un error en la ceniza hay un error en la conciencia, hay un error en no pensar,",
-          "hay un error, hay un error... hay un error en adaptarse, hay un error en no cambiar hay un error en rendirse, hay un error en matar hay un error, hay un error... hay un error en el pecado, hay un error en la honradez hay un error en ser un héroe, hay un error en ser un traidor, hay un error, hay un error tropecé con buda, tropecé con jesús no hay ningún camino que me lleve a la luz, hay un error en la noche, en los árboles, en la rama, en la hoja, y en la hormiga...",
-          "hay un error, hay un error en el espacio, en el mundo, en vos hay un error, hay un error"
-        ]
-      },
-      {
-        "title": "VILLA GESELL",
-        "lines": [
-          "Siete días atrás yo vine a la playa",
-          "El sol brilla en la mañana",
-          "Las calles son de arena",
-          "Y sí es verdad la gente es más tranquila aquí",
-          "Y no quiero volver a mi ciudad",
-          "Yo quiero quedarme acá en el mar"
-        ]
-      },
-      {
-        "title": "LA CABAÑA",
-        "lines": [
-          "Se esconde el sol detrás mis sueños van",
-          "La cabaña es todo mi hogar",
-          "La muerte abre mi puerta y no me importa",
-          "El viento arrastra hojas por el bosque",
-          "Y esos pasos traen tu nombre a mi mente",
-          "Y es la luz que hace que aún brille algo en mí"
-        ]
-      },
-      {
-        "title": "LOCO Y MALO",
-        "lines": [
-          "No importa si sos loco o malo o loco y malo",
-          "Siempre habrá uno que te de la espalda y otro que te de la mano",
-          "Si te aman o te odian es así",
-          "¿Qué les vas a decir?",
-          "No importa si sos cuerdo o lerdo, o cuerdo y lerdo",
-          "Siempre habrá una que tenga el recuerdo",
-          "y otra que diga no me acuerdo",
-          "si te aman o te odian es asó",
-          "¿Qué les vas a decir?",
-          "No importa si sos viejo o feo, o viejo y feo.",
-          "Siempre habrá uno que te de limosna y otro que te de un trofeo.",
-          "Si te aman o te odian es así.",
-          "¿Qué les vas a decir?",
-          "No importa si sos loco o malo o loco y malo",
-          "Siempre habrá uno que te de la espalda y otro que te de la mano",
-          "Si te aman o te odian es así",
-          "¿Qué les vas a decir?"
-        ]
-      },
-      {
-        "title": "TU PELO DE DIAMANTES",
-        "lines": [
-          "En tu pelo de diamantes",
-          "Flotan sueños del mar",
-          "Seis marineros luchan por su vida",
-          "En tu cuello",
-          "Se caen",
-          "Van en un barco viejo",
-          "Bajando por tu espalda",
-          "Por la ranura de la persiana",
-          "Entran los rayos del sol",
-          "Flotando",
-          "Que cuando despiertes",
-          "Quiero morder",
-          "Buscando luz",
-          "Buscando luz",
-          "En tus sueños llenos de agua",
-          "Las hormigas se mueren ahogadas",
-          "Las ratas también",
-          "Infectan todo, los niños beben de ahí",
-          "Mientras todos los seres",
-          "Flotamos",
-          "En tu pelo de diamantes",
-          "En tu pelo de diamantes",
-          "Cuando despertemos",
-          "Da el sol, despacio"
-        ]
-      },
-      {
-        "title": "LANABIES",
-        "lines": [
-          "Cualquier lugar en que me sienta bien",
-          "Será si estoy con vos",
-          "Son mil abrigos los que siento yo",
-          "al oír tu vos sólo para mí",
-          "Busco en vos sweaters de lana en tus brazos"
-        ]
-      },
-      {
-        "title": "LA CRIOLLA",
-        "lines": [
-          "Esta canción es para mi guitarra",
-          "Siempre me acompaña",
-          "Cuando me voy al mar",
-          "Ésta canción es para mi guitarra",
-          "Guitarra criolla, desde los catorce,",
-          "Siempre me acompaña",
-          "Cuando estoy bien y mal",
-          "Cuando voy al mar",
-          "Cuando estoy en casa",
-          "Compro queso y pan",
-          "Y ella me hace",
-          "Viajar",
-          "Algunos me dicen que no afina",
-          "Pero tiene un alma",
-          "dime si no la podés escuchar.",
-          "Esta canción es para vos",
-          "Mi guitarra",
-          "Cuando me muera",
-          "Alguien te va a tocar",
-          "Algunas tardes te desafino toda",
-          "Para ver que podés dar",
-          "Hay tantas clases de belleza juntas",
-          "Me hacés viajar",
-          "Esta canción es para mi guitarra",
-          "Llévame de viaje!",
-          "Llévame de viaje!"
-        ]
-      },
-      {
-        "title": "PLAYAS NEGRAS",
-        "lines": [
-          "Invierno en playas negras,",
-          "La novia muerta,",
-          "Su dedo quebrado,",
-          "la sangre en el pulmón,",
-          "La orina en el frasco,",
-          "ni un último adiós",
-          "Cangrejos en mi sopa,",
-          "La carne al sol,",
-          "Pus en la pierna,",
-          "Caer de un balcón,",
-          "Sacar malas notas,",
-          "Llorar por amor.",
-          "La orina en el frasco,",
-          "Ni un último adiós."
-        ]
-      },
-      {
-        "title": "CRUDO",
-        "lines": [
-          "Me diste tanto dolor,",
-          "Te lo voy a devolver,",
-          "Me vas a dar tu adiós",
-          "O te lo compraré.",
-          "Te puedo pagar con",
-          "Mi perdón.",
-          "Que igual es una trampa,",
-          "Porque ni vos",
-          "Te podés perdonar",
-          "Crudo es el verano",
-          "Crudo es el amor",
-          "Porque se va de uno y de otro no",
-          "¿Por qué será?",
-          "Crudo es el invierno",
-          "Crudo soy yo",
-          "Conmigo",
-          "No ves que no te hablo más",
-          "Y el que paga soy yo",
-          "Que te extraño la voz",
-          "Crudo es el verano,",
-          "Crudo es el amor",
-          "Porque se va de uno y de otro no,",
-          "¿Por qué será?",
-          "Si me darías la mitad de una",
-          "de tus excusas falsas borracha",
-          "Yo te iría corriendo a ver",
-          "Crudo es el verano,",
-          "Crudo es el amor",
-          "Porque se va de uno y de otro no,",
-          "¿Por qué será?",
-          "Así, tan crudo."
-        ]
-      },
-      {
-        "title": "15 AÑOS",
-        "lines": [
-          "Ya tienes 15 años",
-          "Hoy es un día especial",
-          "Como cualquier otro",
-          "Toda la vida es especial"
+          "Se queman las flores, se queman los días del amor",
+          "En estas aguas ya no hacemos pie,",
+          "Para esto nos queda la Fe",
+          "Una luz está susurrando versos al corazón",
+          "Una luz está sembrando más días para vos",
+          "Nacerán más flores, nacerán más días de amor",
+          "Y si en las aguas ya no hacemos pie,",
+          "Siempre habrá más Fe",
+          "Una luz estará susurrando versos al corazón",
+          "Una luz estará sembrando más días para vos",
+          "Todo el mundo sabe (Leonard Cohen)",
+          "Todo el mundo sabe que los dados están cargados",
+          "Todo el mundo tira con los dedos cruzados",
+          "Todo el mundo sabe que la guerra terminó",
+          "Todo el mundo sabe que el bueno perdió",
+          "Todo el mundo sabe que la pelea está comprada",
+          "Los pobres siguen pobres y los ricos, ricos",
+          "Todo el mundo sabe que el barco está agujereado",
+          "Todo el mundo sabe que el capitán mintió",
+          "Todo el mundo tiene ese sentimiento roto",
+          "Como si su padre o su perro hubiese muerto",
+          "Todo el mundo va hablando a sus pantalones",
+          "Todo el mundo quiere una caja de bombones",
+          "Y un ramo de flores, todo el mundo sabe",
+          "Todo el mundo sabe son los últimos días",
+          "Desde aquel momento en que colgamos al mesías",
+          "Todo el mundo sabe que hay olor a podrido",
+          "Y que el mundo entero es un enorme baldío",
+          "Todo el mundo sabe que mucho no cambiamos",
+          "Los pobres siguen pobres y los ricos, ricos",
+          "Así es la cosa, todo el mundo sabe"
         ]
       }
     ]
   },
   {
-    "key": "la-ultima-noche-2013",
-    "title": "La Última Noche",
-    "year": "2013",
+    "key": "playa-nocturna-vol3",
+    "title": "Playa Nocturna, Vol. 3",
+    "year": "2021",
     "cat": "SOLISTA",
-    "meta": "SOLISTA · 2013",
-    "desc": "Historia de un amor, Sabor a mí, 20 años.",
-    "cover": "assets/album-la-ultima-noche.jpg",
-    "spotify_embed": "https://open.spotify.com/embed/album/0R2qlryfHvHzKDm5j4JuIe?utm_source=generator&theme=0",
-    "credits_html": "<p><strong>Lanzamiento:</strong> 07/01/2013</p><p>Todos los instrumentos y voces por Maxi Prietto.</p><p>El álbum versiona clásicos del bolero y la canción, excepto tracks 13 y 17 (Prietto)</p>",
+    "meta": "SOLISTA · 2021",
+    "desc": "Otra Tumba Más / No Te Rindas.",
+    "cover": "assets/album-playa-nocturna-vol-3.jpg",
+    "spotify_embed": "https://open.spotify.com/embed/album/32n71m49Hh7E64bWbL0aQZ?utm_source=generator&amp;theme=0",
+    "credits_html": "<p><strong>Lanzamiento:</strong> 28/05/2021</p><p><strong>Grabado en:</strong> Estudios ION en 2017 por Pablo Barros</p><p><strong>Mezclado y masterizado:</strong> Mezclado en Mono y masterizado en cinta en estudio El Attic por Patricio Claypole en agosto 2018</p><p><strong>Guitarra y voz:</strong> Maxi Prietto</p><p><strong>Contrabajo:</strong> Damián Manfredi</p><p><strong>Batería:</strong> Pipe Correa</p><p><strong>Piano:</strong> Miguel Tennina</p><p><strong>Saxo Barítono:</strong> Santiago Zarba</p><p><strong>Violín:</strong> Alex Musatov</p><p><strong>Viola:</strong> Charly Pacini</p><p><strong>Cello:</strong> Alfredo Zuccarelli</p><p><strong>Letra y música:</strong> Maxi Prietto</p><p><strong>Diseño:</strong> Santi Pozzi</p><p><strong>Sello:</strong> Alto Valle</p>",
+    "photos": [],
+    "songs": [
+      {
+        "title": "OTRA TUMBA MÁS",
+        "lines": [
+          "Y al final nunca fuimos ricos",
+          "Ni encontramos esos sueños",
+          "Que dejamos de buscar",
+          "Sí, al final, nunca nos fuimos",
+          "A vivir a esa cabaña en busca de esa paz",
+          "Insoportable paz, que nos persiguió",
+          "Como una duda inalcanzable, maldita sombra detrás",
+          "Y todos los ladrillos hoy se caen",
+          "Ni nuestros nombres eran nuestros en verdad",
+          "Y esas canciones que grabamos ¿dónde están?",
+          "Perdidas y enterradas en la posteridad",
+          "Si algún trofeo te hizo creer que eras mejor que los demás",
+          "Te esperan novedades en la guardia del hospital",
+          "Y si la suerte te ahorra ese lugar",
+          "Un poquito más linda, o un poquito más fea",
+          "Para el cementerio y la tierra serás solo otra tumba más"
+        ]
+      },
+      {
+        "title": "NO TE RINDAS",
+        "lines": [
+          "No te rindas ni aunque veas tu nombre en la lápida",
+          "Sí, no te rindas ni aunque veas tu nombre en la tumba",
+          "La luz te llegará si estás, si estás",
+          "La luz te llegará si estás, si estás"
+        ]
+      }
+    ]
+  },
+  {
+    "key": "sancocho-stereo",
+    "title": "Sancocho Stereo",
+    "year": "2021",
+    "cat": "LOS ESPÍRITUS",
+    "meta": "ESPIRITUS · 2021",
+    "desc": "Buscando la luz, Mugre, Jericó.",
+    "cover": "assets/album-sancocho-stereo.jpg",
+    "spotify_embed": "https://open.spotify.com/embed/album/38Y2bvBgrjb4zyMrGlJjAq?utm_source=generator&amp;theme=0",
+    "credits_html": "",
+    "photos": [],
+    "songs": []
+  },
+  {
+    "key": "cronicas-2021",
+    "title": "Crónicas",
+    "year": "2021",
+    "cat": "COSMOS",
+    "meta": "COSMOS · 2021",
+    "desc": "Prietto viaja al cosmos con Mariano. Editado por Alto Valle.",
+    "cover": "assets/album-cronicas.jpg",
+    "spotify_embed": "https://open.spotify.com/embed/artist/79KyjLxTR5a6vVpPvljowB?utm_source=generator&theme=0",
+    "credits_html": "<p><strong>Lanzamiento:</strong> 1/10/2021</p><p><strong>Guitarra y voz:</strong> Maxi Prietto</p><p><strong>Batería y coros:</strong> Mariano Castro</p><p>Grabado y mezclado en Estudios Plasma por Miguel Mactas entre diciembre 2020 y abril 2021.</p><p>Tracks 1, 7 y 9 grabados por Miguel Mactas y Bruno Cimmino.</p><p>Masterizado por Mario Breuer.</p><p><strong>Arte de tapa y diseño:</strong> Santi Pozzi</p><p><strong>Fotos:</strong> Juan Francisco Sanchez</p><p><strong>Producción general/Managment:</strong> Nacho Perotti.</p><p>Editado por Alto Valle</p><p>Pruebo en los carteles,</p>",
+    "photos": [
+      {
+        "src": "assets/albums/2021_PVCCM_CRONICAS/PVCM Plasma 09-09-21 0007.jpg",
+        "alt": "Crónicas — Sesión",
+        "caption": "Sesión en Estudio Plasma"
+      },
+      {
+        "src": "assets/albums/2021_PVCCM_CRONICAS/PVCM Plasma 09-09-21 0047.jpg",
+        "alt": "Crónicas — Grabación",
+        "caption": "Grabación de Crónicas"
+      },
+      {
+        "src": "assets/albums/2021_PVCCM_CRONICAS/PVCM Plasma 09-09-21 0065.jpg",
+        "alt": "Crónicas — Estudio",
+        "caption": "PVCCM en Estudio Plasma"
+      }
+    ],
+    "songs": [
+      {
+        "title": "HASTA SIEMPRE",
+        "lines": [
+          "Con las manos oí el sabor de tu pelo",
+          "Es amor lo que se fue",
+          "Y aún quema tu abrazo",
+          "Mientras todo se va",
+          "algo queda,",
+          "queda… y se queda en la garganta",
+          "del silencio, de otra noche más.",
+          "Ves más ardor que amor.",
+          "Algún día partiré hasta siempre",
+          "Besando lo que se fue",
+          "Y aún quedará tu abrazo",
+          "Mientras todo se va",
+          "Eso quedará",
+          "se quedará en el alma",
+          "De este corazón",
+          "Hasta siempre y más",
+          "Ves mas ardor que amor."
+        ]
+      },
+      {
+        "title": "ALGO",
+        "lines": [
+          "Si al final todo se cae",
+          "Y entre los vidrios aún queda algo",
+          "Dímelo, dime algo",
+          "Aunque no sea verdad, te amo.",
+          "Dímelo, dime algo,",
+          "que al amanecer ya podré seguir solo.",
+          "Aunque aún las noches no pasen de largo",
+          "Sin notarlo,",
+          "dímelo, dime algo,",
+          "aunque no sea verdad, te amo.",
+          "Que al amanecer ya podré seguir solo.",
+          "Aunque aún la vida siga girando para cualquier lado",
+          "Dímelo, dime algo. Aunque no sea verdad, te amo.",
+          "Dime algo,",
+          "Que al amanecer ya podré seguir solo."
+        ]
+      },
+      {
+        "title": "CARROUSEL",
+        "lines": [
+          "No hay más que hacer",
+          "Mira el carrousel",
+          "Gira, brillante",
+          "Todo te daré, siempre.",
+          "Todo te daré, siempre."
+        ]
+      },
+      {
+        "title": "MÁSCARA",
+        "lines": [
+          "Ríe el mundo terminó ayer",
+          "En la noche cruzarás el sol",
+          "Alguien sigue con su mascara huyendo",
+          "A ese mundo donde la fantasía es cruel",
+          "Ríe el mundo despertó ayer",
+          "En la noche cruzarás el sol",
+          "Alguien sigue con su mascara huyendo",
+          "A ese mundo donde la fantasía es cruel"
+        ]
+      },
+      {
+        "title": "RAMBLA",
+        "lines": [
+          "Sé que es lo que quise",
+          "Que hice trampa y",
+          "Que no podré llegar",
+          "Porque es imposible porque todo lo que quiero es no desear",
+          "Sólo entre veredas tropezando con mis penas",
+          "Vuelvo a negar",
+          "Que soy el primero en traicionarme",
+          "Recorriendo esta ciudad",
+          "En la rambla, espero",
+          "Jurando al cielo",
+          "en los subtes y en los trenes de tu pan",
+          "suelo apuntar con mis rodillas",
+          "cuando me tiro a rezar",
+          "el semáforo en luz negra",
+          "debí haberme dado cuenta esa señal.",
+          "creo en lo que busco,",
+          "lo que encuentro",
+          "no me importa, en realidad",
+          "en la rambla, espero",
+          "jurando al cielo",
+          "Sé que es lo que quise",
+          "Que hice trampa y",
+          "Que no podré llegar",
+          "Porque es imposible porque todo lo que quiero es no desear",
+          "Más"
+        ]
+      },
+      {
+        "title": "RISA",
+        "lines": [
+          "Por esas calles va tu alma",
+          "Una y otra vez",
+          "Hay un camino de calma",
+          "Que nunca eliges tomar",
+          "En el agua",
+          "Buscas tu nombre",
+          "ya sabes",
+          "Tu risa es quien eres",
+          "Por esas calles va tu alma",
+          "Debes dejarlo y volver",
+          "Hay un camino de calma",
+          "Que nunca eliges tomar",
+          "En el aire",
+          "Buscas tu nombre",
+          "Y ya sabes",
+          "Tu risa es quien eres"
+        ]
+      },
+      {
+        "title": "DIARIOS",
+        "lines": [
+          "Una paloma muerta en la avenida",
+          "Un viejo la mira mientras fuma y vende",
+          "Diarios de mañana o de ayer",
+          "Los presos tienen rejas",
+          "Nos niños tienen rejas",
+          "Y el perro con correa y bozal",
+          "Una ambulancia chocí en la avenida",
+          "La gente la mira mientras",
+          "Habla y compra",
+          "Diarios de mañana o de ayer",
+          "Las plazas tienen rejas",
+          "Por fuera las parejas",
+          "Corren con correa y bozal",
+          "La plaza tiene rejas",
+          "Por fuera las parejas",
+          "Corren con correa y bozal"
+        ]
+      },
+      {
+        "title": "BALADA",
+        "lines": [
+          "En esa idea de querer había un error",
+          "Es que esa tarde de aquel amor",
+          "Quizás fue lo peor",
+          "Tratar de estar mejor",
+          "Arruinamos lo que había de bueno",
+          "Cuando caía en la red",
+          "Veía amor",
+          "Y ahora que sólo hay pared",
+          "Siento el error",
+          "Que crudo error!",
+          "Quizás fue lo peor",
+          "Tratar de estar mejor",
+          "No hay que elegir todo",
+          "Si sólo somos dos",
+          "Más"
+        ]
+      }
+    ]
+  },
+  {
+    "key": "playa-nocturna-vol2",
+    "title": "Playa Nocturna, Vol. 2",
+    "year": "2020",
+    "cat": "SOLISTA",
+    "meta": "SOLISTA · 2020",
+    "desc": "Dos Gardenias / Flotando en la oscuridad.",
+    "cover": "assets/album-playa-nocturna-vol-2.jpg",
+    "spotify_embed": "https://open.spotify.com/embed/album/32n71m49Hh7E64bWbL0aQZ?utm_source=generator&amp;theme=0",
+    "credits_html": "<p><strong>Lanzamiento:</strong> 18/12/2020</p><p><strong>Grabado por:</strong> Miguel Mactas en Estudio Plasma</p><p><strong>Mastering:</strong> Mario Breuer</p><p><strong>Guitarra y voz:</strong> Maxi Prietto</p><p><strong>Piano:</strong> Daniel Godfrid</p><p><strong>Contrabajo:</strong> Damián Manfredi</p><p><strong>Batería:</strong> Pipe Correa</p><p><strong>Guitarra:</strong> Martín Ferbat</p><p><strong>Violín:</strong> Alex Musatov</p><p><strong>Sello:</strong> Alto Valle</p>",
+    "photos": [],
+    "songs": [
+      {
+        "title": "FLOTANDO EN LA OSCURIDAD",
+        "lines": [
+          "Pude oírte, pude oírme",
+          "Puedo irme o pudrirme aquí",
+          "Di lo que quieras hoy, amor",
+          "Me voy siguiendo al sol",
+          "Sé que habrá más versos y más besos y más mañanas",
+          "Sé que habrá más besos y más versos flotando en la oscuridad",
+          "Soy lo que buscan mis pies",
+          "Soy lo que buscan mis pies"
+        ]
+      }
+    ]
+  },
+  {
+    "key": "playa-nocturna-vol1",
+    "title": "Playa Nocturna, Vol. 1",
+    "year": "2020",
+    "cat": "SOLISTA",
+    "meta": "SOLISTA · 2020",
+    "desc": "El Rey Criollo del Rock and Roll / Definición de Ritmo.",
+    "cover": "assets/album-playa-nocturna-vol-1.jpg",
+    "spotify_embed": "https://open.spotify.com/embed/album/32n71m49Hh7E64bWbL0aQZ?utm_source=generator&amp;theme=0",
+    "credits_html": "<p><strong>Lanzamiento:</strong> 02/10/2020</p><p><strong>Grabado en:</strong> Plasma Estudio por Miguel Mactas</p><p><strong>Producido por:</strong> Maxi Prietto</p><p><strong>Mastering:</strong> Mario Breuer</p><p><strong>Arte de tapa:</strong> Santi Pozzi</p><p><strong>Sello:</strong> Alto Valle</p><p><strong>Guitarra y voz:</strong> Maxi Prietto</p><p><strong>Contrabajo:</strong> Damián Manfredi</p><p><strong>Batería:</strong> Pipe Correa</p><p><strong>Piano:</strong> Daniel Godfrid</p><p><strong>Violín:</strong> Alex Musatov</p>",
+    "photos": [],
+    "songs": []
+  },
+  {
+    "key": "blanco-negro-2020",
+    "title": "Blanco y Negro",
+    "year": "2020",
+    "cat": "SOLISTA",
+    "meta": "SOLISTA · 2020",
+    "desc": "Canciones grabadas durante el encierro.",
+    "cover": "assets/album-blanco-negro.jpg",
+    "spotify_embed": "https://open.spotify.com/embed/album/02dlo3Xv0GojfPBUbcPkFY?utm_source=generator&theme=0",
+    "credits_html": "<p><strong>Lanzamiento:</strong> 21/05/2020</p><p>Guitarra sola, grabado e interpretado por Maxi Prietto.</p>",
+    "photos": [
+      {
+        "src": "assets/albums/2020-_Blanco_y_negro/blancoynegro.jpg",
+        "alt": "Blanco y Negro",
+        "caption": "Sesión en cuarentena"
+      }
+    ],
+    "songs": []
+  },
+  {
+    "key": "lluvia-cumbrecita-2019",
+    "title": "Lluvia en la Cumbrecita",
+    "year": "2019",
+    "cat": "SOLISTA",
+    "meta": "SOLISTA · 2019",
+    "desc": "Canciones de ruta, lluvia y montaña.",
+    "cover": "assets/album-lluvia.jpg",
+    "spotify_embed": "https://open.spotify.com/embed/album/6tGg0qNv0PRtFISCO0YVzQ?utm_source=generator&theme=0",
+    "credits_html": "<p><strong>Lanzamiento:</strong> 17/01/2019</p><p>Grabado con una Zoom H4n en distintos lugares de La Cumbrecita, Córdoba.</p><p><strong>Fotos:</strong> Facu Plaga, Luciana Bassi.</p>",
+    "photos": [
+      {
+        "src": "assets/albums/2019-_Lluvia_en_la_cumbrecita/Cumbrecita 0116 - spoti.jpg",
+        "alt": "Lluvia en La Cumbrecita",
+        "caption": "La Cumbrecita — Sesión nocturna"
+      }
+    ],
+    "songs": []
+  },
+  {
+    "key": "caldero",
+    "title": "Caldero",
+    "year": "2019",
+    "cat": "LOS ESPÍRITUS",
+    "meta": "ESPIRITUS · 2019",
+    "desc": "Nueva formación, mismo fuego.",
+    "cover": "assets/album-caldero.jpg",
+    "spotify_embed": "https://open.spotify.com/embed/album/0WD2XbzYbyiWWhOzTtzmW8?utm_source=generator&amp;theme=0",
+    "credits_html": "",
+    "photos": [],
+    "songs": []
+  },
+  {
+    "key": "boleros-canciones-2018",
+    "title": "Boleros & Canciones",
+    "year": "2018",
+    "cat": "SOLISTA",
+    "meta": "SOLISTA · 2018",
+    "desc": "Poli &amp; Prietto. Cariñito, Sabor a mí, Algo contigo.",
+    "cover": "assets/album-boleros-canciones.jpg",
+    "spotify_embed": "https://open.spotify.com/embed/album/0Ieorv8QKVoR9UL1umHtzJ?utm_source=generator&theme=0",
+    "credits_html": "<p><strong>Fecha de lanzamiento:</strong> 8 de junio del 2018.</p><p>Grabado por Patricio Claypole en Estudios ION en septiembre de 2017.</p><p><strong>Producción artística:</strong> Maxi Prietto.</p><p><strong>Mastering:</strong> Gavin Lurssen.</p><p><strong>Natalia Napolitano:</strong> Guitarra y voz. Autoría temas 3 y 10.</p><p><strong>Alex Musatov:</strong> Violín.</p><p><strong>Alfredo Zuccarelli:</strong> Cello.</p><p><strong>Damián Manfredi:</strong> Contrabajo</p><p><strong>Juan Felipe Correa:</strong> Maracas y Batería.</p><p><strong>Miguel Tennina:</strong> Piano y acordeón.</p><p><strong>Santiago Zarba:</strong> Saxo Barítono.</p><p><strong>Invitados especiales:</strong> </p><p><strong>Producción ejecutiva:</strong> Nacho Perotti y Maxi Prietto.</p><p><strong>Fotografías:</strong> Juan Francisco Sanchez.</p><p><strong>Arte y diseño gráfico:</strong> Santi Pozzi.</p><p><strong>Sello:</strong> Alto Valle. AV006.</p><p><strong>Citas:</strong> </p><p><strong>Maxi Prietto para Artezeta:</strong> </p><p><strong>Poli sobre el Bolero para Artezeta:</strong> </p><p><strong>El bolero tiene toda una apertura que va desde lo más doliente, en el estilo mexicano, hasta algo más afro, con mucha percusión, contrabajo y trompetas, como se hace en Cuba. Incluso las líricas son distintas. Puede ser bien sabroso o bien dramático, trágico. El cubano tiene mucho de celebrar a “aquel amor”. El otro es más de hablar de “por qué se fue”. Nosotros mezclamos un poco de las dos vertientes:</strong> las cuerdas acentúan lo dramático, mientras que el bongó y la maraca le dan un ritmito más llevadero. A la vez, las cuerdas de la Fernández Fierro, le dan una onda muy tanguera a temas como «Veinte años».</p>",
+    "photos": [
+      {
+        "src": "assets/albums/2018_POLI_Y_PRIETTO_-_Boleros_and_Canciones/_MG_0073.jpg",
+        "alt": "Poli y Prietto en vivo",
+        "caption": "Poli y Prietto en vivo"
+      },
+      {
+        "src": "assets/albums/2018_POLI_Y_PRIETTO_-_Boleros_and_Canciones/_MG_0157.jpg",
+        "alt": "Boleros & Canciones",
+        "caption": "Sesión Boleros & Canciones"
+      },
+      {
+        "src": "assets/albums/2018_POLI_Y_PRIETTO_-_Boleros_and_Canciones/_MG_0374.jpg",
+        "alt": "Boleros & Canciones",
+        "caption": "En el escenario"
+      }
+    ],
+    "songs": []
+  },
+  {
+    "key": "bano-de-bosque-2018",
+    "title": "Baño de Bosque",
+    "year": "2018",
+    "cat": "SOLISTA",
+    "meta": "SOLISTA · 2018",
+    "desc": "Guitarra de 12 cuerdas, acústica y koshi.",
+    "cover": "assets/album-bano-de-bosque.jpg",
+    "spotify_embed": "https://open.spotify.com/embed/artist/3Xm2CjJ6i14krOHOGVDYts?utm_source=generator&theme=0",
+    "credits_html": "<p><strong>Lanzamiento:</strong> 30/12/2018</p><p>Grabado e interpretado por Maxi Prietto el sábado 29 de diciembre del 2018.</p>",
+    "photos": [
+      {
+        "src": "assets/albums/2018_bano_de_bosque/SAPOCONTRATAPA.jpg",
+        "alt": "Baño de Bosque",
+        "caption": "La Cumbrecita, Córdoba"
+      }
+    ],
+    "songs": []
+  },
+  {
+    "key": "siesta-2017",
+    "title": "Siesta",
+    "year": "2017",
+    "cat": "SOLISTA",
+    "meta": "SOLISTA · 2017",
+    "desc": "Guitarra sola interpretada por Maxi Prietto.",
+    "cover": "assets/album-siesta.jpg",
+    "spotify_embed": "https://open.spotify.com/embed/artist/3Xm2CjJ6i14krOHOGVDYts?utm_source=generator&theme=0",
+    "credits_html": "<p><strong>Lanzamiento:</strong> 26/04/2017</p><p>Guitarra sola, grabado e interpretado por Maxi Prietto.</p>",
+    "photos": [],
+    "songs": []
+  },
+  {
+    "key": "pum-pum-pum-2017",
+    "title": "Pum Pum Pum",
+    "year": "2017",
+    "cat": "SOLISTA",
+    "meta": "SOLISTA · 2017",
+    "desc": "Single compuesto y grabado con Zoom H4n.",
+    "cover": "assets/album-pum-pum-pum.jpg",
+    "spotify_embed": "https://open.spotify.com/embed/album/5sWQhZ8JO0R9tDy8xjagPq?utm_source=generator&amp;theme=0",
+    "credits_html": "<p><strong>Lanzamiento:</strong> 21/12/2017</p><p><strong>Arte de tapa:</strong> Santi Pozzi</p><p>Compuesto y grabado el mismo día.</p><p>Grabado con una zoom H4n</p>",
+    "photos": [
+      {
+        "src": "assets/albums/2017_Pum_Pum_Pum/PUM PUM PUM.jpg",
+        "alt": "Pum Pum Pum",
+        "caption": "Pum Pum Pum — Sesión"
+      }
+    ],
+    "songs": []
+  },
+  {
+    "key": "guayabo-2017",
+    "title": "Guayabo de Agua Ardiente",
+    "year": "2017",
+    "cat": "LOS ESPÍRITUS",
+    "meta": "2017 · EP",
+    "desc": "Los Espíritus · Maxi Prietto",
+    "cover": "assets/album-guayabo.jpg",
+    "spotify_embed": "https://open.spotify.com/embed/album/1gZFGvIIXbOnowKlW8cGh9?utm_source=generator&amp;theme=0",
+    "credits_html": "",
+    "photos": [],
+    "songs": []
+  },
+  {
+    "key": "agua-ardiente",
+    "title": "Agua Ardiente",
+    "year": "2017",
+    "cat": "LOS ESPÍRITUS",
+    "meta": "ESPIRITUS · 2017",
+    "desc": "Blues psicodélico y camino de tierra. Camina.",
+    "cover": "assets/album-agua-ardiente.jpg",
+    "spotify_embed": "https://open.spotify.com/embed/album/1ahdp3YzkgsUZZl3gJPYgL?utm_source=generator&amp;theme=0",
+    "credits_html": "",
     "photos": [],
     "songs": []
   },
@@ -1113,507 +929,53 @@ window.PRIETTO_RELEASES = [
     ]
   },
   {
-    "key": "pum-pum-pum-2017",
-    "title": "Pum Pum Pum",
-    "year": "2017",
-    "cat": "SOLISTA",
-    "meta": "SOLISTA · 2017",
-    "desc": "Single compuesto y grabado con Zoom H4n.",
-    "cover": "assets/album-pum-pum-pum.jpg",
-    "spotify_embed": "https://open.spotify.com/embed/album/5sWQhZ8JO0R9tDy8xjagPq?utm_source=generator&amp;theme=0",
-    "credits_html": "<p><strong>Lanzamiento:</strong> 21/12/2017</p><p><strong>Arte de tapa:</strong> Santi Pozzi</p><p>Compuesto y grabado el mismo día.</p><p>Grabado con una zoom H4n</p>",
-    "photos": [
-      {
-        "src": "assets/albums/2017_Pum_Pum_Pum/PUM PUM PUM.jpg",
-        "alt": "Pum Pum Pum",
-        "caption": "Pum Pum Pum — Sesión"
-      }
-    ],
-    "songs": []
-  },
-  {
-    "key": "siesta-2017",
-    "title": "Siesta",
-    "year": "2017",
-    "cat": "SOLISTA",
-    "meta": "SOLISTA · 2017",
-    "desc": "Guitarra sola interpretada por Maxi Prietto.",
-    "cover": "assets/album-siesta.jpg",
-    "spotify_embed": "https://open.spotify.com/embed/artist/3Xm2CjJ6i14krOHOGVDYts?utm_source=generator&theme=0",
-    "credits_html": "<p><strong>Lanzamiento:</strong> 26/04/2017</p><p>Guitarra sola, grabado e interpretado por Maxi Prietto.</p>",
-    "photos": [],
-    "songs": []
-  },
-  {
-    "key": "boleros-canciones-2018",
-    "title": "Boleros & Canciones",
-    "year": "2018",
-    "cat": "SOLISTA",
-    "meta": "SOLISTA · 2018",
-    "desc": "Poli &amp; Prietto. Cariñito, Sabor a mí, Algo contigo.",
-    "cover": "assets/album-boleros-canciones.jpg",
-    "spotify_embed": "https://open.spotify.com/embed/album/0Ieorv8QKVoR9UL1umHtzJ?utm_source=generator&theme=0",
-    "credits_html": "<p><strong>Fecha de lanzamiento:</strong> 8 de junio del 2018.</p><p>Grabado por Patricio Claypole en Estudios ION en septiembre de 2017.</p><p><strong>Producción artística:</strong> Maxi Prietto.</p><p><strong>Mastering:</strong> Gavin Lurssen.</p><p><strong>Natalia Napolitano:</strong> Guitarra y voz. Autoría temas 3 y 10.</p><p><strong>Alex Musatov:</strong> Violín.</p><p><strong>Alfredo Zuccarelli:</strong> Cello.</p><p><strong>Damián Manfredi:</strong> Contrabajo</p><p><strong>Juan Felipe Correa:</strong> Maracas y Batería.</p><p><strong>Miguel Tennina:</strong> Piano y acordeón.</p><p><strong>Santiago Zarba:</strong> Saxo Barítono.</p><p><strong>Invitados especiales:</strong> </p><p><strong>Producción ejecutiva:</strong> Nacho Perotti y Maxi Prietto.</p><p><strong>Fotografías:</strong> Juan Francisco Sanchez.</p><p><strong>Arte y diseño gráfico:</strong> Santi Pozzi.</p><p><strong>Sello:</strong> Alto Valle. AV006.</p><p><strong>Citas:</strong> </p><p><strong>Maxi Prietto para Artezeta:</strong> </p><p><strong>Poli sobre el Bolero para Artezeta:</strong> </p><p><strong>El bolero tiene toda una apertura que va desde lo más doliente, en el estilo mexicano, hasta algo más afro, con mucha percusión, contrabajo y trompetas, como se hace en Cuba. Incluso las líricas son distintas. Puede ser bien sabroso o bien dramático, trágico. El cubano tiene mucho de celebrar a “aquel amor”. El otro es más de hablar de “por qué se fue”. Nosotros mezclamos un poco de las dos vertientes:</strong> las cuerdas acentúan lo dramático, mientras que el bongó y la maraca le dan un ritmito más llevadero. A la vez, las cuerdas de la Fernández Fierro, le dan una onda muy tanguera a temas como «Veinte años».</p>",
-    "photos": [
-      {
-        "src": "assets/albums/2018_POLI_Y_PRIETTO_-_Boleros_and_Canciones/_MG_0073.jpg",
-        "alt": "Poli y Prietto en vivo",
-        "caption": "Poli y Prietto en vivo"
-      },
-      {
-        "src": "assets/albums/2018_POLI_Y_PRIETTO_-_Boleros_and_Canciones/_MG_0157.jpg",
-        "alt": "Boleros & Canciones",
-        "caption": "Sesión Boleros & Canciones"
-      },
-      {
-        "src": "assets/albums/2018_POLI_Y_PRIETTO_-_Boleros_and_Canciones/_MG_0374.jpg",
-        "alt": "Boleros & Canciones",
-        "caption": "En el escenario"
-      }
-    ],
-    "songs": []
-  },
-  {
-    "key": "bano-de-bosque-2018",
-    "title": "Baño de Bosque",
-    "year": "2018",
-    "cat": "SOLISTA",
-    "meta": "SOLISTA · 2018",
-    "desc": "Guitarra de 12 cuerdas, acústica y koshi.",
-    "cover": "assets/album-bano-de-bosque.jpg",
-    "spotify_embed": "https://open.spotify.com/embed/artist/3Xm2CjJ6i14krOHOGVDYts?utm_source=generator&theme=0",
-    "credits_html": "<p><strong>Lanzamiento:</strong> 30/12/2018</p><p>Grabado e interpretado por Maxi Prietto el sábado 29 de diciembre del 2018.</p>",
-    "photos": [
-      {
-        "src": "assets/albums/2018_bano_de_bosque/SAPOCONTRATAPA.jpg",
-        "alt": "Baño de Bosque",
-        "caption": "La Cumbrecita, Córdoba"
-      }
-    ],
-    "songs": []
-  },
-  {
-    "key": "lluvia-cumbrecita-2019",
-    "title": "Lluvia en la Cumbrecita",
-    "year": "2019",
-    "cat": "SOLISTA",
-    "meta": "SOLISTA · 2019",
-    "desc": "Canciones de ruta, lluvia y montaña.",
-    "cover": "assets/album-lluvia.jpg",
-    "spotify_embed": "https://open.spotify.com/embed/album/6tGg0qNv0PRtFISCO0YVzQ?utm_source=generator&theme=0",
-    "credits_html": "<p><strong>Lanzamiento:</strong> 17/01/2019</p><p>Grabado con una Zoom H4n en distintos lugares de La Cumbrecita, Córdoba.</p><p><strong>Fotos:</strong> Facu Plaga, Luciana Bassi.</p>",
-    "photos": [
-      {
-        "src": "assets/albums/2019-_Lluvia_en_la_cumbrecita/Cumbrecita 0116 - spoti.jpg",
-        "alt": "Lluvia en La Cumbrecita",
-        "caption": "La Cumbrecita — Sesión nocturna"
-      }
-    ],
-    "songs": []
-  },
-  {
-    "key": "blanco-negro-2020",
-    "title": "Blanco y Negro",
-    "year": "2020",
-    "cat": "SOLISTA",
-    "meta": "SOLISTA · 2020",
-    "desc": "Canciones grabadas durante el encierro.",
-    "cover": "assets/album-blanco-negro.jpg",
-    "spotify_embed": "https://open.spotify.com/embed/album/02dlo3Xv0GojfPBUbcPkFY?utm_source=generator&theme=0",
-    "credits_html": "<p><strong>Lanzamiento:</strong> 21/05/2020</p><p>Guitarra sola, grabado e interpretado por Maxi Prietto.</p>",
-    "photos": [
-      {
-        "src": "assets/albums/2020-_Blanco_y_negro/blancoynegro.jpg",
-        "alt": "Blanco y Negro",
-        "caption": "Sesión en cuarentena"
-      }
-    ],
-    "songs": []
-  },
-  {
-    "key": "playa-nocturna-vol1",
-    "title": "Playa Nocturna, Vol. 1",
-    "year": "2020",
-    "cat": "SOLISTA",
-    "meta": "SOLISTA · 2020",
-    "desc": "El Rey Criollo del Rock and Roll / Definición de Ritmo.",
-    "cover": "assets/album-playa-nocturna-vol-1.jpg",
-    "spotify_embed": "https://open.spotify.com/embed/album/32n71m49Hh7E64bWbL0aQZ?utm_source=generator&amp;theme=0",
-    "credits_html": "<p><strong>Lanzamiento:</strong> 02/10/2020</p><p><strong>Grabado en:</strong> Plasma Estudio por Miguel Mactas</p><p><strong>Producido por:</strong> Maxi Prietto</p><p><strong>Mastering:</strong> Mario Breuer</p><p><strong>Arte de tapa:</strong> Santi Pozzi</p><p><strong>Sello:</strong> Alto Valle</p><p><strong>Guitarra y voz:</strong> Maxi Prietto</p><p><strong>Contrabajo:</strong> Damián Manfredi</p><p><strong>Batería:</strong> Pipe Correa</p><p><strong>Piano:</strong> Daniel Godfrid</p><p><strong>Violín:</strong> Alex Musatov</p>",
-    "photos": [],
-    "songs": []
-  },
-  {
-    "key": "playa-nocturna-vol2",
-    "title": "Playa Nocturna, Vol. 2",
-    "year": "2020",
-    "cat": "SOLISTA",
-    "meta": "SOLISTA · 2020",
-    "desc": "Dos Gardenias / Flotando en la oscuridad.",
-    "cover": "assets/album-playa-nocturna-vol-2.jpg",
-    "spotify_embed": "https://open.spotify.com/embed/album/32n71m49Hh7E64bWbL0aQZ?utm_source=generator&amp;theme=0",
-    "credits_html": "<p><strong>Lanzamiento:</strong> 18/12/2020</p><p><strong>Grabado por:</strong> Miguel Mactas en Estudio Plasma</p><p><strong>Mastering:</strong> Mario Breuer</p><p><strong>Guitarra y voz:</strong> Maxi Prietto</p><p><strong>Piano:</strong> Daniel Godfrid</p><p><strong>Contrabajo:</strong> Damián Manfredi</p><p><strong>Batería:</strong> Pipe Correa</p><p><strong>Guitarra:</strong> Martín Ferbat</p><p><strong>Violín:</strong> Alex Musatov</p><p><strong>Sello:</strong> Alto Valle</p>",
-    "photos": [],
-    "songs": [
-      {
-        "title": "FLOTANDO EN LA OSCURIDAD",
-        "lines": [
-          "Pude oírte, pude oírme",
-          "Puedo irme o pudrirme aquí",
-          "Di lo que quieras hoy, amor",
-          "Me voy siguiendo al sol",
-          "Sé que habrá más versos y más besos y más mañanas",
-          "Sé que habrá más besos y más versos flotando en la oscuridad",
-          "Soy lo que buscan mis pies",
-          "Soy lo que buscan mis pies"
-        ]
-      }
-    ]
-  },
-  {
-    "key": "playa-nocturna-vol3",
-    "title": "Playa Nocturna, Vol. 3",
-    "year": "2021",
-    "cat": "SOLISTA",
-    "meta": "SOLISTA · 2021",
-    "desc": "Otra Tumba Más / No Te Rindas.",
-    "cover": "assets/album-playa-nocturna-vol-3.jpg",
-    "spotify_embed": "https://open.spotify.com/embed/album/32n71m49Hh7E64bWbL0aQZ?utm_source=generator&amp;theme=0",
-    "credits_html": "<p><strong>Lanzamiento:</strong> 28/05/2021</p><p><strong>Grabado en:</strong> Estudios ION en 2017 por Pablo Barros</p><p><strong>Mezclado y masterizado:</strong> Mezclado en Mono y masterizado en cinta en estudio El Attic por Patricio Claypole en agosto 2018</p><p><strong>Guitarra y voz:</strong> Maxi Prietto</p><p><strong>Contrabajo:</strong> Damián Manfredi</p><p><strong>Batería:</strong> Pipe Correa</p><p><strong>Piano:</strong> Miguel Tennina</p><p><strong>Saxo Barítono:</strong> Santiago Zarba</p><p><strong>Violín:</strong> Alex Musatov</p><p><strong>Viola:</strong> Charly Pacini</p><p><strong>Cello:</strong> Alfredo Zuccarelli</p><p><strong>Letra y música:</strong> Maxi Prietto</p><p><strong>Diseño:</strong> Santi Pozzi</p><p><strong>Sello:</strong> Alto Valle</p>",
-    "photos": [],
-    "songs": [
-      {
-        "title": "OTRA TUMBA MÁS",
-        "lines": [
-          "Y al final nunca fuimos ricos",
-          "Ni encontramos esos sueños",
-          "Que dejamos de buscar",
-          "Sí, al final, nunca nos fuimos",
-          "A vivir a esa cabaña en busca de esa paz",
-          "Insoportable paz, que nos persiguió",
-          "Como una duda inalcanzable, maldita sombra detrás",
-          "Y todos los ladrillos hoy se caen",
-          "Ni nuestros nombres eran nuestros en verdad",
-          "Y esas canciones que grabamos ¿dónde están?",
-          "Perdidas y enterradas en la posteridad",
-          "Si algún trofeo te hizo creer que eras mejor que los demás",
-          "Te esperan novedades en la guardia del hospital",
-          "Y si la suerte te ahorra ese lugar",
-          "Un poquito más linda, o un poquito más fea",
-          "Para el cementerio y la tierra serás solo otra tumba más"
-        ]
-      },
-      {
-        "title": "NO TE RINDAS",
-        "lines": [
-          "No te rindas ni aunque veas tu nombre en la lápida",
-          "Sí, no te rindas ni aunque veas tu nombre en la tumba",
-          "La luz te llegará si estás, si estás",
-          "La luz te llegará si estás, si estás"
-        ]
-      }
-    ]
-  },
-  {
-    "key": "playa-nocturna-vol4",
-    "title": "Playa Nocturna, Vol. 4",
-    "year": "2026",
-    "cat": "SOLISTA",
-    "meta": "SOLISTA · 2026",
-    "desc": "Rumbo a Hong Kong / Sólo una canción más.",
-    "cover": "assets/album-playa-nocturna-vol-4.jpg",
-    "spotify_embed": "https://open.spotify.com/embed/album/32n71m49Hh7E64bWbL0aQZ?utm_source=generator&amp;theme=0",
-    "credits_html": "<p><strong>Lanzamiento:</strong> 27/05/2026</p><p><strong>Rumbo a Hong Kong Autor:</strong> Félix Prietto</p><p><strong>Solo una canción más Autor:</strong> Maxi Prietto</p><p><strong>Grabación y mix:</strong> Maxi Prietto</p><p><strong>Mastering:</strong> Michael Graves</p><p><strong>Arte de tapa:</strong> Santi Pozzi</p><p><strong>Sello:</strong> Alto Valle</p><p><strong>Contrabajo:</strong> Damián Manfredi</p><p><strong>Batería:</strong> Pipe Correa</p><p><strong>Guitarra y voz:</strong> Maxi Prietto</p>",
-    "photos": [],
-    "songs": [
-      {
-        "title": "RUMBO A HONG KONG",
-        "lines": [
-          "Navegando en un barco mercante",
-          "Voy rumbo hacia Hong Kong",
-          "Maravillado del azul resplandor",
-          "Y de los días que me regala el sol",
-          "Voy rumbo a Hong Kong",
-          "Paisajes, rayos de sol",
-          "Hay mañanas y hay mañanas",
-          "Ámame hasta la muerte",
-          "Porque tú eres mi suerte:",
-          "Singapur del mar Oriente.",
-          "Navegando en un barco mercante",
-          "Voy rumbo hacia Hong Kong",
-          "Maravillado del azul resplandor",
-          "Y de los días que me regala el sol",
-          "Voy rumbo a Hong Kong",
-          "Paisajes, rayos de sol.",
-          "Un mar de aceite, nena",
-          "Un mar de aceite, nene",
-          "Voy rumbo a Hong Kong",
-          "Paisajes, rayos de sol"
-        ]
-      },
-      {
-        "title": "SÓLO UNA CANCIÓN MÁS",
-        "lines": [
-          "Se van los efectos de otra noche",
-          "Y al abrir la ventana ya no queda nada",
-          "Sólo una canción más pedís para bailar con el cielo",
-          "Y ya ni la luna está",
-          "Muertos en el piso están los sueños que más quiso",
-          "Ya no hay nadie nuevo a quien culpar",
-          "Sólo una canción más pedís para bailar con el cielo",
-          "Y ya ni la luna está",
-          "Se van los efectos de otra copa",
-          "Y al abrir la ventana ya no queda nada",
-          "Sólo una canción más pedís para bailar con el cielo",
-          "Y ya ni la luna está",
-          "Muertos en el piso están los sueños que más quiso",
-          "Ya no hay nadie nuevo a quien culpar",
-          "Sólo una canción más pedís para bailar con el cielo",
-          "Y ya ni la luna está"
-        ]
-      }
-    ]
-  },
-  {
-    "key": "astro-lofi-2022",
-    "title": "Astro Lo Fi Beats",
-    "year": "2022",
-    "cat": "SOLISTA",
-    "meta": "SOLISTA · 2022",
-    "desc": "Beats de otra dimensión.",
-    "cover": "assets/album-astro.jpg",
-    "spotify_embed": "https://open.spotify.com/embed/album/3ocmSKPNc3wNoyKuu3A3qS?utm_source=generator&theme=0",
-    "credits_html": "<p><strong>Lanzamiento:</strong> 5/10/2022</p><p>Grabado y producido por Maxi Prietto</p>",
-    "photos": [
-      {
-        "src": "assets/albums/2022_Astro_Lo_Fi_Beats/prietto-107.jpg",
-        "alt": "Astro Lo-Fi Beats",
-        "caption": "Prietto — Astro Lo-Fi"
-      }
-    ],
-    "songs": [
-      {
-        "title": "ASTRO LO FI BEATS",
-        "lines": [
-          "Vincent (1:14)",
-          "Cosa más bonita (0:45)",
-          "Ras (1:47)",
-          "Días de amor (4:05)",
-          "Quién tiene tu amor (1:55)",
-          "El Lobo (1:29)",
-          "Cerveza Tabaco Café (2:23)",
-          "Los amo (0:15)",
-          "Todo el mundo sabe (3:11)",
-          "Funkaflute (4:09)",
-          "Esperanza (2:50)",
-          "Astro Lo Fi Beats (0:26)",
-          "Groove Fx (2:31)"
-        ]
-      },
-      {
-        "title": "RAS",
-        "lines": [
-          "Jacarandá hoy ha abierto sus flores",
-          "Le cantarán al sol",
-          "Noche de luna que alumbras las flores",
-          "Le cantarán al sol",
-          "Lluvias del mar caerán",
-          "Le cantarán al sol"
-        ]
-      },
-      {
-        "title": "DÍAS DE AMOR",
-        "lines": [
-          "Se queman las flores, se queman los días del amor",
-          "En estas aguas ya no hacemos pie,",
-          "Para esto nos queda la Fe",
-          "Una luz está susurrando versos al corazón",
-          "Una luz está sembrando más días para vos",
-          "Nacerán más flores, nacerán más días de amor",
-          "Y si en las aguas ya no hacemos pie,",
-          "Siempre habrá más Fe",
-          "Una luz estará susurrando versos al corazón",
-          "Una luz estará sembrando más días para vos",
-          "Todo el mundo sabe (Leonard Cohen)",
-          "Todo el mundo sabe que los dados están cargados",
-          "Todo el mundo tira con los dedos cruzados",
-          "Todo el mundo sabe que la guerra terminó",
-          "Todo el mundo sabe que el bueno perdió",
-          "Todo el mundo sabe que la pelea está comprada",
-          "Los pobres siguen pobres y los ricos, ricos",
-          "Todo el mundo sabe que el barco está agujereado",
-          "Todo el mundo sabe que el capitán mintió",
-          "Todo el mundo tiene ese sentimiento roto",
-          "Como si su padre o su perro hubiese muerto",
-          "Todo el mundo va hablando a sus pantalones",
-          "Todo el mundo quiere una caja de bombones",
-          "Y un ramo de flores, todo el mundo sabe",
-          "Todo el mundo sabe son los últimos días",
-          "Desde aquel momento en que colgamos al mesías",
-          "Todo el mundo sabe que hay olor a podrido",
-          "Y que el mundo entero es un enorme baldío",
-          "Todo el mundo sabe que mucho no cambiamos",
-          "Los pobres siguen pobres y los ricos, ricos",
-          "Así es la cosa, todo el mundo sabe"
-        ]
-      }
-    ]
-  },
-  {
-    "key": "hogo-sound-2023",
-    "title": "Hogo Sound",
-    "year": "2023",
-    "cat": "SOLISTA",
-    "meta": "SOLISTA · 2023",
-    "desc": "Intro, Samurái, Mouy.",
-    "cover": "assets/album-hogo-sound.jpg",
-    "spotify_embed": "https://open.spotify.com/embed/album/5wsT0qbNcCcauMkdoEh4zC?utm_source=generator&theme=0",
-    "credits_html": "<p><strong>Lanzamiento:</strong> 20/10/2023</p><p>Grabado y producido por Maxi Prietto</p><p>Todos los instrumentos por Maxi Prietto excepto trompetas en Track 7 por Seisuke.</p>",
-    "photos": [],
-    "songs": []
-  },
-  {
-    "key": "pin-de-fartie-2026",
-    "title": "Pin de Fartie (Soundtrack)",
-    "year": "2026",
-    "cat": "SOLISTA",
-    "meta": "SOLISTA · 2026",
-    "desc": "Viene arrastrándose, Socorro.",
-    "cover": "assets/album-pin-de-fartie.jpg",
-    "spotify_embed": "https://open.spotify.com/embed/album/22ZnGk507MS2c70HTM7HNr?utm_source=generator&theme=0",
-    "credits_html": "<p><strong>Lanzamiento:</strong> 28/08/2025</p><p>Todos los instrumentos por Maxi Prietto.</p><p>Música original para la película “pin de Fartie” de Alejo Moguillansky.</p>",
-    "photos": [
-      {
-        "src": "assets/albums/2026_-_Pin_de_Fartie_/IMG_0116.jpg",
-        "alt": "Pin de Fartie — Sesión",
-        "caption": "Sesión de grabación"
-      },
-      {
-        "src": "assets/albums/2026_-_Pin_de_Fartie_/IMG_0122.jpg",
-        "alt": "Pin de Fartie — Estudio",
-        "caption": "En el estudio"
-      },
-      {
-        "src": "assets/albums/2026_-_Pin_de_Fartie_/IMG_0128.jpg",
-        "alt": "Pin de Fartie — Grabación",
-        "caption": "Grabación Pin de Fartie"
-      }
-    ],
-    "songs": [
-      {
-        "title": "VIENE ARRASTRÁNDOSE",
-        "lines": [
-          "Si hay un final que anda escondido por ahí",
-          "Creo que ese final, está frente a mí"
-        ]
-      },
-      {
-        "title": "VIENE ARRASTRÁNDOSE",
-        "lines": [
-          "Si hay un día que espera por mí",
-          "Será ese día, el día de partir"
-        ]
-      },
-      {
-        "title": "VIENE ARRASTRÁNDOSE",
-        "lines": [
-          "Eso que sientes, que nunca vendrá",
-          "No importa que sientas vos,",
-          "No viene a preguntar"
-        ]
-      },
-      {
-        "title": "VIENE ARRASTRÁNDOSE",
-        "lines": [
-          "Si hay una curva que te alejará de mí",
-          "Si hay un desvío que me alejará de ti"
-        ]
-      },
-      {
-        "title": "SOCORRO (ARNALDO ANTUNES)",
-        "lines": [
-          "Socorro no estoy sintiendo nada",
-          "Ni miedo ni calor ni fuego",
-          "No da para llorar ni reír",
-          "Socorro algún alma naufragada",
-          "Me preste sus penas",
-          "Ya no siento amor, ni dolor",
-          "Ya no siento nada.",
-          "Socorro alguien me de su corazón",
-          "Que este ya no late ni apaña",
-          "Por favor, una emoción pequeña, cualquier cosa.",
-          "Cualquier cosa que se sienta,",
-          "Si hay tantos sentimientos,",
-          "debe haber uno que sirva.",
-          "Socorro, algún camino que me de sentido.",
-          "Solo un momento un paliativo para este tormento.",
-          "Socorro, ya no siento nada.",
-          "Socorro, no estoy sintiendo nada.",
-          "Ni miedo, ni calor, ni fuego.",
-          "Ni ganas de llorar, ni reír.",
-          "Socorro, algún alma naufragada me preste sus penas.",
-          "Ya no siento amor, ni dolor, ya no siento nada.",
-          "Socorro, alguien me de su corazón,",
-          "Que éste ya no late ni apaña.",
-          "Por favor, una emoción pequeña cualquier cosa",
-          "Cualquier cosa que se sienta",
-          "Si hay tantos sentimientos,",
-          "debe haber uno que sirva."
-        ]
-      }
-    ]
-  },
-  {
-    "key": "velada-blues-boleros-2026",
-    "title": "Una Velada de Blues & Boleros",
-    "year": "2026",
-    "cat": "SOLISTA",
-    "meta": "SOLISTA · 2026",
-    "desc": "Perro de Hospital, Estás Lejos, Error Blues.",
-    "cover": "assets/album-una-velada-blues-boleros.jpg",
-    "spotify_embed": "https://open.spotify.com/embed/album/0t6XeAkrHRBLCjlunTAnpH?utm_source=generator&theme=0",
-    "credits_html": "<p><strong>Fecha de lanzamiento:</strong> 22/05/2024</p><p><strong>Grabado en vivo en Buenos Aires en Diciembre del 2022. Damian Manfredi:</strong> Contrabajo Pipe Correa: Batería, Maracas. Luciano Scalera: Bongó. Noe Sinkunas: Piano. Alex Musatov: Violín. Jacquelin Oro: cello. Invitado especial: Melingo en voz y clarinete (Sin Luna)</p><p><strong>Arte:</strong> Santi Pozzi Sello: Alto Valle.</p><p><strong>Fotos:</strong> Magdalena Dihel</p>",
-    "photos": [
-      {
-        "src": "assets/albums/2026-_Una_velada_de_Blues_y_Boleros/10dic2022_PriettoEnBerlin_025.jpg",
-        "alt": "Una Velada de Blues y Boleros",
-        "caption": "Prietto en vivo"
-      },
-      {
-        "src": "assets/albums/2026-_Una_velada_de_Blues_y_Boleros/10dic2022_PriettoEnBerlin_074.jpg",
-        "alt": "Una Velada de Blues y Boleros",
-        "caption": "Sesión en La Tangente"
-      },
-      {
-        "src": "assets/albums/2026-_Una_velada_de_Blues_y_Boleros/10dic2022_PriettoEnBerlin_135.jpg",
-        "alt": "Una Velada de Blues y Boleros",
-        "caption": "Blues y Boleros — En vivo"
-      }
-    ],
-    "songs": []
-  },
-  {
-    "key": "hacele-caso-espiritu",
-    "title": "Hacele caso a tu espíritu!",
-    "year": "2010",
+    "key": "gratitud",
+    "title": "Gratitud",
+    "year": "2015",
     "cat": "LOS ESPÍRITUS",
-    "meta": "ESPIRITUS · 2010",
-    "desc": "Primeros registros y demos.",
-    "cover": "assets/album-hacele-caso-a-tu-espiritu.jpg",
-    "spotify_embed": "https://open.spotify.com/embed/artist/1UnfU05eCWxrY4vWarpeF0?utm_source=generator&theme=0",
+    "meta": "ESPIRITUS · 2015",
+    "desc": "El salto internacional. La crecida.",
+    "cover": "assets/album-gratitud.jpg",
+    "spotify_embed": "https://open.spotify.com/embed/album/4wojL8SZIhIi5DRxx7NYbN?utm_source=generator&amp;theme=0",
     "credits_html": "",
     "photos": [],
     "songs": []
   },
   {
-    "key": "lo-echaron-del-bar-ep",
-    "title": "Lo echaron del bar EP",
-    "year": "2011",
+    "key": "los-puedo-viajar",
+    "title": "Los Puedo Viajar",
+    "year": "2014",
+    "cat": "COSMOS",
+    "meta": "COSMOS · 2014",
+    "desc": "Dos personas tocando lo que les pinta.",
+    "cover": "assets/album-puedo-viajar.jpg",
+    "spotify_embed": "https://open.spotify.com/embed/artist/79KyjLxTR5a6vVpPvljowB?utm_source=generator&theme=0",
+    "credits_html": "",
+    "photos": [],
+    "songs": []
+  },
+  {
+    "key": "la-ultima-noche-2013",
+    "title": "La Última Noche",
+    "year": "2013",
+    "cat": "SOLISTA",
+    "meta": "SOLISTA · 2013",
+    "desc": "Historia de un amor, Sabor a mí, 20 años.",
+    "cover": "assets/album-la-ultima-noche.jpg",
+    "spotify_embed": "https://open.spotify.com/embed/album/0R2qlryfHvHzKDm5j4JuIe?utm_source=generator&theme=0",
+    "credits_html": "<p><strong>Lanzamiento:</strong> 07/01/2013</p><p>Todos los instrumentos y voces por Maxi Prietto.</p><p>El álbum versiona clásicos del bolero y la canción, excepto tracks 13 y 17 (Prietto)</p>",
+    "photos": [],
+    "songs": []
+  },
+  {
+    "key": "espiritus-debut",
+    "title": "Los Espíritus",
+    "year": "2013",
     "cat": "LOS ESPÍRITUS",
-    "meta": "ESPIRITUS · 2011",
-    "desc": "Lo echaron del bar, Jesús rima con cruz.",
-    "cover": "assets/album-lo-echaron-del-bar-ep.jpg",
-    "spotify_embed": "https://open.spotify.com/embed/artist/1UnfU05eCWxrY4vWarpeF0?utm_source=generator&amp;theme=0",
+    "meta": "ESPIRITUS · 2013",
+    "desc": "Álbum debut de la banda. Lo echaron del bar.",
+    "cover": "assets/album-espiritus-debut.jpg",
+    "spotify_embed": "https://open.spotify.com/embed/album/3jIrLCi1YnbMJHybfNExxS?utm_source=generator&amp;theme=0",
     "credits_html": "",
     "photos": [],
     "songs": []
@@ -1632,242 +994,14 @@ window.PRIETTO_RELEASES = [
     "songs": []
   },
   {
-    "key": "espiritus-debut",
-    "title": "Los Espíritus",
-    "year": "2013",
+    "key": "lo-echaron-del-bar-ep",
+    "title": "Lo echaron del bar EP",
+    "year": "2011",
     "cat": "LOS ESPÍRITUS",
-    "meta": "ESPIRITUS · 2013",
-    "desc": "Álbum debut de la banda. Lo echaron del bar.",
-    "cover": "assets/album-espiritus-debut.jpg",
-    "spotify_embed": "https://open.spotify.com/embed/album/3jIrLCi1YnbMJHybfNExxS?utm_source=generator&amp;theme=0",
-    "credits_html": "",
-    "photos": [],
-    "songs": []
-  },
-  {
-    "key": "gratitud",
-    "title": "Gratitud",
-    "year": "2015",
-    "cat": "LOS ESPÍRITUS",
-    "meta": "ESPIRITUS · 2015",
-    "desc": "El salto internacional. La crecida.",
-    "cover": "assets/album-gratitud.jpg",
-    "spotify_embed": "https://open.spotify.com/embed/album/4wojL8SZIhIi5DRxx7NYbN?utm_source=generator&amp;theme=0",
-    "credits_html": "",
-    "photos": [],
-    "songs": []
-  },
-  {
-    "key": "agua-ardiente",
-    "title": "Agua Ardiente",
-    "year": "2017",
-    "cat": "LOS ESPÍRITUS",
-    "meta": "ESPIRITUS · 2017",
-    "desc": "Blues psicodélico y camino de tierra. Camina.",
-    "cover": "assets/album-agua-ardiente.jpg",
-    "spotify_embed": "https://open.spotify.com/embed/album/1ahdp3YzkgsUZZl3gJPYgL?utm_source=generator&amp;theme=0",
-    "credits_html": "",
-    "photos": [],
-    "songs": []
-  },
-  {
-    "key": "guayabo-2017",
-    "title": "Guayabo de Agua Ardiente",
-    "year": "2017",
-    "cat": "LOS ESPÍRITUS",
-    "meta": "2017 · EP",
-    "desc": "Los Espíritus · Maxi Prietto",
-    "cover": "assets/album-guayabo.jpg",
-    "spotify_embed": "https://open.spotify.com/embed/album/1gZFGvIIXbOnowKlW8cGh9?utm_source=generator&amp;theme=0",
-    "credits_html": "",
-    "photos": [],
-    "songs": []
-  },
-  {
-    "key": "caldero",
-    "title": "Caldero",
-    "year": "2019",
-    "cat": "LOS ESPÍRITUS",
-    "meta": "ESPIRITUS · 2019",
-    "desc": "Nueva formación, mismo fuego.",
-    "cover": "assets/album-caldero.jpg",
-    "spotify_embed": "https://open.spotify.com/embed/album/0WD2XbzYbyiWWhOzTtzmW8?utm_source=generator&amp;theme=0",
-    "credits_html": "",
-    "photos": [],
-    "songs": []
-  },
-  {
-    "key": "sancocho-stereo",
-    "title": "Sancocho Stereo",
-    "year": "2021",
-    "cat": "LOS ESPÍRITUS",
-    "meta": "ESPIRITUS · 2021",
-    "desc": "Buscando la luz, Mugre, Jericó.",
-    "cover": "assets/album-sancocho-stereo.jpg",
-    "spotify_embed": "https://open.spotify.com/embed/album/38Y2bvBgrjb4zyMrGlJjAq?utm_source=generator&amp;theme=0",
-    "credits_html": "",
-    "photos": [],
-    "songs": []
-  },
-  {
-    "key": "la-montana",
-    "title": "La Montaña",
-    "year": "2023",
-    "cat": "LOS ESPÍRITUS",
-    "meta": "ESPIRITUS · 2023",
-    "desc": "Blues rock y psicodelia.",
-    "cover": "assets/album-montana.jpg",
-    "spotify_embed": "https://open.spotify.com/embed/album/1kJEPy20AkL9lccVH8oTpC?utm_source=generator&amp;theme=0",
-    "credits_html": "",
-    "photos": [],
-    "songs": []
-  },
-  {
-    "key": "camina-2025",
-    "title": "Camina",
-    "year": "2025",
-    "cat": "LOS ESPÍRITUS",
-    "meta": "2025 · SINGLE / EP",
-    "desc": "Los Espíritus · Maxi Prietto",
-    "cover": "assets/album-camina.jpg",
-    "spotify_embed": "https://open.spotify.com/embed/album/63hLRWCHwL16njnYW7sT10?utm_source=generator&amp;theme=0",
-    "credits_html": "",
-    "photos": [
-      {
-        "src": "assets/yt-thumb-camina.jpg",
-        "alt": "Los Espíritus - Camina",
-        "caption": "Sesión de Camina"
-      },
-      {
-        "src": "assets/tonal-15-abrl-30.jpg",
-        "alt": "Los Espíritus en vivo",
-        "caption": "Los Espíritus en vivo"
-      }
-    ],
-    "songs": []
-  },
-  {
-    "key": "experiencias-salon-cosmico",
-    "title": "Experiencias del Salón Cósmico",
-    "year": "2006",
-    "cat": "COSMOS",
-    "meta": "COSMOS · 2006",
-    "desc": "De la experiencia en México, Alucinando en el Salón Cósmico.",
-    "cover": "assets/album-experiencias-salon-cosmico.jpg",
-    "spotify_embed": "https://open.spotify.com/embed/artist/79KyjLxTR5a6vVpPvljowB?utm_source=generator&theme=0",
-    "credits_html": "",
-    "photos": [],
-    "songs": []
-  },
-  {
-    "key": "pvccm-ep-2007",
-    "title": "Viaja al Cosmos EP",
-    "year": "2007",
-    "cat": "COSMOS",
-    "meta": "COSMOS · 2007",
-    "desc": "Av. Corrientes, Chispas, Cruzando el Parque.",
-    "cover": "assets/album-cosmos-ep.jpg",
-    "spotify_embed": "https://open.spotify.com/embed/artist/79KyjLxTR5a6vVpPvljowB?utm_source=generator&theme=0",
-    "credits_html": "<p><strong>Lanzamiento:</strong> 8/05/2007</p><p>Producido por Prietto viaja al cosmos con Mariano y Shaman Herrera.</p><p>Grabado por Ualberto de Orta y Shaman Herrera en estudio La Burbuja</p><p>Mezclado por Shaman Herrera.</p><p><strong>Arte de tapa:</strong> Santiago Motorizado.</p><p><strong>Foto:</strong> Santiago Moraes.</p><p><strong>Sello:</strong> Laptra</p><p>Las fotos se queman y yo me quedé por ahí cantando.</p>",
-    "photos": [
-      {
-        "src": "assets/albums/2007-_pvccm_EP/credito santiago moraes.jpg",
-        "alt": "PVCCM EP",
-        "caption": "Crédito: Santiago Moraes"
-      }
-    ],
-    "songs": [
-      {
-        "title": "AV CORRIENTES",
-        "lines": [
-          "Noche de sábado en capital",
-          "Fui a enterrar lo que seré",
-          "Caminando por Corrientes",
-          "Los tontos se mordían los dientes",
-          "Y yo, en soledad",
-          "Fui a buscar dolor",
-          "Solo encontré a la felicidad",
-          "De ser tan necio",
-          "De no estar sobrio",
-          "De olvidar, de recordar",
-          "Si me había obligado a no extrañar",
-          "Noche de sábado en capital",
-          "Fui a bautizar lo que no quiero ser",
-          "Pero era absurdo",
-          "Es que uno es uno y ya"
-        ]
-      },
-      {
-        "title": "CHISPAS",
-        "lines": [
-          "Chispas desde lo alto de las montañas.",
-          "Chispas de estrellas fugaces, cayendo en los fríos campos del sur.",
-          "El anciano hindú mira sus manos, las acaricia y sonríe hacia el altísimo."
-        ]
-      },
-      {
-        "title": "CRUZANDO EL PARQUE",
-        "lines": [
-          "1950, Blues en el patio, zarpado verano.",
-          "Los tiradores, el vino rojo y las casitas con césped en la entrada.",
-          "La televisión con los jopos y la gente felíz de juguete.",
-          "Cadillacs derritiéndose en la playa y el alma de los negros riéndose en otro lado.",
-          "Silbamos un Rock and Roll cruzando el parque,",
-          "en algún lugar del sur del mundo.",
-          "La carretera de los incendios",
-          "Esta es una canción tradicional en el espacio.",
-          "Con esta canción bailan el vals los enamorados,",
-          "En las cabañas del universo.",
-          "El ojo de Él",
-          "Por advertencia y amenaza, la letra de El ojo de Él no será traducida al castellano.",
-          "Tobogán",
-          "Todo el tiempo espero,",
-          "Sé que va a llegar y entonces voy a estar bien",
-          "Mientras tanto espero,",
-          "En días iguales por calles que ni miro,",
-          "Personas que ignoro, sigo.",
-          "A veces me río y otras pienso",
-          "En qué es lo que tiene que venir",
-          "Si va a venir o si tengo que buscarlo",
-          "Se hace la noche,",
-          "En mi cama lo sé",
-          "Otra vez no vino",
-          "Ni nunca va a venir",
-          "Nunca va a venir,",
-          "Nunca va a venir.",
-          "Final",
-          "Esto no es el final",
-          "Esto no es el final",
-          "No digas que nunca más",
-          "Nos vamos a encontrar",
-          "Por el mar te guiarán mis sueños más dulces",
-          "No creas que nunca más nos vamos a encontrar",
-          "Verano fatal",
-          "Los días duraban años",
-          "Entre tus ojos y el mar",
-          "Y las noches duraban siglos",
-          "Entre tus gritos y el bar",
-          "Fue un verano fatal con las resacas y borracheras",
-          "Y en medio de esa guerra que era vivir así",
-          "Yo me enamoré de vos, yo me enamoré de vos",
-          "Y otro día se fue, pareciera que fueran muchos más",
-          "En medio de todo este caos",
-          "del mar ,del bar, de tu mirada",
-          "Son cosas que guardo en la almohada antes de dormir",
-          "Consuelos para el día en que no quiera estar vivo"
-        ]
-      }
-    ]
-  },
-  {
-    "key": "lou-fai-home-sessions-ii",
-    "title": "Lou Fai Home sessions vol II",
-    "year": "2007",
-    "cat": "COSMOS",
-    "meta": "COSMOS · 2007",
-    "desc": "Cruzando el parque, Verano fatal.",
-    "cover": "assets/album-lou-fai-home-sessions-ii.jpg",
-    "spotify_embed": "https://open.spotify.com/embed/artist/79KyjLxTR5a6vVpPvljowB?utm_source=generator&theme=0",
+    "meta": "ESPIRITUS · 2011",
+    "desc": "Lo echaron del bar, Jesús rima con cruz.",
+    "cover": "assets/album-lo-echaron-del-bar-ep.jpg",
+    "spotify_embed": "https://open.spotify.com/embed/artist/1UnfU05eCWxrY4vWarpeF0?utm_source=generator&amp;theme=0",
     "credits_html": "",
     "photos": [],
     "songs": []
@@ -2344,201 +1478,1067 @@ window.PRIETTO_RELEASES = [
     ]
   },
   {
-    "key": "los-puedo-viajar",
-    "title": "Los Puedo Viajar",
-    "year": "2014",
+    "key": "casa-vol2-2010",
+    "title": "Casa Vol. 2: La Sartén Lavada y el Lado Crudo",
+    "year": "2010",
+    "cat": "SOLISTA",
+    "meta": "SOLISTA · 2010",
+    "desc": "Carlos dijo, 20 Hombres, Un hindú me miró la cara.",
+    "cover": "assets/album-casa-vol2.jpg",
+    "spotify_embed": "https://open.spotify.com/embed/album/0DDeac1LdDLmpof09gfRd2?utm_source=generator&theme=0",
+    "credits_html": "<p><strong>Lanzamiento:</strong> 10/09/2010</p><p>Grabado por Maxi Prietto en su habitación, durante el 2010.</p><p>Alumbran partes de tu cuerpo</p>",
+    "photos": [
+      {
+        "src": "assets/albums/2010_-_Casa_Vol_2/PRIETTO - CASA VOL II.jpg",
+        "alt": "Casa Vol. 2",
+        "caption": "Sesión Casa Vol. 2"
+      }
+    ],
+    "songs": [
+      {
+        "title": "CARLOS DIJO",
+        "lines": [
+          "“La sartén lavada es la continuación de aquél disquillo titulado casa.",
+          "Un disco bastante cojonudo y depresivo.",
+          "Comencemos a escuchar y basta de rodeos, joder.”"
+        ]
+      },
+      {
+        "title": "20 HOMBRES",
+        "lines": [
+          "20 hombres en el frío se ponen a esperar",
+          "Es temprano y está oscuro",
+          "Son las siete en la ciudad",
+          "El trabajo es poca paga",
+          "Ya de entrada lo odian",
+          "No se hablan ni se miran",
+          "Se pusieron a fumar",
+          "Pasa un pibe borracho",
+          "Está volviendo hacia su hogar",
+          "Se le acabó la noche y ellos",
+          "Se acaban de levantar",
+          "Y en la bronca ahí parados",
+          "Todos quieren regresar",
+          "Y no hay vuelta en esta vida",
+          "Vas a tener que esperar",
+          "Y dentro todos llevan sueños",
+          "Que no se cumplirán",
+          "20 hombres en el frío se ponen a esperar",
+          "La muerte los abraza y se ríe sin parar",
+          "No hay momentos deseados",
+          "No hay más reyes magos",
+          "No existe la suerte",
+          "Se acabó el carnaval"
+        ]
+      },
+      {
+        "title": "UN HINDÚ ME MIRÓ LA CARA",
+        "lines": [
+          "Un hindú me miró la cara y me dijo que cara rara",
+          "Dónde está tu ojo del medio?"
+        ]
+      },
+      {
+        "title": "CUADROS DE IMAGINACIÓN",
+        "lines": [
+          "Te vi jugando en el sol",
+          "Te vi jugando bajo el sol",
+          "Te vi correr, dar saltos",
+          "En cuadros de imaginación",
+          "Te vi, jurando una canción",
+          "Te vi, jurando una canción",
+          "Te vi volver al campo",
+          "Sentí nacer la flor"
+        ]
+      },
+      {
+        "title": "LAS HOJAS CAEN",
+        "lines": [
+          "He oído derrumbes de montañas",
+          "Sólo me han enseñado a contarlas y olvidarlas",
+          "Yo también soy paisaje de los demás",
+          "O sólo un número más",
+          "Las hojas caen, los árboles caen",
+          "Las hojas caen, los árboles caen",
+          "Sobre el camino",
+          "Y alguien olvidó un té frío",
+          "Sobre la mesa de esta cabaña",
+          "Cabaña soy yo",
+          "Cabaña soy yo",
+          "Las hojas caen, los árboles caen",
+          "Las hojas caen, los árboles caen",
+          "Sobre el camino"
+        ]
+      },
+      {
+        "title": "VIEJAS BOTELLAS",
+        "lines": [
+          "Trenes blancos bajo el mar",
+          "Llevan duendes de cristal",
+          "A lo profundo los enviarán",
+          "Los niños buscándolos se ahogarán",
+          "Y esos sueños",
+          "Que naufragan",
+          "En viejas botellas",
+          "Se perderán",
+          "Las olas el rumbo olvidarán",
+          "Trenes blancos bajo el mar",
+          "Llevan duendes de cristal",
+          "A lo profundo los enviarán",
+          "Los niños buscándolos se ahogarán",
+          "Naves negras sobre el mar",
+          "Llevan bombas de metal",
+          "A lo profundo las enviarán",
+          "Romperán tus sueños de cristal"
+        ]
+      },
+      {
+        "title": "THE ERROR BLUES",
+        "lines": [
+          "hay un error en la semilla, hay un error en la ceniza hay un error en la conciencia, hay un error en no pensar,",
+          "hay un error, hay un error... hay un error en adaptarse, hay un error en no cambiar hay un error en rendirse, hay un error en matar hay un error, hay un error... hay un error en el pecado, hay un error en la honradez hay un error en ser un héroe, hay un error en ser un traidor, hay un error, hay un error tropecé con buda, tropecé con jesús no hay ningún camino que me lleve a la luz, hay un error en la noche, en los árboles, en la rama, en la hoja, y en la hormiga...",
+          "hay un error, hay un error en el espacio, en el mundo, en vos hay un error, hay un error"
+        ]
+      },
+      {
+        "title": "VILLA GESELL",
+        "lines": [
+          "Siete días atrás yo vine a la playa",
+          "El sol brilla en la mañana",
+          "Las calles son de arena",
+          "Y sí es verdad la gente es más tranquila aquí",
+          "Y no quiero volver a mi ciudad",
+          "Yo quiero quedarme acá en el mar"
+        ]
+      },
+      {
+        "title": "LA CABAÑA",
+        "lines": [
+          "Se esconde el sol detrás mis sueños van",
+          "La cabaña es todo mi hogar",
+          "La muerte abre mi puerta y no me importa",
+          "El viento arrastra hojas por el bosque",
+          "Y esos pasos traen tu nombre a mi mente",
+          "Y es la luz que hace que aún brille algo en mí"
+        ]
+      },
+      {
+        "title": "LOCO Y MALO",
+        "lines": [
+          "No importa si sos loco o malo o loco y malo",
+          "Siempre habrá uno que te de la espalda y otro que te de la mano",
+          "Si te aman o te odian es así",
+          "¿Qué les vas a decir?",
+          "No importa si sos cuerdo o lerdo, o cuerdo y lerdo",
+          "Siempre habrá una que tenga el recuerdo",
+          "y otra que diga no me acuerdo",
+          "si te aman o te odian es asó",
+          "¿Qué les vas a decir?",
+          "No importa si sos viejo o feo, o viejo y feo.",
+          "Siempre habrá uno que te de limosna y otro que te de un trofeo.",
+          "Si te aman o te odian es así.",
+          "¿Qué les vas a decir?",
+          "No importa si sos loco o malo o loco y malo",
+          "Siempre habrá uno que te de la espalda y otro que te de la mano",
+          "Si te aman o te odian es así",
+          "¿Qué les vas a decir?"
+        ]
+      },
+      {
+        "title": "TU PELO DE DIAMANTES",
+        "lines": [
+          "En tu pelo de diamantes",
+          "Flotan sueños del mar",
+          "Seis marineros luchan por su vida",
+          "En tu cuello",
+          "Se caen",
+          "Van en un barco viejo",
+          "Bajando por tu espalda",
+          "Por la ranura de la persiana",
+          "Entran los rayos del sol",
+          "Flotando",
+          "Que cuando despiertes",
+          "Quiero morder",
+          "Buscando luz",
+          "Buscando luz",
+          "En tus sueños llenos de agua",
+          "Las hormigas se mueren ahogadas",
+          "Las ratas también",
+          "Infectan todo, los niños beben de ahí",
+          "Mientras todos los seres",
+          "Flotamos",
+          "En tu pelo de diamantes",
+          "En tu pelo de diamantes",
+          "Cuando despertemos",
+          "Da el sol, despacio"
+        ]
+      },
+      {
+        "title": "LANABIES",
+        "lines": [
+          "Cualquier lugar en que me sienta bien",
+          "Será si estoy con vos",
+          "Son mil abrigos los que siento yo",
+          "al oír tu vos sólo para mí",
+          "Busco en vos sweaters de lana en tus brazos"
+        ]
+      },
+      {
+        "title": "LA CRIOLLA",
+        "lines": [
+          "Esta canción es para mi guitarra",
+          "Siempre me acompaña",
+          "Cuando me voy al mar",
+          "Ésta canción es para mi guitarra",
+          "Guitarra criolla, desde los catorce,",
+          "Siempre me acompaña",
+          "Cuando estoy bien y mal",
+          "Cuando voy al mar",
+          "Cuando estoy en casa",
+          "Compro queso y pan",
+          "Y ella me hace",
+          "Viajar",
+          "Algunos me dicen que no afina",
+          "Pero tiene un alma",
+          "dime si no la podés escuchar.",
+          "Esta canción es para vos",
+          "Mi guitarra",
+          "Cuando me muera",
+          "Alguien te va a tocar",
+          "Algunas tardes te desafino toda",
+          "Para ver que podés dar",
+          "Hay tantas clases de belleza juntas",
+          "Me hacés viajar",
+          "Esta canción es para mi guitarra",
+          "Llévame de viaje!",
+          "Llévame de viaje!"
+        ]
+      },
+      {
+        "title": "PLAYAS NEGRAS",
+        "lines": [
+          "Invierno en playas negras,",
+          "La novia muerta,",
+          "Su dedo quebrado,",
+          "la sangre en el pulmón,",
+          "La orina en el frasco,",
+          "ni un último adiós",
+          "Cangrejos en mi sopa,",
+          "La carne al sol,",
+          "Pus en la pierna,",
+          "Caer de un balcón,",
+          "Sacar malas notas,",
+          "Llorar por amor.",
+          "La orina en el frasco,",
+          "Ni un último adiós."
+        ]
+      },
+      {
+        "title": "CRUDO",
+        "lines": [
+          "Me diste tanto dolor,",
+          "Te lo voy a devolver,",
+          "Me vas a dar tu adiós",
+          "O te lo compraré.",
+          "Te puedo pagar con",
+          "Mi perdón.",
+          "Que igual es una trampa,",
+          "Porque ni vos",
+          "Te podés perdonar",
+          "Crudo es el verano",
+          "Crudo es el amor",
+          "Porque se va de uno y de otro no",
+          "¿Por qué será?",
+          "Crudo es el invierno",
+          "Crudo soy yo",
+          "Conmigo",
+          "No ves que no te hablo más",
+          "Y el que paga soy yo",
+          "Que te extraño la voz",
+          "Crudo es el verano,",
+          "Crudo es el amor",
+          "Porque se va de uno y de otro no,",
+          "¿Por qué será?",
+          "Si me darías la mitad de una",
+          "de tus excusas falsas borracha",
+          "Yo te iría corriendo a ver",
+          "Crudo es el verano,",
+          "Crudo es el amor",
+          "Porque se va de uno y de otro no,",
+          "¿Por qué será?",
+          "Así, tan crudo."
+        ]
+      },
+      {
+        "title": "15 AÑOS",
+        "lines": [
+          "Ya tienes 15 años",
+          "Hoy es un día especial",
+          "Como cualquier otro",
+          "Toda la vida es especial"
+        ]
+      }
+    ]
+  },
+  {
+    "key": "hacele-caso-espiritu",
+    "title": "Hacele caso a tu espíritu!",
+    "year": "2010",
+    "cat": "LOS ESPÍRITUS",
+    "meta": "ESPIRITUS · 2010",
+    "desc": "Primeros registros y demos.",
+    "cover": "assets/album-hacele-caso-a-tu-espiritu.jpg",
+    "spotify_embed": "https://open.spotify.com/embed/artist/1UnfU05eCWxrY4vWarpeF0?utm_source=generator&theme=0",
+    "credits_html": "",
+    "photos": [],
+    "songs": []
+  },
+  {
+    "key": "casa-vol1-2009",
+    "title": "Casa Vol. 1",
+    "year": "2009",
+    "cat": "SOLISTA",
+    "meta": "SOLISTA · 2009",
+    "desc": "Ay, Corazón, Días de sol, Bozal, Varela.",
+    "cover": "assets/album-casa-vol1.jpg",
+    "spotify_embed": "https://open.spotify.com/embed/album/2cPBaTnWJQL38YxdfhZ7vq?utm_source=generator&theme=0",
+    "credits_html": "<p><strong>Lanzamiento:</strong> 4/06/2009</p><p>Grabado por Maxi Prietto en su habitación.</p><p>Todos los instrumentos y voces por Maxi Prietto.</p><p>Quiero encontrarte</p><p>y al hablarte descubrí la sombra otra vez</p>",
+    "photos": [
+      {
+        "src": "assets/albums/2009_-_Casa_vol_1/PRIETTO - CASAok.jpg",
+        "alt": "Casa Vol. 1",
+        "caption": "Sesión Casa Vol. 1"
+      }
+    ],
+    "songs": [
+      {
+        "title": "AY, CORAZÓN",
+        "lines": [
+          "No vale la pena llorar por tu amor"
+        ]
+      },
+      {
+        "title": "AY, CORAZÓN",
+        "lines": [
+          "No vale la pena sufrir por tu adiós",
+          "Que sea lo que la suerte quiera",
+          "Digo, tirando monedas",
+          "que no puedo atrapar"
+        ]
+      },
+      {
+        "title": "AY, CORAZÓN",
+        "lines": [
+          "No vale la pena sufrir por tu adiós"
+        ]
+      },
+      {
+        "title": "AY, CORAZÓN",
+        "lines": [
+          "Es que no hay nada, nada, mejor",
+          "Que sea lo que la suerte quiera",
+          "Digo, tirando monedas",
+          "Que no puedo atrapar"
+        ]
+      },
+      {
+        "title": "DÍAS DE SOL",
+        "lines": [
+          "Nubes se acercan,",
+          "Sombras se acercan",
+          "¿Y donde estas?",
+          "Todos se esconden,",
+          "Todos se alejan,",
+          "¿Y a donde van?",
+          "Yo voy dentro mío",
+          "Donde las nubes",
+          "No alcanzan",
+          "Mis días de sol"
+        ]
+      },
+      {
+        "title": "BOZAL",
+        "lines": [
+          "En las bocas de los pájaros,",
+          "Hay poco por envidiar",
+          "En cambio, en sus alas",
+          "En cambio…",
+          "Arráncame el bozal y bésame",
+          "Que te estaba esperando",
+          "Desde antes de nacer",
+          "Desde antes de no ser",
+          "Somos testigos de nuestras compras",
+          "Y de nuestros zapatos nuevos",
+          "Somos testigos de nuestras muertes",
+          "Pero nunca de nuestro amor",
+          "Y hoy no hay amigos en el alma",
+          "Pero no importa no",
+          "Si tus labios eran el puente",
+          "Que había que cruzar",
+          "Para sentirme eterno",
+          "O al menos seguro",
+          "Por hoy",
+          "Arráncame el bozal y bésame",
+          "Que te estaba esperando",
+          "Desde antes de nacer",
+          "Desde antes de no ser"
+        ]
+      },
+      {
+        "title": "VARELA",
+        "lines": [
+          "Se va el tren bajo el sol",
+          "De Varela se va el tren",
+          "El verano dejó",
+          "Un desierto acá",
+          "Verano, sin sol",
+          "Verano, sin sol",
+          "Una vida no es nada",
+          "Si yo quiero vivir",
+          "Una vida no es nada",
+          "Si sólo es trabajar",
+          "Crecen mis sueños en noches de alcohol",
+          "Crecen mis sueños de irme de acá",
+          "Al mar, al mar…",
+          "Se va el tren bajo el sol",
+          "De Varela se va el tren",
+          "El verano dejó",
+          "Un desierto acá"
+        ]
+      },
+      {
+        "title": "ES LA VERDAD",
+        "lines": [
+          "En la mañana",
+          "Sientes bondad",
+          "Al caminar",
+          "Es la verdad que transmite el sol",
+          "Es la verdad que transmite el sol"
+        ]
+      },
+      {
+        "title": "EL HOMBRE DE LA PROVINCIA",
+        "lines": [
+          "El hombre de la provincia viaja a la ciudad",
+          "Va buscar fortuna con su traje nuevo",
+          "El hombre de la provincia viaja a la ciudad",
+          "Va buscar fortuna y le dan propinas"
+        ]
+      },
+      {
+        "title": "LA SOMBRA",
+        "lines": [
+          "Más abro los ojos más quiero cerrarlos",
+          "Más quiero cerrarlos,",
+          "me voy quedando sólo",
+          "Yo en la gran ciudad",
+          "La sombra se estira por el pasto",
+          "Y contamina mil cabezas",
+          "Quiebra almas y enferma",
+          "Yo busco alguien puro en esta tierra",
+          "y sólo creo en el mar",
+          "tal vez viajar allí me ayudaría",
+          "me engañaron las estrellas de tus ojos"
+        ]
+      },
+      {
+        "title": "EL TREN",
+        "lines": [
+          "No hay mas vos",
+          "Que lo que has dicho",
+          "Y no hay más vos",
+          "de lo que has hecho",
+          "No hay mas vos",
+          "de lo que han visto",
+          "No hay mas vos",
+          "De lo que has dado",
+          "Sube al tren",
+          "Que el tiempo se ha ido",
+          "Y si dejaste atrás",
+          "Un sueño dormido",
+          "Es muy tarde ya",
+          "Para llorar",
+          "Y a un paso de este tren…",
+          "Te veo y me arrepiento",
+          "De no haberte hablado",
+          "Tanto tiempo sin verte",
+          "Me ha hecho mal",
+          "Solo pido al tiempo",
+          "Un día más con vos",
+          "Si el tren no me lleva",
+          "¿Me lo darás?",
+          "No hay más vos",
+          "De lo que has dicho",
+          "No hay más vos",
+          "De lo que has hecho",
+          "No hay más vos",
+          "De lo que han visto",
+          "No hay más vos",
+          "De lo que has dado"
+        ]
+      },
+      {
+        "title": "COSAS EXTRAÑAS",
+        "lines": [
+          "- Ey, no recuerdo nada!",
+          "“Esto es un sueño",
+          "Tenés que ponerte un buen vestido",
+          "Y bailar…",
+          "Esta noche fue hecha para los dos",
+          "Pero ya no estás",
+          "Ven a cabalgar en la noche ésta",
+          "En tus sueños, por lugares que apesten",
+          "O que te gusten…",
+          "Hay seres y cosas muy extrañas:",
+          "Tratá de disfrutarlas.”"
+        ]
+      },
+      {
+        "title": "FRENTE AL MAR",
+        "lines": [
+          "(Instrumental)"
+        ]
+      },
+      {
+        "title": "LA ÚLTIMA CANCIÓN",
+        "lines": [
+          "Cada cual tiene su cruz",
+          "Y cada cual su luz",
+          "Que sería del borde del precipicio",
+          "Si nadie se atreviera a mirar",
+          "Voy a bailar en el silencio",
+          "De mis canciones muertas",
+          "Y cada beso que te ofrezca",
+          "Será una canción de verdad"
+        ]
+      },
+      {
+        "title": "LO PEOR DEL CAMINO",
+        "lines": [
+          "Este es el día en el que nadie extraña",
+          "Este es un día como el de ayer",
+          "Este es el día en el que nadie amaminolan",
+          "Como cualquier día",
+          "Como otro día más",
+          "Ahora que me volvés a ver",
+          "Te reís de mi ingenuidad",
+          "Ahora que yo te vuelvo a ver",
+          "Veo la mentira en tus ojos",
+          "Por primera vez",
+          "Y este es el día en que los muertos bailan",
+          "Sobre la tumba del perdedor",
+          "Y esto que viene es lo peor del camino",
+          "Como para el borracho",
+          "El día siguiente"
+        ]
+      },
+      {
+        "title": "TODO DEBE MORIR",
+        "lines": [
+          "Todo lo que nace debe morir",
+          "Esta es una ley universal",
+          "Todo lo que hagas",
+          "Se ha de olvidar",
+          "Eso no nos debe importar",
+          "No, mi amigo",
+          "No, señor",
+          "No, verdugos",
+          "No, perros"
+        ]
+      },
+      {
+        "title": "MÉDANOS",
+        "lines": [
+          "Día en la playa",
+          "Atardecer",
+          "Viento, viento",
+          "Tu lunar,",
+          "Tu lunar",
+          "Lluvia, lluvia y",
+          "Tu lunar, tu lunar",
+          "Quédate,",
+          "Oh sí, quédate",
+          "Con las manos aferradas",
+          "Mirando el mar",
+          "Viento, noche",
+          "Tu pulgar, tu pulgar",
+          "Cerveza, cerveza",
+          "Y tu pulgar, tu pulgar",
+          "Bésame,",
+          "Oh sí, bésame",
+          "Médanos, médanos…",
+          "Médanos, médanos…"
+        ]
+      }
+    ]
+  },
+  {
+    "key": "pvccm-ep-2007",
+    "title": "Viaja al Cosmos EP",
+    "year": "2007",
     "cat": "COSMOS",
-    "meta": "COSMOS · 2014",
-    "desc": "Dos personas tocando lo que les pinta.",
-    "cover": "assets/album-puedo-viajar.jpg",
+    "meta": "COSMOS · 2007",
+    "desc": "Av. Corrientes, Chispas, Cruzando el Parque.",
+    "cover": "assets/album-cosmos-ep.jpg",
+    "spotify_embed": "https://open.spotify.com/embed/artist/79KyjLxTR5a6vVpPvljowB?utm_source=generator&theme=0",
+    "credits_html": "<p><strong>Lanzamiento:</strong> 8/05/2007</p><p>Producido por Prietto viaja al cosmos con Mariano y Shaman Herrera.</p><p>Grabado por Ualberto de Orta y Shaman Herrera en estudio La Burbuja</p><p>Mezclado por Shaman Herrera.</p><p><strong>Arte de tapa:</strong> Santiago Motorizado.</p><p><strong>Foto:</strong> Santiago Moraes.</p><p><strong>Sello:</strong> Laptra</p><p>Las fotos se queman y yo me quedé por ahí cantando.</p>",
+    "photos": [
+      {
+        "src": "assets/albums/2007-_pvccm_EP/credito santiago moraes.jpg",
+        "alt": "PVCCM EP",
+        "caption": "Crédito: Santiago Moraes"
+      }
+    ],
+    "songs": [
+      {
+        "title": "AV CORRIENTES",
+        "lines": [
+          "Noche de sábado en capital",
+          "Fui a enterrar lo que seré",
+          "Caminando por Corrientes",
+          "Los tontos se mordían los dientes",
+          "Y yo, en soledad",
+          "Fui a buscar dolor",
+          "Solo encontré a la felicidad",
+          "De ser tan necio",
+          "De no estar sobrio",
+          "De olvidar, de recordar",
+          "Si me había obligado a no extrañar",
+          "Noche de sábado en capital",
+          "Fui a bautizar lo que no quiero ser",
+          "Pero era absurdo",
+          "Es que uno es uno y ya"
+        ]
+      },
+      {
+        "title": "CHISPAS",
+        "lines": [
+          "Chispas desde lo alto de las montañas.",
+          "Chispas de estrellas fugaces, cayendo en los fríos campos del sur.",
+          "El anciano hindú mira sus manos, las acaricia y sonríe hacia el altísimo."
+        ]
+      },
+      {
+        "title": "CRUZANDO EL PARQUE",
+        "lines": [
+          "1950, Blues en el patio, zarpado verano.",
+          "Los tiradores, el vino rojo y las casitas con césped en la entrada.",
+          "La televisión con los jopos y la gente felíz de juguete.",
+          "Cadillacs derritiéndose en la playa y el alma de los negros riéndose en otro lado.",
+          "Silbamos un Rock and Roll cruzando el parque,",
+          "en algún lugar del sur del mundo.",
+          "La carretera de los incendios",
+          "Esta es una canción tradicional en el espacio.",
+          "Con esta canción bailan el vals los enamorados,",
+          "En las cabañas del universo.",
+          "El ojo de Él",
+          "Por advertencia y amenaza, la letra de El ojo de Él no será traducida al castellano.",
+          "Tobogán",
+          "Todo el tiempo espero,",
+          "Sé que va a llegar y entonces voy a estar bien",
+          "Mientras tanto espero,",
+          "En días iguales por calles que ni miro,",
+          "Personas que ignoro, sigo.",
+          "A veces me río y otras pienso",
+          "En qué es lo que tiene que venir",
+          "Si va a venir o si tengo que buscarlo",
+          "Se hace la noche,",
+          "En mi cama lo sé",
+          "Otra vez no vino",
+          "Ni nunca va a venir",
+          "Nunca va a venir,",
+          "Nunca va a venir.",
+          "Final",
+          "Esto no es el final",
+          "Esto no es el final",
+          "No digas que nunca más",
+          "Nos vamos a encontrar",
+          "Por el mar te guiarán mis sueños más dulces",
+          "No creas que nunca más nos vamos a encontrar",
+          "Verano fatal",
+          "Los días duraban años",
+          "Entre tus ojos y el mar",
+          "Y las noches duraban siglos",
+          "Entre tus gritos y el bar",
+          "Fue un verano fatal con las resacas y borracheras",
+          "Y en medio de esa guerra que era vivir así",
+          "Yo me enamoré de vos, yo me enamoré de vos",
+          "Y otro día se fue, pareciera que fueran muchos más",
+          "En medio de todo este caos",
+          "del mar ,del bar, de tu mirada",
+          "Son cosas que guardo en la almohada antes de dormir",
+          "Consuelos para el día en que no quiera estar vivo"
+        ]
+      }
+    ]
+  },
+  {
+    "key": "lou-fai-home-sessions-ii",
+    "title": "Lou Fai Home sessions vol II",
+    "year": "2007",
+    "cat": "COSMOS",
+    "meta": "COSMOS · 2007",
+    "desc": "Cruzando el parque, Verano fatal.",
+    "cover": "assets/album-lou-fai-home-sessions-ii.jpg",
     "spotify_embed": "https://open.spotify.com/embed/artist/79KyjLxTR5a6vVpPvljowB?utm_source=generator&theme=0",
     "credits_html": "",
     "photos": [],
     "songs": []
   },
   {
-    "key": "cronicas-2021",
-    "title": "Crónicas",
-    "year": "2021",
+    "key": "ciruja-2007",
+    "title": "El ciruja y los rayos solares",
+    "year": "2007",
+    "cat": "SOLISTA",
+    "meta": "SOLISTA · 2007",
+    "desc": "A través de los soles, El ciruja, La estiba.",
+    "cover": "assets/album-ciruja-2007.jpg",
+    "spotify_embed": "https://open.spotify.com/embed/album/0bh0Try1eMw42AG1rQTpaX?utm_source=generator&amp;theme=0",
+    "credits_html": "<p><strong>Lanzamiento:</strong> 9/04/2007</p><p><strong>Arte de tapa:</strong> Gabriel Rud</p><p>Compuesto y grabado en una semana por Maxi Prietto con un Casiotone y una guitarra criolla.</p>",
+    "photos": [],
+    "songs": [
+      {
+        "title": "A TRAVÉS DE LOS SOLES",
+        "lines": [
+          "Viajo en rayos de luz, a través de los soles",
+          "Rojos primero, luego azules",
+          "Viajo en barcos de sal, a través de los mares",
+          "Hondos primero, luego oscuros",
+          "Entre los moribundos, vi tu rostro feliz",
+          "Rojas mejillas, luego azules"
+        ]
+      },
+      {
+        "title": "CANCIÓN PARA SHAMAN Y EL AFRO",
+        "lines": [
+          "Cruzaron los siete mares en sus escobas las brujas todas",
+          "Ardientes palabras sangraban sus bocas",
+          "Arriba de un árbol un hombre",
+          "De larga barba y sin nombre",
+          "Creyó ver una luz fugaz",
+          "Cruzar el cielo negro",
+          "Abajo las personas corrían por el pasto",
+          "Eran en el bosque una noche más de amor",
+          "Querían ver la luz nomás",
+          "Eso nadie lo podía explicar",
+          "Querían ver la luz nomás",
+          "Eso nadie lo podía explicar"
+        ]
+      },
+      {
+        "title": "LOCO DE AMOR",
+        "lines": [
+          "Me diste toda la ternura que yo podía querer",
+          "Me diste toda la frescura que yo quería tener",
+          "Me diste todo el amor yo nunca había sentido tanto amor",
+          "Así que ahora ni lo pienses",
+          "Si te quieres marchar",
+          "Soy capaz de cualquier cosa",
+          "Estoy loco de amor",
+          "Estoy loco de amor",
+          "Estoy loco de amor",
+          "Estoy loco de amor",
+          "El instante en que te vi, aún sigo ahí",
+          "Mirándote entrar",
+          "Supe que no existía yo para vos, me heriste.",
+          "Ahora te miro, te volvés hermosa con tu mal humor",
+          "Ahora te hablo y esa es toda la conversación",
+          "Porque a veces me miras",
+          "Para qué lo hacés? Me ilusionas",
+          "Porque a veces me miras",
+          "Te espero",
+          "Porque en verdad está en mí",
+          "El amor por vos",
+          "Te invento",
+          "Porque es bueno tener algo por que vivir",
+          "Y en verdad yo no te conozco bien"
+        ]
+      },
+      {
+        "title": "ESTRELLAS VERDES",
+        "lines": [
+          "Soles rojos",
+          "Soles azules"
+        ]
+      },
+      {
+        "title": "ES QUE QUIERO COMER",
+        "lines": [
+          "Ya vi la trampa, detrás de tu pastel",
+          "Lo que pasa es que quiero comer",
+          "No fue el blanco de tus dientes",
+          "Lo que me enamoró",
+          "Fueron sólo tus dientes",
+          "Acá nadie tiene",
+          "Cuando escupas para arriba",
+          "No quiero estar arriba",
+          "Cuando te tropieces",
+          "No quiero ser el tren",
+          "No quiero que seamos el gato y el ratón",
+          "No quiero que seamos el perro y el león",
+          "No quería ser niño pero el tiempo pasó",
+          "No quería ser niño, pero el tiempo pasó",
+          "Ya vi la trampa, detrás de tu pastel",
+          "Lo que pasa es que quiero comer"
+        ]
+      },
+      {
+        "title": "CHOZAS DE FUEGO",
+        "lines": [
+          "Este es mi lugar, no quiero volver",
+          "siempre quise estar lejos en barco",
+          "Por las estrellas, bajar al campo",
+          "Pasto amarillo, chozas de fuego"
+        ]
+      },
+      {
+        "title": "LA JOVEN ORIENTAL",
+        "lines": [
+          "La joven oriental camina con su cesta por el pueblo",
+          "Los jóvenes la miran piensan que ella es la mujer más hermosa",
+          "Por las noches le escriben cartas de amor",
+          "Diciéndole que sin su amor ellos no quieren vivir más"
+        ]
+      },
+      {
+        "title": "EL HOMBRE GATO",
+        "lines": [
+          "El Hombre de la bolsa es un chiste",
+          "Al lado del Hombre Gato",
+          "A través de los soles verdes, rojos y azules",
+          "Viajo en rayos de luz, a través de los soles",
+          "Rojos primero, luego azules",
+          "Viajo en barcos de sal, a través de los mares",
+          "Hondos primero, luego oscuros"
+        ]
+      },
+      {
+        "title": "LOCO DE AMOR (DELUXE)",
+        "lines": [
+          "Me diste toda la ternura que yo podía querer",
+          "Me diste toda la frescura que yo quería tener",
+          "Me diste todo el amor yo nunca había sentido tanto amor",
+          "Así que ahora ni lo pienses",
+          "Si te quieres marchar",
+          "Soy capaz de cualquier cosa",
+          "Estoy loco de amor",
+          "Estoy loco de amor",
+          "Estoy loco de amor",
+          "Estoy loco de amor"
+        ]
+      }
+    ]
+  },
+  {
+    "key": "experiencias-salon-cosmico",
+    "title": "Experiencias del Salón Cósmico",
+    "year": "2006",
     "cat": "COSMOS",
-    "meta": "COSMOS · 2021",
-    "desc": "Prietto viaja al cosmos con Mariano. Editado por Alto Valle.",
-    "cover": "assets/album-cronicas.jpg",
+    "meta": "COSMOS · 2006",
+    "desc": "De la experiencia en México, Alucinando en el Salón Cósmico.",
+    "cover": "assets/album-experiencias-salon-cosmico.jpg",
     "spotify_embed": "https://open.spotify.com/embed/artist/79KyjLxTR5a6vVpPvljowB?utm_source=generator&theme=0",
-    "credits_html": "<p><strong>Lanzamiento:</strong> 1/10/2021</p><p><strong>Guitarra y voz:</strong> Maxi Prietto</p><p><strong>Batería y coros:</strong> Mariano Castro</p><p>Grabado y mezclado en Estudios Plasma por Miguel Mactas entre diciembre 2020 y abril 2021.</p><p>Tracks 1, 7 y 9 grabados por Miguel Mactas y Bruno Cimmino.</p><p>Masterizado por Mario Breuer.</p><p><strong>Arte de tapa y diseño:</strong> Santi Pozzi</p><p><strong>Fotos:</strong> Juan Francisco Sanchez</p><p><strong>Producción general/Managment:</strong> Nacho Perotti.</p><p>Editado por Alto Valle</p><p>Pruebo en los carteles,</p>",
+    "credits_html": "",
+    "photos": [],
+    "songs": []
+  },
+  {
+    "key": "prietto-2002",
+    "title": "Prietto 2002",
+    "year": "2002",
+    "cat": "SOLISTA",
+    "meta": "SOLISTA · 2002",
+    "desc": "La Noche de Verano, Pies en la arena, Los brujos del lugar.",
+    "cover": "assets/album-prietto-2002.jpg",
+    "spotify_embed": "https://open.spotify.com/embed/album/7GnSVuVpmKbt6ZrS2dqHiy?utm_source=generator&amp;theme=0",
+    "credits_html": "<p>Grabado en diciembre de 2002 por Maxi Prietto en la habitación con un Shure 58.</p>",
     "photos": [
       {
-        "src": "assets/albums/2021_PVCCM_CRONICAS/PVCM Plasma 09-09-21 0007.jpg",
-        "alt": "Crónicas — Sesión",
-        "caption": "Sesión en Estudio Plasma"
-      },
-      {
-        "src": "assets/albums/2021_PVCCM_CRONICAS/PVCM Plasma 09-09-21 0047.jpg",
-        "alt": "Crónicas — Grabación",
-        "caption": "Grabación de Crónicas"
-      },
-      {
-        "src": "assets/albums/2021_PVCCM_CRONICAS/PVCM Plasma 09-09-21 0065.jpg",
-        "alt": "Crónicas — Estudio",
-        "caption": "PVCCM en Estudio Plasma"
+        "src": "assets/albums/2002_prietto/priettoestibadorcolor.jpg",
+        "alt": "Prietto 2002",
+        "caption": "Maxi Prietto, 2002"
       }
     ],
     "songs": [
       {
-        "title": "HASTA SIEMPRE",
+        "title": "LA NOCHE DE VERANO",
         "lines": [
-          "Con las manos oí el sabor de tu pelo",
-          "Es amor lo que se fue",
-          "Y aún quema tu abrazo",
-          "Mientras todo se va",
-          "algo queda,",
-          "queda… y se queda en la garganta",
-          "del silencio, de otra noche más.",
-          "Ves más ardor que amor.",
-          "Algún día partiré hasta siempre",
-          "Besando lo que se fue",
-          "Y aún quedará tu abrazo",
-          "Mientras todo se va",
-          "Eso quedará",
-          "se quedará en el alma",
-          "De este corazón",
-          "Hasta siempre y más",
-          "Ves mas ardor que amor."
+          "Sale del mar empapado y contento",
+          "Y se acuesta en la arena otra vez",
+          "Su chica le toca la espalda y prepara el mate",
+          "Son las siete y media de la tarde y el viento empieza a picar",
+          "Se ponen los buzos, se abrazan, se acuestan",
+          "Y vuelven callados a su hogar",
+          "Se bañan juntos, se cambian",
+          "Y salen a la peatonal",
+          "Se sientan en el bar mas barato",
+          "Piden pizza y birra helada",
+          "Es de noche",
+          "La noche, el verano, summer, cerveza el calor",
+          "La noche, el verano, summer, cerveza el calor"
         ]
       },
       {
-        "title": "ALGO",
+        "title": "PIES EN LA ARENA",
         "lines": [
-          "Si al final todo se cae",
-          "Y entre los vidrios aún queda algo",
-          "Dímelo, dime algo",
-          "Aunque no sea verdad, te amo.",
-          "Dímelo, dime algo,",
-          "que al amanecer ya podré seguir solo.",
-          "Aunque aún las noches no pasen de largo",
-          "Sin notarlo,",
-          "dímelo, dime algo,",
-          "aunque no sea verdad, te amo.",
-          "Que al amanecer ya podré seguir solo.",
-          "Aunque aún la vida siga girando para cualquier lado",
-          "Dímelo, dime algo. Aunque no sea verdad, te amo.",
-          "Dime algo,",
-          "Que al amanecer ya podré seguir solo."
+          "Sube el sol, sobre el mar",
+          "Huesos rotos, la noche azul",
+          "El verano, la madrugada",
+          "Pies y arena, la libertad",
+          "No hay palabras, hay verdad",
+          "Aire y tiempo, la muerte",
+          "Se quiebran las alas de mi alma,",
+          "En la montaña oí mi voz",
+          "Pude comprender la calma",
+          "Pude comprender dolor",
+          "Pies y arena, la libertad",
+          "No hay palabras, hay verdad",
+          "Aire y tiempo, la muerte",
+          "Aire y tiempo, la muerte"
         ]
       },
       {
-        "title": "CARROUSEL",
+        "title": "ES LA VERDAD",
         "lines": [
-          "No hay más que hacer",
-          "Mira el carrousel",
-          "Gira, brillante",
-          "Todo te daré, siempre.",
-          "Todo te daré, siempre."
+          "En la mañana sientes bondad al caminar",
+          "Es la verdad que transmite el sol",
+          "Es la verdad que transmite el sol"
         ]
       },
       {
-        "title": "MÁSCARA",
+        "title": "LOS BRUJOS DEL LUGAR",
         "lines": [
-          "Ríe el mundo terminó ayer",
-          "En la noche cruzarás el sol",
-          "Alguien sigue con su mascara huyendo",
-          "A ese mundo donde la fantasía es cruel",
-          "Ríe el mundo despertó ayer",
-          "En la noche cruzarás el sol",
-          "Alguien sigue con su mascara huyendo",
-          "A ese mundo donde la fantasía es cruel"
+          "Son siete pactos los que hacen y se van",
+          "Visten con sotanas negras hasta el piso",
+          "Bailan con tambores alrededor del fuego",
+          "Se mueven como ebrios hacen culto a Satán",
+          "Lo hacen a cien millas de un pueblo lejano",
+          "Donde viven forasteros de rostros sucios",
+          "Que mastican tabaco y no saben que",
+          "Estos transeúntes son los brujos del lugar",
+          "Estos transeúntes son los brujos del lugar"
         ]
       },
       {
-        "title": "RAMBLA",
+        "title": "SALUDO AL SOL",
         "lines": [
-          "Sé que es lo que quise",
-          "Que hice trampa y",
-          "Que no podré llegar",
-          "Porque es imposible porque todo lo que quiero es no desear",
-          "Sólo entre veredas tropezando con mis penas",
-          "Vuelvo a negar",
-          "Que soy el primero en traicionarme",
-          "Recorriendo esta ciudad",
-          "En la rambla, espero",
-          "Jurando al cielo",
-          "en los subtes y en los trenes de tu pan",
-          "suelo apuntar con mis rodillas",
-          "cuando me tiro a rezar",
-          "el semáforo en luz negra",
-          "debí haberme dado cuenta esa señal.",
-          "creo en lo que busco,",
-          "lo que encuentro",
-          "no me importa, en realidad",
-          "en la rambla, espero",
-          "jurando al cielo",
-          "Sé que es lo que quise",
-          "Que hice trampa y",
-          "Que no podré llegar",
-          "Porque es imposible porque todo lo que quiero es no desear",
-          "Más"
+          "Los indios van a la montaña",
+          "Miran arriba estrellas",
+          "Piensan en amigos muertos",
+          "Y en donde estarán",
+          "O si estarán bien",
+          "Vuelven a la madrugada",
+          "Vuelven sin hablar",
+          "Fumaron hachís junto al fuego",
+          "Dieron bienvenida al sol",
+          "Dieron bienvenida al sol"
         ]
       },
       {
-        "title": "RISA",
+        "title": "COSAS DE LA CIUDAD",
         "lines": [
-          "Por esas calles va tu alma",
-          "Una y otra vez",
-          "Hay un camino de calma",
-          "Que nunca eliges tomar",
-          "En el agua",
-          "Buscas tu nombre",
-          "ya sabes",
-          "Tu risa es quien eres",
-          "Por esas calles va tu alma",
-          "Debes dejarlo y volver",
-          "Hay un camino de calma",
-          "Que nunca eliges tomar",
-          "En el aire",
-          "Buscas tu nombre",
-          "Y ya sabes",
-          "Tu risa es quien eres"
+          "Él vende en el tren cuchillos",
+          "Ella canta en un bar",
+          "Él antes paseaba perros",
+          "Ella tuvo que abortar",
+          "Él no come al mediodía y",
+          "Se emborracha todo el día",
+          "Ella sufre de asma y no tiene obra social",
+          "Él torturó sin asco",
+          "Ella dejó aerobics y el yoga",
+          "Él se puso a llorar",
+          "Mil veces quiso suicidarse",
+          "pero tiene dos niñas hermosas que no puede abandonar",
+          "Él nunca se lavó los dientes, se los tienen que arrancar",
+          "Ella está harta de la tele",
+          "Cuando tiene un rato libre se va a fumar al balcón",
+          "Él se hizo Skin Head y era negro, nadie lo quiso aceptar",
+          "Ella salía con un tipo que se hizo homosexual",
+          "Ella quiere un Estado justo, ya eligió a su candidato",
+          "Él no quiere ningún Estado, él quiere andar en libertad",
+          "Y por las noches ellos salen de paso con sus Falcon",
+          "Miran chicas, miran travas",
+          "Paran autos piden plata",
+          "Y ellas siempre con sonrisas,",
+          "Sueñan con verlos morir",
+          "Sueñan con verlos morir"
         ]
       },
       {
-        "title": "DIARIOS",
+        "title": "ALGUIEN VIO AL SOL",
         "lines": [
-          "Una paloma muerta en la avenida",
-          "Un viejo la mira mientras fuma y vende",
-          "Diarios de mañana o de ayer",
-          "Los presos tienen rejas",
-          "Nos niños tienen rejas",
-          "Y el perro con correa y bozal",
-          "Una ambulancia chocí en la avenida",
-          "La gente la mira mientras",
-          "Habla y compra",
-          "Diarios de mañana o de ayer",
-          "Las plazas tienen rejas",
-          "Por fuera las parejas",
-          "Corren con correa y bozal",
-          "La plaza tiene rejas",
-          "Por fuera las parejas",
-          "Corren con correa y bozal"
+          "- Ey, alguien vio al sol?",
+          "- Yo lo vi",
+          "- Donde está?",
+          "- Detrás de la colina",
+          "- Hay que cambiarlo de lugar",
+          "- Por qué?",
+          "- Porque está en un lugar muy lejos",
+          "- Lejos, lejos",
+          "- Muy, muy, lejos",
+          "- Lejos"
         ]
       },
       {
-        "title": "BALADA",
+        "title": "ALGUIEN VIO AL SOL",
         "lines": [
-          "En esa idea de querer había un error",
-          "Es que esa tarde de aquel amor",
-          "Quizás fue lo peor",
-          "Tratar de estar mejor",
-          "Arruinamos lo que había de bueno",
-          "Cuando caía en la red",
-          "Veía amor",
-          "Y ahora que sólo hay pared",
-          "Siento el error",
-          "Que crudo error!",
-          "Quizás fue lo peor",
-          "Tratar de estar mejor",
-          "No hay que elegir todo",
-          "Si sólo somos dos",
-          "Más"
+          "- Yo lo vi"
+        ]
+      },
+      {
+        "title": "ALGUIEN VIO AL SOL",
+        "lines": [
+          "- Yo lo vi. Está lejos. detrás de la colina.",
+          "- Hay que esconder a la muerte",
+          "- Sí",
+          "- Alguien vio a la muerte?",
+          "- Yo la vi",
+          "- Y que hacía ahí?",
+          "- Estaba jugando con unas niñas",
+          "- De qué edad?",
+          "- Seis años",
+          "- Hay que matar a la muerte",
+          "- Sí, hay que matarla",
+          "- Hay que matar a la muerte",
+          "- Sí, hay que matarla",
+          "- Y a las niñas",
+          "- No",
+          "- Hay que matar al sol",
+          "- Hay que esconder a las niñas"
+        ]
+      },
+      {
+        "title": "ALCANCÍA DE TRISTEZA",
+        "lines": [
+          "“Miro las nubes grises desde mi cama",
+          "Se rompió la alcancía de tristeza",
+          "E inundó mi mundo.",
+          "Hoy soy tristeza",
+          "Hoy soy tristeza…”"
+        ]
+      },
+      {
+        "title": "LA MAÑANA DEL VERANO",
+        "lines": [
+          "El sol sale, detrás del mar",
+          "Los últimos jóvenes borrachos se vuelven a su casa",
+          "O duermen en la playa",
+          "Los viejos se levantan, van a jugar al tejo",
+          "La noche ha muerto hace rato",
+          "Gobiernan las resacas en las cabezas de mis amigos y yo… (teléfono)"
+        ]
+      },
+      {
+        "title": "SUMMER, NOCHE, PLAYA Y SOL",
+        "lines": [
+          "Chicas tragos rock and roll",
+          "Nada falta en este largo viaje hacia mi buen final"
+        ]
+      },
+      {
+        "title": "CERVEZA EN LA PLAYA",
+        "lines": [
+          "(instrumental)"
         ]
       }
     ]
