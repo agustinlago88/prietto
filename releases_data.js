@@ -8,7 +8,7 @@ window.PRIETTO_RELEASES = [
     "meta": "SOLISTA · 2026",
     "desc": "Rumbo a Hong Kong / Sólo una canción más.",
     "cover": "assets/album-playa-nocturna-vol-4.jpg",
-    "spotify_embed": "https://open.spotify.com/embed/album/4vM4H8JdY0X6J0eK9gR0eD?utm_source=generator&amp;theme=0",
+    "spotify_embed": "https://open.spotify.com/embed/track/4VFWjjCKsZHYJv0rUBstH8?utm_source=generator&amp;theme=0",
     "credits_html": "<p><strong>Lanzamiento:</strong> 27/05/2026</p><p><strong>Rumbo a Hong Kong Autor:</strong> Félix Prietto</p><p><strong>Solo una canción más Autor:</strong> Maxi Prietto</p><p><strong>Grabación y mix:</strong> Maxi Prietto</p><p><strong>Mastering:</strong> Michael Graves</p><p><strong>Arte de tapa:</strong> Santi Pozzi</p><p><strong>Sello:</strong> Alto Valle</p><p><strong>Contrabajo:</strong> Damián Manfredi</p><p><strong>Batería:</strong> Pipe Correa</p><p><strong>Guitarra y voz:</strong> Maxi Prietto</p>",
     "photos": [],
     "songs": [
@@ -323,7 +323,7 @@ window.PRIETTO_RELEASES = [
     "meta": "SOLISTA · 2021",
     "desc": "Otra Tumba Más / No Te Rindas.",
     "cover": "assets/album-playa-nocturna-vol-3.jpg",
-    "spotify_embed": "https://open.spotify.com/embed/album/6k5P7Z2v8u1i9O3n4LqJkY?utm_source=generator&amp;theme=0",
+    "spotify_embed": "https://open.spotify.com/embed/track/5Z8ymY823V2aJIojEBOj2d?utm_source=generator&amp;theme=0",
     "credits_html": "<p><strong>Lanzamiento:</strong> 28/05/2021</p><p><strong>Grabado en:</strong> Estudios ION en 2017 por Pablo Barros</p><p><strong>Mezclado y masterizado:</strong> Mezclado en Mono y masterizado en cinta en estudio El Attic por Patricio Claypole en agosto 2018</p><p><strong>Guitarra y voz:</strong> Maxi Prietto</p><p><strong>Contrabajo:</strong> Damián Manfredi</p><p><strong>Batería:</strong> Pipe Correa</p><p><strong>Piano:</strong> Miguel Tennina</p><p><strong>Saxo Barítono:</strong> Santiago Zarba</p><p><strong>Violín:</strong> Alex Musatov</p><p><strong>Viola:</strong> Charly Pacini</p><p><strong>Cello:</strong> Alfredo Zuccarelli</p><p><strong>Letra y música:</strong> Maxi Prietto</p><p><strong>Diseño:</strong> Santi Pozzi</p><p><strong>Sello:</strong> Alto Valle</p>",
     "photos": [],
     "songs": [
@@ -567,7 +567,7 @@ window.PRIETTO_RELEASES = [
     "meta": "SOLISTA · 2020",
     "desc": "Dos Gardenias / Flotando en la oscuridad.",
     "cover": "assets/album-playa-nocturna-vol-2.jpg",
-    "spotify_embed": "https://open.spotify.com/embed/album/4c9D087s29s8U4o4w6y4W2?utm_source=generator&amp;theme=0",
+    "spotify_embed": "https://open.spotify.com/embed/track/43bg10mZzSFLdxwg8StHLH?utm_source=generator&amp;theme=0",
     "credits_html": "<p><strong>Lanzamiento:</strong> 18/12/2020</p><p><strong>Grabado por:</strong> Miguel Mactas en Estudio Plasma</p><p><strong>Mastering:</strong> Mario Breuer</p><p><strong>Guitarra y voz:</strong> Maxi Prietto</p><p><strong>Piano:</strong> Daniel Godfrid</p><p><strong>Contrabajo:</strong> Damián Manfredi</p><p><strong>Batería:</strong> Pipe Correa</p><p><strong>Guitarra:</strong> Martín Ferbat</p><p><strong>Violín:</strong> Alex Musatov</p><p><strong>Sello:</strong> Alto Valle</p>",
     "photos": [],
     "songs": [
@@ -594,7 +594,7 @@ window.PRIETTO_RELEASES = [
     "meta": "SOLISTA · 2020",
     "desc": "El Rey Criollo del Rock and Roll / Definición de Ritmo.",
     "cover": "assets/album-playa-nocturna-vol-1.jpg",
-    "spotify_embed": "https://open.spotify.com/embed/album/37zJjGj6oT351Q3s2pIu3F?utm_source=generator&amp;theme=0",
+    "spotify_embed": "https://open.spotify.com/embed/track/7eGIqzMRFvqJ6mhnNdJoSi?utm_source=generator&amp;theme=0",
     "credits_html": "<p><strong>Lanzamiento:</strong> 02/10/2020</p><p><strong>Grabado en:</strong> Plasma Estudio por Miguel Mactas</p><p><strong>Producido por:</strong> Maxi Prietto</p><p><strong>Mastering:</strong> Mario Breuer</p><p><strong>Arte de tapa:</strong> Santi Pozzi</p><p><strong>Sello:</strong> Alto Valle</p><p><strong>Guitarra y voz:</strong> Maxi Prietto</p><p><strong>Contrabajo:</strong> Damián Manfredi</p><p><strong>Batería:</strong> Pipe Correa</p><p><strong>Piano:</strong> Daniel Godfrid</p><p><strong>Violín:</strong> Alex Musatov</p>",
     "photos": [],
     "songs": []
