@@ -1,4 +1,4 @@
-/* PRIETTO RELEASE DATABASE - 34 ALBUMS */
+/* PRIETTO RELEASE DATABASE - 37 ALBUMS */
 window.PRIETTO_RELEASES = [
   {
     "key": "prietto-2002",
@@ -1231,22 +1231,29 @@ window.PRIETTO_RELEASES = [
     "songs": []
   },
   {
-    "key": "playa-nocturna",
-    "title": "Playa Nocturna (Vol. 1 - 4)",
+    "key": "playa-nocturna-vol1",
+    "title": "Playa Nocturna, Vol. 1",
     "year": "2020",
     "cat": "SOLISTA",
-    "meta": "SOLISTA · 2020-2026",
-    "desc": "Rey Criollo, Dos Gardenias, Otra Tumba Más, Rumbo a Hong Kong.",
-    "cover": "assets/album-playa-nocturna-vol-4.jpg",
-    "spotify_embed": "https://open.spotify.com/embed/album/0etbh21ZQH4vVyp5Ssq6qj?utm_source=generator&theme=0",
-    "credits_html": "<p><strong>Lanzamiento:</strong> 02/10/20</p><p>Grabado en Plasma Estudio por Miguel Mactas</p><p>Producido por Maxi Prietto.</p><p><strong>Mastering:</strong> Mario Breuer</p><p><strong>Arte de tapa:</strong> Santi Pozzi</p><p><strong>Sello:</strong> Alto Valle</p><p><strong>Guitarra y voz:</strong> Maxi Prietto</p><p><strong>Contrabajo:</strong> Damián Manfredi</p><p><strong>Batería:</strong> Pipe Correa</p><p><strong>Piano:</strong> Daniel Godfrid</p><p><strong>Violín:</strong> Alex Musatov</p><p><strong>Lanzamiento:</strong> 18/12/2020</p><p>Grabado por Miguel Mactas en Estudio Plasma.</p><p>Mastering por Mario Breuer.</p><p><strong>Sello:</strong> Alto Valle.</p><p><strong>Lanzamiento:</strong> 28/05/21</p><p>grabado en estudios ION en 2017 por Pablo Barros.</p><p>Mezclado en Mono y masterizado en cinta en estudio El Attic por Patricio Claypole en agosto 2018.</p><p><strong>Piano:</strong> Miguel Tennina</p><p><strong>Saxo Barítono:</strong> Santiago Zarba</p><p><strong>Cello:</strong> Alfredo Zuccarelli</p><p><strong>Diseño:</strong> Santi Pozzi</p><p><strong>Lanzamiento:</strong> 27/05/26</p><p><strong>Rumbo a Hong Kong Autor:</strong> Félix Prietto Solo una canción más Autor: Maxi Prietto</p><p><strong>Grabación y mix:</strong> Maxi PriettoMastering: Michael Graves Arte de tapa: Santi Pozzi Sello: Alto Valle</p><p><strong>Contrabajo:</strong> Damián Manfredi Batería: Pipe Correa Guitarra y voz: Maxi Prietto</p>",
-    "photos": [
-      {
-        "src": "assets/albums/Playa_Nocturna/IMG_9121.JPG",
-        "alt": "Playa Nocturna",
-        "caption": "Sesión Playa Nocturna"
-      }
-    ],
+    "meta": "SOLISTA · 2020",
+    "desc": "El Rey Criollo del Rock and Roll / Definición de Ritmo.",
+    "cover": "assets/album-playa-nocturna-vol-1.jpg",
+    "spotify_embed": "https://open.spotify.com/embed/album/32n71m49Hh7E64bWbL0aQZ?utm_source=generator&amp;theme=0",
+    "credits_html": "<p><strong>Lanzamiento:</strong> 02/10/2020</p><p><strong>Grabado en:</strong> Plasma Estudio por Miguel Mactas</p><p><strong>Producido por:</strong> Maxi Prietto</p><p><strong>Mastering:</strong> Mario Breuer</p><p><strong>Arte de tapa:</strong> Santi Pozzi</p><p><strong>Sello:</strong> Alto Valle</p><p><strong>Guitarra y voz:</strong> Maxi Prietto</p><p><strong>Contrabajo:</strong> Damián Manfredi</p><p><strong>Batería:</strong> Pipe Correa</p><p><strong>Piano:</strong> Daniel Godfrid</p><p><strong>Violín:</strong> Alex Musatov</p>",
+    "photos": [],
+    "songs": []
+  },
+  {
+    "key": "playa-nocturna-vol2",
+    "title": "Playa Nocturna, Vol. 2",
+    "year": "2020",
+    "cat": "SOLISTA",
+    "meta": "SOLISTA · 2020",
+    "desc": "Dos Gardenias / Flotando en la oscuridad.",
+    "cover": "assets/album-playa-nocturna-vol-2.jpg",
+    "spotify_embed": "https://open.spotify.com/embed/album/32n71m49Hh7E64bWbL0aQZ?utm_source=generator&amp;theme=0",
+    "credits_html": "<p><strong>Lanzamiento:</strong> 18/12/2020</p><p><strong>Grabado por:</strong> Miguel Mactas en Estudio Plasma</p><p><strong>Mastering:</strong> Mario Breuer</p><p><strong>Guitarra y voz:</strong> Maxi Prietto</p><p><strong>Piano:</strong> Daniel Godfrid</p><p><strong>Contrabajo:</strong> Damián Manfredi</p><p><strong>Batería:</strong> Pipe Correa</p><p><strong>Guitarra:</strong> Martín Ferbat</p><p><strong>Violín:</strong> Alex Musatov</p><p><strong>Sello:</strong> Alto Valle</p>",
+    "photos": [],
     "songs": [
       {
         "title": "FLOTANDO EN LA OSCURIDAD",
@@ -1255,48 +1262,82 @@ window.PRIETTO_RELEASES = [
           "Puedo irme o pudrirme aquí",
           "Di lo que quieras hoy, amor",
           "Me voy siguiendo al sol",
-          "Sé que habrá más versos y más besos",
-          "y más mañanas",
-          "Sé que habrá más besos y más versos",
-          "flotando en la oscuridad",
+          "Sé que habrá más versos y más besos y más mañanas",
+          "Sé que habrá más besos y más versos flotando en la oscuridad",
           "Soy lo que buscan mis pies",
-          "Soy lo que buscan mis pies",
-          "Playa Nocturna, Vol. 3: Otra Tumba Más / No Te Rindas",
-          "Viola:  Charly Pacini",
-          "Letra y música: Maxi Prietto",
-          "Otra tumba más",
+          "Soy lo que buscan mis pies"
+        ]
+      }
+    ]
+  },
+  {
+    "key": "playa-nocturna-vol3",
+    "title": "Playa Nocturna, Vol. 3",
+    "year": "2021",
+    "cat": "SOLISTA",
+    "meta": "SOLISTA · 2021",
+    "desc": "Otra Tumba Más / No Te Rindas.",
+    "cover": "assets/album-playa-nocturna-vol-3.jpg",
+    "spotify_embed": "https://open.spotify.com/embed/album/32n71m49Hh7E64bWbL0aQZ?utm_source=generator&amp;theme=0",
+    "credits_html": "<p><strong>Lanzamiento:</strong> 28/05/2021</p><p><strong>Grabado en:</strong> Estudios ION en 2017 por Pablo Barros</p><p><strong>Mezclado y masterizado:</strong> Mezclado en Mono y masterizado en cinta en estudio El Attic por Patricio Claypole en agosto 2018</p><p><strong>Guitarra y voz:</strong> Maxi Prietto</p><p><strong>Contrabajo:</strong> Damián Manfredi</p><p><strong>Batería:</strong> Pipe Correa</p><p><strong>Piano:</strong> Miguel Tennina</p><p><strong>Saxo Barítono:</strong> Santiago Zarba</p><p><strong>Violín:</strong> Alex Musatov</p><p><strong>Viola:</strong> Charly Pacini</p><p><strong>Cello:</strong> Alfredo Zuccarelli</p><p><strong>Letra y música:</strong> Maxi Prietto</p><p><strong>Diseño:</strong> Santi Pozzi</p><p><strong>Sello:</strong> Alto Valle</p>",
+    "photos": [],
+    "songs": [
+      {
+        "title": "OTRA TUMBA MÁS",
+        "lines": [
           "Y al final nunca fuimos ricos",
           "Ni encontramos esos sueños",
           "Que dejamos de buscar",
           "Sí, al final, nunca nos fuimos",
           "A vivir a esa cabaña en busca de esa paz",
           "Insoportable paz, que nos persiguió",
-          "Como una duda inalcazable, maldita sombra detrás",
+          "Como una duda inalcanzable, maldita sombra detrás",
           "Y todos los ladrillos hoy se caen",
           "Ni nuestros nombres eran nuestros en verdad",
-          "Y esas canciones que grabamos donde están?",
+          "Y esas canciones que grabamos ¿dónde están?",
           "Perdidas y enterradas en la posteridad",
           "Si algún trofeo te hizo creer que eras mejor que los demás",
           "Te esperan novedades en la guardia del hospital",
           "Y si la suerte te ahorra ese lugar",
           "Un poquito más linda, o un poquito más fea",
-          "Para el cementerio y la tierra serás solo otra tumba más",
-          "No te rindas",
-          "No te rinas ni aunque veas tu nombre en la lápida",
-          "Sí, no te rindas ni aque veas tu nombre en la tumba",
+          "Para el cementerio y la tierra serás solo otra tumba más"
+        ]
+      },
+      {
+        "title": "NO TE RINDAS",
+        "lines": [
+          "No te rindas ni aunque veas tu nombre en la lápida",
+          "Sí, no te rindas ni aunque veas tu nombre en la tumba",
           "La luz te llegará si estás, si estás",
-          "La luz te llegará si estás, si estás",
-          "Playa Nocturna, vol. 4: Rumbo a Hong Kong/ Sólo una canción más",
-          "Rumbo a Hong Kong",
+          "La luz te llegará si estás, si estás"
+        ]
+      }
+    ]
+  },
+  {
+    "key": "playa-nocturna-vol4",
+    "title": "Playa Nocturna, Vol. 4",
+    "year": "2026",
+    "cat": "SOLISTA",
+    "meta": "SOLISTA · 2026",
+    "desc": "Rumbo a Hong Kong / Sólo una canción más.",
+    "cover": "assets/album-playa-nocturna-vol-4.jpg",
+    "spotify_embed": "https://open.spotify.com/embed/album/32n71m49Hh7E64bWbL0aQZ?utm_source=generator&amp;theme=0",
+    "credits_html": "<p><strong>Lanzamiento:</strong> 27/05/2026</p><p><strong>Rumbo a Hong Kong Autor:</strong> Félix Prietto</p><p><strong>Solo una canción más Autor:</strong> Maxi Prietto</p><p><strong>Grabación y mix:</strong> Maxi Prietto</p><p><strong>Mastering:</strong> Michael Graves</p><p><strong>Arte de tapa:</strong> Santi Pozzi</p><p><strong>Sello:</strong> Alto Valle</p><p><strong>Contrabajo:</strong> Damián Manfredi</p><p><strong>Batería:</strong> Pipe Correa</p><p><strong>Guitarra y voz:</strong> Maxi Prietto</p>",
+    "photos": [],
+    "songs": [
+      {
+        "title": "RUMBO A HONG KONG",
+        "lines": [
           "Navegando en un barco mercante",
           "Voy rumbo hacia Hong Kong",
           "Maravillado del azul resplandor",
           "Y de los días que me regala el sol",
-          "Voy rumbo a hong Kong",
-          "Paisaje, rayos de sol",
+          "Voy rumbo a Hong Kong",
+          "Paisajes, rayos de sol",
           "Hay mañanas y hay mañanas",
           "Ámame hasta la muerte",
-          "Porque tu eres mi suerte:",
+          "Porque tú eres mi suerte:",
           "Singapur del mar Oriente.",
           "Navegando en un barco mercante",
           "Voy rumbo hacia Hong Kong",
@@ -1307,8 +1348,12 @@ window.PRIETTO_RELEASES = [
           "Un mar de aceite, nena",
           "Un mar de aceite, nene",
           "Voy rumbo a Hong Kong",
-          "Pisajes rayos de sol",
-          "Sólo una canción más",
+          "Paisajes, rayos de sol"
+        ]
+      },
+      {
+        "title": "SÓLO UNA CANCIÓN MÁS",
+        "lines": [
           "Se van los efectos de otra noche",
           "Y al abrir la ventana ya no queda nada",
           "Sólo una canción más pedís para bailar con el cielo",
