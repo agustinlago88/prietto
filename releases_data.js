@@ -1,4 +1,4 @@
-/* PRIETTO RELEASE DATABASE - 37 ALBUMS (NEWEST TO OLDEST) */
+/* PRIETTO RELEASE DATABASE - 37 ALBUMS */
 window.PRIETTO_RELEASES = [
   {
     "key": "playa-nocturna-vol4",
@@ -795,13 +795,6 @@ window.PRIETTO_RELEASES = [
     ],
     "songs": [
       {
-        "title": "VIVELO",
-        "lines": [
-          "Vívelo, Vivelo.",
-          "No preguntes, vívelo."
-        ]
-      },
-      {
         "title": "ESTÁS LEJOS",
         "lines": [
           "Estás lejos, estás lejos,",
@@ -831,12 +824,6 @@ window.PRIETTO_RELEASES = [
           "Ay, ay, corazón. No vale la pena llorar por tu amor.",
           "Ay, ay, corazón, no vale la pena llorar por tu adios.",
           "Que sea lo que la suerte quiera digo tirando monedas que no puedo atrapar."
-        ]
-      },
-      {
-        "title": "SUEÑOS DE MACHAGAI",
-        "lines": [
-          "(Instrumental)"
         ]
       },
       {
@@ -910,12 +897,6 @@ window.PRIETTO_RELEASES = [
           "De las continuas olas",
           "Las mañanas nos escudarán de aquellos bellos espejismos",
           "A los que ciegos creímos que en heladas noches vimos partir"
-        ]
-      },
-      {
-        "title": "LA 844",
-        "lines": [
-          "(Instrumental)"
         ]
       },
       {
@@ -1034,54 +1015,6 @@ window.PRIETTO_RELEASES = [
       }
     ],
     "songs": [
-      {
-        "title": "CD 1",
-        "lines": [
-          "Bahía Rosales (3:44)",
-          "Ey, esa no es forma de decir adiós (L. Cohen) (3:00)",
-          "Ríos (3:32)",
-          "La semana de la dulzura (2:32)",
-          "Vacaciones (4:18)",
-          "Nico introdacyon (1:14)",
-          "Niños (2:19)",
-          "El bombero (4:40)",
-          "Tu único (3:50)",
-          "Las cosas de cada año (2:17)",
-          "Tu eres quien va (3:10)",
-          "Tristeza (3:38)",
-          "La ruta de noche (3:46)",
-          "San Ceferino (1:34)",
-          "Los viejos (6:52)"
-        ]
-      },
-      {
-        "title": "CD 2",
-        "lines": [
-          "Tu eres quien va (3:14)",
-          "Rezan (2:47)",
-          "El monstruo (3:26)",
-          "El viento del alba/ il angelo de lo divino (8:02)",
-          "Vestido de verano (2:06)",
-          "Cometa (3:30)",
-          "Canción de Olivia (5:22)",
-          "Fuertes olas (6:15)",
-          "La mañana hermosa (3:09)",
-          "Que se incendió (2:13)",
-          "Nací en un hospital que se prendía fuego (1:14)",
-          "Los hombres de poder (2:22)",
-          "Divagando en El Salón Cósmico (4:01)",
-          "Disco 1",
-          "Voz en tema 6, Nico Bedini. Coro en tema 7, Gastón Caba.",
-          "Trompetas en 12, El Ale. Viola en 9, Gustavo Monsalvo.",
-          "Sobregrabaciones de voces y arreglos por Shaman Herrera en estudio Kraut.",
-          "Disco 2",
-          "Coros en tema 3 y 13 por Shaman Herrera.",
-          "Viola en tema 6, Gustavo Monsalvo.",
-          "Coro en tema 8, Gastón Caba.",
-          "Armonio en tema 12, Miguel Mactas.",
-          "Violines en tema 12, Gigi Vlatko."
-        ]
-      },
       {
         "title": "BAHÍA ROSALES",
         "lines": [
@@ -1994,12 +1927,6 @@ window.PRIETTO_RELEASES = [
         ]
       },
       {
-        "title": "FRENTE AL MAR",
-        "lines": [
-          "(Instrumental)"
-        ]
-      },
-      {
         "title": "LA ÚLTIMA CANCIÓN",
         "lines": [
           "Cada cual tiene su cruz",
@@ -2476,18 +2403,10 @@ window.PRIETTO_RELEASES = [
           "- Porque está en un lugar muy lejos",
           "- Lejos, lejos",
           "- Muy, muy, lejos",
-          "- Lejos"
-        ]
-      },
-      {
-        "title": "ALGUIEN VIO AL SOL",
-        "lines": [
-          "- Yo lo vi"
-        ]
-      },
-      {
-        "title": "ALGUIEN VIO AL SOL",
-        "lines": [
+          "- Lejos",
+          "- Alguien vio al sol?",
+          "- Yo lo vi",
+          "- Alguien vio al sol?",
           "- Yo lo vi. Está lejos. detrás de la colina.",
           "- Hay que esconder a la muerte",
           "- Sí",
@@ -2533,12 +2452,6 @@ window.PRIETTO_RELEASES = [
         "lines": [
           "Chicas tragos rock and roll",
           "Nada falta en este largo viaje hacia mi buen final"
-        ]
-      },
-      {
-        "title": "CERVEZA EN LA PLAYA",
-        "lines": [
-          "(instrumental)"
         ]
       }
     ]
