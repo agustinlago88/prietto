@@ -1025,6 +1025,67 @@ body[data-route="home"] .pager { display: none; }
 .channels .ch-val { font-size: clamp(1rem, 2vw, 1.25rem); font-weight: 700; letter-spacing: -0.01em; }
 .channels a:hover .ch-val { text-decoration: underline; text-underline-offset: 0.2em; }
 
+.contact-form {
+  margin-top: clamp(1.5rem, 3.5vh, 2.5rem);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.contact-form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.contact-form label {
+  font-size: 0.68rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--ink-70);
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  background: var(--paper);
+  border: 1px solid var(--rule-strong);
+  padding: 0.85rem 1rem;
+  color: var(--ink);
+  font-family: inherit;
+  font-size: 0.95rem;
+  border-radius: 0;
+  outline: none;
+  transition: border-color var(--t-fast);
+}
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+  border-color: var(--accent);
+}
+.contact-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+.contact-form .btn-submit {
+  background: var(--ink);
+  color: var(--paper);
+  border: 1px solid var(--ink);
+  padding: 0.9rem 1.6rem;
+  font-family: inherit;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all var(--t-fast);
+  align-self: flex-start;
+  margin-top: 0.4rem;
+}
+.contact-form .btn-submit:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #ffffff;
+}
+
 .colophon {
   margin-top: clamp(3rem, 8vh, 6rem);
   padding-top: 1.4rem;
