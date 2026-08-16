@@ -359,12 +359,11 @@
   var flyersTrack = document.getElementById("flyersTrack");
   var flyerPrev = document.getElementById("flyerPrev");
   var flyerNext = document.getElementById("flyerNext");
-  var flyerDots = document.querySelectorAll(".flyer-dot");
-  var dateRows = document.querySelectorAll(".dates .date-row");
   var currentFlyerIndex = 0;
-  var totalFlyers = 5;
 
   function goToFlyerSlide(index) {
+    var slides = flyersTrack ? flyersTrack.querySelectorAll(".flyer-slide") : [];
+    var totalFlyers = slides.length || 8;
     if (index < 0) index = totalFlyers - 1;
     if (index >= totalFlyers) index = 0;
     currentFlyerIndex = index;
@@ -373,10 +372,12 @@
       flyersTrack.style.transform = "translateX(-" + (currentFlyerIndex * 100) + "%)";
     }
 
+    var flyerDots = document.querySelectorAll(".flyer-dot");
     flyerDots.forEach(function (dot, i) {
       dot.classList.toggle("active", i === currentFlyerIndex);
     });
 
+    var dateRows = document.querySelectorAll(".dates .date-row");
     dateRows.forEach(function (row, i) {
       row.classList.toggle("active-date", i === currentFlyerIndex);
     });
