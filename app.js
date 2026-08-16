@@ -43,13 +43,17 @@
     var prev = idx <= 1 ? ROUTES[0] : ROUTES[idx - 1];
     var next = idx >= ROUTES.length - 1 ? ROUTES[0] : ROUTES[idx + 1];
 
-    pgPrev.href = "#/" + (prev.id === "home" ? "" : prev.id);
-    pgPrev.querySelector("span").textContent =
-      (prev.id === "home" ? "← Índice" : "← " + prev.label);
+    if (pgPrev) {
+      pgPrev.href = "#/" + (prev.id === "home" ? "" : prev.id);
+      var prevSpan = pgPrev.querySelector("span");
+      if (prevSpan) prevSpan.textContent = (prev.id === "home" ? "← Índice" : "← " + prev.label);
+    }
 
-    pgNext.href = "#/" + (next.id === "home" ? "" : next.id);
-    pgNext.querySelector("span").textContent =
-      (next.id === "home" ? "Índice →" : next.label + " →");
+    if (pgNext) {
+      pgNext.href = "#/" + (next.id === "home" ? "" : next.id);
+      var nextSpan = pgNext.querySelector("span");
+      if (nextSpan) nextSpan.textContent = (next.id === "home" ? "Índice →" : next.label + " →");
+    }
   }
 
 
@@ -168,19 +172,20 @@
   function render() {
     var id = routeFromHash();
     var idx = indexOfRoute(id);
-    var meta = ROUTES[idx];
+    var meta = ROUTES[idx] || ROUTES[0];
 
-    views.forEach(function (v) {
+    var allViews = document.querySelectorAll(".view");
+    allViews.forEach(function (v) {
       v.classList.toggle("is-active", v.id === id);
     });
 
-    body.setAttribute("data-route", id);
+    if (body) body.setAttribute("data-route", id);
     if (id === "release") {
       renderReleasePage();
-      tbWhere.textContent = "Disco";
+      if (tbWhere) tbWhere.textContent = "Disco";
       setPager(idx);
     } else if (id !== "home") {
-      tbWhere.textContent = meta.label;
+      if (tbWhere) tbWhere.textContent = meta.label;
       setPager(idx);
     }
 
@@ -508,7 +513,11 @@
     startHomeAuto();
   }
 
-  render();
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", render);
+  } else {
+    render();
+  }
 
   window.openReleaseFichaModal = function (key) {
     var raw = (location.hash || "").replace(/^#\/?/, "").trim();
