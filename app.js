@@ -86,7 +86,7 @@
     var relPrevBtn = document.getElementById("relPrevBtn");
     var relNextBtn = document.getElementById("relNextBtn");
 
-    if (relCatBadge) relCatBadge.textContent = item.cat || "SOLISTA";
+    if (relCatBadge) relCatBadge.textContent = item.cat || "PRIETTO";
     if (relYearBadge) relYearBadge.textContent = item.year || "";
     if (relMetaLine) relMetaLine.textContent = (item.year || "") + " · " + (item.cat || "REGISTRO DE OBRA");
     if (relTitle) relTitle.textContent = item.title;
@@ -108,7 +108,7 @@
       var creditsContent = (item.credits_html && item.credits_html.trim())
         ? item.credits_html
         : "<p><strong>Año:</strong> " + (item.year || "") + "</p>" +
-          "<p><strong>Categoría:</strong> " + (item.cat || "SOLISTA") + "</p>" +
+          "<p><strong>Categoría:</strong> " + (item.cat || "PRIETTO") + "</p>" +
           "<p><strong>Artista:</strong> Maxi Prietto</p>";
       creditsBody.innerHTML = creditsContent;
       fichaCard.style.display = "block";
@@ -546,7 +546,7 @@
     if (modCreditsBody) {
       modCreditsBody.innerHTML = (item.credits_html && item.credits_html.trim())
         ? item.credits_html
-        : "<p><strong>Año de lanzamiento:</strong> " + (item.year || "") + "</p><p><strong>Categoría:</strong> " + (item.cat || "SOLISTA") + "</p><p><strong>Artista:</strong> Maxi Prietto</p><p><em>Información técnica de grabación y créditos de obra.</em></p>";
+        : "<p><strong>Año de lanzamiento:</strong> " + (item.year || "") + "</p><p><strong>Categoría:</strong> " + (item.cat || "PRIETTO") + "</p><p><strong>Artista:</strong> Maxi Prietto</p><p><em>Información técnica de grabación y créditos de obra.</em></p>";
     }
 
     if (modGalleryGrid && modGallerySection) {
