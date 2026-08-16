@@ -355,8 +355,8 @@ window.PRIETTO_RELEASES = [
     "meta": "PRIETTO VIAJA AL COSMOS CON MARIANO · 2021",
     "desc": "Prietto viaja al cosmos con Mariano. Editado por Alto Valle.",
     "cover": "assets/album-cronicas.jpg",
-    "spotify_embed": "https://open.spotify.com/embed/artist/79KyjLxTR5a6vVpPvljowB?utm_source=generator&theme=0",
-    "credits_html": "<p><strong>Lanzamiento:</strong> 1/10/2021</p><p><strong>Guitarra y voz:</strong> Maxi Prietto</p><p><strong>Batería y coros:</strong> Mariano Castro</p><p>Grabado y mezclado en Estudios Plasma por Miguel Mactas entre diciembre 2020 y abril 2021.</p><p>Tracks 1, 7 y 9 grabados por Miguel Mactas y Bruno Cimmino.</p><p>Masterizado por Mario Breuer.</p><p><strong>Arte de tapa y diseño:</strong> Santi Pozzi</p><p><strong>Fotos:</strong> Juan Francisco Sanchez</p><p><strong>Producción general/Managment:</strong> Nacho Perotti.</p><p>Editado por Alto Valle</p><p>Pruebo en los carteles,</p>",
+    "spotify_embed": "https://open.spotify.com/embed/album/43nltoTfJ7OZsprDHEoAqP?utm_source=generator&amp;theme=0",
+    "credits_html": "<p><strong>Lanzamiento:</strong> 1/10/2021</p><p><strong>Guitarra y voz:</strong> Maxi Prietto</p><p><strong>Batería y coros:</strong> Mariano Castro</p><p>Grabado y mezclado en Estudios Plasma por Miguel Mactas entre diciembre 2020 y abril 2021.</p><p>Tracks 1, 7 y 9 grabados por Miguel Mactas y Bruno Cimmino.</p><p>Masterizado por Mario Breuer.</p><p><strong>Arte de tapa y diseño:</strong> Santi Pozzi</p><p><strong>Fotos:</strong> Juan Francisco Sanchez</p><p><strong>Producción general/Managment:</strong> Nacho Perotti.</p><p>Editado por Alto Valle.</p>",
     "photos": [
       {
         "src": "assets/albums/2021_PVCCM_CRONICAS/PVCM Plasma 09-09-21 0007.jpg",
@@ -631,7 +631,7 @@ window.PRIETTO_RELEASES = [
     "year": "2018",
     "cat": "PRIETTO",
     "meta": "PRIETTO · 2018",
-    "desc": "Poli &amp; Prietto. Cariñito, Sabor a mí, Algo contigo.",
+    "desc": "Poli & Prietto. Palmeras, Historia de un amor, Perfidia.",
     "cover": "assets/album-boleros-canciones.jpg",
     "spotify_embed": "https://open.spotify.com/embed/album/0Ieorv8QKVoR9UL1umHtzJ?utm_source=generator&theme=0",
     "credits_html": "<p><strong>Fecha de lanzamiento:</strong> 8 de junio del 2018.</p><p><strong>Grabado por:</strong> Patricio Claypole en Estudios ION en septiembre de 2017.</p><p><strong>Producción artística:</strong> Maxi Prietto.</p><p><strong>Mezcla:</strong> Pablo Barros.</p><p><strong>Mastering:</strong> Gavin Lurssen.</p><p><strong>Arreglos por:</strong> Charly Pacini.</p><p><strong>Arreglos tema 9:</strong> Alex Musatov.</p><p><strong>Maxi Prietto:</strong> Guitarra eléctrica, criolla, tres cubano y voz.</p><p><strong>Natalia Napolitano (Poli):</strong> Guitarra y voz. Autoría temas 3 y 10.</p><p><strong>Charly Pacini:</strong> Viola.</p><p><strong>Alex Musatov:</strong> Violín.</p><p><strong>Alfredo Zuccarelli:</strong> Cello.</p><p><strong>Damián Manfredi:</strong> Contrabajo.</p><p><strong>Juan Felipe Correa:</strong> Maracas y batería.</p><p><strong>Miguel Tennina:</strong> Piano y acordeón.</p><p><strong>Martín Fernandez Batmalle:</strong> Guitarras criolla, gypsy y eléctrica.</p><p><strong>Fer Barrey:</strong> Bongó.</p><p><strong>Santiago Zarba:</strong> Saxo barítono.</p><p><strong>Invitados especiales:</strong></p><p><strong>Andrés Calamaro:</strong> Voz y coros en 4, 6 y 8.</p><p><strong>Gustavo Santaolalla:</strong> Ronroco en 5.</p><p><strong>Producción ejecutiva:</strong> Nacho Perotti y Maxi Prietto.</p><p><strong>Fotografías:</strong> Juan Francisco Sanchez.</p><p><strong>Arte y diseño gráfico:</strong> Santi Pozzi.</p><p><strong>Sello:</strong> Alto Valle. AV006.</p><p><strong>Citas:</strong></p><p><strong>Maxi Prietto para Artezeta:</strong><br>“La idea fue adueñarse de estas canciones, tocarlas como si fueran nuestras, con el relajo y la confianza que da tocar algo propio”.</p><p><strong>Poli sobre el Bolero para Artezeta:</strong><br>“Me siento cerca de alguien que cante de un modo muy personal, busco eso en el canto. No me interesa que se ‘afine’, sino que me hagas temblar cuando te escucho”.</p><p><strong>Maxi Prietto para Vice:</strong><br>“El bolero tiene toda una apertura que va desde lo más doliente, en el estilo mexicano, hasta algo más afro, con mucha percusión, contrabajo y trompetas, como se hace en Cuba. Incluso las líricas son distintas. Puede ser bien sabroso o bien dramático, trágico. El cubano tiene mucho de celebrar a ‘aquel amor’. El otro es más de hablar de ‘por qué se fue’. Nosotros mezclamos un poco de las dos vertientes: las cuerdas acentúan lo dramático, mientras que el bongó y la maraca le dan un ritmito más llevadero. A la vez, las cuerdas de la Fernández Fierro, le dan una onda muy tanguera a temas como ‘Veinte años’”.</p>",
@@ -662,7 +662,7 @@ window.PRIETTO_RELEASES = [
     "meta": "PRIETTO · 2018",
     "desc": "Guitarra de 12 cuerdas, acústica y koshi.",
     "cover": "assets/album-bano-de-bosque.jpg",
-    "spotify_embed": "https://open.spotify.com/embed/artist/3Xm2CjJ6i14krOHOGVDYts?utm_source=generator&theme=0",
+    "spotify_embed": "https://www.youtube-nocookie.com/embed/Z-s5a-Hp6DM?rel=0&modestbranding=1",
     "credits_html": "<p><strong>Lanzamiento:</strong> 30/12/2018</p><p>Grabado e interpretado por Maxi Prietto el sábado 29 de diciembre del 2018.</p>",
     "photos": [
       {
@@ -681,7 +681,7 @@ window.PRIETTO_RELEASES = [
     "meta": "PRIETTO · 2017",
     "desc": "Guitarra sola interpretada por Maxi Prietto.",
     "cover": "assets/album-siesta.jpg",
-    "spotify_embed": "https://open.spotify.com/embed/artist/3Xm2CjJ6i14krOHOGVDYts?utm_source=generator&theme=0",
+    "spotify_embed": "https://www.youtube-nocookie.com/embed/videoseries?list=PLp721Z7jQ9Y9oJ541Q2_3y9pSg2J6P5kU",
     "credits_html": "<p><strong>Lanzamiento:</strong> 26/04/2017</p><p>Guitarra sola, grabado e interpretado por Maxi Prietto.</p>",
     "photos": [],
     "songs": []
@@ -740,7 +740,7 @@ window.PRIETTO_RELEASES = [
     "desc": "Estás Lejos, Error Blues, Vívelo.",
     "cover": "assets/album-prietto.jpg",
     "spotify_embed": "https://open.spotify.com/embed/album/7dfcnLFaM1MXsBKTp5FQVA?utm_source=generator&theme=0",
-    "credits_html": "<p><strong>Fecha de lanzamiento:</strong> 2 de noviembre del 2015.</p><p>Grabado, mezclado y masterizado en Estudio El Attic en 4 días en septiembre del 2015.</p><p><strong>Ingeniero de grabación, mezcla y mastering:</strong> Patricio Claypole.</p><p><strong>Damián Manfredi:</strong> Contrabajo</p><p><strong>Juan Felipe Correa:</strong> Batería y percusiones.</p><p><strong>Miguel Tennina:</strong> Piano.</p><p><strong>Maxi Prietto:</strong> Guitarra y voz.</p><p><strong>Foto de tapa:</strong> Juan Francisco Sanchez.</p><p><strong>Fotos de grabación:</strong> Marcos Barrera.</p><p><strong>Arte y diseño:</strong> Santi Pozzi.</p><p>Voy a buscarte en un sueño,</p><p>Voy a buscarte en las aguas del día.</p><p>Tu tumba en el mar, las playas son parte de vos</p><p>Mirando fotos nuestras pasé la navidad</p><p><strong>Dijo Prietto a Enrique Blanc para Zona de Obras:</strong> </p><p>\"está inspirado en el blues tradicional y fue grabado en el Estudio El Attic por Patricio Claypole, de manera íntegramente analógica, en cinta. Como aquellos discos de rock and roll con los que crecí y en los que no había tantos procesos digitales, sino simplemente un grupo tocando en vivo y poniendo todo a través de sus dedos, su mente y su corazón\".</p>",
+    "credits_html": "<p><strong>Fecha de lanzamiento:</strong> 2 de noviembre del 2015.</p><p>Grabado, mezclado y masterizado en Estudio El Attic en 4 días en septiembre del 2015.</p><p><strong>Ingeniero de grabación, mezcla y mastering:</strong> Patricio Claypole.</p><p><strong>Damián Manfredi:</strong> Contrabajo.</p><p><strong>Juan Felipe Correa:</strong> Batería y percusiones.</p><p><strong>Miguel Tennina:</strong> Piano.</p><p><strong>Maxi Prietto:</strong> Guitarra y voz.</p><p><strong>Foto de tapa:</strong> Juan Francisco Sanchez.</p><p><strong>Fotos de grabación:</strong> Marcos Barrera.</p><p><strong>Arte y diseño:</strong> Santi Pozzi.</p><p><strong>Dijo Prietto a Enrique Blanc para Zona de Obras:</strong></p><p>“está inspirado en el blues tradicional y fue grabado en el Estudio El Attic por Patricio Claypole, de manera íntegramente analógica, en cinta. Como aquellos discos de rock and roll con los que crecí y en los que no había tantos procesos digitales, sino simplemente un grupo tocando en vivo y poniendo todo a través de sus dedos, su mente y su corazón”.</p>",
     "photos": [
       {
         "src": "assets/prietto-2015/rec-1.jpg",
@@ -769,6 +769,12 @@ window.PRIETTO_RELEASES = [
       }
     ],
     "songs": [
+      {
+        "title": "VÍVELO",
+        "lines": [
+          "Vívelo, vívelo. No preguntes, vívelo"
+        ]
+      },
       {
         "title": "ESTÁS LEJOS",
         "lines": [
@@ -2093,7 +2099,7 @@ window.PRIETTO_RELEASES = [
     "year": "2007",
     "cat": "PRIETTO",
     "meta": "PRIETTO · 2007",
-    "desc": "A través de los soles, El ciruja, La estiba.",
+    "desc": "A través de los soles, El ciruja, Canción para Shaman y el Afro.",
     "cover": "assets/album-ciruja-2007.jpg",
     "spotify_embed": "https://open.spotify.com/embed/album/0bh0Try1eMw42AG1rQTpaX?utm_source=generator&amp;theme=0",
     "credits_html": "<p><strong>Lanzamiento:</strong> 9/04/2007</p><p><strong>Arte de tapa:</strong> Gabriel Rud</p><p>Compuesto y grabado en una semana por Maxi Prietto con un Casiotone y una guitarra criolla.</p>",
