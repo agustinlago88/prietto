@@ -408,6 +408,7 @@
     });
   }
 
+  var flyerDots = document.querySelectorAll(".flyer-dot");
   flyerDots.forEach(function (dot) {
     dot.addEventListener("click", function (e) {
       e.preventDefault();
@@ -416,6 +417,7 @@
     });
   });
 
+  var dateRows = document.querySelectorAll(".dates .date-row");
   dateRows.forEach(function (row) {
     row.addEventListener("mouseenter", function () {
       var idx = parseInt(this.getAttribute("data-slide"), 10);
