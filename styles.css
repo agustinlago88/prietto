@@ -440,7 +440,8 @@ button { font-family: inherit; cursor: pointer; }
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 5;
+  z-index: 10;
+  pointer-events: auto;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -477,7 +478,8 @@ button { font-family: inherit; cursor: pointer; }
   bottom: 1rem;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 5;
+  z-index: 10;
+  pointer-events: auto;
   display: flex;
   gap: 8px;
   align-items: center;
