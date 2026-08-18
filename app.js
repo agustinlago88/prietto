@@ -215,6 +215,12 @@
     document.title = id === "home"
       ? "Prietto — Cosmos, Blues y Canción"
       : "Prietto — " + meta.label;
+
+    if (id === "home") {
+      startHomeAuto();
+    } else {
+      stopHomeAuto();
+    }
   }
 
   window.addEventListener("hashchange", render);
@@ -433,25 +439,31 @@
     }, { passive: true });
   }
 
-  /* ---------- Home Hero Slider ---------- */
+  /* ---------- Home Hero Slider (Rotación automática cada 5 segundos en Web y Móvil) ---------- */
   var homeHeroTrack = document.getElementById("homeHeroTrack");
   var homeHeroPrev = document.getElementById("homeHeroPrev");
   var homeHeroNext = document.getElementById("homeHeroNext");
-  var homeHeroDots = document.querySelectorAll(".home-hero-dot");
   var currentHomeIndex = 0;
-  var totalHomeSlides = 4;
   var homeAutoTimer = null;
 
+  function getTotalHomeSlides() {
+    if (!homeHeroTrack) return 4;
+    var slides = homeHeroTrack.querySelectorAll(".home-hero-slide");
+    return slides.length || 4;
+  }
+
   function goToHomeSlide(index) {
-    if (index < 0) index = totalHomeSlides - 1;
-    if (index >= totalHomeSlides) index = 0;
+    var total = getTotalHomeSlides();
+    if (index < 0) index = total - 1;
+    if (index >= total) index = 0;
     currentHomeIndex = index;
 
     if (homeHeroTrack) {
       homeHeroTrack.style.transform = "translateX(-" + (currentHomeIndex * 100) + "%)";
     }
 
-    homeHeroDots.forEach(function (dot, i) {
+    var dots = document.querySelectorAll(".home-hero-dot");
+    dots.forEach(function (dot, i) {
       dot.classList.toggle("active", i === currentHomeIndex);
     });
   }
@@ -464,7 +476,10 @@
   }
 
   function stopHomeAuto() {
-    if (homeAutoTimer) clearInterval(homeAutoTimer);
+    if (homeAutoTimer) {
+      clearInterval(homeAutoTimer);
+      homeAutoTimer = null;
+    }
   }
 
   if (homeHeroPrev) {
@@ -483,6 +498,7 @@
     });
   }
 
+  var homeHeroDots = document.querySelectorAll(".home-hero-dot");
   homeHeroDots.forEach(function (dot) {
     dot.addEventListener("click", function (e) {
       e.preventDefault();
@@ -503,15 +519,27 @@
     homeHeroTrack.addEventListener("touchend", function (e) {
       var endX = e.changedTouches[0].clientX;
       var dist = endX - homeStartX;
-      if (Math.abs(dist) > 40) {
+      if (Math.abs(dist) > 35) {
         if (dist < 0) goToHomeSlide(currentHomeIndex + 1);
         else goToHomeSlide(currentHomeIndex - 1);
+      }
+      startHomeAuto();
+    }, { passive: true });
+  }
+
+  // Pausar rotación si la pestaña está en segundo plano y reanudar al volver
+  document.addEventListener("visibilitychange", function () {
+    if (document.hidden) {
+      stopHomeAuto();
+    } else {
+      if (routeFromHash() === "home") {
         startHomeAuto();
       }
-    }, { passive: true });
+    }
+  });
 
-    startHomeAuto();
-  }
+  // Iniciar rotación automática al cargar
+  startHomeAuto();
 
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", render);
