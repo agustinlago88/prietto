@@ -970,7 +970,7 @@ window.PRIETTO_RELEASES = [
   },
   {
     "key": "le-priet-vaha-2011",
-    "title": "Le Priët VAHA-CHOSMOS",
+    "title": "Prietto viaja al cosmos con Mariano",
     "year": "2011",
     "cat": "PRIETTO VIAJA AL COSMOS CON MARIANO",
     "meta": "PRIETTO VIAJA AL COSMOS CON MARIANO · 2011",
@@ -981,17 +981,17 @@ window.PRIETTO_RELEASES = [
     "photos": [
       {
         "src": "assets/albums/2011_Le_Priet_VAHA_CHOSMOS/thumbnail_DSC01466.jpg",
-        "alt": "Le Priet Vaha Chosmos",
+        "alt": "Prietto viaja al cosmos con Mariano",
         "caption": "Sesión de grabación"
       },
       {
         "src": "assets/albums/2011_Le_Priet_VAHA_CHOSMOS/thumbnail_DSC01602.jpg",
-        "alt": "Le Priet Vaha Chosmos",
+        "alt": "Prietto viaja al cosmos con Mariano",
         "caption": "En el estudio"
       },
       {
         "src": "assets/albums/2011_Le_Priet_VAHA_CHOSMOS/thumbnail_DSC01694.jpg",
-        "alt": "Le Priet Vaha Chosmos",
+        "alt": "Prietto viaja al cosmos con Mariano",
         "caption": "PVCCM — Sesión"
       }
     ],
