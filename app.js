@@ -374,13 +374,14 @@
 
   function goToFlyerSlide(index) {
     var slides = flyersTrack ? flyersTrack.querySelectorAll(".flyer-slide") : [];
-    var totalFlyers = slides.length || 8;
+    var totalFlyers = slides.length || 7;
     if (index < 0) index = totalFlyers - 1;
     if (index >= totalFlyers) index = 0;
     currentFlyerIndex = index;
 
     if (flyersTrack) {
-      flyersTrack.style.transform = "translateX(-" + (currentFlyerIndex * 100) + "%)";
+      var shiftPercent = (currentFlyerIndex * (100 / totalFlyers));
+      flyersTrack.style.transform = "translateX(-" + shiftPercent + "%)";
     }
 
     var flyerDots = document.querySelectorAll(".flyer-dot");
@@ -459,7 +460,8 @@
     currentHomeIndex = index;
 
     if (homeHeroTrack) {
-      homeHeroTrack.style.transform = "translateX(-" + (currentHomeIndex * 100) + "%)";
+      var shiftPercent = (currentHomeIndex * (100 / total));
+      homeHeroTrack.style.transform = "translateX(-" + shiftPercent + "%)";
     }
 
     var dots = document.querySelectorAll(".home-hero-dot");

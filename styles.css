@@ -417,7 +417,9 @@ button { font-family: inherit; cursor: pointer; }
 
 .home-hero-slide {
   flex: 0 0 100%;
+  min-width: 100%;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .home-hero-slide img {
@@ -1717,6 +1719,7 @@ body[data-route="home"] .pager { display: none; }
 
 .flyer-slide {
   flex: 0 0 100%;
+  min-width: 100%;
   width: 100%;
   display: flex;
   align-items: center;
