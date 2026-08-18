@@ -447,22 +447,17 @@
   var homeAutoTimer = null;
 
   function getTotalHomeSlides() {
-    if (!homeHeroTrack) return 4;
-    var slides = homeHeroTrack.querySelectorAll(".home-hero-slide");
+    var slides = document.querySelectorAll("#homeHeroTrack .home-hero-slide");
     return slides.length || 4;
   }
 
   function goToHomeSlide(index) {
-    var total = getTotalHomeSlides();
+    var slides = document.querySelectorAll("#homeHeroTrack .home-hero-slide");
+    var total = slides.length || 4;
     if (index < 0) index = total - 1;
     if (index >= total) index = 0;
     currentHomeIndex = index;
 
-    if (homeHeroTrack) {
-      homeHeroTrack.style.transform = "translateX(-" + (currentHomeIndex * 100) + "%)";
-    }
-
-    var slides = homeHeroTrack ? homeHeroTrack.querySelectorAll(".home-hero-slide") : [];
     slides.forEach(function (s, i) {
       s.classList.toggle("active", i === currentHomeIndex);
     });
