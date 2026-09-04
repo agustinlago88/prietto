@@ -2073,3 +2073,15 @@ body[data-route="home"] .pager { display: none; }
   }
 }
 
+
+/* =========================================================
+   BANDSINTOWN INTEGRATION
+   ========================================================= */
+.bandsintown-section {
+  margin-top: clamp(2rem, 4vh, 3.5rem);
+  padding-bottom: 2rem;
+}
+.bandsintown-widget-wrap {
+  margin-top: 1.25rem;
+  width: 100%;
+}
