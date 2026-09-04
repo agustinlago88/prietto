@@ -2075,13 +2075,86 @@ body[data-route="home"] .pager { display: none; }
 
 
 /* =========================================================
-   BANDSINTOWN INTEGRATION
+   BANDSINTOWN TRACKER CARD
    ========================================================= */
-.bandsintown-section {
-  margin-top: clamp(2rem, 4vh, 3.5rem);
-  padding-bottom: 2rem;
+.bit-tracker-card {
+  margin-top: clamp(2.5rem, 5vh, 4rem);
+  margin-bottom: 2.5rem;
+  border: 1px solid var(--rule-strong);
+  padding: clamp(1.25rem, 2.5vw, 2rem);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  background: var(--paper-warm, rgba(0, 0, 0, 0.02));
 }
-.bandsintown-widget-wrap {
-  margin-top: 1.25rem;
-  width: 100%;
+
+.bit-tracker-content {
+  flex: 1 1 340px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.bit-tracker-title {
+  font-size: clamp(1.05rem, 2.2vw, 1.35rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 0;
+  color: var(--ink);
+}
+
+.bit-tracker-desc {
+  font-size: 0.86rem;
+  line-height: 1.55;
+  color: var(--ink-70);
+  margin: 0;
+}
+
+.bit-tracker-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.bit-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 1.35rem;
+  font-family: inherit;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.bit-btn-primary {
+  background: var(--accent);
+  color: #fff;
+  border: 1px solid var(--accent);
+}
+
+.bit-btn-primary:hover {
+  background: #d84e1b;
+  border-color: #d84e1b;
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.bit-btn-secondary {
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--rule-strong);
+}
+
+.bit-btn-secondary:hover {
+  border-color: var(--ink);
+  background: rgba(0, 0, 0, 0.04);
 }

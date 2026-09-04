@@ -222,11 +222,7 @@
       stopHomeAuto();
     }
 
-    if (id === "fechas") {
-      setTimeout(function () {
-        window.dispatchEvent(new Event("resize"));
-      }, 150);
-    }
+
   }
 
   window.addEventListener("hashchange", render);
