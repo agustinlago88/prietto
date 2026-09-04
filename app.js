@@ -374,7 +374,7 @@
 
   function goToFlyerSlide(index) {
     var slides = flyersTrack ? flyersTrack.querySelectorAll(".flyer-slide") : [];
-    var totalFlyers = slides.length || 4;
+    var totalFlyers = slides.length || 5;
     if (index < 0) index = totalFlyers - 1;
     if (index >= totalFlyers) index = 0;
     currentFlyerIndex = index;
