@@ -1,6 +1,90 @@
 /* PRIETTO RELEASE DATABASE - 37 ALBUMS */
 window.PRIETTO_RELEASES = [
   {
+    "key": "melingo-tangos-bajos-2026",
+    "title": "Tangos Bajos",
+    "year": "2026",
+    "cat": "PRIETTO",
+    "meta": "MELINGO & MAXI PRIETTO · 2026",
+    "desc": "José, el Cuchiyero (Ft. Maxi Prietto).",
+    "cover": "assets/album-melingo-tangos-bajos.jpg",
+    "spotify_embed": "https://open.spotify.com/embed/track/4NFB4RJRb5M1clenrgXP8R?utm_source=generator&theme=0",
+    "credits_html": "<p><strong>Álbum:</strong> Melingo presenta Tangos Bajos (2026)</p><p><strong>Track:</strong> JOSÉ, EL CUCHIYERO Ft. Maxi Prietto (Melingo)</p><p><strong>Maxi Prietto:</strong> Voz & Dobro</p><p><strong>Pato Cotella:</strong> Contrabajo</p><p><strong>Melingo:</strong> Voz & Guitarra</p><p><strong>Grabado en:</strong> La Cocina de Bety</p><p><strong>Juan Ravioli:</strong> Ingeniero de sonido</p><p><strong>Producción:</strong> Melingo</p><p><strong>All Mixes:</strong> Juan Ravioli & Melingo</p><p><strong>Mastering:</strong> Mauro Taranto</p><p><strong>Diseño gráfico:</strong> Alejandro Ros</p><p><strong>Arte de Portada:</strong> Ricardo Mosner</p>",
+    "photos": [
+      {
+        "src": "assets/album-melingo-tangos-bajos-back.jpg",
+        "alt": "Melingo - Tangos Bajos Contratapa",
+        "caption": "Contratapa y Tracklist"
+      },
+      {
+        "src": "assets/album-melingo-tangos-bajos-booklet.jpg",
+        "alt": "Melingo - Tangos Bajos Ficha Técnica y Letras",
+        "caption": "Ficha técnica y letras oficiales"
+      }
+    ],
+    "songs": [
+      {
+        "title": "JOSÉ, EL CUCHIYERO",
+        "lines": [
+          "Tenés la cara marcada,",
+          "por andar en entrevEROS.",
+          "Te peleaste a cuchiyazos",
+          "con machos de mucho vuelo.",
+          "Algunos te dicen el Mudo,",
+          "otros, ni peras les das.",
+          "Pero yo una cosa sé,",
+          "sos el guapo del lugar.",
+          "A veces te corren a tiros,",
+          "pero vos siempre el facón.",
+          "Sos fiel a tu estirpe gaucha, querido,",
+          "siempre vas con el malón.",
+          "Malevaje a la orden del día,",
+          "siempre tomando una grapa.",
+          "Pero te toco un mal día,",
+          "y te la dieron por la espalda.",
+          "",
+          "Cuando la luna se lleva el día,",
+          "es cuando desvías tus penas!",
+          "Un ala de oveja maleva y dañina,",
+          "¡Atila contra la vereda!",
+          "Toda tu intención severa y maldita,",
+          "ya quisieras buscar pelea;",
+          "Sale p'esculpir la cascarita,",
+          "con los piezas que cruzaron.",
+          "La simple costumbre de medievo afuera,",
+          "como en el ring pero en la parcela;",
+          "Vos la estudiaste y la hiciste sierra,",
+          "",
+          "p'esos son pa' tirar los que pelean.",
+          "Son p'los giles las compoteras,",
+          "arriba los filos, arranquen fuera.",
+          "Que corran p'al Luna los que gustaron",
+          "que bailen las puntas a ver quien se lleva!",
+          "Vos sabías que tus días,",
+          "ya tenían fecha, ya estaban contados,",
+          "vino el calavera guía,",
+          "a darse la derecha p'llevarte al lado.",
+          "A la casa e'mandinga,",
+          "el Dueño de la Hoguera,",
+          "donde van los bravos.",
+          "El papá de lo malo mira,",
+          "mira y se sonríe , te sintió ganado.",
+          "Ríe porque vos supiste",
+          "comprarte tu muer-",
+          "Por que como simple mortal",
+          "fuiste un bardo.",
+          "Sin un pariente, ni amigos,",
+          "ni hermanos ;",
+          "Naciste guachito, tirao desde el vamo.",
+          "En ese boliche que hacías estragos,",
+          "Fue solo un pinche y así te tuvieron",
+          "ni lo sentiste, te fuiste en un trago,",
+          "guapaco fondín, el amigo del diablo."
+        ]
+      }
+    ]
+  },
+  {
     "key": "playa-nocturna-vol4",
     "title": "Playa Nocturna, Vol. 4",
     "year": "2026",
