@@ -2158,3 +2158,55 @@ body[data-route="home"] .pager { display: none; }
   border-color: var(--ink);
   background: rgba(0, 0, 0, 0.04);
 }
+
+/* =========================================================
+   SINGLE SLIDE & PAST DATES ACCORDION
+   ========================================================= */
+.flyers-carousel-wrap.single-slide .flyer-nav,
+.flyers-carousel-wrap.single-slide .flyer-dots {
+  display: none !important;
+}
+
+.past-dates-accordion {
+  margin-top: 2.5rem;
+  border-top: 1px dashed var(--rule, rgba(0, 0, 0, 0.15));
+  padding-top: 1.25rem;
+}
+
+.past-dates-accordion summary.dates-heading {
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: none;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 0;
+  transition: color 0.2s ease;
+}
+
+.past-dates-accordion summary::-webkit-details-marker {
+  display: none;
+}
+
+.past-dates-accordion summary:hover {
+  color: var(--accent);
+}
+
+.archive-toggle-text {
+  font-size: 0.75rem;
+  font-family: var(--mono);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-50, #888);
+  font-weight: 500;
+}
+
+.past-dates-accordion[open] summary .archive-toggle-text {
+  color: var(--accent);
+}
+
+.past-dates-list {
+  padding-top: 0.5rem;
+}
